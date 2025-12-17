@@ -78,53 +78,5 @@
     Tip: If a PDF doesn’t open in your browser, try right‑clicking the link and choosing “Open Link in New Tab” or “Download Linked File”.
   </p>
 
-  <script>
-    function toggleSection(id) {
-      const el = document.getElementById(id);
-      const toggle = document.getElementById(id + '-toggle');
-      if (!el || !toggle) return;
-
-      const isHidden = el.classList.contains('hidden');
-      el.classList.toggle('hidden', !isHidden);
-      toggle.textContent = isHidden ? 'hide' : 'show';
-    }
-
-    document.addEventListener('DOMContentLoaded', function () {
-      const input = document.getElementById('searchInput');
-      if (!input) return;
-
-      const sectionIds = ['guides', 'folders'];
-
-      input.addEventListener('input', function () {
-        const query = (this.value || '').toLowerCase().trim();
-
-        sectionIds.forEach(sectionId => {
-          const ul = document.getElementById(sectionId);
-          if (!ul) return;
-
-          const items = ul.querySelectorAll('li');
-          let anyVisible = false;
-
-          items.forEach(li => {
-            const text = (li.textContent || '').toLowerCase();
-            const visible = query === '' || text.includes(query);
-            li.style.display = visible ? '' : 'none';
-            if (visible) anyVisible = true;
-          });
-
-          // If searching and nothing in a section matches, collapse that section visually.
-          const toggle = document.getElementById(sectionId + '-toggle');
-          if (query !== '' && !anyVisible) {
-            ul.classList.add('hidden');
-            if (toggle) toggle.textContent = 'show';
-          } else if (query !== '') {
-            ul.classList.remove('hidden');
-            if (toggle) toggle.textContent = 'hide';
-          }
-        });
-      });
-    });
-  </script>
-
 </body>
 </html>
