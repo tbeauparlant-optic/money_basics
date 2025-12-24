@@ -1,0 +1,46 @@
+Parts/Teaching Materials/Workshop 6/.DS_Store
+Parts/Teaching Materials/Workshop 6/Handouts/1. How Does Credit Work.pdf
+Parts/Teaching Materials/Workshop 6/Handouts/2. Debunking Smart Credit Myths.pdf
+Parts/Teaching Materials/Workshop 6/Handouts/3. How To Improve Your Credit Score.pdf
+Parts/Teaching Materials/Workshop 6/Handouts/4. Definition and Examples of Predatory Lending.pdf
+Parts/Teaching Materials/Workshop 6/Handouts/Avoiding.Dangerous.Loans.pdf
+Parts/Teaching Materials/Workshop 6/Handouts/Credit Card FAQs.pdf
+Parts/Teaching Materials/Workshop 6/Handouts/Credit Card Fact or Fiction Game.docx
+Parts/Teaching Materials/Workshop 6/Handouts/How.to.Spot.Predatory.Lending.pdf
+Parts/Teaching Materials/Workshop 6/Money Basics PPT Workshop 6.pptx
+Parts/Teaching Materials/Workshop 6/Resources/1. How Credit Scores Work.docx
+Parts/Teaching Materials/Workshop 6/Resources/1. How Credit Scores Work.pdf
+Parts/Teaching Materials/Workshop 6/Resources/10. Student Loan Settlements.pdf
+Parts/Teaching Materials/Workshop 6/Resources/11 How to Get a Good Deal on your First Car Loan.pdf
+Parts/Teaching Materials/Workshop 6/Resources/12. What To Know About Payday and Car Title Loans.pdf
+Parts/Teaching Materials/Workshop 6/Resources/13. Predatory Lending Practices.pdf
+Parts/Teaching Materials/Workshop 6/Resources/14. What Is Predatory Mortgage Lending.pdf
+Parts/Teaching Materials/Workshop 6/Resources/15. How to Ask for a Lower Credit Card Interest Rate.pdf
+Parts/Teaching Materials/Workshop 6/Resources/16. How to Get the Best Car Loan.docx
+Parts/Teaching Materials/Workshop 6/Resources/16. How to Get the Best Car Loan.pdf
+Parts/Teaching Materials/Workshop 6/Resources/17. Interest Rates and Student Loans.pdf
+Parts/Teaching Materials/Workshop 6/Resources/18. Why Payday Loans Can Be Costly.docx
+Parts/Teaching Materials/Workshop 6/Resources/18. Why Payday Loans Can Be Costly.pdf
+Parts/Teaching Materials/Workshop 6/Resources/19. Predatory Lending and Mortgages.pdf
+Parts/Teaching Materials/Workshop 6/Resources/2. How to Choose a Credit Card.docx
+Parts/Teaching Materials/Workshop 6/Resources/2. How to Choose a Credit Card.pdf
+Parts/Teaching Materials/Workshop 6/Resources/3. Little-Known Facts About Your Credit Card.pdf
+Parts/Teaching Materials/Workshop 6/Resources/4. How to Raise a Low Credit Score.docx
+Parts/Teaching Materials/Workshop 6/Resources/4. How to Raise a Low Credit Score.pdf
+Parts/Teaching Materials/Workshop 6/Resources/5. Best Credit Cards for Rebuilding Bad Credit.pdf
+Parts/Teaching Materials/Workshop 6/Resources/6. What You Should Know About Credit Card Interest Rates.docx
+Parts/Teaching Materials/Workshop 6/Resources/6. What You Should Know About Credit Card Interest Rates.pdf
+Parts/Teaching Materials/Workshop 6/Resources/7. Spotting Credit Repair Scams.pdf
+Parts/Teaching Materials/Workshop 6/Resources/8. How to Get Preapproved for a Loan.docx
+Parts/Teaching Materials/Workshop 6/Resources/8. How to Get Preapproved for a Loan.pdf
+Parts/Teaching Materials/Workshop 6/Resources/9. Credit Unions and Car Loans.pdf
+Parts/Teaching Materials/Workshop 6/Resources/Building.a.Better.Credit.Report.pdf
+Parts/Teaching Materials/Workshop 6/Resources/Difference.Between.Fixed.and.Variable.Interest.Rates.pdf
+Parts/Teaching Materials/Workshop 6/Resources/How.Credit.Cards.Work.Discover.pdf
+Parts/Teaching Materials/Workshop 6/Resources/Predatory Lending- Payday Loans.pdf .pdf
+Parts/Teaching Materials/Workshop 6/Resources/Reading.Your.Credit.Card.Bill.pdf
+Parts/Teaching Materials/Workshop 6/Resources/Understanding.Loan.Interest.pdf
+Parts/Teaching Materials/Workshop 6/Resources/Workshop 6 Additional Resources.docx
+Parts/Teaching Materials/Workshop 6/Resources/Workshop 6 Additional Resources.pdf
+worksheets/wksp_7/action_plan_future.html
+worksheets/wksp_7/money_basics_github_repo.code-workspace
