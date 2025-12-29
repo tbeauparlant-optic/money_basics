@@ -1,0 +1,126 @@
+#!/usr/bin/env python3
+import os
+import re
+import sys
+from pathlib import Path
+
+
+def parse_args(argv):
+    opts = {
+        "wksp": None,
+        "guide": None,
+        "pages": None,
+        "output": None,
+        "host": os.environ.get("PG_MERGE_HOST", "https://tbeauparlant-optic.github.io/money_basics/"),
+        "commit": False,
+        "push": False,
+        "message": None,
+    }
+
+    for arg in argv:
+        if arg == "--commit":
+            opts["commit"] = True
+            continue
+        if arg == "--push":
+            opts["push"] = True
+            continue
+        if arg.startswith("--host="):
+            opts["host"] = arg.split("=", 1)[1]
+            continue
+        if arg.startswith("--message="):
+            opts["message"] = arg.split("=", 1)[1]
+            continue
+        if "=" in arg:
+            key, value = arg.split("=", 1)
+            if key in opts:
+                opts[key] = value
+                continue
+        raise SystemExit(f"Unknown arg: {arg}")
+
+    missing = [k for k in ("wksp", "guide", "pages", "output") if not opts[k]]
+    if missing:
+        raise SystemExit(f"Missing required args: {', '.join(missing)}")
+
+    return opts
+
+
+def parse_pages(pages_str):
+    pages = []
+    for part in pages_str.split(","):
+        part = part.strip()
+        if not part:
+            continue
+        if "-" in part:
+            start, end = part.split("-", 1)
+            start_i = int(start)
+            end_i = int(end)
+            if start_i > end_i:
+                raise SystemExit("Invalid page range")
+            pages.extend(range(start_i, end_i + 1))
+        else:
+            pages.append(int(part))
+    if not pages:
+        raise SystemExit("No pages specified")
+    return pages
+
+
+def main():
+    try:
+        from pypdf import PdfReader, PdfWriter
+    except Exception:
+        raise SystemExit("Missing dependency. Run: python -m pip install --user pypdf")
+
+    opts = parse_args(sys.argv[1:])
+    wksp = opts["wksp"].zfill(2)
+    guide = opts["guide"].lower()
+    if guide not in {"student", "facilitator"}:
+        raise SystemExit("guide must be 'student' or 'facilitator'")
+
+    pages = parse_pages(opts["pages"])
+
+    guide_dir = "Student_Guide" if guide == "student" else "Facilitator_Guide"
+    base = Path("Parts/FG:SG_Splits/Wksp Pages") / f"Workshop_{wksp}" / guide_dir / f"Workshop_{wksp}" / "PDFs"
+    if not base.exists():
+        raise SystemExit(f"PDFs folder not found: {base}")
+
+    inputs = []
+    for p in pages:
+        path = base / f"pg{p}.pdf"
+        if not path.exists():
+            raise SystemExit(f"Missing page PDF: {path}")
+        inputs.append(path)
+
+    output = base / f"{opts['output']}.pdf"
+
+    writer = PdfWriter()
+    for path in inputs:
+        reader = PdfReader(str(path))
+        for page in reader.pages:
+            writer.add_page(page)
+
+    with open(output, "wb") as f:
+        writer.write(f)
+
+    print(f"Wrote: {output}")
+
+    if opts["commit"] or opts["push"]:
+        import subprocess
+
+        subprocess.check_call(["git", "add", str(output)])
+        message = opts["message"] or f"Add combined workshop {wksp} {guide} pages {pages[0]}-{pages[-1]}"
+        subprocess.check_call(["git", "commit", "-m", message])
+        if opts["push"]:
+            subprocess.check_call(["git", "push", "origin", "main"])
+
+    host = opts["host"].rstrip("/") + "/"
+    # URL-encode path for embed
+    rel = str(output)
+    rel = re.sub(r":", "%3A", rel)
+    rel = rel.replace(" ", "%20")
+    embed = f"<iframe src=\"{host}{rel}\" width=\"100%\" height=\"600\" style=\"border:0;\" loading=\"lazy\"></iframe>"
+    print("Embed:")
+    print(embed)
+
+
+if __name__ == "__main__":
+    main()
