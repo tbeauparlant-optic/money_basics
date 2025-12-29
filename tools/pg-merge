@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 import os
-import re
 import sys
 from pathlib import Path
+from urllib.parse import quote
 
 
 def parse_args(argv):
@@ -114,9 +114,7 @@ def main():
 
     host = opts["host"].rstrip("/") + "/"
     # URL-encode path for embed
-    rel = str(output)
-    rel = re.sub(r":", "%3A", rel)
-    rel = rel.replace(" ", "%20")
+    rel = quote(str(output), safe="/")
     embed = f"<iframe src=\"{host}{rel}\" width=\"100%\" height=\"600\" style=\"border:0;\" loading=\"lazy\"></iframe>"
     print("Embed:")
     print(embed)
