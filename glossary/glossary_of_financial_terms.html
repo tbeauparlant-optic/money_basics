@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Financial Terms Glossary</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9fafb;
+      color: #374151;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 p-4 sm:p-8">
+  <div class="max-w-5xl mx-auto bg-white rounded-xl shadow-lg p-6 sm:p-10">
+    <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900">Financial Terms Glossary</h1>
+    <p class="text-sm text-gray-500 mt-1 mb-6">Key financial concepts referenced in the Money Basics Student Guide.</p>
+
+    <div class="mb-8">
+      <label class="sr-only" for="q">Search terms</label>
+      <input id="q" type="search" placeholder="Search glossary terms..."
+             class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200" />
+    </div>
+
+    <div id="results" class="space-y-8">
+      <div class="term" data-term="annual percentage rate apr">
+        <h3 class="font-semibold text-gray-900 text-lg">Annual Percentage Rate (APR)</h3>
+        <p class="text-gray-700 mt-1">The yearly interest rate charged for borrowing or earned through an investment, expressed as a percentage of the amount borrowed or invested.</p>
+      </div>
+
+      <div class="term" data-term="assets">
+        <h3 class="font-semibold text-gray-900 text-lg">Assets</h3>
+        <p class="text-gray-700 mt-1">Anything of value owned by an individual or organization that can be converted into cash, such as property, savings, or investments.</p>
+      </div>
+
+      <div class="term" data-term="atm">
+        <h3 class="font-semibold text-gray-900 text-lg">ATM</h3>
+        <p class="text-gray-700 mt-1">An Automated Teller Machine that allows bank customers to withdraw cash, make deposits, or check account balances electronically.</p>
+      </div>
+
+      <div class="term" data-term="bank">
+        <h3 class="font-semibold text-gray-900 text-lg">Bank</h3>
+        <p class="text-gray-700 mt-1">A company chartered by state or federal government to offer financial services such as checking and savings accounts, loans, and safe-deposit boxes. The FDIC insures accounts in federally chartered banks and most state-chartered banks.</p>
+      </div>
+
+      <div class="term" data-term="bond">
+        <h3 class="font-semibold text-gray-900 text-lg">Bond</h3>
+        <p class="text-gray-700 mt-1">A certificate of indebtedness issued by a government or company, promising to repay borrowed funds to the lender with interest at predetermined intervals.</p>
+      </div>
+
+      <div class="term" data-term="borrower">
+        <h3 class="font-semibold text-gray-900 text-lg">Borrower</h3>
+        <p class="text-gray-700 mt-1">An individual, business, or government that receives and uses something belonging to someone else with the intention of returning or repaying it, usually with interest.</p>
+      </div>
+
+      <div class="term" data-term="budget">
+        <h3 class="font-semibold text-gray-900 text-lg">Budget</h3>
+        <p class="text-gray-700 mt-1">A plan to manage income, spending, and saving over a specific period of time.</p>
+      </div>
+
+      <div class="term" data-term="capital gains">
+        <h3 class="font-semibold text-gray-900 text-lg">Capital Gains</h3>
+        <p class="text-gray-700 mt-1">A profit realized from the sale of property, stocks, or other investments.</p>
+      </div>
+
+      <div class="term" data-term="cash">
+        <h3 class="font-semibold text-gray-900 text-lg">Cash</h3>
+        <p class="text-gray-700 mt-1">Money in the form of paper currency or coins.</p>
+      </div>
+
+      <div class="term" data-term="certificate of deposit cd">
+        <h3 class="font-semibold text-gray-900 text-lg">Certificate of Deposit (CD)</h3>
+        <p class="text-gray-700 mt-1">A certificate issued by a bank to a person depositing money for a specified period of time. Early withdrawals often incur a penalty.</p>
+      </div>
+
+      <div class="term" data-term="check">
+        <h3 class="font-semibold text-gray-900 text-lg">Check</h3>
+        <p class="text-gray-700 mt-1">A written order to a financial institution directing it to pay a stated amount from the customer’s account.</p>
+      </div>
+
+      <div class="term" data-term="checking account">
+        <h3 class="font-semibold text-gray-900 text-lg">Checking Account</h3>
+        <p class="text-gray-700 mt-1">A financial account into which people deposit money and from which they withdraw funds by writing checks or using debit or ATM cards.</p>
+      </div>
+
+      <div class="term" data-term="compound interest">
+        <h3 class="font-semibold text-gray-900 text-lg">Compound Interest</h3>
+        <p class="text-gray-700 mt-1">Interest calculated on both the initial principal and the accumulated interest from previous periods.</p>
+      </div>
+
+      <div class="term" data-term="credit">
+        <h3 class="font-semibold text-gray-900 text-lg">Credit</h3>
+        <p class="text-gray-700 mt-1">Borrowing money or obtaining goods or services with the promise to pay later, usually with interest.</p>
+      </div>
+
+      <div class="term" data-term="credit card">
+        <h3 class="font-semibold text-gray-900 text-lg">Credit Card</h3>
+        <p class="text-gray-700 mt-1">A plastic card issued by a financial institution that allows the holder to borrow funds to pay for goods and services, with repayment required later.</p>
+      </div>
+
+      <div class="term" data-term="credit report">
+        <h3 class="font-semibold text-gray-900 text-lg">Credit Report</h3>
+        <p class="text-gray-700 mt-1">A record collected by a credit agency that tracks a borrower’s credit history, including on-time and missed payments.</p>
+      </div>
+
+      <div class="term" data-term="credit union">
+        <h3 class="font-semibold text-gray-900 text-lg">Credit Union</h3>
+        <p class="text-gray-700 mt-1">A not-for-profit financial cooperative owned by its members, offering many of the same services as banks, often with lower fees.</p>
+      </div>
+
+      <div class="term" data-term="debit card">
+        <h3 class="font-semibold text-gray-900 text-lg">Debit Card</h3>
+        <p class="text-gray-700 mt-1">A plastic card linked to a checking account that allows the holder to pay for purchases or withdraw cash directly from their funds.</p>
+      </div>
+
+      <div class="term" data-term="dividend">
+        <h3 class="font-semibold text-gray-900 text-lg">Dividend</h3>
+        <p class="text-gray-700 mt-1">A portion of a company’s profits paid to its shareholders, usually quarterly.</p>
+      </div>
+
+      <div class="term" data-term="expenses">
+        <h3 class="font-semibold text-gray-900 text-lg">Expenses</h3>
+        <p class="text-gray-700 mt-1">Payments made for goods and services; money spent in the course of living or doing business.</p>
+      </div>
+
+      <div class="term" data-term="finance charges">
+        <h3 class="font-semibold text-gray-900 text-lg">Finance Charges</h3>
+        <p class="text-gray-700 mt-1">The cost of borrowing money, including interest and fees, on unpaid balances.</p>
+      </div>
+
+      <div class="term" data-term="financial institutions">
+        <h3 class="font-semibold text-gray-900 text-lg">Financial Institutions</h3>
+        <p class="text-gray-700 mt-1">Organizations such as banks and credit unions that help channel funds from savers to borrowers.</p>
+      </div>
+
+      <div class="term" data-term="financial literacy">
+        <h3 class="font-semibold text-gray-900 text-lg">Financial Literacy</h3>
+        <p class="text-gray-700 mt-1">Understanding financial systems, products, and behaviors — including budgeting, credit, saving, and investing — and applying that knowledge to make sound financial decisions.</p>
+      </div>
+
+      <div class="term" data-term="fixed expenses">
+        <h3 class="font-semibold text-gray-900 text-lg">Fixed Expenses</h3>
+        <p class="text-gray-700 mt-1">Costs that remain constant from month to month, such as rent or car payments.</p>
+      </div>
+
+      <div class="term" data-term="grace period">
+        <h3 class="font-semibold text-gray-900 text-lg">Grace Period</h3>
+        <p class="text-gray-700 mt-1">The amount of time a borrower has to make a payment after its due date before penalties or interest are charged.</p>
+      </div>
+
+      <div class="term" data-term="human capital">
+        <h3 class="font-semibold text-gray-900 text-lg">Human Capital</h3>
+        <p class="text-gray-700 mt-1">The knowledge, skills, and experience possessed by individuals that contribute to their economic value and earning potential.</p>
+      </div>
+
+      <div class="term" data-term="income">
+        <h3 class="font-semibold text-gray-900 text-lg">Income</h3>
+        <p class="text-gray-700 mt-1">Money received through work, investments, or other sources.</p>
+      </div>
+
+      <div class="term" data-term="interest">
+        <h3 class="font-semibold text-gray-900 text-lg">Interest</h3>
+        <p class="text-gray-700 mt-1">The cost of borrowing money or the return on saving money, typically expressed as a percentage.</p>
+      </div>
+
+      <div class="term" data-term="lender">
+        <h3 class="font-semibold text-gray-900 text-lg">Lender</h3>
+        <p class="text-gray-700 mt-1">An individual or institution that loans money to a borrower with the expectation of repayment plus interest.</p>
+      </div>
+
+      <div class="term" data-term="liabilities">
+        <h3 class="font-semibold text-gray-900 text-lg">Liabilities</h3>
+        <p class="text-gray-700 mt-1">Financial obligations or debts owed to others, such as loans or credit balances.</p>
+      </div>
+
+      <div class="term" data-term="minimum payment">
+        <h3 class="font-semibold text-gray-900 text-lg">Minimum Payment</h3>
+        <p class="text-gray-700 mt-1">The smallest amount a person must pay on a credit account in a given billing cycle to remain in good standing.</p>
+      </div>
+
+      <div class="term" data-term="money market account">
+        <h3 class="font-semibold text-gray-900 text-lg">Money Market Account</h3>
+        <p class="text-gray-700 mt-1">A type of savings account that typically offers higher interest rates and limited check-writing privileges.</p>
+      </div>
+
+      <div class="term" data-term="mutual fund">
+        <h3 class="font-semibold text-gray-900 text-lg">Mutual Fund</h3>
+        <p class="text-gray-700 mt-1">An investment vehicle that pools money from many investors to buy a diversified portfolio of stocks, bonds, or other assets.</p>
+      </div>
+
+      <div class="term" data-term="net worth">
+        <h3 class="font-semibold text-gray-900 text-lg">Net Worth</h3>
+        <p class="text-gray-700 mt-1">The value of a person’s assets minus their liabilities; an overall measure of financial health.</p>
+      </div>
+
+      <div class="term" data-term="rate of return">
+        <h3 class="font-semibold text-gray-900 text-lg">Rate of Return</h3>
+        <p class="text-gray-700 mt-1">The gain or loss on an investment over a specified period, expressed as a percentage of the investment’s cost.</p>
+      </div>
+
+      <div class="term" data-term="return">
+        <h3 class="font-semibold text-gray-900 text-lg">Return</h3>
+        <p class="text-gray-700 mt-1">The profit or income generated by an investment, usually stated as a percentage.</p>
+      </div>
+
+      <div class="term" data-term="risk">
+        <h3 class="font-semibold text-gray-900 text-lg">Risk</h3>
+        <p class="text-gray-700 mt-1">The chance of losing money or experiencing a financial loss on an investment or decision.</p>
+      </div>
+
+      <div class="term" data-term="rule of 72">
+        <h3 class="font-semibold text-gray-900 text-lg">Rule of 72</h3>
+        <p class="text-gray-700 mt-1">A formula used to estimate the number of years required for an investment to double in value, found by dividing 72 by the annual interest rate.</p>
+      </div>
+
+      <div class="term" data-term="saving">
+        <h3 class="font-semibold text-gray-900 text-lg">Saving</h3>
+        <p class="text-gray-700 mt-1">Income not spent on current consumption or taxes; money set aside for future use.</p>
+      </div>
+
+      <div class="term" data-term="savings account">
+        <h3 class="font-semibold text-gray-900 text-lg">Savings Account</h3>
+        <p class="text-gray-700 mt-1">An interest-bearing bank account used for storing money not intended for daily expenses.</p>
+      </div>
+
+      <div class="term" data-term="spending">
+        <h3 class="font-semibold text-gray-900 text-lg">Spending</h3>
+        <p class="text-gray-700 mt-1">Using income to purchase goods or services for current needs or wants.</p>
+      </div>
+
+      <div class="term" data-term="stocks">
+        <h3 class="font-semibold text-gray-900 text-lg">Stocks</h3>
+        <p class="text-gray-700 mt-1">Shares of ownership in a corporation that represent a claim on part of its assets and earnings.</p>
+      </div>
+
+      <div class="term" data-term="taxes">
+        <h3 class="font-semibold text-gray-900 text-lg">Taxes</h3>
+        <p class="text-gray-700 mt-1">Mandatory payments made to government to fund public programs and services.</p>
+      </div>
+
+      <div class="term" data-term="variable expenses">
+        <h3 class="font-semibold text-gray-900 text-lg">Variable Expenses</h3>
+        <p class="text-gray-700 mt-1">Expenses that can change in amount or frequency, such as food, utilities, or entertainment.</p>
+      </div>
+
+      <div class="term" data-term="wealth">
+        <h3 class="font-semibold text-gray-900 text-lg">Wealth</h3>
+        <p class="text-gray-700 mt-1">The accumulation of valuable resources and assets, such as savings, investments, and property.</p>
+      </div>
+    </div>
+
+    <div class="mt-10 pt-6 border-t text-xs text-gray-400 text-center">
+      <p>© Money Basics — Financial Terms Glossary</p>
+    </div>
+  </div>
+
+  <script>
+    const q = document.getElementById('q');
+    q.addEventListener('input', e => {
+      const needle = e.target.value.trim().toLowerCase();
+      document.querySelectorAll('.term').forEach(el => {
+        el.style.display = el.dataset.term.includes(needle) ? '' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>
