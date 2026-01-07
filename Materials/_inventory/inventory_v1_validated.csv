@@ -1,702 +1,702 @@
-workshop_id,bucket,asset_type,title,source_path,status,notes,validation_issues
-01,Core_Resources,pdf,Workshop 01 Introduction,Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 01 - Introduction.pdf,ok,,
-02,Core_Resources,pdf,Workshop 02 Setting Financial Goals,Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 02 - Setting Financial Goals.pdf,ok,,
-03,Core_Resources,pdf,Workshop 03 Creating a Budget,Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 03 - Creating a Budget.pdf,ok,,
-04,Core_Resources,pdf,Workshop 04 Banking Basics,Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 04 - Banking Basics.pdf,ok,,
-05,Core_Resources,pdf,"Workshop 05 Debit Cards, ATMs, Online Banking","Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 05 - Debit Cards, ATMs, Online Banking.pdf",ok,,
-06,Core_Resources,pdf,Workshop 06 Credit & Loans,Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 06 - Credit & Loans.pdf,ok,,
-07,Core_Resources,pdf,Workshop 07 Debt & Tools,Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 07 - Debt & Tools.pdf,ok,,
-08,Core_Resources,pdf,"Workshop 08 Mental Health, Relationships & Money","Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 08 - Mental Health, Relationships & Money.pdf",ok,,
-09,Core_Resources,pdf,Workshop 09 Tax Returns,Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 09 - Tax Returns.pdf,ok,,
-10,Core_Resources,pdf,Workshop 10 Savings Accounts & Goals,Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 10 - Savings Accounts & Goals.pdf,ok,,
-11,Core_Resources,pdf,Workshop 11 Course Graduation,Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 11 - Course Graduation.pdf,ok,,
-01,Core_Resources,pdf,Workshop 01 Introduction & Course Overview,Parts/FG:SG_Splits/Wksp/Student Guide/Wksps/Workshop 01 - Introduction & Course Overview.pdf,ok,,
-02,Core_Resources,pdf,Workshop 02 Setting Financial Goals; Person Directed Planning,Parts/FG:SG_Splits/Wksp/Student Guide/Wksps/Workshop 02 - Setting Financial Goals; Person Directed Planning.pdf,ok,,
-03,Core_Resources,pdf,Workshop 03 Creating a Budget & Resources to Save Money,Parts/FG:SG_Splits/Wksp/Student Guide/Wksps/Workshop 03 - Creating a Budget & Resources to Save Money.pdf,ok,,
-04,Core_Resources,pdf,Workshop 04 Banking Basics & Checking Accounts,Parts/FG:SG_Splits/Wksp/Student Guide/Wksps/Workshop 04 - Banking Basics & Checking Accounts.pdf,ok,,
-05,Core_Resources,pdf,"Workshop 05 Debit Cards, ATMs, Online Banking & Money Safety","Parts/FG:SG_Splits/Wksp/Student Guide/Wksps/Workshop 05 - Debit Cards, ATMs, Online Banking & Money Safety.pdf",ok,,
-06,Core_Resources,pdf,Workshop 06 Credit & Loans,Parts/FG:SG_Splits/Wksp/Student Guide/Wksps/Workshop 06 - Credit & Loans.pdf,ok,,
-07,Core_Resources,pdf,Workshop 07 Debt & Tools to Get Out of It,Parts/FG:SG_Splits/Wksp/Student Guide/Wksps/Workshop 07 - Debt & Tools to Get Out of It.pdf,ok,,
-08,Core_Resources,pdf,"Workshop 08 Mental Health, Relationships & Money; Financial Crisis Planning","Parts/FG:SG_Splits/Wksp/Student Guide/Wksps/Workshop 08 - Mental Health, Relationships & Money; Financial Crisis Planning.pdf",ok,,
-09,Core_Resources,pdf,Workshop 09 How to File a Tax Return & Resources for Doing So,Parts/FG:SG_Splits/Wksp/Student Guide/Wksps/Workshop 09 - How to File a Tax Return & Resources for Doing So.pdf,ok,,
-,,docx,Glossary of Financial Terms,Parts/Teaching Materials/Facilitator & Student Guides/Glossaries/Glossary of Financial Terms.docx,review,,missing_workshop_id;missing_bucket
-,,pdf,Glossary of Financial Terms,Parts/Teaching Materials/Facilitator & Student Guides/Glossaries/Glossary of Financial Terms.pdf,review,,missing_workshop_id;missing_bucket
-,,pdf,Glossary of Terms on Poverty,Parts/Teaching Materials/Facilitator & Student Guides/Glossaries/Glossary of Terms on Poverty.pdf,review,,missing_workshop_id;missing_bucket
-,,html,financial terms glossary.filtered,Parts/Teaching Materials/Facilitator & Student Guides/Glossaries/financial-terms-glossary.filtered.html,review,,missing_workshop_id;missing_bucket
-,,html,money basics student glossary,Parts/Teaching Materials/Facilitator & Student Guides/Glossaries/money-basics-student-glossary.html,review,,missing_workshop_id;missing_bucket
-,,pdf,Money Basics Facilitator Guide,Parts/Teaching Materials/Facilitator & Student Guides/Money Basics Facilitator Guide.pdf,review,,missing_workshop_id;missing_bucket
-,,docx,Money Basics Facilitator Guide[Final],Parts/Teaching Materials/Facilitator & Student Guides/Money Basics Facilitator Guide[Final].docx,review,,missing_workshop_id;missing_bucket
-,,docx,Money Basics Student Guide [Final],Parts/Teaching Materials/Facilitator & Student Guides/Money Basics Student Guide [Final].docx,review,,missing_workshop_id;missing_bucket
-,,pdf,Money Basics Student Guide,Parts/Teaching Materials/Facilitator & Student Guides/Money Basics Student Guide.pdf,review,,missing_workshop_id;missing_bucket
-,,pdf,Glossary of Financial Terms,Parts/Teaching Materials/Glossaries/Glossary of Financial Terms.pdf,review,,missing_workshop_id;missing_bucket
-,,pdf,Glossary of Terms on Poverty,Parts/Teaching Materials/Glossaries/Glossary of Terms on Poverty.pdf,review,,missing_workshop_id;missing_bucket
-,,pdf,ODHS Equity Glossary,Parts/Teaching Materials/Glossaries/ODHS Equity Glossary.pdf,review,,missing_workshop_id;missing_bucket
-01,Handouts,pdf,1. Poverty and Hunger in America,Parts/Teaching Materials/Workshop 1/Handouts/1. Poverty and Hunger in America.pdf,ok,,
-01,Handouts,pdf,2. Steps Toward Financial Resilience,Parts/Teaching Materials/Workshop 1/Handouts/2. Steps Toward Financial Resilience.pdf,ok,,
-01,Handouts,pdf,3. Poverty and Intersectionality in Oregon,Parts/Teaching Materials/Workshop 1/Handouts/3. Poverty and Intersectionality in Oregon.pdf,ok,,
-01,Handouts,pdf,4. Hidden Rules Among Classes,Parts/Teaching Materials/Workshop 1/Handouts/4. Hidden Rules Among Classes.pdf,ok,,
-01,Handouts,pdf,5. How Poverty is Measured in the US,Parts/Teaching Materials/Workshop 1/Handouts/5. How Poverty is Measured in the US.pdf,ok,,
-01,Handouts,pdf,6. The American Dream of upward mobility is broken,Parts/Teaching Materials/Workshop 1/Handouts/6. The _American Dream_ of upward mobility is broken.pdf,ok,,
-01,Handouts,pdf,7. White Privilege Invisible Knapsack,Parts/Teaching Materials/Workshop 1/Handouts/7. White Privilege Invisible Knapsack.pdf,ok,,
-01,Handouts,pdf,Financial Literacy & African Americans Bridging the Gap,Parts/Teaching Materials/Workshop 1/Handouts/Financial Literacy & African Americans_ Bridging the Gap.pdf,ok,,
-01,Handouts,pdf,Workshop 1 Worksheets (extra),Parts/Teaching Materials/Workshop 1/Handouts/Workshop 1 Worksheets (extra).pdf,ok,,
-01,Handouts,pdf,Workshop 1 Worksheets,Parts/Teaching Materials/Workshop 1/Handouts/Workshop 1 Worksheets.pdf,ok,,
-01,Core_Resources,pptx,Money Basics PPT Workshop 1,Parts/Teaching Materials/Workshop 1/Money Basics PPT Workshop 1.pptx,ok,,
-01,Additional_Resources,pdf,1. Tips for Managing Money When You Live With Mental Health Challenges,Parts/Teaching Materials/Workshop 1/Resources/1. Tips for Managing Money When You Live With Mental Health Challenges.pdf,ok,,
-01,Additional_Resources,pdf,"10. Brief History of Race, Racism & Colonialism","Parts/Teaching Materials/Workshop 1/Resources/10. Brief History of Race, Racism & Colonialism.pdf",ok,,
-01,Additional_Resources,pdf,"11. Unaffordable America. Poverty, Housing and Eviction","Parts/Teaching Materials/Workshop 1/Resources/11. Unaffordable America. Poverty, Housing and Eviction.pdf",ok,,
-01,Additional_Resources,pdf,12. FAQs on Problem Gambling,Parts/Teaching Materials/Workshop 1/Resources/12. FAQs on Problem Gambling.pdf,ok,,
-01,Additional_Resources,pdf,13. Financial Toolkit for Problem Gamblers,Parts/Teaching Materials/Workshop 1/Resources/13. Financial Toolkit for Problem Gamblers.pdf,ok,,
-01,Additional_Resources,pdf,14. Financial Strategies for Loved Ones of Gamblers,Parts/Teaching Materials/Workshop 1/Resources/14. Financial Strategies for Loved Ones of Gamblers.pdf,ok,,
-01,Additional_Resources,pdf,15. Dismantling the Poverty Trap Article,Parts/Teaching Materials/Workshop 1/Resources/15. Dismantling the Poverty Trap Article.pdf,ok,,
-01,Additional_Resources,pdf,16. Supplemental Poverty Measure,Parts/Teaching Materials/Workshop 1/Resources/16. Supplemental Poverty Measure.pdf,ok,,
-01,Additional_Resources,pdf,2. How to Practice Mindfulness on a Budget,Parts/Teaching Materials/Workshop 1/Resources/2. How to Practice Mindfulness on a Budget.pdf,ok,,
-01,Additional_Resources,pdf,3. How to Reduce Financial Stress,Parts/Teaching Materials/Workshop 1/Resources/3. How to Reduce Financial Stress.pdf,ok,,
-01,Additional_Resources,pdf,4. Income Inequality in America,Parts/Teaching Materials/Workshop 1/Resources/4. Income Inequality in America.pdf,ok,,
-01,Additional_Resources,pdf,5. Poverty in America Statistics,Parts/Teaching Materials/Workshop 1/Resources/5. Poverty in America Statistics.pdf,ok,,
-01,Additional_Resources,pdf,6. Data Illustrating the Intersectional Nature of Poverty,Parts/Teaching Materials/Workshop 1/Resources/6. Data Illustrating the Intersectional Nature of Poverty.pdf,ok,,
-01,Additional_Resources,pdf,8. Race and the lack of intergenerational economic mobility in the US,Parts/Teaching Materials/Workshop 1/Resources/8. Race and the lack of intergenerational economic mobility in the US.pdf,ok,,
-01,Additional_Resources,pdf,9. Displacement in Portland,Parts/Teaching Materials/Workshop 1/Resources/9. Displacement in Portland.pdf,ok,,
-01,Additional_Resources,pdf,Workshop 1 Additional Resources,Parts/Teaching Materials/Workshop 1/Resources/Workshop 1 Additional Resources.pdf,ok,,
-10,Handouts,pdf,1. How To Save For Your Future,Parts/Teaching Materials/Workshop 10/Handouts/1. How To Save For Your Future.pdf,ok,,
-10,Handouts,pdf,2. Individual Development Account Fact Sheet,Parts/Teaching Materials/Workshop 10/Handouts/2. Individual Development Account Fact Sheet.pdf,ok,,
-10,Handouts,docx,3. IDA Basics & Resources,Parts/Teaching Materials/Workshop 10/Handouts/3. IDA Basics & Resources.docx,ok,,
-10,Handouts,pdf,3. IDA Basics & Resources,Parts/Teaching Materials/Workshop 10/Handouts/3. IDA Basics & Resources.pdf,ok,,
-10,Handouts,pdf,Individual Development Accounts FAQs,Parts/Teaching Materials/Workshop 10/Handouts/Individual Development Accounts FAQs.pdf,ok,,
-10,Handouts,pdf,Savings Tips,Parts/Teaching Materials/Workshop 10/Handouts/Savings Tips.pdf,ok,,
-10,Handouts,docx,Workshop 10 Worksheets,Parts/Teaching Materials/Workshop 10/Handouts/Workshop 10 Worksheets.docx,ok,,
-10,Handouts,pdf,Workshop 10 Worksheets,Parts/Teaching Materials/Workshop 10/Handouts/Workshop 10 Worksheets.pdf,ok,,
-10,Core_Resources,pptx,Money Basics PPT Workshop 10,Parts/Teaching Materials/Workshop 10/Money Basics PPT Workshop 10.pptx,ok,,
-10,Additional_Resources,pdf,1. ABLE Accounts,Parts/Teaching Materials/Workshop 10/Resources/1. ABLE Accounts.pdf,ok,,
-10,Additional_Resources,docx,2. Asset Building For Low Income Families,Parts/Teaching Materials/Workshop 10/Resources/2. Asset Building For Low-Income Families.docx,ok,,
-10,Additional_Resources,pdf,2. Asset Building For Low Income Families,Parts/Teaching Materials/Workshop 10/Resources/2. Asset Building For Low-Income Families.pdf,ok,,
-10,Additional_Resources,docx,3. 23 Easy Ways To Save Money,Parts/Teaching Materials/Workshop 10/Resources/3. 23 Easy Ways To Save Money.docx,ok,,
-10,Additional_Resources,pdf,3. 23 Easy Ways To Save Money,Parts/Teaching Materials/Workshop 10/Resources/3. 23 Easy Ways To Save Money.pdf,ok,,
-10,Additional_Resources,docx,4. How to Save Money On A Low Income,Parts/Teaching Materials/Workshop 10/Resources/4. How to Save Money On A Low Income.docx,ok,,
-10,Additional_Resources,pdf,4. How to Save Money On A Low Income,Parts/Teaching Materials/Workshop 10/Resources/4. How to Save Money On A Low Income.pdf,ok,,
-10,Additional_Resources,docx,5. A Beginner s Guide to Saving Money,Parts/Teaching Materials/Workshop 10/Resources/5. A Beginner_s Guide to Saving Money.docx,ok,,
-10,Additional_Resources,pdf,5. A Beginner s Guide to Saving Money,Parts/Teaching Materials/Workshop 10/Resources/5. A Beginner_s Guide to Saving Money.pdf,ok,,
-10,Additional_Resources,docx,Workshop 10 Additional Resources,Parts/Teaching Materials/Workshop 10/Resources/Workshop 10 Additional Resources.docx,ok,,
-10,Additional_Resources,pdf,Workshop 10 Additional Resources,Parts/Teaching Materials/Workshop 10/Resources/Workshop 10 Additional Resources.pdf,ok,,
-11,Core_Resources,pptx,Money Basics PPT Workshop 11,Parts/Teaching Materials/Workshop 11/Money Basics PPT Workshop 11.pptx,ok,,
-02,Handouts,pdf,1. What is Person Directed Planning,Parts/Teaching Materials/Workshop 2/Handouts/1. What is Person-Directed Planning.pdf,ok,,
-02,Handouts,docx,Workshop 2 Worksheets,Parts/Teaching Materials/Workshop 2/Handouts/Workshop 2 Worksheets.docx,ok,,
-02,Handouts,pdf,Workshop 2 Worksheets,Parts/Teaching Materials/Workshop 2/Handouts/Workshop 2 Worksheets.pdf,ok,,
-02,Core_Resources,pptx,Money Basics PPT Workshop 2,Parts/Teaching Materials/Workshop 2/Money Basics PPT Workshop 2.pptx,ok,,
-02,Additional_Resources,docx,1. Person Centered Planning,Parts/Teaching Materials/Workshop 2/Resources/1. Person-Centered Planning.docx,ok,,
-02,Additional_Resources,pdf,1. Person Centered Planning,Parts/Teaching Materials/Workshop 2/Resources/1. Person-Centered Planning.pdf,ok,,
-02,Additional_Resources,pdf,2. Person Centered Planning Tools,Parts/Teaching Materials/Workshop 2/Resources/2. Person-Centered Planning Tools.pdf,ok,,
-02,Additional_Resources,docx,Workshop 2 Additional Resources,Parts/Teaching Materials/Workshop 2/Resources/Workshop 2 Additional Resources.docx,ok,,
-02,Additional_Resources,pdf,Workshop 2 Additional Resources,Parts/Teaching Materials/Workshop 2/Resources/Workshop 2 Additional Resources.pdf,ok,,
-03,Handouts,docx,1. Budgeting Apps,Parts/Teaching Materials/Workshop 3/Handouts/1. Budgeting Apps.docx,ok,,
-03,Handouts,pdf,1. Budgeting Apps,Parts/Teaching Materials/Workshop 3/Handouts/1. Budgeting Apps.pdf,ok,,
-03,Handouts,pdf,2. Budgeting Tips,Parts/Teaching Materials/Workshop 3/Handouts/2. Budgeting Tips.pdf,ok,,
-03,Handouts,docx,3. Money Saving Resources Handout,Parts/Teaching Materials/Workshop 3/Handouts/3. Money Saving Resources Handout.docx,ok,,
-03,Handouts,pdf,3. Money Saving Resources Handout,Parts/Teaching Materials/Workshop 3/Handouts/3. Money Saving Resources Handout.pdf,ok,,
-03,Handouts,pdf,Budget Worksheet 1,Parts/Teaching Materials/Workshop 3/Handouts/Budget Worksheet 1.pdf,ok,,
-03,Handouts,pdf,Budget Worksheet 2,Parts/Teaching Materials/Workshop 3/Handouts/Budget Worksheet 2.pdf,ok,,
-03,Handouts,pdf,Budget Worksheet 3,Parts/Teaching Materials/Workshop 3/Handouts/Budget Worksheet 3.pdf,ok,,
-03,Handouts,pdf,Budget Worksheet 4 Income & Expenses,Parts/Teaching Materials/Workshop 3/Handouts/Budget Worksheet 4_ Income & Expenses.pdf,ok,,
-03,Handouts,pdf,Fact Sheet Benefits Counseling,Parts/Teaching Materials/Workshop 3/Handouts/Fact-Sheet-Benefits-Counseling.pdf,ok,,
-03,Handouts,xlsx,Personal Balance Sheet,Parts/Teaching Materials/Workshop 3/Handouts/Personal Balance Sheet.xlsx,ok,,
-03,Handouts,xlsx,Personal Monthly Budget,Parts/Teaching Materials/Workshop 3/Handouts/Personal Monthly Budget.xlsx,ok,,
-03,Handouts,docx,Workshop 3 Worksheets,Parts/Teaching Materials/Workshop 3/Handouts/Workshop 3 Worksheets.docx,ok,,
-03,Handouts,pdf,Workshop 3 Worksheets,Parts/Teaching Materials/Workshop 3/Handouts/Workshop 3 Worksheets.pdf,ok,,
-03,,pdf,Money Basics PPT Workshop 3,Parts/Teaching Materials/Workshop 3/Money Basics PPT Workshop 3.pdf,review,,missing_bucket
-03,Core_Resources,pptx,Money Basics PPT Workshop 3,Parts/Teaching Materials/Workshop 3/Money Basics PPT Workshop 3.pptx,ok,,
-03,Additional_Resources,docx,1. How to Make a Budget,Parts/Teaching Materials/Workshop 3/Resources/1. How to Make a Budget.docx,ok,,
-03,Additional_Resources,pdf,1. How to Make a Budget,Parts/Teaching Materials/Workshop 3/Resources/1. How to Make a Budget.pdf,ok,,
-03,Additional_Resources,docx,10. How to Buy a House with Low Income,Parts/Teaching Materials/Workshop 3/Resources/10.  How to Buy a House with Low Income.docx,ok,,
-03,Additional_Resources,pdf,10. How to Buy a House with Low Income.docx,Parts/Teaching Materials/Workshop 3/Resources/10.  How to Buy a House with Low Income.docx.pdf,ok,,
-03,Additional_Resources,docx,11. How To File For SSDI Benefits If Homeless,Parts/Teaching Materials/Workshop 3/Resources/11. How To File For SSDI Benefits If Homeless.docx,ok,,
-03,Additional_Resources,pdf,11. How To File For SSDI Benefits If Homeless.docx,Parts/Teaching Materials/Workshop 3/Resources/11. How To File For SSDI Benefits If Homeless.docx.pdf,ok,,
-03,Additional_Resources,pdf,12. SSI Ticket to Work and PASS Accounts,Parts/Teaching Materials/Workshop 3/Resources/12. SSI Ticket to Work and PASS Accounts.pdf,ok,,
-03,Additional_Resources,docx,13. SSI Elibility Requirements and Asset Limits,Parts/Teaching Materials/Workshop 3/Resources/13. SSI Elibility Requirements and Asset Limits.docx,ok,,
-03,Additional_Resources,pdf,13. SSI Elibility Requirements and Asset Limits.docx,Parts/Teaching Materials/Workshop 3/Resources/13. SSI Elibility Requirements and Asset Limits.docx.pdf,ok,,
-03,Additional_Resources,docx,2. Free Online Budgeting Tools,Parts/Teaching Materials/Workshop 3/Resources/2. Free Online Budgeting Tools.docx,ok,,
-03,Additional_Resources,pdf,2. Free Online Budgeting Tools,Parts/Teaching Materials/Workshop 3/Resources/2. Free Online Budgeting Tools.pdf,ok,,
-03,Additional_Resources,pdf,25 Ways to Live on Less,Parts/Teaching Materials/Workshop 3/Resources/25 Ways to Live on Less.pdf,ok,,
-03,Additional_Resources,docx,3. How to Create a Successful Budget,Parts/Teaching Materials/Workshop 3/Resources/3. How to Create a Successful Budget.docx,ok,,
-03,Additional_Resources,pdf,3. How to Create a Successful Budget,Parts/Teaching Materials/Workshop 3/Resources/3. How to Create a Successful Budget.pdf,ok,,
-03,Additional_Resources,pdf,4. How to Create a Budget in Six Steps,Parts/Teaching Materials/Workshop 3/Resources/4. How to Create a Budget in Six Steps.pdf,ok,,
-03,Additional_Resources,pdf,5. 190 Online Resources for Saving Money,Parts/Teaching Materials/Workshop 3/Resources/5. 190 Online Resources for Saving Money.pdf,ok,,
-03,Additional_Resources,docx,6. 10 Easy Ways to Save Money,Parts/Teaching Materials/Workshop 3/Resources/6. 10 Easy Ways to Save Money.docx,ok,,
-03,Additional_Resources,pdf,6. 10 Easy Ways to Save Money.docx,Parts/Teaching Materials/Workshop 3/Resources/6. 10 Easy Ways to Save Money.docx.pdf,ok,,
-03,Additional_Resources,pdf,7. 99 Great Ways to Save Money,Parts/Teaching Materials/Workshop 3/Resources/7. 99 Great Ways to Save Money.pdf,ok,,
-03,Additional_Resources,docx,8. No brainer Money Saving Tips,Parts/Teaching Materials/Workshop 3/Resources/8. No-brainer Money-Saving Tips.docx,ok,,
-03,Additional_Resources,pdf,8. No brainer Money Saving Tips,Parts/Teaching Materials/Workshop 3/Resources/8. No-brainer Money-Saving Tips.pdf,ok,,
-03,Additional_Resources,docx,9. 11 Frugal Living Tips,Parts/Teaching Materials/Workshop 3/Resources/9. 11 Frugal Living Tips.docx,ok,,
-03,Additional_Resources,pdf,9. 11 Frugal Living Tips,Parts/Teaching Materials/Workshop 3/Resources/9. 11 Frugal Living Tips.pdf,ok,,
-03,Additional_Resources,pdf,Guide to SSI,Parts/Teaching Materials/Workshop 3/Resources/Guide to SSI.pdf,ok,,
-03,Additional_Resources,pdf,The Social Security Administration Red Book (2020),Parts/Teaching Materials/Workshop 3/Resources/The Social Security Administration Red Book (2020).pdf,ok,,
-03,Additional_Resources,pdf,Tips for Family Money Management,Parts/Teaching Materials/Workshop 3/Resources/Tips for Family Money Management.pdf,ok,,
-03,Additional_Resources,pdf,Tips for Successful Budgeting,Parts/Teaching Materials/Workshop 3/Resources/Tips for Successful Budgeting.pdf,ok,,
-03,Additional_Resources,docx,Workshop 3 Additional Resources,Parts/Teaching Materials/Workshop 3/Resources/Workshop 3 Additional Resources.docx,ok,,
-03,Additional_Resources,pdf,Workshop 3 Additional Resources,Parts/Teaching Materials/Workshop 3/Resources/Workshop 3 Additional Resources.pdf,ok,,
-04,Handouts,docx,1. Second Chance Checking Accounts,Parts/Teaching Materials/Workshop 4/Handouts/1. Second Chance Checking Accounts.docx,ok,,
-04,Handouts,pdf,1. Second Chance Checking Accounts.docx,Parts/Teaching Materials/Workshop 4/Handouts/1. Second Chance Checking Accounts.docx.pdf,ok,,
-04,Handouts,pdf,2. How to Avoid Bank Fees,Parts/Teaching Materials/Workshop 4/Handouts/2. How to Avoid Bank Fees.pdf,ok,,
-04,Handouts,docx,3. How to Balance Your Checkbook,Parts/Teaching Materials/Workshop 4/Handouts/3. How to Balance Your Checkbook.docx,ok,,
-04,Handouts,pdf,3. How to Balance Your Checkbook.docx,Parts/Teaching Materials/Workshop 4/Handouts/3. How to Balance Your Checkbook.docx.pdf,ok,,
-04,Handouts,docx,Check Writing Activity Cards,Parts/Teaching Materials/Workshop 4/Handouts/Check Writing Activity Cards.docx,ok,,
-04,Handouts,pdf,Check Writing Activity Cards,Parts/Teaching Materials/Workshop 4/Handouts/Check Writing Activity Cards.pdf,ok,,
-04,Handouts,docx,Check Writing Activity Instructions,Parts/Teaching Materials/Workshop 4/Handouts/Check Writing Activity Instructions.docx,ok,,
-04,Handouts,pdf,Check Writing Activity Instructions,Parts/Teaching Materials/Workshop 4/Handouts/Check Writing Activity Instructions.pdf,ok,,
-04,Handouts,pdf,Practice Checks,Parts/Teaching Materials/Workshop 4/Handouts/Practice Checks.pdf,ok,,
-04,Handouts,docx,Workshop 4 Worksheet,Parts/Teaching Materials/Workshop 4/Handouts/Workshop 4 Worksheet.docx,ok,,
-04,Handouts,pdf,Workshop 4 Worksheet,Parts/Teaching Materials/Workshop 4/Handouts/Workshop 4 Worksheet.pdf,ok,,
-04,,pdf,Money Basics PPT Workshop 4,Parts/Teaching Materials/Workshop 4/Money Basics PPT Workshop 4.pdf,review,,missing_bucket
-04,Core_Resources,pptx,Money Basics PPT Workshop 4,Parts/Teaching Materials/Workshop 4/Money Basics PPT Workshop 4.pptx,ok,,
-04,Additional_Resources,docx,1. How to Open a Bank Account,Parts/Teaching Materials/Workshop 4/Resources/1. How to Open a Bank Account.docx,ok,,
-04,Additional_Resources,pdf,1. How to Open a Bank Account,Parts/Teaching Materials/Workshop 4/Resources/1. How to Open a Bank Account.pdf,ok,,
-04,Additional_Resources,pdf,2. What to Consider When Opening a Bank Account,Parts/Teaching Materials/Workshop 4/Resources/2. What to Consider When Opening a Bank Account.pdf,ok,,
-04,Additional_Resources,docx,3. How to Open a Checking Account With Bad Credit,Parts/Teaching Materials/Workshop 4/Resources/3. How to Open a Checking Account With Bad Credit.docx,ok,,
-04,Additional_Resources,pdf,3. How to Open a Checking Account With Bad Credit,Parts/Teaching Materials/Workshop 4/Resources/3. How to Open a Checking Account With Bad Credit.pdf,ok,,
-04,Additional_Resources,docx,4. Is Balancing Your Checkbook Still Important,Parts/Teaching Materials/Workshop 4/Resources/4. Is Balancing Your Checkbook Still Important.docx,ok,,
-04,Additional_Resources,pdf,4. Is Balancing Your Checkbook Still Important,Parts/Teaching Materials/Workshop 4/Resources/4. Is Balancing Your Checkbook Still Important.pdf,ok,,
-04,Additional_Resources,pdf,5. Check Writing Tips,Parts/Teaching Materials/Workshop 4/Resources/5. Check Writing Tips.pdf,ok,,
-04,Additional_Resources,pdf,6. Common Banking Fees,Parts/Teaching Materials/Workshop 4/Resources/6. Common Banking Fees.pdf,ok,,
-04,Additional_Resources,pdf,How to Read a Check,Parts/Teaching Materials/Workshop 4/Resources/How to Read a Check.pdf,ok,,
-04,Additional_Resources,pdf,How to Write a Check,Parts/Teaching Materials/Workshop 4/Resources/How to Write a Check.pdf,ok,,
-04,Additional_Resources,pdf,Keeping a Check Register,Parts/Teaching Materials/Workshop 4/Resources/Keeping a Check Register.pdf,ok,,
-04,Additional_Resources,pdf,Why.Are.Credit.Unions.Different.Than.Banks,Parts/Teaching Materials/Workshop 4/Resources/Why.Are.Credit.Unions.Different.Than.Banks.pdf,ok,,
-04,Additional_Resources,docx,Workshop 4 Additional Resources,Parts/Teaching Materials/Workshop 4/Resources/Workshop 4 Additional Resources.docx,ok,,
-04,Additional_Resources,pdf,Workshop 4 Additional Resources,Parts/Teaching Materials/Workshop 4/Resources/Workshop 4 Additional Resources.pdf,ok,,
-05,Handouts,pdf,1. ATMs and ATM Safety,Parts/Teaching Materials/Workshop 5/Handouts/1. ATMs and ATM Safety.pdf,ok,,
-05,Handouts,pdf,2. Best Online Banks of 2021,Parts/Teaching Materials/Workshop 5/Handouts/2. Best Online Banks of 2021.pdf,ok,,
-05,Handouts,docx,3. Options if You Can t Open a Traditional Bank Account,Parts/Teaching Materials/Workshop 5/Handouts/3. Options if You Can_t Open a Traditional Bank Account.docx,ok,,
-05,Handouts,pdf,3. Options if You Can t Open a Traditional Bank Account,Parts/Teaching Materials/Workshop 5/Handouts/3. Options if You Can_t Open a Traditional Bank Account.pdf,ok,,
-05,Handouts,pdf,4. Common Phone Scams,Parts/Teaching Materials/Workshop 5/Handouts/4. Common Phone Scams.pdf,ok,,
-05,Handouts,pdf,5. How to Avoid Identity Scams,Parts/Teaching Materials/Workshop 5/Handouts/5. How to Avoid Identity Scams.pdf,ok,,
-05,Handouts,pdf,6. Help for Identity Theft,Parts/Teaching Materials/Workshop 5/Handouts/6. Help for Identity Theft.pdf,ok,,
-05,Core_Resources,pptx,Money Basics PPT Workshop 5,Parts/Teaching Materials/Workshop 5/Money Basics PPT Workshop 5.pptx,ok,,
-05,Additional_Resources,pdf,1. What to Do if Your Debit Card is Lost or Stolen,Parts/Teaching Materials/Workshop 5/Resources/1. What to Do if Your Debit Card is Lost or Stolen.pdf,ok,,
-05,Additional_Resources,pdf,10. Online and Mobile Money Safety,Parts/Teaching Materials/Workshop 5/Resources/10. Online and Mobile Money Safety.pdf,ok,,
-05,Additional_Resources,pdf,11. First Aid for Identity Theft,Parts/Teaching Materials/Workshop 5/Resources/11. First Aid for Identity Theft.pdf,ok,,
-05,Additional_Resources,docx,12. How to Spot and Avoid Card Skimmers,Parts/Teaching Materials/Workshop 5/Resources/12. How to Spot and Avoid Card Skimmers.docx,ok,,
-05,Additional_Resources,pdf,12. How to Spot and Avoid Card Skimmers,Parts/Teaching Materials/Workshop 5/Resources/12. How to Spot and Avoid Card Skimmers.pdf,ok,,
-05,Additional_Resources,pdf,13. IRS Tips for Protecting Your Identity,Parts/Teaching Materials/Workshop 5/Resources/13. IRS Tips for Protecting Your Identity.pdf,ok,,
-05,Additional_Resources,pdf,14. Repairing Identity Theft,Parts/Teaching Materials/Workshop 5/Resources/14. Repairing Identity Theft.pdf,ok,,
-05,Additional_Resources,pdf,15. What To Do if You ve Been Scammed,Parts/Teaching Materials/Workshop 5/Resources/15. What To Do if You_ve Been Scammed.pdf,ok,,
-05,Additional_Resources,pdf,16. What is ATM Skimming,Parts/Teaching Materials/Workshop 5/Resources/16. What is ATM Skimming.pdf,ok,,
-05,Additional_Resources,docx,2. Debit Card Safety Online,Parts/Teaching Materials/Workshop 5/Resources/2. Debit Card Safety Online.docx,ok,,
-05,Additional_Resources,pdf,2. Debit Card Safety Online,Parts/Teaching Materials/Workshop 5/Resources/2. Debit Card Safety Online.pdf,ok,,
-05,Additional_Resources,pdf,3. Best Online Banks,Parts/Teaching Materials/Workshop 5/Resources/3. Best Online Banks.pdf,ok,,
-05,Additional_Resources,docx,4. Alternatives to Traditional Banks,Parts/Teaching Materials/Workshop 5/Resources/4. Alternatives to Traditional Banks.docx,ok,,
-05,Additional_Resources,pdf,4. Alternatives to Traditional Banks,Parts/Teaching Materials/Workshop 5/Resources/4. Alternatives to Traditional Banks.pdf,ok,,
-05,Additional_Resources,docx,5. Pros and Cons of Internet Banks,Parts/Teaching Materials/Workshop 5/Resources/5. Pros and Cons of Internet Banks.docx,ok,,
-05,Additional_Resources,pdf,5. Pros and Cons of Internet Banks,Parts/Teaching Materials/Workshop 5/Resources/5. Pros and Cons of Internet Banks.pdf,ok,,
-05,Additional_Resources,pdf,6. What are Credit Unions,Parts/Teaching Materials/Workshop 5/Resources/6. What are Credit Unions.pdf,ok,,
-05,Additional_Resources,docx,"7. Online Banking Definition, Pros and Cons","Parts/Teaching Materials/Workshop 5/Resources/7. Online Banking Definition, Pros and Cons.docx",ok,,
-05,Additional_Resources,pdf,"7. Online Banking Definition, Pros and Cons","Parts/Teaching Materials/Workshop 5/Resources/7. Online Banking Definition, Pros and Cons.pdf",ok,,
-05,Additional_Resources,docx,8. Things to Consider When Choosing an Online Bank,Parts/Teaching Materials/Workshop 5/Resources/8. Things to Consider When Choosing an Online Bank.docx,ok,,
-05,Additional_Resources,pdf,8. Things to Consider When Choosing an Online Bank,Parts/Teaching Materials/Workshop 5/Resources/8. Things to Consider When Choosing an Online Bank.pdf,ok,,
-05,Additional_Resources,pdf,9. List of Virtual Banks and Their Benefits,Parts/Teaching Materials/Workshop 5/Resources/9. List of Virtual Banks and Their Benefits.pdf,ok,,
-05,Additional_Resources,docx,ATM Safety Scenarios,Parts/Teaching Materials/Workshop 5/Resources/ATM Safety Scenarios.docx,ok,,
-05,Additional_Resources,pdf,ATM Safety Scenarios,Parts/Teaching Materials/Workshop 5/Resources/ATM Safety Scenarios.pdf,ok,,
-05,Additional_Resources,pdf,Internet.Banking.Safety.Tips,Parts/Teaching Materials/Workshop 5/Resources/Internet.Banking.Safety.Tips.pdf,ok,,
-05,Additional_Resources,pdf,Safe Virtual Banking,Parts/Teaching Materials/Workshop 5/Resources/Safe Virtual Banking.pdf,ok,,
-05,Additional_Resources,pdf,Workshop 5 Additional Resources,Parts/Teaching Materials/Workshop 5/Resources/Workshop 5 Additional Resources.pdf,ok,,
-06,Handouts,pdf,1. How Does Credit Work,Parts/Teaching Materials/Workshop 6/Handouts/1. How Does Credit Work.pdf,ok,,
-06,Handouts,pdf,2. Debunking Smart Credit Myths,Parts/Teaching Materials/Workshop 6/Handouts/2. Debunking Smart Credit Myths.pdf,ok,,
-06,Handouts,pdf,3. How To Improve Your Credit Score,Parts/Teaching Materials/Workshop 6/Handouts/3. How To Improve Your Credit Score.pdf,ok,,
-06,Handouts,pdf,4. Definition and Examples of Predatory Lending,Parts/Teaching Materials/Workshop 6/Handouts/4. Definition and Examples of Predatory Lending.pdf,ok,,
-06,Handouts,pdf,Avoiding.Dangerous.Loans,Parts/Teaching Materials/Workshop 6/Handouts/Avoiding.Dangerous.Loans.pdf,ok,,
-06,Handouts,pdf,Credit Card FAQs,Parts/Teaching Materials/Workshop 6/Handouts/Credit Card FAQs.pdf,ok,,
-06,Handouts,docx,Credit Card Fact or Fiction Game,Parts/Teaching Materials/Workshop 6/Handouts/Credit Card Fact or Fiction Game.docx,ok,,
-06,Handouts,pdf,How.to.Spot.Predatory.Lending,Parts/Teaching Materials/Workshop 6/Handouts/How.to.Spot.Predatory.Lending.pdf,ok,,
-06,Core_Resources,pptx,Money Basics PPT Workshop 6,Parts/Teaching Materials/Workshop 6/Money Basics PPT Workshop 6.pptx,ok,,
-06,Additional_Resources,docx,1. How Credit Scores Work,Parts/Teaching Materials/Workshop 6/Resources/1. How Credit Scores Work.docx,ok,,
-06,Additional_Resources,pdf,1. How Credit Scores Work,Parts/Teaching Materials/Workshop 6/Resources/1. How Credit Scores Work.pdf,ok,,
-06,Additional_Resources,pdf,10. Student Loan Settlements,Parts/Teaching Materials/Workshop 6/Resources/10. Student Loan Settlements.pdf,ok,,
-06,Additional_Resources,pdf,11 How to Get a Good Deal on your First Car Loan,Parts/Teaching Materials/Workshop 6/Resources/11 How to Get a Good Deal on your First Car Loan.pdf,ok,,
-06,Additional_Resources,pdf,12. What To Know About Payday and Car Title Loans,Parts/Teaching Materials/Workshop 6/Resources/12. What To Know About Payday and Car Title Loans.pdf,ok,,
-06,Additional_Resources,pdf,13. Predatory Lending Practices,Parts/Teaching Materials/Workshop 6/Resources/13. Predatory Lending Practices.pdf,ok,,
-06,Additional_Resources,pdf,14. What Is Predatory Mortgage Lending,Parts/Teaching Materials/Workshop 6/Resources/14. What Is Predatory Mortgage Lending.pdf,ok,,
-06,Additional_Resources,pdf,15. How to Ask for a Lower Credit Card Interest Rate,Parts/Teaching Materials/Workshop 6/Resources/15. How to Ask for a Lower Credit Card Interest Rate.pdf,ok,,
-06,Additional_Resources,docx,16. How to Get the Best Car Loan,Parts/Teaching Materials/Workshop 6/Resources/16. How to Get the Best Car Loan.docx,ok,,
-06,Additional_Resources,pdf,16. How to Get the Best Car Loan,Parts/Teaching Materials/Workshop 6/Resources/16. How to Get the Best Car Loan.pdf,ok,,
-06,Additional_Resources,pdf,17. Interest Rates and Student Loans,Parts/Teaching Materials/Workshop 6/Resources/17. Interest Rates and Student Loans.pdf,ok,,
-06,Additional_Resources,docx,18. Why Payday Loans Can Be Costly,Parts/Teaching Materials/Workshop 6/Resources/18. Why Payday Loans Can Be Costly.docx,ok,,
-06,Additional_Resources,pdf,18. Why Payday Loans Can Be Costly,Parts/Teaching Materials/Workshop 6/Resources/18. Why Payday Loans Can Be Costly.pdf,ok,,
-06,Additional_Resources,pdf,19. Predatory Lending and Mortgages,Parts/Teaching Materials/Workshop 6/Resources/19. Predatory Lending and Mortgages.pdf,ok,,
-06,Additional_Resources,docx,2. How to Choose a Credit Card,Parts/Teaching Materials/Workshop 6/Resources/2. How to Choose a Credit Card.docx,ok,,
-06,Additional_Resources,pdf,2. How to Choose a Credit Card,Parts/Teaching Materials/Workshop 6/Resources/2. How to Choose a Credit Card.pdf,ok,,
-06,Additional_Resources,pdf,3. Little Known Facts About Your Credit Card,Parts/Teaching Materials/Workshop 6/Resources/3. Little-Known Facts About Your Credit Card.pdf,ok,,
-06,Additional_Resources,docx,4. How to Raise a Low Credit Score,Parts/Teaching Materials/Workshop 6/Resources/4. How to Raise a Low Credit Score.docx,ok,,
-06,Additional_Resources,pdf,4. How to Raise a Low Credit Score,Parts/Teaching Materials/Workshop 6/Resources/4. How to Raise a Low Credit Score.pdf,ok,,
-06,Additional_Resources,pdf,5. Best Credit Cards for Rebuilding Bad Credit,Parts/Teaching Materials/Workshop 6/Resources/5. Best Credit Cards for Rebuilding Bad Credit.pdf,ok,,
-06,Additional_Resources,docx,6. What You Should Know About Credit Card Interest Rates,Parts/Teaching Materials/Workshop 6/Resources/6. What You Should Know About Credit Card Interest Rates.docx,ok,,
-06,Additional_Resources,pdf,6. What You Should Know About Credit Card Interest Rates,Parts/Teaching Materials/Workshop 6/Resources/6. What You Should Know About Credit Card Interest Rates.pdf,ok,,
-06,Additional_Resources,pdf,7. Spotting Credit Repair Scams,Parts/Teaching Materials/Workshop 6/Resources/7. Spotting Credit Repair Scams.pdf,ok,,
-06,Additional_Resources,docx,8. How to Get Preapproved for a Loan,Parts/Teaching Materials/Workshop 6/Resources/8. How to Get Preapproved for a Loan.docx,ok,,
-06,Additional_Resources,pdf,8. How to Get Preapproved for a Loan,Parts/Teaching Materials/Workshop 6/Resources/8. How to Get Preapproved for a Loan.pdf,ok,,
-06,Additional_Resources,pdf,9. Credit Unions and Car Loans,Parts/Teaching Materials/Workshop 6/Resources/9. Credit Unions and Car Loans.pdf,ok,,
-06,Additional_Resources,pdf,Building.a.Better.Credit.Report,Parts/Teaching Materials/Workshop 6/Resources/Building.a.Better.Credit.Report.pdf,ok,,
-06,Additional_Resources,pdf,Difference.Between.Fixed.and.Variable.Interest.Rates,Parts/Teaching Materials/Workshop 6/Resources/Difference.Between.Fixed.and.Variable.Interest.Rates.pdf,ok,,
-06,Additional_Resources,pdf,How.Credit.Cards.Work.Discover,Parts/Teaching Materials/Workshop 6/Resources/How.Credit.Cards.Work.Discover.pdf,ok,,
-06,Additional_Resources,pdf,Predatory Lending Payday Loans.pdf ,Parts/Teaching Materials/Workshop 6/Resources/Predatory Lending- Payday Loans.pdf .pdf,ok,,
-06,Additional_Resources,pdf,Reading.Your.Credit.Card.Bill,Parts/Teaching Materials/Workshop 6/Resources/Reading.Your.Credit.Card.Bill.pdf,ok,,
-06,Additional_Resources,pdf,Understanding.Loan.Interest,Parts/Teaching Materials/Workshop 6/Resources/Understanding.Loan.Interest.pdf,ok,,
-06,Additional_Resources,docx,Workshop 6 Additional Resources,Parts/Teaching Materials/Workshop 6/Resources/Workshop 6 Additional Resources.docx,ok,,
-06,Additional_Resources,pdf,Workshop 6 Additional Resources,Parts/Teaching Materials/Workshop 6/Resources/Workshop 6 Additional Resources.pdf,ok,,
-07,Handouts,pdf,1. Debt and Mental Health,Parts/Teaching Materials/Workshop 7/Handouts/1. Debt and Mental Health.pdf,ok,,
-07,Handouts,pdf,2. How to Cope with Debt,Parts/Teaching Materials/Workshop 7/Handouts/2. How to Cope with Debt.pdf,ok,,
-07,Handouts,pdf,3. Debt Collection FAQs,Parts/Teaching Materials/Workshop 7/Handouts/3. Debt Collection FAQs.pdf,ok,,
-07,Handouts,docx,4. How to Create a Debt Elimination Plan,Parts/Teaching Materials/Workshop 7/Handouts/4. How to Create a Debt Elimination Plan.docx,ok,,
-07,Handouts,pdf,4. How to Create a Debt Elimination Plan,Parts/Teaching Materials/Workshop 7/Handouts/4. How to Create a Debt Elimination Plan.pdf,ok,,
-07,Handouts,docx,Workshop 7 Worksheets,Parts/Teaching Materials/Workshop 7/Handouts/Workshop 7 Worksheets.docx,ok,,
-07,Handouts,pdf,Workshop 7 Worksheets,Parts/Teaching Materials/Workshop 7/Handouts/Workshop 7 Worksheets.pdf,ok,,
-07,Core_Resources,pptx,Money Basics PPT Workshop 7,Parts/Teaching Materials/Workshop 7/Money Basics PPT Workshop 7.pptx,ok,,
-07,Additional_Resources,pdf,1. The Emotional Effects of Debt,Parts/Teaching Materials/Workshop 7/Resources/1. The Emotional Effects of Debt.pdf,ok,,
-07,Additional_Resources,docx,2. How Debt Affects Your Health,Parts/Teaching Materials/Workshop 7/Resources/2. How Debt Affects Your Health.docx,ok,,
-07,Additional_Resources,pdf,2. How Debt Affects Your Health,Parts/Teaching Materials/Workshop 7/Resources/2. How Debt Affects Your Health.pdf,ok,,
-07,Additional_Resources,pdf,3. The Effect of Debt Problems on People s Health,Parts/Teaching Materials/Workshop 7/Resources/3. The Effect of Debt Problems on People_s Health.pdf,ok,,
-07,Additional_Resources,pdf,4. Deciding Between Debt Relief or Bankruptcy,Parts/Teaching Materials/Workshop 7/Resources/4. Deciding Between Debt Relief or Bankruptcy.pdf,ok,,
-07,Additional_Resources,pdf,5. Filing for Bankrupcty Without an Attorney,Parts/Teaching Materials/Workshop 7/Resources/5. Filing for Bankrupcty Without an Attorney.pdf,ok,,
-07,Additional_Resources,pdf,6. How Bankrupcty Can Affect Your Mental Health,Parts/Teaching Materials/Workshop 7/Resources/6. How Bankrupcty Can Affect Your Mental Health.pdf,ok,,
-07,Additional_Resources,pdf,7. Understanding Bankruptcy,Parts/Teaching Materials/Workshop 7/Resources/7. Understanding Bankruptcy.pdf,ok,,
-07,Additional_Resources,docx,8. 73 Tips for Eliminating Debt,Parts/Teaching Materials/Workshop 7/Resources/8. 73 Tips for Eliminating Debt.docx,ok,,
-07,Additional_Resources,pdf,8. 73 Tips for Eliminating Debt,Parts/Teaching Materials/Workshop 7/Resources/8. 73 Tips for Eliminating Debt.pdf,ok,,
-07,Additional_Resources,docx,9. 5 Ways to Get out of Debt,Parts/Teaching Materials/Workshop 7/Resources/9. 5 Ways to Get out of Debt.docx,ok,,
-07,Additional_Resources,pdf,9. 5 Ways to Get out of Debt,Parts/Teaching Materials/Workshop 7/Resources/9. 5 Ways to Get out of Debt.pdf,ok,,
-07,Additional_Resources,docx,Workshop 7 Additional Resources,Parts/Teaching Materials/Workshop 7/Resources/Workshop 7 Additional Resources.docx,ok,,
-07,Additional_Resources,pdf,Workshop 7 Additional Resources,Parts/Teaching Materials/Workshop 7/Resources/Workshop 7 Additional Resources.pdf,ok,,
-08,Handouts,pdf,1. The 2 Way Connnection Between Poverty and Mental Health Issues,Parts/Teaching Materials/Workshop 8/Handouts/1. The 2 Way Connnection Between Poverty and Mental Health Issues.pdf,ok,,
-08,Handouts,docx,2. Tips for Talking With Your Partner About Finances,Parts/Teaching Materials/Workshop 8/Handouts/2. Tips for Talking With Your Partner About Finances.docx,ok,,
-08,Handouts,pdf,2. Tips for Talking With Your Partner About Finances,Parts/Teaching Materials/Workshop 8/Handouts/2. Tips for Talking With Your Partner About Finances.pdf,ok,,
-08,Handouts,pdf,3. Steps to Healthy Finances in Your Relationship,Parts/Teaching Materials/Workshop 8/Handouts/3. Steps to Healthy Finances in Your Relationship.pdf,ok,,
-08,Handouts,pdf,4. Understanding Representative Payees,Parts/Teaching Materials/Workshop 8/Handouts/4. Understanding Representative Payees.pdf,ok,,
-08,Handouts,pdf,5. When a Representative Payee Manages Your Money,Parts/Teaching Materials/Workshop 8/Handouts/5. When a Representative Payee Manages Your Money.pdf,ok,,
-08,Handouts,docx,6. Understanding Financial Abuse & Safety Planning,Parts/Teaching Materials/Workshop 8/Handouts/6. Understanding Financial Abuse & Safety Planning.docx,ok,,
-08,Handouts,pdf,6. Understanding Financial Abuse & Safety Planning,Parts/Teaching Materials/Workshop 8/Handouts/6. Understanding Financial Abuse & Safety Planning.pdf,ok,,
-08,Handouts,pdf,7. Information and Services for Survivors,Parts/Teaching Materials/Workshop 8/Handouts/7. Information and Services for Survivors.pdf,ok,,
-08,Handouts,pdf,FAQ.Representative.Payees,Parts/Teaching Materials/Workshop 8/Handouts/FAQ.Representative.Payees.pdf,ok,,
-08,Handouts,pdf,Financial Abuse FAQs,Parts/Teaching Materials/Workshop 8/Handouts/Financial Abuse FAQs.pdf,ok,,
-08,Handouts,pdf,Financial Abuse Fact Sheet,Parts/Teaching Materials/Workshop 8/Handouts/Financial Abuse Fact Sheet.pdf,ok,,
-08,Handouts,docx,Workshop 8 Worksheets,Parts/Teaching Materials/Workshop 8/Handouts/Workshop 8 Worksheets.docx,ok,,
-08,Handouts,pdf,Workshop 8 Worksheets,Parts/Teaching Materials/Workshop 8/Handouts/Workshop 8 Worksheets.pdf,ok,,
-08,Core_Resources,pptx,Money Basics PPT Workshop 8,Parts/Teaching Materials/Workshop 8/Money Basics PPT Workshop 8.pptx,ok,,
-08,Additional_Resources,pdf,1. Mental Health and Money,Parts/Teaching Materials/Workshop 8/Resources/1. Mental Health and Money.pdf,ok,,
-08,Additional_Resources,pdf,10. Poverty and Poor Health Worldwide,Parts/Teaching Materials/Workshop 8/Resources/10. Poverty and Poor Health Worldwide.pdf,ok,,
-08,Additional_Resources,docx,11. How to Talk to Your Partner About Money,Parts/Teaching Materials/Workshop 8/Resources/11. How to Talk to Your Partner About Money.docx,ok,,
-08,Additional_Resources,pdf,11. How to Talk to Your Partner About Money,Parts/Teaching Materials/Workshop 8/Resources/11. How to Talk to Your Partner About Money.pdf,ok,,
-08,Additional_Resources,pdf,12. Money Problems and Relationship Problems,Parts/Teaching Materials/Workshop 8/Resources/12. Money Problems and Relationship Problems.pdf,ok,,
-08,Additional_Resources,pdf,13. How to Prevent Arguments About Money,Parts/Teaching Materials/Workshop 8/Resources/13. How to Prevent Arguments About Money.pdf,ok,,
-08,Additional_Resources,pdf,14. How to Talk to Your Spouse About Money,Parts/Teaching Materials/Workshop 8/Resources/14. How to Talk to Your Spouse About Money.pdf,ok,,
-08,Additional_Resources,pdf,15. Common Financially Abusive Behaviors,Parts/Teaching Materials/Workshop 8/Resources/15. Common Financially Abusive Behaviors.pdf,ok,,
-08,Additional_Resources,docx,16. How to Spot Financial Abuse of an Elder,Parts/Teaching Materials/Workshop 8/Resources/16. How to Spot Financial Abuse of an Elder.docx,ok,,
-08,Additional_Resources,pdf,16. How to Spot Financial Abuse of an Elder,Parts/Teaching Materials/Workshop 8/Resources/16. How to Spot Financial Abuse of an Elder.pdf,ok,,
-08,Additional_Resources,pdf,18. Tackling social inequalities to reduce mental health problems,Parts/Teaching Materials/Workshop 8/Resources/18. Tackling social inequalities to reduce mental health problems.pdf,ok,,
-08,Additional_Resources,pdf,"2. Poverty, Social Inequality and Mental Health","Parts/Teaching Materials/Workshop 8/Resources/2. Poverty, Social Inequality and Mental Health.pdf",ok,,
-08,Additional_Resources,pdf,3. Recovering Your Finances After Rehab,Parts/Teaching Materials/Workshop 8/Resources/3. Recovering Your Finances After Rehab.pdf,ok,,
-08,Additional_Resources,pdf,4. The Poverty Mindset,Parts/Teaching Materials/Workshop 8/Resources/4. The Poverty Mindset.pdf,ok,,
-08,Additional_Resources,pdf,5. FAQs on Problem Gambling,Parts/Teaching Materials/Workshop 8/Resources/5. FAQs on Problem Gambling.pdf,ok,,
-08,Additional_Resources,pdf,6. Resources for Problem Gambling,Parts/Teaching Materials/Workshop 8/Resources/6. Resources for Problem Gambling.pdf,ok,,
-08,Additional_Resources,docx,7. Income Inequality and Health Care,Parts/Teaching Materials/Workshop 8/Resources/7. Income Inequality and Health Care.docx,ok,,
-08,Additional_Resources,pdf,7. Income Inequality and Health Care,Parts/Teaching Materials/Workshop 8/Resources/7. Income Inequality and Health Care.pdf,ok,,
-08,Additional_Resources,docx,8. How to Avoid the Health Risks that Come from Financial Stress,Parts/Teaching Materials/Workshop 8/Resources/8. How to Avoid the Health Risks that Come from Financial Stress.docx,ok,,
-08,Additional_Resources,pdf,8. How to Avoid the Health Risks that Come from Financial Stress,Parts/Teaching Materials/Workshop 8/Resources/8. How to Avoid the Health Risks that Come from Financial Stress.pdf,ok,,
-08,Additional_Resources,pdf,9. Poverty s Effect on Children s Health,Parts/Teaching Materials/Workshop 8/Resources/9. Poverty_s Effect on Children_s Health.pdf,ok,,
-08,Additional_Resources,pdf,Effects of Childhood Poverty,Parts/Teaching Materials/Workshop 8/Resources/Effects of Childhood Poverty.pdf,ok,,
-08,Additional_Resources,pdf,Financial Abuse and Rebuilding your Finances,Parts/Teaching Materials/Workshop 8/Resources/Financial Abuse and Rebuilding your Finances.pdf,ok,,
-08,Additional_Resources,pdf,Money.Smart.for.Older.Adults.Prevent.Financial.Exploitation,Parts/Teaching Materials/Workshop 8/Resources/Money.Smart.for.Older.Adults.Prevent.Financial.Exploitation.pdf,ok,,
-08,Additional_Resources,pdf,Poverty and Health,Parts/Teaching Materials/Workshop 8/Resources/Poverty and Health.pdf,ok,,
-08,Additional_Resources,pdf,Statistics on Mental Illness and Poverty,Parts/Teaching Materials/Workshop 8/Resources/Statistics on Mental Illness and Poverty.pdf,ok,,
-08,Additional_Resources,docx,Workshop 8 Additional Resources,Parts/Teaching Materials/Workshop 8/Resources/Workshop 8 Additional Resources.docx,ok,,
-08,Additional_Resources,pdf,Workshop 8 Additional Resources,Parts/Teaching Materials/Workshop 8/Resources/Workshop 8 Additional Resources.pdf,ok,,
-09,Handouts,pdf,1. IRS Tips to Take the Stress out of Tax Season,Parts/Teaching Materials/Workshop 9/Handouts/1. IRS Tips to Take the Stress out of Tax Season.pdf,ok,,
-09,Handouts,pdf,2. IRS Free File,Parts/Teaching Materials/Workshop 9/Handouts/2. IRS Free File.pdf,ok,,
-09,Handouts,pdf,3. 6 Steps for First Time Tax Filers,Parts/Teaching Materials/Workshop 9/Handouts/3. 6 Steps for First-Time Tax Filers.pdf,ok,,
-09,Handouts,pdf,4. The Three Basic Tax Types,Parts/Teaching Materials/Workshop 9/Handouts/4. The Three Basic Tax Types.pdf,ok,,
-09,Handouts,pdf,5. Credits & Deductions,Parts/Teaching Materials/Workshop 9/Handouts/5. Credits & Deductions.pdf,ok,,
-09,Handouts,pdf,6. Common Tax Write Offs You Can Claim,Parts/Teaching Materials/Workshop 9/Handouts/6. Common Tax Write-Offs You Can Claim.pdf,ok,,
-09,Handouts,pdf,Who Qualifies for the Earned Income Tax Credit (EITC) Internal Revenue Service,Parts/Teaching Materials/Workshop 9/Handouts/Who Qualifies for the Earned Income Tax Credit (EITC) _ Internal Revenue Service.pdf,ok,,
-09,Core_Resources,pptx,Money Basics PPT Workshop 9,Parts/Teaching Materials/Workshop 9/Money Basics PPT Workshop 9.pptx,ok,,
-09,Additional_Resources,docx,1. What to Know About How to File Taxes,Parts/Teaching Materials/Workshop 9/Resources/1. What to Know About How to File Taxes.docx,ok,,
-09,Additional_Resources,pdf,1. What to Know About How to File Taxes,Parts/Teaching Materials/Workshop 9/Resources/1. What to Know About How to File Taxes.pdf,ok,,
-09,Additional_Resources,docx,2. How to Cope with Tax Season Stress,Parts/Teaching Materials/Workshop 9/Resources/2. How to Cope with Tax Season Stress.docx,ok,,
-09,Additional_Resources,pdf,2. How to Cope with Tax Season Stress,Parts/Teaching Materials/Workshop 9/Resources/2. How to Cope with Tax Season Stress.pdf,ok,,
-09,Additional_Resources,pdf,3. How to File Your Taxes,Parts/Teaching Materials/Workshop 9/Resources/3. How to File Your Taxes.pdf,ok,,
-09,Additional_Resources,pdf,4. Tax Basics,Parts/Teaching Materials/Workshop 9/Resources/4. Tax Basics.pdf,ok,,
-09,Additional_Resources,pdf,5. Why We Pay Taxes,Parts/Teaching Materials/Workshop 9/Resources/5. Why We Pay Taxes.pdf,ok,,
-09,Additional_Resources,docx,6. Regressive Vs. Progressive Taxes,Parts/Teaching Materials/Workshop 9/Resources/6. Regressive Vs. Progressive Taxes.docx,ok,,
-09,Additional_Resources,pdf,6. Regressive Vs. Progressive Taxes,Parts/Teaching Materials/Workshop 9/Resources/6. Regressive Vs. Progressive Taxes.pdf,ok,,
-09,Additional_Resources,pdf,7. Federal Tax Revenue,Parts/Teaching Materials/Workshop 9/Resources/7. Federal Tax Revenue.pdf,ok,,
-09,Additional_Resources,pdf,Form 1040,Parts/Teaching Materials/Workshop 9/Resources/Form 1040.pdf,ok,,
-09,Additional_Resources,docx,Workshop 9 Additional Resources,Parts/Teaching Materials/Workshop 9/Resources/Workshop 9 Additional Resources.docx,ok,,
-09,Additional_Resources,pdf,Workshop 9 Additional Resources,Parts/Teaching Materials/Workshop 9/Resources/Workshop 9 Additional Resources.pdf,ok,,
-00,,docx,MB FTS 0,Whole/Module 0/MB_FTS_ 0.docx,review,,missing_bucket
-01,,pdf,Creating Community Agreements,Whole/Module 1/Course Introduction/Creating Community Agreements.pdf,review,,missing_bucket
-01,,pdf,Developing Community Agreements,Whole/Module 1/Course Introduction/Developing Community Agreements.pdf,review,,missing_bucket
-01,,pdf,Trauma Informed Care in the Classroom,Whole/Module 1/Course Introduction/Trauma-Informed-Care-in-the-Classroom.pdf,review,,missing_bucket
-01,,pdf,Workshop 01 Introduction,Whole/Module 1/Course Introduction/Workshop 01 - Introduction.pdf,review,,missing_bucket
-01,,docx,MB FTS 1,Whole/Module 1/MB_FTS_ 1.docx,review,,missing_bucket
-01,,pdf,Money Basics PPT Workshop 1,Whole/Module 1/Money Basics PPT Workshop 1.pdf,review,,missing_bucket
-01,Core_Resources,pptx,Money Basics PPT Workshop 1,Whole/Module 1/Money Basics PPT Workshop 1.pptx,ok,,
-01,,pptx,OR WorkSystemsPresentation 20211006,Whole/Module 1/OR_WorkSystemsPresentation_20211006.pptx,review,,missing_bucket
-01,,pdf,W1 FG copy,Whole/Module 1/SG:FG/W1_FG copy.pdf,review,,missing_bucket
-01,,pdf,W1 FG,Whole/Module 1/SG:FG/W1_FG.pdf,review,,missing_bucket
-01,,pdf,W1 SG,Whole/Module 1/SG:FG/W1_SG.pdf,review,,missing_bucket
-01,,jpg,2 768x512,Whole/Module 1/Visuals/2-768x512.jpg,review,,missing_bucket
-01,,png,Wheel of Privilege and Power,Whole/Module 1/Visuals/Wheel of Privilege and Power.png,review,,missing_bucket
-01,,jpg,equity apple tree 1024x575,Whole/Module 1/Visuals/equity-apple-tree-1024x575.jpg,review,,missing_bucket
-01,,html,poverty intersectionality privilege excerpt,Whole/Module 1/Visuals/poverty_intersectionality_privilege_excerpt.html,review,,missing_bucket
-01,,png,workshop packet image,Whole/Module 1/Visuals/workshop packet image.png,review,,missing_bucket
-01,,pdf,1. Poverty and Hunger in America,Whole/Module 1/WS1 Handouts/1. Poverty and Hunger in America.pdf,review,,missing_bucket
-01,,pdf,2. Steps Toward Financial Resilience,Whole/Module 1/WS1 Handouts/2. Steps Toward Financial Resilience.pdf,review,,missing_bucket
-01,,pdf,3. Poverty and Intersectionality in Oregon,Whole/Module 1/WS1 Handouts/3. Poverty and Intersectionality in Oregon.pdf,review,,missing_bucket
-01,,pdf,4. Hidden Rules Among Classes,Whole/Module 1/WS1 Handouts/4. Hidden Rules Among Classes.pdf,review,,missing_bucket
-01,,pdf,5. How Poverty is Measured in the US,Whole/Module 1/WS1 Handouts/5. How Poverty is Measured in the US.pdf,review,,missing_bucket
-01,,pdf,6. The American Dream of upward mobility is broken,Whole/Module 1/WS1 Handouts/6. The _American Dream_ of upward mobility is broken.pdf,review,,missing_bucket
-01,,pdf,7. White Privilege Invisible Knapsack,Whole/Module 1/WS1 Handouts/7. White Privilege Invisible Knapsack.pdf,review,,missing_bucket
-01,,pdf,Financial Literacy & African Americans Bridging the Gap,Whole/Module 1/WS1 Handouts/Financial Literacy & African Americans_ Bridging the Gap.pdf,review,,missing_bucket
-01,,pdf,SSS BudgetWorksheet 052023,Whole/Module 1/WS1 Handouts/SSS_BudgetWorksheet_052023.pdf,review,,missing_bucket
-01,,pdf,Workshop 1 Worksheets (extra),Whole/Module 1/WS1 Handouts/Workshop 1 Worksheets (extra).pdf,review,,missing_bucket
-01,,pdf,Workshop 1 Worksheets,Whole/Module 1/WS1 Handouts/Workshop 1 Worksheets.pdf,review,,missing_bucket
-01,,pdf,12. FAQs on Problem Gambling,Whole/Module 1/WS1 Resources/12. FAQs on Problem Gambling.pdf,review,,missing_bucket
-01,,pdf,13. Financial Toolkit for Problem Gamblers,Whole/Module 1/WS1 Resources/13. Financial Toolkit for Problem Gamblers.pdf,review,,missing_bucket
-01,,pdf,14. Financial Strategies for Loved Ones of Gamblers,Whole/Module 1/WS1 Resources/14. Financial Strategies for Loved Ones of Gamblers.pdf,review,,missing_bucket
-01,,pdf,16. Supplemental Poverty Measure,Whole/Module 1/WS1 Resources/16. Supplemental Poverty Measure.pdf,review,,missing_bucket
-01,,pdf,1. Tips for Managing Money When You Live With Mental Health Challenges,Whole/Module 1/WS1 Resources/Behavioral Health and Mindfulness/1. Tips for Managing Money When You Live With Mental Health Challenges.pdf,review,,missing_bucket
-01,,pdf,2. How to Practice Mindfulness on a Budget,Whole/Module 1/WS1 Resources/Behavioral Health and Mindfulness/2. How to Practice Mindfulness on a Budget.pdf,review,,missing_bucket
-01,,pdf,3. How to Reduce Financial Stress,Whole/Module 1/WS1 Resources/Behavioral Health and Mindfulness/3. How to Reduce Financial Stress.pdf,review,,missing_bucket
-01,,pdf,"10. Brief History of Race, Racism & Colonialism","Whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/10. Brief History of Race, Racism & Colonialism.pdf",review,,missing_bucket
-01,,pdf,"11. Unaffordable America. Poverty, Housing and Eviction","Whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/11. Unaffordable America. Poverty, Housing and Eviction.pdf",review,,missing_bucket
-01,,pdf,15. Dismantling the Poverty Trap Article,"Whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/15. Dismantling the Poverty Trap Article.pdf",review,,missing_bucket
-01,,pdf,4. Income Inequality in America,"Whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/4. Income Inequality in America.pdf",review,,missing_bucket
-01,,pdf,5. Poverty in America Statistics,"Whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/5. Poverty in America Statistics.pdf",review,,missing_bucket
-01,,pdf,6. Data Illustrating the Intersectional Nature of Poverty,"Whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/6. Data Illustrating the Intersectional Nature of Poverty.pdf",review,,missing_bucket
-01,,pdf,8. Race and the lack of intergenerational economic mobility in the US,"Whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/8. Race and the lack of intergenerational economic mobility in the US.pdf",review,,missing_bucket
-01,,pdf,9. Displacement in Portland,"Whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/9. Displacement in Portland.pdf",review,,missing_bucket
-01,,pdf,Workshop 01 Introduction,Whole/Module 1/WS1 Resources/Workshop 01 - Introduction.pdf,review,,missing_bucket
-01,,pdf,Workshop 1 Additional Resources,Whole/Module 1/WS1 Resources/Workshop 1 Additional Resources.pdf,review,,missing_bucket
-01,Worksheets,pdf,Individual Course Goals,Whole/Module 1/Worksheets/Individual Course Goals.pdf,ok,,
-01,Worksheets,pdf,Money Savings Ideas and Trackers,Whole/Module 1/Worksheets/Money Savings Ideas and Trackers.pdf,ok,,
-01,,docx,~$ FTS 1,Whole/Module 1/~$_FTS_ 1.docx,review,,missing_bucket
-10,,docx,23 Easy Ways To Save Money,Whole/Module 10/23 Easy Ways To Save Money.docx,review,,missing_bucket
-10,,docx,A Beginner s Guide to Saving Money,Whole/Module 10/A Beginner_s Guide to Saving Money.docx,review,,missing_bucket
-10,,docx,Asset Building For Low Income Families,Whole/Module 10/Asset Building For Low-Income Families.docx,review,,missing_bucket
-10,,pdf,Asset Building Facilitator,Whole/Module 10/Facilitator Guide/Sections/Asset_Building_Facilitator.pdf,review,,missing_bucket
-10,,pdf,Individual Development Accounts Facilitator,Whole/Module 10/Facilitator Guide/Sections/Individual_Development_Accounts_Facilitator.pdf,review,,missing_bucket
-10,,pdf,Retirement Plans and Investments Facilitator,Whole/Module 10/Facilitator Guide/Sections/Retirement_Plans_and_Investments_Facilitator.pdf,review,,missing_bucket
-10,,pdf,Saving Money w: Limited Resources,Whole/Module 10/Facilitator Guide/Sections/Saving Money w: Limited Resources.pdf,review,,missing_bucket
-10,,pdf,Savings Accounts Facilitator,Whole/Module 10/Facilitator Guide/Sections/Savings_Accounts_Facilitator.pdf,review,,missing_bucket
-10,,pdf,Savings Goals Facilitator,Whole/Module 10/Facilitator Guide/Sections/Savings_Goals_Facilitator.pdf,review,,missing_bucket
-10,,png,3. IDA Basics & Resources,Whole/Module 10/HO PNGs/3. IDA Basics & Resources.png,review,,missing_bucket
-10,,docx,How to Save Money On A Low Income,Whole/Module 10/How to Save Money On A Low Income.docx,review,,missing_bucket
-10,,docx,IDA Basics & Resources,Whole/Module 10/IDA Basics & Resources.docx,review,,missing_bucket
-10,,docx,MB FTS 10,Whole/Module 10/MB_FTS_ 10.docx,review,,missing_bucket
-10,,docx,Module 10 Additional Resources,Whole/Module 10/Module 10 Additional Resources.docx,review,,missing_bucket
-10,,pdf,Savings Accounts,Whole/Module 10/Sections ( PDF )/Savings_Accounts.pdf,review,,missing_bucket
-10,,pdf,pg1,Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg1.pdf,review,,missing_bucket
-10,,pdf,pg10,Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg10.pdf,review,,missing_bucket
-10,,pdf,pg11,Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg11.pdf,review,,missing_bucket
-10,,pdf,pg12,Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg12.pdf,review,,missing_bucket
-10,,pdf,pg13,Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg13.pdf,review,,missing_bucket
-10,,pdf,pg14,Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg14.pdf,review,,missing_bucket
-10,,pdf,pg2,Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg2.pdf,review,,missing_bucket
-10,,pdf,pg3,Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg3.pdf,review,,missing_bucket
-10,,pdf,pg4,Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg4.pdf,review,,missing_bucket
-10,,pdf,pg5,Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg5.pdf,review,,missing_bucket
-10,,pdf,pg6,Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg6.pdf,review,,missing_bucket
-10,,pdf,pg7,Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg7.pdf,review,,missing_bucket
-10,,pdf,pg8,Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg8.pdf,review,,missing_bucket
-10,,pdf,pg9,Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg9.pdf,review,,missing_bucket
-10,,png,pg1,Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg1.png,review,,missing_bucket
-10,,png,pg10,Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg10.png,review,,missing_bucket
-10,,png,pg11,Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg11.png,review,,missing_bucket
-10,,png,pg12,Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg12.png,review,,missing_bucket
-10,,png,pg13,Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg13.png,review,,missing_bucket
-10,,png,pg14,Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg14.png,review,,missing_bucket
-10,,png,pg2,Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg2.png,review,,missing_bucket
-10,,png,pg3,Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg3.png,review,,missing_bucket
-10,,png,pg4,Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg4.png,review,,missing_bucket
-10,,png,pg5,Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg5.png,review,,missing_bucket
-10,,png,pg6,Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg6.png,review,,missing_bucket
-10,,png,pg7,Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg7.png,review,,missing_bucket
-10,,png,pg8,Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg8.png,review,,missing_bucket
-10,,png,pg9,Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg9.png,review,,missing_bucket
-10,,pdf,Asset Building Student,Whole/Module 10/Student_Guide/Workshop_10/Sections/PDF/Asset_Building_Student.pdf,review,,missing_bucket
-10,,pdf,Creating a Savings Plan Student,Whole/Module 10/Student_Guide/Workshop_10/Sections/PDF/Creating_a_Savings_Plan_Student.pdf,review,,missing_bucket
-10,,pdf,Different Kinds of Savings Accounts Student,Whole/Module 10/Student_Guide/Workshop_10/Sections/PDF/Different_Kinds_of_Savings_Accounts_Student.pdf,review,,missing_bucket
-10,,png,Budgeting Table,Whole/Module 10/Visuals/Budgeting Table.png,review,,missing_bucket
-10,,png,IDAs,Whole/Module 10/Visuals/IDAs.png,review,,missing_bucket
-10,,png,Savings Activity Jars,Whole/Module 10/Visuals/Savings Activity_Jars.png,review,,missing_bucket
-10,,png,money trees,Whole/Module 10/Visuals/money trees.png,review,,missing_bucket
-10,,pdf,Workshop 10 Savings Accounts & Goals,Whole/Module 10/Workshop 10 - Savings Accounts & Goals.pdf,review,,missing_bucket
-10,,pdf,Workshop 10 Savings Accounts & Savings Goals copy,Whole/Module 10/Workshop 10 - Savings Accounts & Savings Goals copy.pdf,review,,missing_bucket
-10,,pdf,Workshop 10 Savings Accounts & Savings Goals,Whole/Module 10/Workshop 10 - Savings Accounts & Savings Goals.pdf,review,,missing_bucket
-10,,zip,Workshop 10,Whole/Module 10/Workshop_10.zip,review,,missing_bucket
-11,,pdf,Workshop 11 Course Graduation,Whole/Module 11/Workshop 11 - Course Graduation.pdf,review,,missing_bucket
-02,,docx,MB FTS 2,Whole/Module 2/MB_FTS_ 2.docx,review,,missing_bucket
-02,,docx,Module 2 Additional Resources,Whole/Module 2/Module 2 Additional Resources.docx,review,,missing_bucket
-02,,docx,Person Centered Planning,Whole/Module 2/Person-Centered Planning.docx,review,,missing_bucket
-02,,pdf,Workshop 02 Setting Financial Goals,Whole/Module 2/Workshop 02 - Setting Financial Goals.pdf,review,,missing_bucket
-03,,docx,10 Easy Ways to Save Money,Whole/Module 3/10 Easy Ways to Save Money.docx,review,,missing_bucket
-03,,docx,11 Frugal Living Tips,Whole/Module 3/11 Frugal Living Tips.docx,review,,missing_bucket
-03,,docx,5 No brainer Money Saving Tips,Whole/Module 3/5 No-brainer Money-Saving Tips.docx,review,,missing_bucket
-03,,docx,Budgeting Apps,Whole/Module 3/Budgeting Apps.docx,review,,missing_bucket
-03,,docx,How To File For Social Security Disability Benefits If Homeless,Whole/Module 3/How To File For Social Security Disability Benefits If Homeless.docx,review,,missing_bucket
-03,,docx,How to Buy a House with Low Income,Whole/Module 3/How to Buy a House with Low Income.docx,review,,missing_bucket
-03,,docx,How to Make a Budget,Whole/Module 3/How to Make a Budget.docx,review,,missing_bucket
-03,,docx,MB Money Saving Resources Handout,Whole/Module 3/MB Money Saving Resources Handout.docx,review,,missing_bucket
-03,,docx,MB FTS 3,Whole/Module 3/MB_FTS_ 3.docx,review,,missing_bucket
-03,,docx,Module 3 Additional Resources,Whole/Module 3/Module 3 Additional Resources.docx,review,,missing_bucket
-03,,docx,Online Budgeting Tools,Whole/Module 3/Online Budgeting Tools.docx,review,,missing_bucket
-03,,docx,SSI Elibility Requirements and Asset Limits,Whole/Module 3/SSI Elibility Requirements and Asset Limits.docx,review,,missing_bucket
-03,,docx,What Makes for a Successful Budget,Whole/Module 3/What Makes for a Successful Budget.docx,review,,missing_bucket
-03,,pdf,Workshop 03 Creating a Budget,Whole/Module 3/Workshop 03 - Creating a Budget.pdf,review,,missing_bucket
-03,,docx,~$ FTS 3,Whole/Module 3/~$_FTS_ 3.docx,review,,missing_bucket
-04,,docx,How to Balance Your Checkbook,Whole/Module 4/How to Balance Your Checkbook.docx,review,,missing_bucket
-04,,docx,How to Open a Bank Account,Whole/Module 4/How to Open a Bank Account.docx,review,,missing_bucket
-04,,docx,How to Open a Bank Checking Account With Bad Credit,Whole/Module 4/How to Open a Bank Checking Account With Bad Credit.docx,review,,missing_bucket
-04,,docx,MB FTS 4,Whole/Module 4/MB_FTS_ 4.docx,review,,missing_bucket
-04,,docx,Module 4 Additional Resources,Whole/Module 4/Module 4 Additional Resources.docx,review,,missing_bucket
-04,,docx,Second Chance Checking Accounts,Whole/Module 4/Second Chance Checking Accounts.docx,review,,missing_bucket
-04,,docx,Why Balancing Your Checkbook is Important,Whole/Module 4/Why Balancing Your Checkbook is Important.docx,review,,missing_bucket
-04,,pdf,Workshop 04 Banking Basics,Whole/Module 4/Workshop 04 - Banking Basics.pdf,review,,missing_bucket
-04,,jpg,20251212 102840,Whole/Module 4/check_writing_activity/20251212_102840.jpg,review,,missing_bucket
-04,,jpg,20251212 102853,Whole/Module 4/check_writing_activity/20251212_102853.jpg,review,,missing_bucket
-04,,jpg,20251212 102910,Whole/Module 4/check_writing_activity/20251212_102910.jpg,review,,missing_bucket
-04,,jpg,20251212 102915,Whole/Module 4/check_writing_activity/20251212_102915.jpg,review,,missing_bucket
-04,,zip,module4photos,Whole/Module 4/module4photos.zip,review,,missing_bucket
-05,Handouts,pdf,1. ATMs and ATM Safety,Whole/Module 5/Handouts/1. ATMs and ATM Safety.pdf,ok,,
-05,Handouts,pdf,2. Best Online Banks of 2021,Whole/Module 5/Handouts/2. Best Online Banks of 2021.pdf,ok,,
-05,Handouts,docx,3. Options if You Can t Open a Traditional Bank Account,Whole/Module 5/Handouts/3. Options if You Can_t Open a Traditional Bank Account.docx,ok,,
-05,Handouts,pdf,3. Options if You Can t Open a Traditional Bank Account,Whole/Module 5/Handouts/3. Options if You Can_t Open a Traditional Bank Account.pdf,ok,,
-05,Handouts,pdf,4. Common Phone Scams,Whole/Module 5/Handouts/4. Common Phone Scams.pdf,ok,,
-05,Handouts,pdf,5. How to Avoid Identity Scams,Whole/Module 5/Handouts/5. How to Avoid Identity Scams.pdf,ok,,
-05,Handouts,pdf,6. Help for Identity Theft,Whole/Module 5/Handouts/6. Help for Identity Theft.pdf,ok,,
-05,Additional_Resources,pdf,1. What to Do if Your Debit Card is Lost or Stolen,Whole/Module 5/Resources/1. What to Do if Your Debit Card is Lost or Stolen.pdf,ok,,
-05,Additional_Resources,pdf,10. Online and Mobile Money Safety,Whole/Module 5/Resources/10. Online and Mobile Money Safety.pdf,ok,,
-05,Additional_Resources,pdf,11. First Aid for Identity Theft,Whole/Module 5/Resources/11. First Aid for Identity Theft.pdf,ok,,
-05,Additional_Resources,docx,12. How to Spot and Avoid Card Skimmers,Whole/Module 5/Resources/12. How to Spot and Avoid Card Skimmers.docx,ok,,
-05,Additional_Resources,pdf,12. How to Spot and Avoid Card Skimmers,Whole/Module 5/Resources/12. How to Spot and Avoid Card Skimmers.pdf,ok,,
-05,Additional_Resources,pdf,13. IRS Tips for Protecting Your Identity,Whole/Module 5/Resources/13. IRS Tips for Protecting Your Identity.pdf,ok,,
-05,Additional_Resources,pdf,14. Repairing Identity Theft,Whole/Module 5/Resources/14. Repairing Identity Theft.pdf,ok,,
-05,Additional_Resources,pdf,15. What To Do if You ve Been Scammed,Whole/Module 5/Resources/15. What To Do if You_ve Been Scammed.pdf,ok,,
-05,Additional_Resources,pdf,16. What is ATM Skimming,Whole/Module 5/Resources/16. What is ATM Skimming.pdf,ok,,
-05,Additional_Resources,docx,2. Debit Card Safety Online,Whole/Module 5/Resources/2. Debit Card Safety Online.docx,ok,,
-05,Additional_Resources,pdf,2. Debit Card Safety Online,Whole/Module 5/Resources/2. Debit Card Safety Online.pdf,ok,,
-05,Additional_Resources,pdf,3. Best Online Banks,Whole/Module 5/Resources/3. Best Online Banks.pdf,ok,,
-05,Additional_Resources,docx,4. Alternatives to Traditional Banks,Whole/Module 5/Resources/4. Alternatives to Traditional Banks.docx,ok,,
-05,Additional_Resources,pdf,4. Alternatives to Traditional Banks,Whole/Module 5/Resources/4. Alternatives to Traditional Banks.pdf,ok,,
-05,Additional_Resources,docx,5. Pros and Cons of Internet Banks,Whole/Module 5/Resources/5. Pros and Cons of Internet Banks.docx,ok,,
-05,Additional_Resources,pdf,5. Pros and Cons of Internet Banks,Whole/Module 5/Resources/5. Pros and Cons of Internet Banks.pdf,ok,,
-05,Additional_Resources,pdf,6. What are Credit Unions,Whole/Module 5/Resources/6. What are Credit Unions.pdf,ok,,
-05,Additional_Resources,docx,"7. Online Banking Definition, Pros and Cons","Whole/Module 5/Resources/7. Online Banking Definition, Pros and Cons.docx",ok,,
-05,Additional_Resources,pdf,"7. Online Banking Definition, Pros and Cons","Whole/Module 5/Resources/7. Online Banking Definition, Pros and Cons.pdf",ok,,
-05,Additional_Resources,docx,8. Things to Consider When Choosing an Online Bank,Whole/Module 5/Resources/8. Things to Consider When Choosing an Online Bank.docx,ok,,
-05,Additional_Resources,pdf,8. Things to Consider When Choosing an Online Bank,Whole/Module 5/Resources/8. Things to Consider When Choosing an Online Bank.pdf,ok,,
-05,Additional_Resources,pdf,9. List of Virtual Banks and Their Benefits,Whole/Module 5/Resources/9. List of Virtual Banks and Their Benefits.pdf,ok,,
-05,Additional_Resources,docx,ATM Safety Scenarios,Whole/Module 5/Resources/ATM Safety Scenarios.docx,ok,,
-05,Additional_Resources,pdf,ATM Safety Scenarios,Whole/Module 5/Resources/ATM Safety Scenarios.pdf,ok,,
-05,Additional_Resources,pdf,Internet.Banking.Safety.Tips,Whole/Module 5/Resources/Internet.Banking.Safety.Tips.pdf,ok,,
-05,Additional_Resources,pdf,Safe Virtual Banking,Whole/Module 5/Resources/Safe Virtual Banking.pdf,ok,,
-05,Additional_Resources,pdf,Workshop 5 Additional Resources,Whole/Module 5/Resources/Workshop 5 Additional Resources.pdf,ok,,
-05,,pdf,WSP 5 FG ,Whole/Module 5/WSP_5_FG .pdf,review,,missing_bucket
-05,,docx,WSP 5 FT,Whole/Module 5/WSP_5_FT.docx,review,,missing_bucket
-05,,txt,manifest,Whole/Module 5/manifest.txt,review,,missing_bucket
-06,,docx,How Credit Scores Work,Whole/Module 6/How Credit Scores Work.docx,review,,missing_bucket
-06,,docx,How to Choose a Credit Card,Whole/Module 6/How to Choose a Credit Card.docx,review,,missing_bucket
-06,,docx,How to Get Preapproved for a Loan,Whole/Module 6/How to Get Preapproved for a Loan.docx,review,,missing_bucket
-06,,docx,How to Get the Best Car Loan,Whole/Module 6/How to Get the Best Car Loan.docx,review,,missing_bucket
-06,,docx,How to Raise a Low Credit Score,Whole/Module 6/How to Raise a Low Credit Score.docx,review,,missing_bucket
-06,,docx,MB FTS 6,Whole/Module 6/MB_FTS_ 6.docx,review,,missing_bucket
-06,,docx,Module 6 Additional Resources,Whole/Module 6/Module 6 Additional Resources.docx,review,,missing_bucket
-06,,docx,What You Should Know About Credit Card Interest Rates,Whole/Module 6/What You Should Know About Credit Card Interest Rates.docx,review,,missing_bucket
-06,,docx,Why Payday Loans Can Be Costly,Whole/Module 6/Why Payday Loans Can Be Costly.docx,review,,missing_bucket
-06,,pdf,Workshop 06 Credit & Loans,Whole/Module 6/Workshop 06 - Credit & Loans.pdf,review,,missing_bucket
-06,,txt,manifest,Whole/Module 6/manifest.txt,review,,missing_bucket
-07,,docx,5 Ways to Get out of Debt,Whole/Module 7/5 Ways to Get out of Debt.docx,review,,missing_bucket
-07,,docx,73 Tips for Eliminating Debt,Whole/Module 7/73 Tips for Eliminating Debt.docx,review,,missing_bucket
-07,,docx,How to Create a Debt Elimination Plan,Whole/Module 7/How to Create a Debt Elimination Plan.docx,review,,missing_bucket
-07,,docx,MB FTS 7,Whole/Module 7/MB_FTS_ 7.docx,review,,missing_bucket
-07,,pdf,MB FTS 7,Whole/Module 7/MB_FTS_ 7.pdf,review,,missing_bucket
-07,,docx,Module 7 Additional Resources,Whole/Module 7/Module 7 Additional Resources.docx,review,,missing_bucket
-07,,docx,The Effects of Debt on Your Health,Whole/Module 7/The Effects of Debt on Your Health.docx,review,,missing_bucket
-07,,pdf,Workshop 07 Debt & Tools,Whole/Module 7/Workshop 07 - Debt & Tools.pdf,review,,missing_bucket
-07,,pdf,pg1,Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PDFs/pg1.pdf,review,,missing_bucket
-07,,pdf,pg2,Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PDFs/pg2.pdf,review,,missing_bucket
-07,,pdf,pg3,Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PDFs/pg3.pdf,review,,missing_bucket
-07,,pdf,pg4,Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PDFs/pg4.pdf,review,,missing_bucket
-07,,pdf,pg5,Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PDFs/pg5.pdf,review,,missing_bucket
-07,,pdf,pg6,Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PDFs/pg6.pdf,review,,missing_bucket
-07,,pdf,pg7,Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PDFs/pg7.pdf,review,,missing_bucket
-07,,png,pg1,Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PNGs/pg1.png,review,,missing_bucket
-07,,png,pg2,Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PNGs/pg2.png,review,,missing_bucket
-07,,png,pg3,Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PNGs/pg3.png,review,,missing_bucket
-07,,png,pg4,Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PNGs/pg4.png,review,,missing_bucket
-07,,png,pg5,Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PNGs/pg5.png,review,,missing_bucket
-07,,png,pg6,Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PNGs/pg6.png,review,,missing_bucket
-07,,png,pg7,Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PNGs/pg7.png,review,,missing_bucket
-07,,pdf,pg1,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg1.pdf,review,,missing_bucket
-07,,pdf,pg10,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg10.pdf,review,,missing_bucket
-07,,pdf,pg11,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg11.pdf,review,,missing_bucket
-07,,pdf,pg12,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg12.pdf,review,,missing_bucket
-07,,pdf,pg13,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg13.pdf,review,,missing_bucket
-07,,pdf,pg14,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg14.pdf,review,,missing_bucket
-07,,pdf,pg15,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg15.pdf,review,,missing_bucket
-07,,pdf,pg2,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg2.pdf,review,,missing_bucket
-07,,pdf,pg3,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg3.pdf,review,,missing_bucket
-07,,pdf,pg4,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg4.pdf,review,,missing_bucket
-07,,pdf,pg5,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg5.pdf,review,,missing_bucket
-07,,pdf,pg6,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg6.pdf,review,,missing_bucket
-07,,pdf,pg7,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg7.pdf,review,,missing_bucket
-07,,pdf,pg8,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg8.pdf,review,,missing_bucket
-07,,pdf,pg9,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg9.pdf,review,,missing_bucket
-07,,png,pg1,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg1.png,review,,missing_bucket
-07,,png,pg10,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg10.png,review,,missing_bucket
-07,,png,pg11,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg11.png,review,,missing_bucket
-07,,png,pg12,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg12.png,review,,missing_bucket
-07,,png,pg13,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg13.png,review,,missing_bucket
-07,,png,pg14,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg14.png,review,,missing_bucket
-07,,png,pg15,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg15.png,review,,missing_bucket
-07,,png,pg16,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg16.png,review,,missing_bucket
-07,,png,pg2,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg2.png,review,,missing_bucket
-07,,png,pg3,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg3.png,review,,missing_bucket
-07,,png,pg4,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg4.png,review,,missing_bucket
-07,,png,pg5,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg5.png,review,,missing_bucket
-07,,png,pg6,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg6.png,review,,missing_bucket
-07,,png,pg7,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg7.png,review,,missing_bucket
-07,,png,pg8,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg8.png,review,,missing_bucket
-07,,png,pg9,Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg9.png,review,,missing_bucket
-08,Handouts,pdf,1. The 2 Way Connnection Between Poverty and Mental Health Issues,Whole/Module 8/Handouts/1. The 2 Way Connnection Between Poverty and Mental Health Issues.pdf,ok,,
-08,Handouts,docx,2. Tips for Talking With Your Partner About Finances,Whole/Module 8/Handouts/2. Tips for Talking With Your Partner About Finances.docx,ok,,
-08,Handouts,pdf,2. Tips for Talking With Your Partner About Finances,Whole/Module 8/Handouts/2. Tips for Talking With Your Partner About Finances.pdf,ok,,
-08,Handouts,pdf,3. Steps to Healthy Finances in Your Relationship,Whole/Module 8/Handouts/3. Steps to Healthy Finances in Your Relationship.pdf,ok,,
-08,Handouts,pdf,4. Understanding Representative Payees,Whole/Module 8/Handouts/4. Understanding Representative Payees.pdf,ok,,
-08,Handouts,pdf,5. When a Representative Payee Manages Your Money,Whole/Module 8/Handouts/5. When a Representative Payee Manages Your Money.pdf,ok,,
-08,Handouts,docx,6. Understanding Financial Abuse & Safety Planning,Whole/Module 8/Handouts/6. Understanding Financial Abuse & Safety Planning.docx,ok,,
-08,Handouts,pdf,6. Understanding Financial Abuse & Safety Planning,Whole/Module 8/Handouts/6. Understanding Financial Abuse & Safety Planning.pdf,ok,,
-08,Handouts,pdf,7. Information and Services for Survivors,Whole/Module 8/Handouts/7. Information and Services for Survivors.pdf,ok,,
-08,Handouts,docx,Effects of Income Inequality on Health,Whole/Module 8/Handouts/Effects of Income Inequality on Health.docx,ok,,
-08,Handouts,docx,Elder Financial Abuse,Whole/Module 8/Handouts/Elder Financial Abuse.docx,ok,,
-08,Handouts,pdf,FAQ.Representative.Payees,Whole/Module 8/Handouts/FAQ.Representative.Payees.pdf,ok,,
-08,Handouts,pdf,Financial Abuse FAQs,Whole/Module 8/Handouts/Financial Abuse FAQs.pdf,ok,,
-08,Handouts,pdf,Financial Abuse Fact Sheet,Whole/Module 8/Handouts/Financial Abuse Fact Sheet.pdf,ok,,
-08,Handouts,docx,Financial Stress and Health Risks,Whole/Module 8/Handouts/Financial Stress and Health Risks.docx,ok,,
-08,Handouts,docx,How to Prevent and Recover from Domestic Financial Abuse,Whole/Module 8/Handouts/How to Prevent and Recover from Domestic Financial Abuse.docx,ok,,
-08,Handouts,docx,Workshop 8 Worksheets,Whole/Module 8/Handouts/Workshop 8 Worksheets.docx,ok,,
-08,Handouts,pdf,Workshop 8 Worksheets,Whole/Module 8/Handouts/Workshop 8 Worksheets.pdf,ok,,
-08,,docx,MB FTS 8,Whole/Module 8/MB_FTS_ 8.docx,review,,missing_bucket
-08,,pdf,MB FTS 8,Whole/Module 8/MB_FTS_ 8.pdf,review,,missing_bucket
-08,Core_Resources,pptx,Money Basics PPT Workshop 8,Whole/Module 8/Money Basics PPT Workshop 8.pptx,ok,,
-08,Additional_Resources,pdf,1. Mental Health and Money,Whole/Module 8/Resources/1. Mental Health and Money.pdf,ok,,
-08,Additional_Resources,pdf,10. Poverty and Poor Health Worldwide,Whole/Module 8/Resources/10. Poverty and Poor Health Worldwide.pdf,ok,,
-08,Additional_Resources,docx,11. How to Talk to Your Partner About Money,Whole/Module 8/Resources/11. How to Talk to Your Partner About Money.docx,ok,,
-08,Additional_Resources,pdf,11. How to Talk to Your Partner About Money,Whole/Module 8/Resources/11. How to Talk to Your Partner About Money.pdf,ok,,
-08,Additional_Resources,pdf,12. Money Problems and Relationship Problems,Whole/Module 8/Resources/12. Money Problems and Relationship Problems.pdf,ok,,
-08,Additional_Resources,pdf,13. How to Prevent Arguments About Money,Whole/Module 8/Resources/13. How to Prevent Arguments About Money.pdf,ok,,
-08,Additional_Resources,pdf,14. How to Talk to Your Spouse About Money,Whole/Module 8/Resources/14. How to Talk to Your Spouse About Money.pdf,ok,,
-08,Additional_Resources,pdf,15. Common Financially Abusive Behaviors,Whole/Module 8/Resources/15. Common Financially Abusive Behaviors.pdf,ok,,
-08,Additional_Resources,docx,16. How to Spot Financial Abuse of an Elder,Whole/Module 8/Resources/16. How to Spot Financial Abuse of an Elder.docx,ok,,
-08,Additional_Resources,pdf,16. How to Spot Financial Abuse of an Elder,Whole/Module 8/Resources/16. How to Spot Financial Abuse of an Elder.pdf,ok,,
-08,Additional_Resources,pdf,18. Tackling social inequalities to reduce mental health problems,Whole/Module 8/Resources/18. Tackling social inequalities to reduce mental health problems.pdf,ok,,
-08,Additional_Resources,pdf,"2. Poverty, Social Inequality and Mental Health","Whole/Module 8/Resources/2. Poverty, Social Inequality and Mental Health.pdf",ok,,
-08,Additional_Resources,pdf,3. Recovering Your Finances After Rehab,Whole/Module 8/Resources/3. Recovering Your Finances After Rehab.pdf,ok,,
-08,Additional_Resources,pdf,4. The Poverty Mindset,Whole/Module 8/Resources/4. The Poverty Mindset.pdf,ok,,
-08,Additional_Resources,pdf,5. FAQs on Problem Gambling,Whole/Module 8/Resources/5. FAQs on Problem Gambling.pdf,ok,,
-08,Additional_Resources,pdf,6. Resources for Problem Gambling,Whole/Module 8/Resources/6. Resources for Problem Gambling.pdf,ok,,
-08,Additional_Resources,docx,7. Income Inequality and Health Care,Whole/Module 8/Resources/7. Income Inequality and Health Care.docx,ok,,
-08,Additional_Resources,pdf,7. Income Inequality and Health Care,Whole/Module 8/Resources/7. Income Inequality and Health Care.pdf,ok,,
-08,Additional_Resources,docx,8. How to Avoid the Health Risks that Come from Financial Stress,Whole/Module 8/Resources/8. How to Avoid the Health Risks that Come from Financial Stress.docx,ok,,
-08,Additional_Resources,pdf,8. How to Avoid the Health Risks that Come from Financial Stress,Whole/Module 8/Resources/8. How to Avoid the Health Risks that Come from Financial Stress.pdf,ok,,
-08,Additional_Resources,pdf,9. Poverty s Effect on Children s Health,Whole/Module 8/Resources/9. Poverty_s Effect on Children_s Health.pdf,ok,,
-08,Additional_Resources,pdf,Effects of Childhood Poverty,Whole/Module 8/Resources/Effects of Childhood Poverty.pdf,ok,,
-08,Additional_Resources,pdf,Financial Abuse and Rebuilding your Finances,Whole/Module 8/Resources/Financial Abuse and Rebuilding your Finances.pdf,ok,,
-08,Additional_Resources,pdf,Money.Smart.for.Older.Adults.Prevent.Financial.Exploitation,Whole/Module 8/Resources/Money.Smart.for.Older.Adults.Prevent.Financial.Exploitation.pdf,ok,,
-08,Additional_Resources,pdf,Poverty and Health,Whole/Module 8/Resources/Poverty and Health.pdf,ok,,
-08,Additional_Resources,pdf,Statistics on Mental Illness and Poverty,Whole/Module 8/Resources/Statistics on Mental Illness and Poverty.pdf,ok,,
-08,Additional_Resources,docx,Workshop 8 Additional Resources,Whole/Module 8/Resources/Workshop 8 Additional Resources.docx,ok,,
-08,Additional_Resources,pdf,Workshop 8 Additional Resources,Whole/Module 8/Resources/Workshop 8 Additional Resources.pdf,ok,,
-08,,pdf,"Workshop 08 Mental Health, Relationships & Money","Whole/Module 8/Workshop 08 - Mental Health, Relationships & Money.pdf",review,,missing_bucket
-08,,pdf,"Workshop 08 Mental Health, Relationships & Money; Financial Crisis Planning","Whole/Module 8/Workshop 08 - Mental Health, Relationships & Money; Financial Crisis Planning.pdf",review,,missing_bucket
-08,,pdf,pg1,Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PDFs/pg1.pdf,review,,missing_bucket
-08,,pdf,pg2,Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PDFs/pg2.pdf,review,,missing_bucket
-08,,pdf,pg3,Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PDFs/pg3.pdf,review,,missing_bucket
-08,,pdf,pg4,Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PDFs/pg4.pdf,review,,missing_bucket
-08,,pdf,pg5,Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PDFs/pg5.pdf,review,,missing_bucket
-08,,pdf,pg6,Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PDFs/pg6.pdf,review,,missing_bucket
-08,,pdf,pg7,Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PDFs/pg7.pdf,review,,missing_bucket
-08,,pdf,pg8,Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PDFs/pg8.pdf,review,,missing_bucket
-08,,pdf,pg9,Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PDFs/pg9.pdf,review,,missing_bucket
-08,,png,pg1,Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PNGs/pg1.png,review,,missing_bucket
-08,,png,pg2,Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PNGs/pg2.png,review,,missing_bucket
-08,,png,pg3,Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PNGs/pg3.png,review,,missing_bucket
-08,,png,pg4,Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PNGs/pg4.png,review,,missing_bucket
-08,,png,pg5,Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PNGs/pg5.png,review,,missing_bucket
-08,,png,pg6,Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PNGs/pg6.png,review,,missing_bucket
-08,,png,pg7,Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PNGs/pg7.png,review,,missing_bucket
-08,,png,pg8,Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PNGs/pg8.png,review,,missing_bucket
-08,,png,pg9,Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PNGs/pg9.png,review,,missing_bucket
-08,,pdf,pg1,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg1.pdf,review,,missing_bucket
-08,,pdf,pg10,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg10.pdf,review,,missing_bucket
-08,,pdf,pg11,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg11.pdf,review,,missing_bucket
-08,,pdf,pg12,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg12.pdf,review,,missing_bucket
-08,,pdf,pg13,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg13.pdf,review,,missing_bucket
-08,,pdf,pg14,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg14.pdf,review,,missing_bucket
-08,,pdf,pg15,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg15.pdf,review,,missing_bucket
-08,,pdf,pg16,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg16.pdf,review,,missing_bucket
-08,,pdf,pg17,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg17.pdf,review,,missing_bucket
-08,,pdf,pg18,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg18.pdf,review,,missing_bucket
-08,,pdf,pg19,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg19.pdf,review,,missing_bucket
-08,,pdf,pg2,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg2.pdf,review,,missing_bucket
-08,,pdf,pg20,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg20.pdf,review,,missing_bucket
-08,,pdf,pg21,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg21.pdf,review,,missing_bucket
-08,,pdf,pg3,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg3.pdf,review,,missing_bucket
-08,,pdf,pg4,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg4.pdf,review,,missing_bucket
-08,,pdf,pg5,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg5.pdf,review,,missing_bucket
-08,,pdf,pg6,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg6.pdf,review,,missing_bucket
-08,,pdf,pg7,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg7.pdf,review,,missing_bucket
-08,,pdf,pg8,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg8.pdf,review,,missing_bucket
-08,,pdf,pg9,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg9.pdf,review,,missing_bucket
-08,,png,pg1,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg1.png,review,,missing_bucket
-08,,png,pg10,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg10.png,review,,missing_bucket
-08,,png,pg11,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg11.png,review,,missing_bucket
-08,,png,pg12,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg12.png,review,,missing_bucket
-08,,png,pg13,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg13.png,review,,missing_bucket
-08,,png,pg14,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg14.png,review,,missing_bucket
-08,,png,pg15,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg15.png,review,,missing_bucket
-08,,png,pg16,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg16.png,review,,missing_bucket
-08,,png,pg17,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg17.png,review,,missing_bucket
-08,,png,pg18,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg18.png,review,,missing_bucket
-08,,png,pg19,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg19.png,review,,missing_bucket
-08,,png,pg2,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg2.png,review,,missing_bucket
-08,,png,pg20,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg20.png,review,,missing_bucket
-08,,png,pg21,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg21.png,review,,missing_bucket
-08,,png,pg3,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg3.png,review,,missing_bucket
-08,,png,pg4,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg4.png,review,,missing_bucket
-08,,png,pg5,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg5.png,review,,missing_bucket
-08,,png,pg6,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg6.png,review,,missing_bucket
-08,,png,pg7,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg7.png,review,,missing_bucket
-08,,png,pg8,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg8.png,review,,missing_bucket
-08,,png,pg9,Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg9.png,review,,missing_bucket
-09,Handouts,pdf,1. IRS Tips to Take the Stress out of Tax Season,Whole/Module 9/Handouts/1. IRS Tips to Take the Stress out of Tax Season.pdf,ok,,
-09,Handouts,pdf,2. IRS Free File,Whole/Module 9/Handouts/2. IRS Free File.pdf,ok,,
-09,Handouts,pdf,3. 6 Steps for First Time Tax Filers,Whole/Module 9/Handouts/3. 6 Steps for First-Time Tax Filers.pdf,ok,,
-09,Handouts,pdf,4. The Three Basic Tax Types,Whole/Module 9/Handouts/4. The Three Basic Tax Types.pdf,ok,,
-09,Handouts,pdf,5. Credits & Deductions,Whole/Module 9/Handouts/5. Credits & Deductions.pdf,ok,,
-09,Handouts,pdf,6. Common Tax Write Offs You Can Claim,Whole/Module 9/Handouts/6. Common Tax Write-Offs You Can Claim.pdf,ok,,
-09,Handouts,pdf,Who Qualifies for the Earned Income Tax Credit (EITC) Internal Revenue Service,Whole/Module 9/Handouts/Who Qualifies for the Earned Income Tax Credit (EITC) _ Internal Revenue Service.pdf,ok,,
-09,,docx,How to Cope with Tax Season Stress,Whole/Module 9/How to Cope with Tax Season Stress.docx,review,,missing_bucket
-09,,docx,MB FTS 9,Whole/Module 9/MB_FTS_ 9.docx,review,,missing_bucket
-09,,docx,Module Nine Additional Resources,Whole/Module 9/Module Nine Additional Resources.docx,review,,missing_bucket
-09,Core_Resources,pptx,Money Basics PPT Workshop 9,Whole/Module 9/Money Basics PPT Workshop 9.pptx,ok,,
-09,,docx,"Regressive, Proportional, and Progressive Taxes","Whole/Module 9/Regressive, Proportional, and Progressive Taxes.docx",review,,missing_bucket
-09,Additional_Resources,docx,1. What to Know About How to File Taxes,Whole/Module 9/Resources/1. What to Know About How to File Taxes.docx,ok,,
-09,Additional_Resources,pdf,1. What to Know About How to File Taxes,Whole/Module 9/Resources/1. What to Know About How to File Taxes.pdf,ok,,
-09,Additional_Resources,docx,2. How to Cope with Tax Season Stress,Whole/Module 9/Resources/2. How to Cope with Tax Season Stress.docx,ok,,
-09,Additional_Resources,pdf,2. How to Cope with Tax Season Stress,Whole/Module 9/Resources/2. How to Cope with Tax Season Stress.pdf,ok,,
-09,Additional_Resources,pdf,3. How to File Your Taxes,Whole/Module 9/Resources/3. How to File Your Taxes.pdf,ok,,
-09,Additional_Resources,pdf,4. Tax Basics,Whole/Module 9/Resources/4. Tax Basics.pdf,ok,,
-09,Additional_Resources,pdf,5. Why We Pay Taxes,Whole/Module 9/Resources/5. Why We Pay Taxes.pdf,ok,,
-09,Additional_Resources,docx,6. Regressive Vs. Progressive Taxes,Whole/Module 9/Resources/6. Regressive Vs. Progressive Taxes.docx,ok,,
-09,Additional_Resources,pdf,6. Regressive Vs. Progressive Taxes,Whole/Module 9/Resources/6. Regressive Vs. Progressive Taxes.pdf,ok,,
-09,Additional_Resources,pdf,7. Federal Tax Revenue,Whole/Module 9/Resources/7. Federal Tax Revenue.pdf,ok,,
-09,Additional_Resources,pdf,Form 1040,Whole/Module 9/Resources/Form 1040.pdf,ok,,
-09,Additional_Resources,docx,Workshop 9 Additional Resources,Whole/Module 9/Resources/Workshop 9 Additional Resources.docx,ok,,
-09,Additional_Resources,pdf,Workshop 9 Additional Resources,Whole/Module 9/Resources/Workshop 9 Additional Resources.pdf,ok,,
-09,,docx,What to Know About How to File Taxes,Whole/Module 9/What to Know About How to File Taxes.docx,review,,missing_bucket
-09,,pdf,Workshop 09 Tax Returns,Whole/Module 9/Workshop 09 - Tax Returns.pdf,review,,missing_bucket
+workshop_id|bucket|asset_type|title|source_path|status|notes|validation_issues
+01|Core_Resources|pdf|Workshop 01 Introduction|Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 01 - Introduction.pdf|ok||
+02|Core_Resources|pdf|Workshop 02 Setting Financial Goals|Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 02 - Setting Financial Goals.pdf|ok||
+03|Core_Resources|pdf|Workshop 03 Creating a Budget|Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 03 - Creating a Budget.pdf|ok||
+04|Core_Resources|pdf|Workshop 04 Banking Basics|Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 04 - Banking Basics.pdf|ok||
+05|Core_Resources|pdf|Workshop 05 Debit Cards, ATMs, Online Banking|Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 05 - Debit Cards, ATMs, Online Banking.pdf|ok||
+06|Core_Resources|pdf|Workshop 06 Credit & Loans|Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 06 - Credit & Loans.pdf|ok||
+07|Core_Resources|pdf|Workshop 07 Debt & Tools|Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 07 - Debt & Tools.pdf|ok||
+08|Core_Resources|pdf|Workshop 08 Mental Health, Relationships & Money|Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 08 - Mental Health, Relationships & Money.pdf|ok||
+09|Core_Resources|pdf|Workshop 09 Tax Returns|Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 09 - Tax Returns.pdf|ok||
+10|Core_Resources|pdf|Workshop 10 Savings Accounts & Goals|Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 10 - Savings Accounts & Goals.pdf|ok||
+11|Core_Resources|pdf|Workshop 11 Course Graduation|Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 11 - Course Graduation.pdf|ok||
+01|Core_Resources|pdf|Workshop 01 Introduction & Course Overview|Parts/FG:SG_Splits/Wksp/Student Guide/Wksps/Workshop 01 - Introduction & Course Overview.pdf|ok||
+02|Core_Resources|pdf|Workshop 02 Setting Financial Goals; Person Directed Planning|Parts/FG:SG_Splits/Wksp/Student Guide/Wksps/Workshop 02 - Setting Financial Goals; Person Directed Planning.pdf|ok||
+03|Core_Resources|pdf|Workshop 03 Creating a Budget & Resources to Save Money|Parts/FG:SG_Splits/Wksp/Student Guide/Wksps/Workshop 03 - Creating a Budget & Resources to Save Money.pdf|ok||
+04|Core_Resources|pdf|Workshop 04 Banking Basics & Checking Accounts|Parts/FG:SG_Splits/Wksp/Student Guide/Wksps/Workshop 04 - Banking Basics & Checking Accounts.pdf|ok||
+05|Core_Resources|pdf|Workshop 05 Debit Cards, ATMs, Online Banking & Money Safety|Parts/FG:SG_Splits/Wksp/Student Guide/Wksps/Workshop 05 - Debit Cards, ATMs, Online Banking & Money Safety.pdf|ok||
+06|Core_Resources|pdf|Workshop 06 Credit & Loans|Parts/FG:SG_Splits/Wksp/Student Guide/Wksps/Workshop 06 - Credit & Loans.pdf|ok||
+07|Core_Resources|pdf|Workshop 07 Debt & Tools to Get Out of It|Parts/FG:SG_Splits/Wksp/Student Guide/Wksps/Workshop 07 - Debt & Tools to Get Out of It.pdf|ok||
+08|Core_Resources|pdf|Workshop 08 Mental Health, Relationships & Money; Financial Crisis Planning|Parts/FG:SG_Splits/Wksp/Student Guide/Wksps/Workshop 08 - Mental Health, Relationships & Money; Financial Crisis Planning.pdf|ok||
+09|Core_Resources|pdf|Workshop 09 How to File a Tax Return & Resources for Doing So|Parts/FG:SG_Splits/Wksp/Student Guide/Wksps/Workshop 09 - How to File a Tax Return & Resources for Doing So.pdf|ok||
+||docx|Glossary of Financial Terms|Parts/Teaching Materials/Facilitator & Student Guides/Glossaries/Glossary of Financial Terms.docx|review||missing_workshop_id;missing_bucket
+||pdf|Glossary of Financial Terms|Parts/Teaching Materials/Facilitator & Student Guides/Glossaries/Glossary of Financial Terms.pdf|review||missing_workshop_id;missing_bucket
+||pdf|Glossary of Terms on Poverty|Parts/Teaching Materials/Facilitator & Student Guides/Glossaries/Glossary of Terms on Poverty.pdf|review||missing_workshop_id;missing_bucket
+||html|financial terms glossary.filtered|Parts/Teaching Materials/Facilitator & Student Guides/Glossaries/financial-terms-glossary.filtered.html|review||missing_workshop_id;missing_bucket
+||html|money basics student glossary|Parts/Teaching Materials/Facilitator & Student Guides/Glossaries/money-basics-student-glossary.html|review||missing_workshop_id;missing_bucket
+||pdf|Money Basics Facilitator Guide|Parts/Teaching Materials/Facilitator & Student Guides/Money Basics Facilitator Guide.pdf|review||missing_workshop_id;missing_bucket
+||docx|Money Basics Facilitator Guide[Final]|Parts/Teaching Materials/Facilitator & Student Guides/Money Basics Facilitator Guide[Final].docx|review||missing_workshop_id;missing_bucket
+||docx|Money Basics Student Guide [Final]|Parts/Teaching Materials/Facilitator & Student Guides/Money Basics Student Guide [Final].docx|review||missing_workshop_id;missing_bucket
+||pdf|Money Basics Student Guide|Parts/Teaching Materials/Facilitator & Student Guides/Money Basics Student Guide.pdf|review||missing_workshop_id;missing_bucket
+||pdf|Glossary of Financial Terms|Parts/Teaching Materials/Glossaries/Glossary of Financial Terms.pdf|review||missing_workshop_id;missing_bucket
+||pdf|Glossary of Terms on Poverty|Parts/Teaching Materials/Glossaries/Glossary of Terms on Poverty.pdf|review||missing_workshop_id;missing_bucket
+||pdf|ODHS Equity Glossary|Parts/Teaching Materials/Glossaries/ODHS Equity Glossary.pdf|review||missing_workshop_id;missing_bucket
+01|Handouts|pdf|1. Poverty and Hunger in America|Parts/Teaching Materials/Workshop 1/Handouts/1. Poverty and Hunger in America.pdf|ok||
+01|Handouts|pdf|2. Steps Toward Financial Resilience|Parts/Teaching Materials/Workshop 1/Handouts/2. Steps Toward Financial Resilience.pdf|ok||
+01|Handouts|pdf|3. Poverty and Intersectionality in Oregon|Parts/Teaching Materials/Workshop 1/Handouts/3. Poverty and Intersectionality in Oregon.pdf|ok||
+01|Handouts|pdf|4. Hidden Rules Among Classes|Parts/Teaching Materials/Workshop 1/Handouts/4. Hidden Rules Among Classes.pdf|ok||
+01|Handouts|pdf|5. How Poverty is Measured in the US|Parts/Teaching Materials/Workshop 1/Handouts/5. How Poverty is Measured in the US.pdf|ok||
+01|Handouts|pdf|6. The American Dream of upward mobility is broken|Parts/Teaching Materials/Workshop 1/Handouts/6. The _American Dream_ of upward mobility is broken.pdf|ok||
+01|Handouts|pdf|7. White Privilege Invisible Knapsack|Parts/Teaching Materials/Workshop 1/Handouts/7. White Privilege Invisible Knapsack.pdf|ok||
+01|Handouts|pdf|Financial Literacy & African Americans Bridging the Gap|Parts/Teaching Materials/Workshop 1/Handouts/Financial Literacy & African Americans_ Bridging the Gap.pdf|ok||
+01|Handouts|pdf|Workshop 1 Worksheets (extra)|Parts/Teaching Materials/Workshop 1/Handouts/Workshop 1 Worksheets (extra).pdf|ok||
+01|Handouts|pdf|Workshop 1 Worksheets|Parts/Teaching Materials/Workshop 1/Handouts/Workshop 1 Worksheets.pdf|ok||
+01|Core_Resources|pptx|Money Basics PPT Workshop 1|Parts/Teaching Materials/Workshop 1/Money Basics PPT Workshop 1.pptx|ok||
+01|Additional_Resources|pdf|1. Tips for Managing Money When You Live With Mental Health Challenges|Parts/Teaching Materials/Workshop 1/Resources/1. Tips for Managing Money When You Live With Mental Health Challenges.pdf|ok||
+01|Additional_Resources|pdf|10. Brief History of Race, Racism & Colonialism|Parts/Teaching Materials/Workshop 1/Resources/10. Brief History of Race, Racism & Colonialism.pdf|ok||
+01|Additional_Resources|pdf|11. Unaffordable America. Poverty, Housing and Eviction|Parts/Teaching Materials/Workshop 1/Resources/11. Unaffordable America. Poverty, Housing and Eviction.pdf|ok||
+01|Additional_Resources|pdf|12. FAQs on Problem Gambling|Parts/Teaching Materials/Workshop 1/Resources/12. FAQs on Problem Gambling.pdf|ok||
+01|Additional_Resources|pdf|13. Financial Toolkit for Problem Gamblers|Parts/Teaching Materials/Workshop 1/Resources/13. Financial Toolkit for Problem Gamblers.pdf|ok||
+01|Additional_Resources|pdf|14. Financial Strategies for Loved Ones of Gamblers|Parts/Teaching Materials/Workshop 1/Resources/14. Financial Strategies for Loved Ones of Gamblers.pdf|ok||
+01|Additional_Resources|pdf|15. Dismantling the Poverty Trap Article|Parts/Teaching Materials/Workshop 1/Resources/15. Dismantling the Poverty Trap Article.pdf|ok||
+01|Additional_Resources|pdf|16. Supplemental Poverty Measure|Parts/Teaching Materials/Workshop 1/Resources/16. Supplemental Poverty Measure.pdf|ok||
+01|Additional_Resources|pdf|2. How to Practice Mindfulness on a Budget|Parts/Teaching Materials/Workshop 1/Resources/2. How to Practice Mindfulness on a Budget.pdf|ok||
+01|Additional_Resources|pdf|3. How to Reduce Financial Stress|Parts/Teaching Materials/Workshop 1/Resources/3. How to Reduce Financial Stress.pdf|ok||
+01|Additional_Resources|pdf|4. Income Inequality in America|Parts/Teaching Materials/Workshop 1/Resources/4. Income Inequality in America.pdf|ok||
+01|Additional_Resources|pdf|5. Poverty in America Statistics|Parts/Teaching Materials/Workshop 1/Resources/5. Poverty in America Statistics.pdf|ok||
+01|Additional_Resources|pdf|6. Data Illustrating the Intersectional Nature of Poverty|Parts/Teaching Materials/Workshop 1/Resources/6. Data Illustrating the Intersectional Nature of Poverty.pdf|ok||
+01|Additional_Resources|pdf|8. Race and the lack of intergenerational economic mobility in the US|Parts/Teaching Materials/Workshop 1/Resources/8. Race and the lack of intergenerational economic mobility in the US.pdf|ok||
+01|Additional_Resources|pdf|9. Displacement in Portland|Parts/Teaching Materials/Workshop 1/Resources/9. Displacement in Portland.pdf|ok||
+01|Additional_Resources|pdf|Workshop 1 Additional Resources|Parts/Teaching Materials/Workshop 1/Resources/Workshop 1 Additional Resources.pdf|ok||
+10|Handouts|pdf|1. How To Save For Your Future|Parts/Teaching Materials/Workshop 10/Handouts/1. How To Save For Your Future.pdf|ok||
+10|Handouts|pdf|2. Individual Development Account Fact Sheet|Parts/Teaching Materials/Workshop 10/Handouts/2. Individual Development Account Fact Sheet.pdf|ok||
+10|Handouts|docx|3. IDA Basics & Resources|Parts/Teaching Materials/Workshop 10/Handouts/3. IDA Basics & Resources.docx|ok||
+10|Handouts|pdf|3. IDA Basics & Resources|Parts/Teaching Materials/Workshop 10/Handouts/3. IDA Basics & Resources.pdf|ok||
+10|Handouts|pdf|Individual Development Accounts FAQs|Parts/Teaching Materials/Workshop 10/Handouts/Individual Development Accounts FAQs.pdf|ok||
+10|Handouts|pdf|Savings Tips|Parts/Teaching Materials/Workshop 10/Handouts/Savings Tips.pdf|ok||
+10|Handouts|docx|Workshop 10 Worksheets|Parts/Teaching Materials/Workshop 10/Handouts/Workshop 10 Worksheets.docx|ok||
+10|Handouts|pdf|Workshop 10 Worksheets|Parts/Teaching Materials/Workshop 10/Handouts/Workshop 10 Worksheets.pdf|ok||
+10|Core_Resources|pptx|Money Basics PPT Workshop 10|Parts/Teaching Materials/Workshop 10/Money Basics PPT Workshop 10.pptx|ok||
+10|Additional_Resources|pdf|1. ABLE Accounts|Parts/Teaching Materials/Workshop 10/Resources/1. ABLE Accounts.pdf|ok||
+10|Additional_Resources|docx|2. Asset Building For Low Income Families|Parts/Teaching Materials/Workshop 10/Resources/2. Asset Building For Low-Income Families.docx|ok||
+10|Additional_Resources|pdf|2. Asset Building For Low Income Families|Parts/Teaching Materials/Workshop 10/Resources/2. Asset Building For Low-Income Families.pdf|ok||
+10|Additional_Resources|docx|3. 23 Easy Ways To Save Money|Parts/Teaching Materials/Workshop 10/Resources/3. 23 Easy Ways To Save Money.docx|ok||
+10|Additional_Resources|pdf|3. 23 Easy Ways To Save Money|Parts/Teaching Materials/Workshop 10/Resources/3. 23 Easy Ways To Save Money.pdf|ok||
+10|Additional_Resources|docx|4. How to Save Money On A Low Income|Parts/Teaching Materials/Workshop 10/Resources/4. How to Save Money On A Low Income.docx|ok||
+10|Additional_Resources|pdf|4. How to Save Money On A Low Income|Parts/Teaching Materials/Workshop 10/Resources/4. How to Save Money On A Low Income.pdf|ok||
+10|Additional_Resources|docx|5. A Beginner s Guide to Saving Money|Parts/Teaching Materials/Workshop 10/Resources/5. A Beginner_s Guide to Saving Money.docx|ok||
+10|Additional_Resources|pdf|5. A Beginner s Guide to Saving Money|Parts/Teaching Materials/Workshop 10/Resources/5. A Beginner_s Guide to Saving Money.pdf|ok||
+10|Additional_Resources|docx|Workshop 10 Additional Resources|Parts/Teaching Materials/Workshop 10/Resources/Workshop 10 Additional Resources.docx|ok||
+10|Additional_Resources|pdf|Workshop 10 Additional Resources|Parts/Teaching Materials/Workshop 10/Resources/Workshop 10 Additional Resources.pdf|ok||
+11|Core_Resources|pptx|Money Basics PPT Workshop 11|Parts/Teaching Materials/Workshop 11/Money Basics PPT Workshop 11.pptx|ok||
+02|Handouts|pdf|1. What is Person Directed Planning|Parts/Teaching Materials/Workshop 2/Handouts/1. What is Person-Directed Planning.pdf|ok||
+02|Handouts|docx|Workshop 2 Worksheets|Parts/Teaching Materials/Workshop 2/Handouts/Workshop 2 Worksheets.docx|ok||
+02|Handouts|pdf|Workshop 2 Worksheets|Parts/Teaching Materials/Workshop 2/Handouts/Workshop 2 Worksheets.pdf|ok||
+02|Core_Resources|pptx|Money Basics PPT Workshop 2|Parts/Teaching Materials/Workshop 2/Money Basics PPT Workshop 2.pptx|ok||
+02|Additional_Resources|docx|1. Person Centered Planning|Parts/Teaching Materials/Workshop 2/Resources/1. Person-Centered Planning.docx|ok||
+02|Additional_Resources|pdf|1. Person Centered Planning|Parts/Teaching Materials/Workshop 2/Resources/1. Person-Centered Planning.pdf|ok||
+02|Additional_Resources|pdf|2. Person Centered Planning Tools|Parts/Teaching Materials/Workshop 2/Resources/2. Person-Centered Planning Tools.pdf|ok||
+02|Additional_Resources|docx|Workshop 2 Additional Resources|Parts/Teaching Materials/Workshop 2/Resources/Workshop 2 Additional Resources.docx|ok||
+02|Additional_Resources|pdf|Workshop 2 Additional Resources|Parts/Teaching Materials/Workshop 2/Resources/Workshop 2 Additional Resources.pdf|ok||
+03|Handouts|docx|1. Budgeting Apps|Parts/Teaching Materials/Workshop 3/Handouts/1. Budgeting Apps.docx|ok||
+03|Handouts|pdf|1. Budgeting Apps|Parts/Teaching Materials/Workshop 3/Handouts/1. Budgeting Apps.pdf|ok||
+03|Handouts|pdf|2. Budgeting Tips|Parts/Teaching Materials/Workshop 3/Handouts/2. Budgeting Tips.pdf|ok||
+03|Handouts|docx|3. Money Saving Resources Handout|Parts/Teaching Materials/Workshop 3/Handouts/3. Money Saving Resources Handout.docx|ok||
+03|Handouts|pdf|3. Money Saving Resources Handout|Parts/Teaching Materials/Workshop 3/Handouts/3. Money Saving Resources Handout.pdf|ok||
+03|Handouts|pdf|Budget Worksheet 1|Parts/Teaching Materials/Workshop 3/Handouts/Budget Worksheet 1.pdf|ok||
+03|Handouts|pdf|Budget Worksheet 2|Parts/Teaching Materials/Workshop 3/Handouts/Budget Worksheet 2.pdf|ok||
+03|Handouts|pdf|Budget Worksheet 3|Parts/Teaching Materials/Workshop 3/Handouts/Budget Worksheet 3.pdf|ok||
+03|Handouts|pdf|Budget Worksheet 4 Income & Expenses|Parts/Teaching Materials/Workshop 3/Handouts/Budget Worksheet 4_ Income & Expenses.pdf|ok||
+03|Handouts|pdf|Fact Sheet Benefits Counseling|Parts/Teaching Materials/Workshop 3/Handouts/Fact-Sheet-Benefits-Counseling.pdf|ok||
+03|Handouts|xlsx|Personal Balance Sheet|Parts/Teaching Materials/Workshop 3/Handouts/Personal Balance Sheet.xlsx|ok||
+03|Handouts|xlsx|Personal Monthly Budget|Parts/Teaching Materials/Workshop 3/Handouts/Personal Monthly Budget.xlsx|ok||
+03|Handouts|docx|Workshop 3 Worksheets|Parts/Teaching Materials/Workshop 3/Handouts/Workshop 3 Worksheets.docx|ok||
+03|Handouts|pdf|Workshop 3 Worksheets|Parts/Teaching Materials/Workshop 3/Handouts/Workshop 3 Worksheets.pdf|ok||
+03||pdf|Money Basics PPT Workshop 3|Parts/Teaching Materials/Workshop 3/Money Basics PPT Workshop 3.pdf|review||missing_bucket
+03|Core_Resources|pptx|Money Basics PPT Workshop 3|Parts/Teaching Materials/Workshop 3/Money Basics PPT Workshop 3.pptx|ok||
+03|Additional_Resources|docx|1. How to Make a Budget|Parts/Teaching Materials/Workshop 3/Resources/1. How to Make a Budget.docx|ok||
+03|Additional_Resources|pdf|1. How to Make a Budget|Parts/Teaching Materials/Workshop 3/Resources/1. How to Make a Budget.pdf|ok||
+03|Additional_Resources|docx|10. How to Buy a House with Low Income|Parts/Teaching Materials/Workshop 3/Resources/10.  How to Buy a House with Low Income.docx|ok||
+03|Additional_Resources|pdf|10. How to Buy a House with Low Income.docx|Parts/Teaching Materials/Workshop 3/Resources/10.  How to Buy a House with Low Income.docx.pdf|ok||
+03|Additional_Resources|docx|11. How To File For SSDI Benefits If Homeless|Parts/Teaching Materials/Workshop 3/Resources/11. How To File For SSDI Benefits If Homeless.docx|ok||
+03|Additional_Resources|pdf|11. How To File For SSDI Benefits If Homeless.docx|Parts/Teaching Materials/Workshop 3/Resources/11. How To File For SSDI Benefits If Homeless.docx.pdf|ok||
+03|Additional_Resources|pdf|12. SSI Ticket to Work and PASS Accounts|Parts/Teaching Materials/Workshop 3/Resources/12. SSI Ticket to Work and PASS Accounts.pdf|ok||
+03|Additional_Resources|docx|13. SSI Elibility Requirements and Asset Limits|Parts/Teaching Materials/Workshop 3/Resources/13. SSI Elibility Requirements and Asset Limits.docx|ok||
+03|Additional_Resources|pdf|13. SSI Elibility Requirements and Asset Limits.docx|Parts/Teaching Materials/Workshop 3/Resources/13. SSI Elibility Requirements and Asset Limits.docx.pdf|ok||
+03|Additional_Resources|docx|2. Free Online Budgeting Tools|Parts/Teaching Materials/Workshop 3/Resources/2. Free Online Budgeting Tools.docx|ok||
+03|Additional_Resources|pdf|2. Free Online Budgeting Tools|Parts/Teaching Materials/Workshop 3/Resources/2. Free Online Budgeting Tools.pdf|ok||
+03|Additional_Resources|pdf|25 Ways to Live on Less|Parts/Teaching Materials/Workshop 3/Resources/25 Ways to Live on Less.pdf|ok||
+03|Additional_Resources|docx|3. How to Create a Successful Budget|Parts/Teaching Materials/Workshop 3/Resources/3. How to Create a Successful Budget.docx|ok||
+03|Additional_Resources|pdf|3. How to Create a Successful Budget|Parts/Teaching Materials/Workshop 3/Resources/3. How to Create a Successful Budget.pdf|ok||
+03|Additional_Resources|pdf|4. How to Create a Budget in Six Steps|Parts/Teaching Materials/Workshop 3/Resources/4. How to Create a Budget in Six Steps.pdf|ok||
+03|Additional_Resources|pdf|5. 190 Online Resources for Saving Money|Parts/Teaching Materials/Workshop 3/Resources/5. 190 Online Resources for Saving Money.pdf|ok||
+03|Additional_Resources|docx|6. 10 Easy Ways to Save Money|Parts/Teaching Materials/Workshop 3/Resources/6. 10 Easy Ways to Save Money.docx|ok||
+03|Additional_Resources|pdf|6. 10 Easy Ways to Save Money.docx|Parts/Teaching Materials/Workshop 3/Resources/6. 10 Easy Ways to Save Money.docx.pdf|ok||
+03|Additional_Resources|pdf|7. 99 Great Ways to Save Money|Parts/Teaching Materials/Workshop 3/Resources/7. 99 Great Ways to Save Money.pdf|ok||
+03|Additional_Resources|docx|8. No brainer Money Saving Tips|Parts/Teaching Materials/Workshop 3/Resources/8. No-brainer Money-Saving Tips.docx|ok||
+03|Additional_Resources|pdf|8. No brainer Money Saving Tips|Parts/Teaching Materials/Workshop 3/Resources/8. No-brainer Money-Saving Tips.pdf|ok||
+03|Additional_Resources|docx|9. 11 Frugal Living Tips|Parts/Teaching Materials/Workshop 3/Resources/9. 11 Frugal Living Tips.docx|ok||
+03|Additional_Resources|pdf|9. 11 Frugal Living Tips|Parts/Teaching Materials/Workshop 3/Resources/9. 11 Frugal Living Tips.pdf|ok||
+03|Additional_Resources|pdf|Guide to SSI|Parts/Teaching Materials/Workshop 3/Resources/Guide to SSI.pdf|ok||
+03|Additional_Resources|pdf|The Social Security Administration Red Book (2020)|Parts/Teaching Materials/Workshop 3/Resources/The Social Security Administration Red Book (2020).pdf|ok||
+03|Additional_Resources|pdf|Tips for Family Money Management|Parts/Teaching Materials/Workshop 3/Resources/Tips for Family Money Management.pdf|ok||
+03|Additional_Resources|pdf|Tips for Successful Budgeting|Parts/Teaching Materials/Workshop 3/Resources/Tips for Successful Budgeting.pdf|ok||
+03|Additional_Resources|docx|Workshop 3 Additional Resources|Parts/Teaching Materials/Workshop 3/Resources/Workshop 3 Additional Resources.docx|ok||
+03|Additional_Resources|pdf|Workshop 3 Additional Resources|Parts/Teaching Materials/Workshop 3/Resources/Workshop 3 Additional Resources.pdf|ok||
+04|Handouts|docx|1. Second Chance Checking Accounts|Parts/Teaching Materials/Workshop 4/Handouts/1. Second Chance Checking Accounts.docx|ok||
+04|Handouts|pdf|1. Second Chance Checking Accounts.docx|Parts/Teaching Materials/Workshop 4/Handouts/1. Second Chance Checking Accounts.docx.pdf|ok||
+04|Handouts|pdf|2. How to Avoid Bank Fees|Parts/Teaching Materials/Workshop 4/Handouts/2. How to Avoid Bank Fees.pdf|ok||
+04|Handouts|docx|3. How to Balance Your Checkbook|Parts/Teaching Materials/Workshop 4/Handouts/3. How to Balance Your Checkbook.docx|ok||
+04|Handouts|pdf|3. How to Balance Your Checkbook.docx|Parts/Teaching Materials/Workshop 4/Handouts/3. How to Balance Your Checkbook.docx.pdf|ok||
+04|Handouts|docx|Check Writing Activity Cards|Parts/Teaching Materials/Workshop 4/Handouts/Check Writing Activity Cards.docx|ok||
+04|Handouts|pdf|Check Writing Activity Cards|Parts/Teaching Materials/Workshop 4/Handouts/Check Writing Activity Cards.pdf|ok||
+04|Handouts|docx|Check Writing Activity Instructions|Parts/Teaching Materials/Workshop 4/Handouts/Check Writing Activity Instructions.docx|ok||
+04|Handouts|pdf|Check Writing Activity Instructions|Parts/Teaching Materials/Workshop 4/Handouts/Check Writing Activity Instructions.pdf|ok||
+04|Handouts|pdf|Practice Checks|Parts/Teaching Materials/Workshop 4/Handouts/Practice Checks.pdf|ok||
+04|Handouts|docx|Workshop 4 Worksheet|Parts/Teaching Materials/Workshop 4/Handouts/Workshop 4 Worksheet.docx|ok||
+04|Handouts|pdf|Workshop 4 Worksheet|Parts/Teaching Materials/Workshop 4/Handouts/Workshop 4 Worksheet.pdf|ok||
+04||pdf|Money Basics PPT Workshop 4|Parts/Teaching Materials/Workshop 4/Money Basics PPT Workshop 4.pdf|review||missing_bucket
+04|Core_Resources|pptx|Money Basics PPT Workshop 4|Parts/Teaching Materials/Workshop 4/Money Basics PPT Workshop 4.pptx|ok||
+04|Additional_Resources|docx|1. How to Open a Bank Account|Parts/Teaching Materials/Workshop 4/Resources/1. How to Open a Bank Account.docx|ok||
+04|Additional_Resources|pdf|1. How to Open a Bank Account|Parts/Teaching Materials/Workshop 4/Resources/1. How to Open a Bank Account.pdf|ok||
+04|Additional_Resources|pdf|2. What to Consider When Opening a Bank Account|Parts/Teaching Materials/Workshop 4/Resources/2. What to Consider When Opening a Bank Account.pdf|ok||
+04|Additional_Resources|docx|3. How to Open a Checking Account With Bad Credit|Parts/Teaching Materials/Workshop 4/Resources/3. How to Open a Checking Account With Bad Credit.docx|ok||
+04|Additional_Resources|pdf|3. How to Open a Checking Account With Bad Credit|Parts/Teaching Materials/Workshop 4/Resources/3. How to Open a Checking Account With Bad Credit.pdf|ok||
+04|Additional_Resources|docx|4. Is Balancing Your Checkbook Still Important|Parts/Teaching Materials/Workshop 4/Resources/4. Is Balancing Your Checkbook Still Important.docx|ok||
+04|Additional_Resources|pdf|4. Is Balancing Your Checkbook Still Important|Parts/Teaching Materials/Workshop 4/Resources/4. Is Balancing Your Checkbook Still Important.pdf|ok||
+04|Additional_Resources|pdf|5. Check Writing Tips|Parts/Teaching Materials/Workshop 4/Resources/5. Check Writing Tips.pdf|ok||
+04|Additional_Resources|pdf|6. Common Banking Fees|Parts/Teaching Materials/Workshop 4/Resources/6. Common Banking Fees.pdf|ok||
+04|Additional_Resources|pdf|How to Read a Check|Parts/Teaching Materials/Workshop 4/Resources/How to Read a Check.pdf|ok||
+04|Additional_Resources|pdf|How to Write a Check|Parts/Teaching Materials/Workshop 4/Resources/How to Write a Check.pdf|ok||
+04|Additional_Resources|pdf|Keeping a Check Register|Parts/Teaching Materials/Workshop 4/Resources/Keeping a Check Register.pdf|ok||
+04|Additional_Resources|pdf|Why.Are.Credit.Unions.Different.Than.Banks|Parts/Teaching Materials/Workshop 4/Resources/Why.Are.Credit.Unions.Different.Than.Banks.pdf|ok||
+04|Additional_Resources|docx|Workshop 4 Additional Resources|Parts/Teaching Materials/Workshop 4/Resources/Workshop 4 Additional Resources.docx|ok||
+04|Additional_Resources|pdf|Workshop 4 Additional Resources|Parts/Teaching Materials/Workshop 4/Resources/Workshop 4 Additional Resources.pdf|ok||
+05|Handouts|pdf|1. ATMs and ATM Safety|Parts/Teaching Materials/Workshop 5/Handouts/1. ATMs and ATM Safety.pdf|ok||
+05|Handouts|pdf|2. Best Online Banks of 2021|Parts/Teaching Materials/Workshop 5/Handouts/2. Best Online Banks of 2021.pdf|ok||
+05|Handouts|docx|3. Options if You Can t Open a Traditional Bank Account|Parts/Teaching Materials/Workshop 5/Handouts/3. Options if You Can_t Open a Traditional Bank Account.docx|ok||
+05|Handouts|pdf|3. Options if You Can t Open a Traditional Bank Account|Parts/Teaching Materials/Workshop 5/Handouts/3. Options if You Can_t Open a Traditional Bank Account.pdf|ok||
+05|Handouts|pdf|4. Common Phone Scams|Parts/Teaching Materials/Workshop 5/Handouts/4. Common Phone Scams.pdf|ok||
+05|Handouts|pdf|5. How to Avoid Identity Scams|Parts/Teaching Materials/Workshop 5/Handouts/5. How to Avoid Identity Scams.pdf|ok||
+05|Handouts|pdf|6. Help for Identity Theft|Parts/Teaching Materials/Workshop 5/Handouts/6. Help for Identity Theft.pdf|ok||
+05|Core_Resources|pptx|Money Basics PPT Workshop 5|Parts/Teaching Materials/Workshop 5/Money Basics PPT Workshop 5.pptx|ok||
+05|Additional_Resources|pdf|1. What to Do if Your Debit Card is Lost or Stolen|Parts/Teaching Materials/Workshop 5/Resources/1. What to Do if Your Debit Card is Lost or Stolen.pdf|ok||
+05|Additional_Resources|pdf|10. Online and Mobile Money Safety|Parts/Teaching Materials/Workshop 5/Resources/10. Online and Mobile Money Safety.pdf|ok||
+05|Additional_Resources|pdf|11. First Aid for Identity Theft|Parts/Teaching Materials/Workshop 5/Resources/11. First Aid for Identity Theft.pdf|ok||
+05|Additional_Resources|docx|12. How to Spot and Avoid Card Skimmers|Parts/Teaching Materials/Workshop 5/Resources/12. How to Spot and Avoid Card Skimmers.docx|ok||
+05|Additional_Resources|pdf|12. How to Spot and Avoid Card Skimmers|Parts/Teaching Materials/Workshop 5/Resources/12. How to Spot and Avoid Card Skimmers.pdf|ok||
+05|Additional_Resources|pdf|13. IRS Tips for Protecting Your Identity|Parts/Teaching Materials/Workshop 5/Resources/13. IRS Tips for Protecting Your Identity.pdf|ok||
+05|Additional_Resources|pdf|14. Repairing Identity Theft|Parts/Teaching Materials/Workshop 5/Resources/14. Repairing Identity Theft.pdf|ok||
+05|Additional_Resources|pdf|15. What To Do if You ve Been Scammed|Parts/Teaching Materials/Workshop 5/Resources/15. What To Do if You_ve Been Scammed.pdf|ok||
+05|Additional_Resources|pdf|16. What is ATM Skimming|Parts/Teaching Materials/Workshop 5/Resources/16. What is ATM Skimming.pdf|ok||
+05|Additional_Resources|docx|2. Debit Card Safety Online|Parts/Teaching Materials/Workshop 5/Resources/2. Debit Card Safety Online.docx|ok||
+05|Additional_Resources|pdf|2. Debit Card Safety Online|Parts/Teaching Materials/Workshop 5/Resources/2. Debit Card Safety Online.pdf|ok||
+05|Additional_Resources|pdf|3. Best Online Banks|Parts/Teaching Materials/Workshop 5/Resources/3. Best Online Banks.pdf|ok||
+05|Additional_Resources|docx|4. Alternatives to Traditional Banks|Parts/Teaching Materials/Workshop 5/Resources/4. Alternatives to Traditional Banks.docx|ok||
+05|Additional_Resources|pdf|4. Alternatives to Traditional Banks|Parts/Teaching Materials/Workshop 5/Resources/4. Alternatives to Traditional Banks.pdf|ok||
+05|Additional_Resources|docx|5. Pros and Cons of Internet Banks|Parts/Teaching Materials/Workshop 5/Resources/5. Pros and Cons of Internet Banks.docx|ok||
+05|Additional_Resources|pdf|5. Pros and Cons of Internet Banks|Parts/Teaching Materials/Workshop 5/Resources/5. Pros and Cons of Internet Banks.pdf|ok||
+05|Additional_Resources|pdf|6. What are Credit Unions|Parts/Teaching Materials/Workshop 5/Resources/6. What are Credit Unions.pdf|ok||
+05|Additional_Resources|docx|7. Online Banking Definition, Pros and Cons|Parts/Teaching Materials/Workshop 5/Resources/7. Online Banking Definition, Pros and Cons.docx|ok||
+05|Additional_Resources|pdf|7. Online Banking Definition, Pros and Cons|Parts/Teaching Materials/Workshop 5/Resources/7. Online Banking Definition, Pros and Cons.pdf|ok||
+05|Additional_Resources|docx|8. Things to Consider When Choosing an Online Bank|Parts/Teaching Materials/Workshop 5/Resources/8. Things to Consider When Choosing an Online Bank.docx|ok||
+05|Additional_Resources|pdf|8. Things to Consider When Choosing an Online Bank|Parts/Teaching Materials/Workshop 5/Resources/8. Things to Consider When Choosing an Online Bank.pdf|ok||
+05|Additional_Resources|pdf|9. List of Virtual Banks and Their Benefits|Parts/Teaching Materials/Workshop 5/Resources/9. List of Virtual Banks and Their Benefits.pdf|ok||
+05|Additional_Resources|docx|ATM Safety Scenarios|Parts/Teaching Materials/Workshop 5/Resources/ATM Safety Scenarios.docx|ok||
+05|Additional_Resources|pdf|ATM Safety Scenarios|Parts/Teaching Materials/Workshop 5/Resources/ATM Safety Scenarios.pdf|ok||
+05|Additional_Resources|pdf|Internet.Banking.Safety.Tips|Parts/Teaching Materials/Workshop 5/Resources/Internet.Banking.Safety.Tips.pdf|ok||
+05|Additional_Resources|pdf|Safe Virtual Banking|Parts/Teaching Materials/Workshop 5/Resources/Safe Virtual Banking.pdf|ok||
+05|Additional_Resources|pdf|Workshop 5 Additional Resources|Parts/Teaching Materials/Workshop 5/Resources/Workshop 5 Additional Resources.pdf|ok||
+06|Handouts|pdf|1. How Does Credit Work|Parts/Teaching Materials/Workshop 6/Handouts/1. How Does Credit Work.pdf|ok||
+06|Handouts|pdf|2. Debunking Smart Credit Myths|Parts/Teaching Materials/Workshop 6/Handouts/2. Debunking Smart Credit Myths.pdf|ok||
+06|Handouts|pdf|3. How To Improve Your Credit Score|Parts/Teaching Materials/Workshop 6/Handouts/3. How To Improve Your Credit Score.pdf|ok||
+06|Handouts|pdf|4. Definition and Examples of Predatory Lending|Parts/Teaching Materials/Workshop 6/Handouts/4. Definition and Examples of Predatory Lending.pdf|ok||
+06|Handouts|pdf|Avoiding.Dangerous.Loans|Parts/Teaching Materials/Workshop 6/Handouts/Avoiding.Dangerous.Loans.pdf|ok||
+06|Handouts|pdf|Credit Card FAQs|Parts/Teaching Materials/Workshop 6/Handouts/Credit Card FAQs.pdf|ok||
+06|Handouts|docx|Credit Card Fact or Fiction Game|Parts/Teaching Materials/Workshop 6/Handouts/Credit Card Fact or Fiction Game.docx|ok||
+06|Handouts|pdf|How.to.Spot.Predatory.Lending|Parts/Teaching Materials/Workshop 6/Handouts/How.to.Spot.Predatory.Lending.pdf|ok||
+06|Core_Resources|pptx|Money Basics PPT Workshop 6|Parts/Teaching Materials/Workshop 6/Money Basics PPT Workshop 6.pptx|ok||
+06|Additional_Resources|docx|1. How Credit Scores Work|Parts/Teaching Materials/Workshop 6/Resources/1. How Credit Scores Work.docx|ok||
+06|Additional_Resources|pdf|1. How Credit Scores Work|Parts/Teaching Materials/Workshop 6/Resources/1. How Credit Scores Work.pdf|ok||
+06|Additional_Resources|pdf|10. Student Loan Settlements|Parts/Teaching Materials/Workshop 6/Resources/10. Student Loan Settlements.pdf|ok||
+06|Additional_Resources|pdf|11 How to Get a Good Deal on your First Car Loan|Parts/Teaching Materials/Workshop 6/Resources/11 How to Get a Good Deal on your First Car Loan.pdf|ok||
+06|Additional_Resources|pdf|12. What To Know About Payday and Car Title Loans|Parts/Teaching Materials/Workshop 6/Resources/12. What To Know About Payday and Car Title Loans.pdf|ok||
+06|Additional_Resources|pdf|13. Predatory Lending Practices|Parts/Teaching Materials/Workshop 6/Resources/13. Predatory Lending Practices.pdf|ok||
+06|Additional_Resources|pdf|14. What Is Predatory Mortgage Lending|Parts/Teaching Materials/Workshop 6/Resources/14. What Is Predatory Mortgage Lending.pdf|ok||
+06|Additional_Resources|pdf|15. How to Ask for a Lower Credit Card Interest Rate|Parts/Teaching Materials/Workshop 6/Resources/15. How to Ask for a Lower Credit Card Interest Rate.pdf|ok||
+06|Additional_Resources|docx|16. How to Get the Best Car Loan|Parts/Teaching Materials/Workshop 6/Resources/16. How to Get the Best Car Loan.docx|ok||
+06|Additional_Resources|pdf|16. How to Get the Best Car Loan|Parts/Teaching Materials/Workshop 6/Resources/16. How to Get the Best Car Loan.pdf|ok||
+06|Additional_Resources|pdf|17. Interest Rates and Student Loans|Parts/Teaching Materials/Workshop 6/Resources/17. Interest Rates and Student Loans.pdf|ok||
+06|Additional_Resources|docx|18. Why Payday Loans Can Be Costly|Parts/Teaching Materials/Workshop 6/Resources/18. Why Payday Loans Can Be Costly.docx|ok||
+06|Additional_Resources|pdf|18. Why Payday Loans Can Be Costly|Parts/Teaching Materials/Workshop 6/Resources/18. Why Payday Loans Can Be Costly.pdf|ok||
+06|Additional_Resources|pdf|19. Predatory Lending and Mortgages|Parts/Teaching Materials/Workshop 6/Resources/19. Predatory Lending and Mortgages.pdf|ok||
+06|Additional_Resources|docx|2. How to Choose a Credit Card|Parts/Teaching Materials/Workshop 6/Resources/2. How to Choose a Credit Card.docx|ok||
+06|Additional_Resources|pdf|2. How to Choose a Credit Card|Parts/Teaching Materials/Workshop 6/Resources/2. How to Choose a Credit Card.pdf|ok||
+06|Additional_Resources|pdf|3. Little Known Facts About Your Credit Card|Parts/Teaching Materials/Workshop 6/Resources/3. Little-Known Facts About Your Credit Card.pdf|ok||
+06|Additional_Resources|docx|4. How to Raise a Low Credit Score|Parts/Teaching Materials/Workshop 6/Resources/4. How to Raise a Low Credit Score.docx|ok||
+06|Additional_Resources|pdf|4. How to Raise a Low Credit Score|Parts/Teaching Materials/Workshop 6/Resources/4. How to Raise a Low Credit Score.pdf|ok||
+06|Additional_Resources|pdf|5. Best Credit Cards for Rebuilding Bad Credit|Parts/Teaching Materials/Workshop 6/Resources/5. Best Credit Cards for Rebuilding Bad Credit.pdf|ok||
+06|Additional_Resources|docx|6. What You Should Know About Credit Card Interest Rates|Parts/Teaching Materials/Workshop 6/Resources/6. What You Should Know About Credit Card Interest Rates.docx|ok||
+06|Additional_Resources|pdf|6. What You Should Know About Credit Card Interest Rates|Parts/Teaching Materials/Workshop 6/Resources/6. What You Should Know About Credit Card Interest Rates.pdf|ok||
+06|Additional_Resources|pdf|7. Spotting Credit Repair Scams|Parts/Teaching Materials/Workshop 6/Resources/7. Spotting Credit Repair Scams.pdf|ok||
+06|Additional_Resources|docx|8. How to Get Preapproved for a Loan|Parts/Teaching Materials/Workshop 6/Resources/8. How to Get Preapproved for a Loan.docx|ok||
+06|Additional_Resources|pdf|8. How to Get Preapproved for a Loan|Parts/Teaching Materials/Workshop 6/Resources/8. How to Get Preapproved for a Loan.pdf|ok||
+06|Additional_Resources|pdf|9. Credit Unions and Car Loans|Parts/Teaching Materials/Workshop 6/Resources/9. Credit Unions and Car Loans.pdf|ok||
+06|Additional_Resources|pdf|Building.a.Better.Credit.Report|Parts/Teaching Materials/Workshop 6/Resources/Building.a.Better.Credit.Report.pdf|ok||
+06|Additional_Resources|pdf|Difference.Between.Fixed.and.Variable.Interest.Rates|Parts/Teaching Materials/Workshop 6/Resources/Difference.Between.Fixed.and.Variable.Interest.Rates.pdf|ok||
+06|Additional_Resources|pdf|How.Credit.Cards.Work.Discover|Parts/Teaching Materials/Workshop 6/Resources/How.Credit.Cards.Work.Discover.pdf|ok||
+06|Additional_Resources|pdf|Predatory Lending Payday Loans.pdf |Parts/Teaching Materials/Workshop 6/Resources/Predatory Lending- Payday Loans.pdf .pdf|ok||
+06|Additional_Resources|pdf|Reading.Your.Credit.Card.Bill|Parts/Teaching Materials/Workshop 6/Resources/Reading.Your.Credit.Card.Bill.pdf|ok||
+06|Additional_Resources|pdf|Understanding.Loan.Interest|Parts/Teaching Materials/Workshop 6/Resources/Understanding.Loan.Interest.pdf|ok||
+06|Additional_Resources|docx|Workshop 6 Additional Resources|Parts/Teaching Materials/Workshop 6/Resources/Workshop 6 Additional Resources.docx|ok||
+06|Additional_Resources|pdf|Workshop 6 Additional Resources|Parts/Teaching Materials/Workshop 6/Resources/Workshop 6 Additional Resources.pdf|ok||
+07|Handouts|pdf|1. Debt and Mental Health|Parts/Teaching Materials/Workshop 7/Handouts/1. Debt and Mental Health.pdf|ok||
+07|Handouts|pdf|2. How to Cope with Debt|Parts/Teaching Materials/Workshop 7/Handouts/2. How to Cope with Debt.pdf|ok||
+07|Handouts|pdf|3. Debt Collection FAQs|Parts/Teaching Materials/Workshop 7/Handouts/3. Debt Collection FAQs.pdf|ok||
+07|Handouts|docx|4. How to Create a Debt Elimination Plan|Parts/Teaching Materials/Workshop 7/Handouts/4. How to Create a Debt Elimination Plan.docx|ok||
+07|Handouts|pdf|4. How to Create a Debt Elimination Plan|Parts/Teaching Materials/Workshop 7/Handouts/4. How to Create a Debt Elimination Plan.pdf|ok||
+07|Handouts|docx|Workshop 7 Worksheets|Parts/Teaching Materials/Workshop 7/Handouts/Workshop 7 Worksheets.docx|ok||
+07|Handouts|pdf|Workshop 7 Worksheets|Parts/Teaching Materials/Workshop 7/Handouts/Workshop 7 Worksheets.pdf|ok||
+07|Core_Resources|pptx|Money Basics PPT Workshop 7|Parts/Teaching Materials/Workshop 7/Money Basics PPT Workshop 7.pptx|ok||
+07|Additional_Resources|pdf|1. The Emotional Effects of Debt|Parts/Teaching Materials/Workshop 7/Resources/1. The Emotional Effects of Debt.pdf|ok||
+07|Additional_Resources|docx|2. How Debt Affects Your Health|Parts/Teaching Materials/Workshop 7/Resources/2. How Debt Affects Your Health.docx|ok||
+07|Additional_Resources|pdf|2. How Debt Affects Your Health|Parts/Teaching Materials/Workshop 7/Resources/2. How Debt Affects Your Health.pdf|ok||
+07|Additional_Resources|pdf|3. The Effect of Debt Problems on People s Health|Parts/Teaching Materials/Workshop 7/Resources/3. The Effect of Debt Problems on People_s Health.pdf|ok||
+07|Additional_Resources|pdf|4. Deciding Between Debt Relief or Bankruptcy|Parts/Teaching Materials/Workshop 7/Resources/4. Deciding Between Debt Relief or Bankruptcy.pdf|ok||
+07|Additional_Resources|pdf|5. Filing for Bankrupcty Without an Attorney|Parts/Teaching Materials/Workshop 7/Resources/5. Filing for Bankrupcty Without an Attorney.pdf|ok||
+07|Additional_Resources|pdf|6. How Bankrupcty Can Affect Your Mental Health|Parts/Teaching Materials/Workshop 7/Resources/6. How Bankrupcty Can Affect Your Mental Health.pdf|ok||
+07|Additional_Resources|pdf|7. Understanding Bankruptcy|Parts/Teaching Materials/Workshop 7/Resources/7. Understanding Bankruptcy.pdf|ok||
+07|Additional_Resources|docx|8. 73 Tips for Eliminating Debt|Parts/Teaching Materials/Workshop 7/Resources/8. 73 Tips for Eliminating Debt.docx|ok||
+07|Additional_Resources|pdf|8. 73 Tips for Eliminating Debt|Parts/Teaching Materials/Workshop 7/Resources/8. 73 Tips for Eliminating Debt.pdf|ok||
+07|Additional_Resources|docx|9. 5 Ways to Get out of Debt|Parts/Teaching Materials/Workshop 7/Resources/9. 5 Ways to Get out of Debt.docx|ok||
+07|Additional_Resources|pdf|9. 5 Ways to Get out of Debt|Parts/Teaching Materials/Workshop 7/Resources/9. 5 Ways to Get out of Debt.pdf|ok||
+07|Additional_Resources|docx|Workshop 7 Additional Resources|Parts/Teaching Materials/Workshop 7/Resources/Workshop 7 Additional Resources.docx|ok||
+07|Additional_Resources|pdf|Workshop 7 Additional Resources|Parts/Teaching Materials/Workshop 7/Resources/Workshop 7 Additional Resources.pdf|ok||
+08|Handouts|pdf|1. The 2 Way Connnection Between Poverty and Mental Health Issues|Parts/Teaching Materials/Workshop 8/Handouts/1. The 2 Way Connnection Between Poverty and Mental Health Issues.pdf|ok||
+08|Handouts|docx|2. Tips for Talking With Your Partner About Finances|Parts/Teaching Materials/Workshop 8/Handouts/2. Tips for Talking With Your Partner About Finances.docx|ok||
+08|Handouts|pdf|2. Tips for Talking With Your Partner About Finances|Parts/Teaching Materials/Workshop 8/Handouts/2. Tips for Talking With Your Partner About Finances.pdf|ok||
+08|Handouts|pdf|3. Steps to Healthy Finances in Your Relationship|Parts/Teaching Materials/Workshop 8/Handouts/3. Steps to Healthy Finances in Your Relationship.pdf|ok||
+08|Handouts|pdf|4. Understanding Representative Payees|Parts/Teaching Materials/Workshop 8/Handouts/4. Understanding Representative Payees.pdf|ok||
+08|Handouts|pdf|5. When a Representative Payee Manages Your Money|Parts/Teaching Materials/Workshop 8/Handouts/5. When a Representative Payee Manages Your Money.pdf|ok||
+08|Handouts|docx|6. Understanding Financial Abuse & Safety Planning|Parts/Teaching Materials/Workshop 8/Handouts/6. Understanding Financial Abuse & Safety Planning.docx|ok||
+08|Handouts|pdf|6. Understanding Financial Abuse & Safety Planning|Parts/Teaching Materials/Workshop 8/Handouts/6. Understanding Financial Abuse & Safety Planning.pdf|ok||
+08|Handouts|pdf|7. Information and Services for Survivors|Parts/Teaching Materials/Workshop 8/Handouts/7. Information and Services for Survivors.pdf|ok||
+08|Handouts|pdf|FAQ.Representative.Payees|Parts/Teaching Materials/Workshop 8/Handouts/FAQ.Representative.Payees.pdf|ok||
+08|Handouts|pdf|Financial Abuse FAQs|Parts/Teaching Materials/Workshop 8/Handouts/Financial Abuse FAQs.pdf|ok||
+08|Handouts|pdf|Financial Abuse Fact Sheet|Parts/Teaching Materials/Workshop 8/Handouts/Financial Abuse Fact Sheet.pdf|ok||
+08|Handouts|docx|Workshop 8 Worksheets|Parts/Teaching Materials/Workshop 8/Handouts/Workshop 8 Worksheets.docx|ok||
+08|Handouts|pdf|Workshop 8 Worksheets|Parts/Teaching Materials/Workshop 8/Handouts/Workshop 8 Worksheets.pdf|ok||
+08|Core_Resources|pptx|Money Basics PPT Workshop 8|Parts/Teaching Materials/Workshop 8/Money Basics PPT Workshop 8.pptx|ok||
+08|Additional_Resources|pdf|1. Mental Health and Money|Parts/Teaching Materials/Workshop 8/Resources/1. Mental Health and Money.pdf|ok||
+08|Additional_Resources|pdf|10. Poverty and Poor Health Worldwide|Parts/Teaching Materials/Workshop 8/Resources/10. Poverty and Poor Health Worldwide.pdf|ok||
+08|Additional_Resources|docx|11. How to Talk to Your Partner About Money|Parts/Teaching Materials/Workshop 8/Resources/11. How to Talk to Your Partner About Money.docx|ok||
+08|Additional_Resources|pdf|11. How to Talk to Your Partner About Money|Parts/Teaching Materials/Workshop 8/Resources/11. How to Talk to Your Partner About Money.pdf|ok||
+08|Additional_Resources|pdf|12. Money Problems and Relationship Problems|Parts/Teaching Materials/Workshop 8/Resources/12. Money Problems and Relationship Problems.pdf|ok||
+08|Additional_Resources|pdf|13. How to Prevent Arguments About Money|Parts/Teaching Materials/Workshop 8/Resources/13. How to Prevent Arguments About Money.pdf|ok||
+08|Additional_Resources|pdf|14. How to Talk to Your Spouse About Money|Parts/Teaching Materials/Workshop 8/Resources/14. How to Talk to Your Spouse About Money.pdf|ok||
+08|Additional_Resources|pdf|15. Common Financially Abusive Behaviors|Parts/Teaching Materials/Workshop 8/Resources/15. Common Financially Abusive Behaviors.pdf|ok||
+08|Additional_Resources|docx|16. How to Spot Financial Abuse of an Elder|Parts/Teaching Materials/Workshop 8/Resources/16. How to Spot Financial Abuse of an Elder.docx|ok||
+08|Additional_Resources|pdf|16. How to Spot Financial Abuse of an Elder|Parts/Teaching Materials/Workshop 8/Resources/16. How to Spot Financial Abuse of an Elder.pdf|ok||
+08|Additional_Resources|pdf|18. Tackling social inequalities to reduce mental health problems|Parts/Teaching Materials/Workshop 8/Resources/18. Tackling social inequalities to reduce mental health problems.pdf|ok||
+08|Additional_Resources|pdf|2. Poverty, Social Inequality and Mental Health|Parts/Teaching Materials/Workshop 8/Resources/2. Poverty, Social Inequality and Mental Health.pdf|ok||
+08|Additional_Resources|pdf|3. Recovering Your Finances After Rehab|Parts/Teaching Materials/Workshop 8/Resources/3. Recovering Your Finances After Rehab.pdf|ok||
+08|Additional_Resources|pdf|4. The Poverty Mindset|Parts/Teaching Materials/Workshop 8/Resources/4. The Poverty Mindset.pdf|ok||
+08|Additional_Resources|pdf|5. FAQs on Problem Gambling|Parts/Teaching Materials/Workshop 8/Resources/5. FAQs on Problem Gambling.pdf|ok||
+08|Additional_Resources|pdf|6. Resources for Problem Gambling|Parts/Teaching Materials/Workshop 8/Resources/6. Resources for Problem Gambling.pdf|ok||
+08|Additional_Resources|docx|7. Income Inequality and Health Care|Parts/Teaching Materials/Workshop 8/Resources/7. Income Inequality and Health Care.docx|ok||
+08|Additional_Resources|pdf|7. Income Inequality and Health Care|Parts/Teaching Materials/Workshop 8/Resources/7. Income Inequality and Health Care.pdf|ok||
+08|Additional_Resources|docx|8. How to Avoid the Health Risks that Come from Financial Stress|Parts/Teaching Materials/Workshop 8/Resources/8. How to Avoid the Health Risks that Come from Financial Stress.docx|ok||
+08|Additional_Resources|pdf|8. How to Avoid the Health Risks that Come from Financial Stress|Parts/Teaching Materials/Workshop 8/Resources/8. How to Avoid the Health Risks that Come from Financial Stress.pdf|ok||
+08|Additional_Resources|pdf|9. Poverty s Effect on Children s Health|Parts/Teaching Materials/Workshop 8/Resources/9. Poverty_s Effect on Children_s Health.pdf|ok||
+08|Additional_Resources|pdf|Effects of Childhood Poverty|Parts/Teaching Materials/Workshop 8/Resources/Effects of Childhood Poverty.pdf|ok||
+08|Additional_Resources|pdf|Financial Abuse and Rebuilding your Finances|Parts/Teaching Materials/Workshop 8/Resources/Financial Abuse and Rebuilding your Finances.pdf|ok||
+08|Additional_Resources|pdf|Money.Smart.for.Older.Adults.Prevent.Financial.Exploitation|Parts/Teaching Materials/Workshop 8/Resources/Money.Smart.for.Older.Adults.Prevent.Financial.Exploitation.pdf|ok||
+08|Additional_Resources|pdf|Poverty and Health|Parts/Teaching Materials/Workshop 8/Resources/Poverty and Health.pdf|ok||
+08|Additional_Resources|pdf|Statistics on Mental Illness and Poverty|Parts/Teaching Materials/Workshop 8/Resources/Statistics on Mental Illness and Poverty.pdf|ok||
+08|Additional_Resources|docx|Workshop 8 Additional Resources|Parts/Teaching Materials/Workshop 8/Resources/Workshop 8 Additional Resources.docx|ok||
+08|Additional_Resources|pdf|Workshop 8 Additional Resources|Parts/Teaching Materials/Workshop 8/Resources/Workshop 8 Additional Resources.pdf|ok||
+09|Handouts|pdf|1. IRS Tips to Take the Stress out of Tax Season|Parts/Teaching Materials/Workshop 9/Handouts/1. IRS Tips to Take the Stress out of Tax Season.pdf|ok||
+09|Handouts|pdf|2. IRS Free File|Parts/Teaching Materials/Workshop 9/Handouts/2. IRS Free File.pdf|ok||
+09|Handouts|pdf|3. 6 Steps for First Time Tax Filers|Parts/Teaching Materials/Workshop 9/Handouts/3. 6 Steps for First-Time Tax Filers.pdf|ok||
+09|Handouts|pdf|4. The Three Basic Tax Types|Parts/Teaching Materials/Workshop 9/Handouts/4. The Three Basic Tax Types.pdf|ok||
+09|Handouts|pdf|5. Credits & Deductions|Parts/Teaching Materials/Workshop 9/Handouts/5. Credits & Deductions.pdf|ok||
+09|Handouts|pdf|6. Common Tax Write Offs You Can Claim|Parts/Teaching Materials/Workshop 9/Handouts/6. Common Tax Write-Offs You Can Claim.pdf|ok||
+09|Handouts|pdf|Who Qualifies for the Earned Income Tax Credit (EITC) Internal Revenue Service|Parts/Teaching Materials/Workshop 9/Handouts/Who Qualifies for the Earned Income Tax Credit (EITC) _ Internal Revenue Service.pdf|ok||
+09|Core_Resources|pptx|Money Basics PPT Workshop 9|Parts/Teaching Materials/Workshop 9/Money Basics PPT Workshop 9.pptx|ok||
+09|Additional_Resources|docx|1. What to Know About How to File Taxes|Parts/Teaching Materials/Workshop 9/Resources/1. What to Know About How to File Taxes.docx|ok||
+09|Additional_Resources|pdf|1. What to Know About How to File Taxes|Parts/Teaching Materials/Workshop 9/Resources/1. What to Know About How to File Taxes.pdf|ok||
+09|Additional_Resources|docx|2. How to Cope with Tax Season Stress|Parts/Teaching Materials/Workshop 9/Resources/2. How to Cope with Tax Season Stress.docx|ok||
+09|Additional_Resources|pdf|2. How to Cope with Tax Season Stress|Parts/Teaching Materials/Workshop 9/Resources/2. How to Cope with Tax Season Stress.pdf|ok||
+09|Additional_Resources|pdf|3. How to File Your Taxes|Parts/Teaching Materials/Workshop 9/Resources/3. How to File Your Taxes.pdf|ok||
+09|Additional_Resources|pdf|4. Tax Basics|Parts/Teaching Materials/Workshop 9/Resources/4. Tax Basics.pdf|ok||
+09|Additional_Resources|pdf|5. Why We Pay Taxes|Parts/Teaching Materials/Workshop 9/Resources/5. Why We Pay Taxes.pdf|ok||
+09|Additional_Resources|docx|6. Regressive Vs. Progressive Taxes|Parts/Teaching Materials/Workshop 9/Resources/6. Regressive Vs. Progressive Taxes.docx|ok||
+09|Additional_Resources|pdf|6. Regressive Vs. Progressive Taxes|Parts/Teaching Materials/Workshop 9/Resources/6. Regressive Vs. Progressive Taxes.pdf|ok||
+09|Additional_Resources|pdf|7. Federal Tax Revenue|Parts/Teaching Materials/Workshop 9/Resources/7. Federal Tax Revenue.pdf|ok||
+09|Additional_Resources|pdf|Form 1040|Parts/Teaching Materials/Workshop 9/Resources/Form 1040.pdf|ok||
+09|Additional_Resources|docx|Workshop 9 Additional Resources|Parts/Teaching Materials/Workshop 9/Resources/Workshop 9 Additional Resources.docx|ok||
+09|Additional_Resources|pdf|Workshop 9 Additional Resources|Parts/Teaching Materials/Workshop 9/Resources/Workshop 9 Additional Resources.pdf|ok||
+00||docx|MB FTS 0|Whole/Module 0/MB_FTS_ 0.docx|review||missing_bucket
+01||pdf|Creating Community Agreements|Whole/Module 1/Course Introduction/Creating Community Agreements.pdf|review||missing_bucket
+01||pdf|Developing Community Agreements|Whole/Module 1/Course Introduction/Developing Community Agreements.pdf|review||missing_bucket
+01||pdf|Trauma Informed Care in the Classroom|Whole/Module 1/Course Introduction/Trauma-Informed-Care-in-the-Classroom.pdf|review||missing_bucket
+01||pdf|Workshop 01 Introduction|Whole/Module 1/Course Introduction/Workshop 01 - Introduction.pdf|review||missing_bucket
+01||docx|MB FTS 1|Whole/Module 1/MB_FTS_ 1.docx|review||missing_bucket
+01||pdf|Money Basics PPT Workshop 1|Whole/Module 1/Money Basics PPT Workshop 1.pdf|review||missing_bucket
+01|Core_Resources|pptx|Money Basics PPT Workshop 1|Whole/Module 1/Money Basics PPT Workshop 1.pptx|ok||
+01||pptx|OR WorkSystemsPresentation 20211006|Whole/Module 1/OR_WorkSystemsPresentation_20211006.pptx|review||missing_bucket
+01||pdf|W1 FG copy|Whole/Module 1/SG:FG/W1_FG copy.pdf|review||missing_bucket
+01||pdf|W1 FG|Whole/Module 1/SG:FG/W1_FG.pdf|review||missing_bucket
+01||pdf|W1 SG|Whole/Module 1/SG:FG/W1_SG.pdf|review||missing_bucket
+01||jpg|2 768x512|Whole/Module 1/Visuals/2-768x512.jpg|review||missing_bucket
+01||png|Wheel of Privilege and Power|Whole/Module 1/Visuals/Wheel of Privilege and Power.png|review||missing_bucket
+01||jpg|equity apple tree 1024x575|Whole/Module 1/Visuals/equity-apple-tree-1024x575.jpg|review||missing_bucket
+01||html|poverty intersectionality privilege excerpt|Whole/Module 1/Visuals/poverty_intersectionality_privilege_excerpt.html|review||missing_bucket
+01||png|workshop packet image|Whole/Module 1/Visuals/workshop packet image.png|review||missing_bucket
+01||pdf|1. Poverty and Hunger in America|Whole/Module 1/WS1 Handouts/1. Poverty and Hunger in America.pdf|review||missing_bucket
+01||pdf|2. Steps Toward Financial Resilience|Whole/Module 1/WS1 Handouts/2. Steps Toward Financial Resilience.pdf|review||missing_bucket
+01||pdf|3. Poverty and Intersectionality in Oregon|Whole/Module 1/WS1 Handouts/3. Poverty and Intersectionality in Oregon.pdf|review||missing_bucket
+01||pdf|4. Hidden Rules Among Classes|Whole/Module 1/WS1 Handouts/4. Hidden Rules Among Classes.pdf|review||missing_bucket
+01||pdf|5. How Poverty is Measured in the US|Whole/Module 1/WS1 Handouts/5. How Poverty is Measured in the US.pdf|review||missing_bucket
+01||pdf|6. The American Dream of upward mobility is broken|Whole/Module 1/WS1 Handouts/6. The _American Dream_ of upward mobility is broken.pdf|review||missing_bucket
+01||pdf|7. White Privilege Invisible Knapsack|Whole/Module 1/WS1 Handouts/7. White Privilege Invisible Knapsack.pdf|review||missing_bucket
+01||pdf|Financial Literacy & African Americans Bridging the Gap|Whole/Module 1/WS1 Handouts/Financial Literacy & African Americans_ Bridging the Gap.pdf|review||missing_bucket
+01||pdf|SSS BudgetWorksheet 052023|Whole/Module 1/WS1 Handouts/SSS_BudgetWorksheet_052023.pdf|review||missing_bucket
+01||pdf|Workshop 1 Worksheets (extra)|Whole/Module 1/WS1 Handouts/Workshop 1 Worksheets (extra).pdf|review||missing_bucket
+01||pdf|Workshop 1 Worksheets|Whole/Module 1/WS1 Handouts/Workshop 1 Worksheets.pdf|review||missing_bucket
+01||pdf|12. FAQs on Problem Gambling|Whole/Module 1/WS1 Resources/12. FAQs on Problem Gambling.pdf|review||missing_bucket
+01||pdf|13. Financial Toolkit for Problem Gamblers|Whole/Module 1/WS1 Resources/13. Financial Toolkit for Problem Gamblers.pdf|review||missing_bucket
+01||pdf|14. Financial Strategies for Loved Ones of Gamblers|Whole/Module 1/WS1 Resources/14. Financial Strategies for Loved Ones of Gamblers.pdf|review||missing_bucket
+01||pdf|16. Supplemental Poverty Measure|Whole/Module 1/WS1 Resources/16. Supplemental Poverty Measure.pdf|review||missing_bucket
+01||pdf|1. Tips for Managing Money When You Live With Mental Health Challenges|Whole/Module 1/WS1 Resources/Behavioral Health and Mindfulness/1. Tips for Managing Money When You Live With Mental Health Challenges.pdf|review||missing_bucket
+01||pdf|2. How to Practice Mindfulness on a Budget|Whole/Module 1/WS1 Resources/Behavioral Health and Mindfulness/2. How to Practice Mindfulness on a Budget.pdf|review||missing_bucket
+01||pdf|3. How to Reduce Financial Stress|Whole/Module 1/WS1 Resources/Behavioral Health and Mindfulness/3. How to Reduce Financial Stress.pdf|review||missing_bucket
+01||pdf|10. Brief History of Race, Racism & Colonialism|Whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/10. Brief History of Race, Racism & Colonialism.pdf|review||missing_bucket
+01||pdf|11. Unaffordable America. Poverty, Housing and Eviction|Whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/11. Unaffordable America. Poverty, Housing and Eviction.pdf|review||missing_bucket
+01||pdf|15. Dismantling the Poverty Trap Article|Whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/15. Dismantling the Poverty Trap Article.pdf|review||missing_bucket
+01||pdf|4. Income Inequality in America|Whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/4. Income Inequality in America.pdf|review||missing_bucket
+01||pdf|5. Poverty in America Statistics|Whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/5. Poverty in America Statistics.pdf|review||missing_bucket
+01||pdf|6. Data Illustrating the Intersectional Nature of Poverty|Whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/6. Data Illustrating the Intersectional Nature of Poverty.pdf|review||missing_bucket
+01||pdf|8. Race and the lack of intergenerational economic mobility in the US|Whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/8. Race and the lack of intergenerational economic mobility in the US.pdf|review||missing_bucket
+01||pdf|9. Displacement in Portland|Whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/9. Displacement in Portland.pdf|review||missing_bucket
+01||pdf|Workshop 01 Introduction|Whole/Module 1/WS1 Resources/Workshop 01 - Introduction.pdf|review||missing_bucket
+01||pdf|Workshop 1 Additional Resources|Whole/Module 1/WS1 Resources/Workshop 1 Additional Resources.pdf|review||missing_bucket
+01|Worksheets|pdf|Individual Course Goals|Whole/Module 1/Worksheets/Individual Course Goals.pdf|ok||
+01|Worksheets|pdf|Money Savings Ideas and Trackers|Whole/Module 1/Worksheets/Money Savings Ideas and Trackers.pdf|ok||
+01||docx|~$ FTS 1|Whole/Module 1/~$_FTS_ 1.docx|review||missing_bucket
+10||docx|23 Easy Ways To Save Money|Whole/Module 10/23 Easy Ways To Save Money.docx|review||missing_bucket
+10||docx|A Beginner s Guide to Saving Money|Whole/Module 10/A Beginner_s Guide to Saving Money.docx|review||missing_bucket
+10||docx|Asset Building For Low Income Families|Whole/Module 10/Asset Building For Low-Income Families.docx|review||missing_bucket
+10||pdf|Asset Building Facilitator|Whole/Module 10/Facilitator Guide/Sections/Asset_Building_Facilitator.pdf|review||missing_bucket
+10||pdf|Individual Development Accounts Facilitator|Whole/Module 10/Facilitator Guide/Sections/Individual_Development_Accounts_Facilitator.pdf|review||missing_bucket
+10||pdf|Retirement Plans and Investments Facilitator|Whole/Module 10/Facilitator Guide/Sections/Retirement_Plans_and_Investments_Facilitator.pdf|review||missing_bucket
+10||pdf|Saving Money w: Limited Resources|Whole/Module 10/Facilitator Guide/Sections/Saving Money w: Limited Resources.pdf|review||missing_bucket
+10||pdf|Savings Accounts Facilitator|Whole/Module 10/Facilitator Guide/Sections/Savings_Accounts_Facilitator.pdf|review||missing_bucket
+10||pdf|Savings Goals Facilitator|Whole/Module 10/Facilitator Guide/Sections/Savings_Goals_Facilitator.pdf|review||missing_bucket
+10||png|3. IDA Basics & Resources|Whole/Module 10/HO PNGs/3. IDA Basics & Resources.png|review||missing_bucket
+10||docx|How to Save Money On A Low Income|Whole/Module 10/How to Save Money On A Low Income.docx|review||missing_bucket
+10||docx|IDA Basics & Resources|Whole/Module 10/IDA Basics & Resources.docx|review||missing_bucket
+10||docx|MB FTS 10|Whole/Module 10/MB_FTS_ 10.docx|review||missing_bucket
+10||docx|Module 10 Additional Resources|Whole/Module 10/Module 10 Additional Resources.docx|review||missing_bucket
+10||pdf|Savings Accounts|Whole/Module 10/Sections ( PDF )/Savings_Accounts.pdf|review||missing_bucket
+10||pdf|pg1|Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg1.pdf|review||missing_bucket
+10||pdf|pg10|Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg10.pdf|review||missing_bucket
+10||pdf|pg11|Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg11.pdf|review||missing_bucket
+10||pdf|pg12|Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg12.pdf|review||missing_bucket
+10||pdf|pg13|Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg13.pdf|review||missing_bucket
+10||pdf|pg14|Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg14.pdf|review||missing_bucket
+10||pdf|pg2|Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg2.pdf|review||missing_bucket
+10||pdf|pg3|Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg3.pdf|review||missing_bucket
+10||pdf|pg4|Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg4.pdf|review||missing_bucket
+10||pdf|pg5|Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg5.pdf|review||missing_bucket
+10||pdf|pg6|Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg6.pdf|review||missing_bucket
+10||pdf|pg7|Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg7.pdf|review||missing_bucket
+10||pdf|pg8|Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg8.pdf|review||missing_bucket
+10||pdf|pg9|Whole/Module 10/Student_Guide/Workshop_10/PDFs/pg9.pdf|review||missing_bucket
+10||png|pg1|Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg1.png|review||missing_bucket
+10||png|pg10|Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg10.png|review||missing_bucket
+10||png|pg11|Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg11.png|review||missing_bucket
+10||png|pg12|Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg12.png|review||missing_bucket
+10||png|pg13|Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg13.png|review||missing_bucket
+10||png|pg14|Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg14.png|review||missing_bucket
+10||png|pg2|Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg2.png|review||missing_bucket
+10||png|pg3|Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg3.png|review||missing_bucket
+10||png|pg4|Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg4.png|review||missing_bucket
+10||png|pg5|Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg5.png|review||missing_bucket
+10||png|pg6|Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg6.png|review||missing_bucket
+10||png|pg7|Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg7.png|review||missing_bucket
+10||png|pg8|Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg8.png|review||missing_bucket
+10||png|pg9|Whole/Module 10/Student_Guide/Workshop_10/PNGs/pg9.png|review||missing_bucket
+10||pdf|Asset Building Student|Whole/Module 10/Student_Guide/Workshop_10/Sections/PDF/Asset_Building_Student.pdf|review||missing_bucket
+10||pdf|Creating a Savings Plan Student|Whole/Module 10/Student_Guide/Workshop_10/Sections/PDF/Creating_a_Savings_Plan_Student.pdf|review||missing_bucket
+10||pdf|Different Kinds of Savings Accounts Student|Whole/Module 10/Student_Guide/Workshop_10/Sections/PDF/Different_Kinds_of_Savings_Accounts_Student.pdf|review||missing_bucket
+10||png|Budgeting Table|Whole/Module 10/Visuals/Budgeting Table.png|review||missing_bucket
+10||png|IDAs|Whole/Module 10/Visuals/IDAs.png|review||missing_bucket
+10||png|Savings Activity Jars|Whole/Module 10/Visuals/Savings Activity_Jars.png|review||missing_bucket
+10||png|money trees|Whole/Module 10/Visuals/money trees.png|review||missing_bucket
+10||pdf|Workshop 10 Savings Accounts & Goals|Whole/Module 10/Workshop 10 - Savings Accounts & Goals.pdf|review||missing_bucket
+10||pdf|Workshop 10 Savings Accounts & Savings Goals copy|Whole/Module 10/Workshop 10 - Savings Accounts & Savings Goals copy.pdf|review||missing_bucket
+10||pdf|Workshop 10 Savings Accounts & Savings Goals|Whole/Module 10/Workshop 10 - Savings Accounts & Savings Goals.pdf|review||missing_bucket
+10||zip|Workshop 10|Whole/Module 10/Workshop_10.zip|review||missing_bucket
+11||pdf|Workshop 11 Course Graduation|Whole/Module 11/Workshop 11 - Course Graduation.pdf|review||missing_bucket
+02||docx|MB FTS 2|Whole/Module 2/MB_FTS_ 2.docx|review||missing_bucket
+02||docx|Module 2 Additional Resources|Whole/Module 2/Module 2 Additional Resources.docx|review||missing_bucket
+02||docx|Person Centered Planning|Whole/Module 2/Person-Centered Planning.docx|review||missing_bucket
+02||pdf|Workshop 02 Setting Financial Goals|Whole/Module 2/Workshop 02 - Setting Financial Goals.pdf|review||missing_bucket
+03||docx|10 Easy Ways to Save Money|Whole/Module 3/10 Easy Ways to Save Money.docx|review||missing_bucket
+03||docx|11 Frugal Living Tips|Whole/Module 3/11 Frugal Living Tips.docx|review||missing_bucket
+03||docx|5 No brainer Money Saving Tips|Whole/Module 3/5 No-brainer Money-Saving Tips.docx|review||missing_bucket
+03||docx|Budgeting Apps|Whole/Module 3/Budgeting Apps.docx|review||missing_bucket
+03||docx|How To File For Social Security Disability Benefits If Homeless|Whole/Module 3/How To File For Social Security Disability Benefits If Homeless.docx|review||missing_bucket
+03||docx|How to Buy a House with Low Income|Whole/Module 3/How to Buy a House with Low Income.docx|review||missing_bucket
+03||docx|How to Make a Budget|Whole/Module 3/How to Make a Budget.docx|review||missing_bucket
+03||docx|MB Money Saving Resources Handout|Whole/Module 3/MB Money Saving Resources Handout.docx|review||missing_bucket
+03||docx|MB FTS 3|Whole/Module 3/MB_FTS_ 3.docx|review||missing_bucket
+03||docx|Module 3 Additional Resources|Whole/Module 3/Module 3 Additional Resources.docx|review||missing_bucket
+03||docx|Online Budgeting Tools|Whole/Module 3/Online Budgeting Tools.docx|review||missing_bucket
+03||docx|SSI Elibility Requirements and Asset Limits|Whole/Module 3/SSI Elibility Requirements and Asset Limits.docx|review||missing_bucket
+03||docx|What Makes for a Successful Budget|Whole/Module 3/What Makes for a Successful Budget.docx|review||missing_bucket
+03||pdf|Workshop 03 Creating a Budget|Whole/Module 3/Workshop 03 - Creating a Budget.pdf|review||missing_bucket
+03||docx|~$ FTS 3|Whole/Module 3/~$_FTS_ 3.docx|review||missing_bucket
+04||docx|How to Balance Your Checkbook|Whole/Module 4/How to Balance Your Checkbook.docx|review||missing_bucket
+04||docx|How to Open a Bank Account|Whole/Module 4/How to Open a Bank Account.docx|review||missing_bucket
+04||docx|How to Open a Bank Checking Account With Bad Credit|Whole/Module 4/How to Open a Bank Checking Account With Bad Credit.docx|review||missing_bucket
+04||docx|MB FTS 4|Whole/Module 4/MB_FTS_ 4.docx|review||missing_bucket
+04||docx|Module 4 Additional Resources|Whole/Module 4/Module 4 Additional Resources.docx|review||missing_bucket
+04||docx|Second Chance Checking Accounts|Whole/Module 4/Second Chance Checking Accounts.docx|review||missing_bucket
+04||docx|Why Balancing Your Checkbook is Important|Whole/Module 4/Why Balancing Your Checkbook is Important.docx|review||missing_bucket
+04||pdf|Workshop 04 Banking Basics|Whole/Module 4/Workshop 04 - Banking Basics.pdf|review||missing_bucket
+04||jpg|20251212 102840|Whole/Module 4/check_writing_activity/20251212_102840.jpg|review||missing_bucket
+04||jpg|20251212 102853|Whole/Module 4/check_writing_activity/20251212_102853.jpg|review||missing_bucket
+04||jpg|20251212 102910|Whole/Module 4/check_writing_activity/20251212_102910.jpg|review||missing_bucket
+04||jpg|20251212 102915|Whole/Module 4/check_writing_activity/20251212_102915.jpg|review||missing_bucket
+04||zip|module4photos|Whole/Module 4/module4photos.zip|review||missing_bucket
+05|Handouts|pdf|1. ATMs and ATM Safety|Whole/Module 5/Handouts/1. ATMs and ATM Safety.pdf|ok||
+05|Handouts|pdf|2. Best Online Banks of 2021|Whole/Module 5/Handouts/2. Best Online Banks of 2021.pdf|ok||
+05|Handouts|docx|3. Options if You Can t Open a Traditional Bank Account|Whole/Module 5/Handouts/3. Options if You Can_t Open a Traditional Bank Account.docx|ok||
+05|Handouts|pdf|3. Options if You Can t Open a Traditional Bank Account|Whole/Module 5/Handouts/3. Options if You Can_t Open a Traditional Bank Account.pdf|ok||
+05|Handouts|pdf|4. Common Phone Scams|Whole/Module 5/Handouts/4. Common Phone Scams.pdf|ok||
+05|Handouts|pdf|5. How to Avoid Identity Scams|Whole/Module 5/Handouts/5. How to Avoid Identity Scams.pdf|ok||
+05|Handouts|pdf|6. Help for Identity Theft|Whole/Module 5/Handouts/6. Help for Identity Theft.pdf|ok||
+05|Additional_Resources|pdf|1. What to Do if Your Debit Card is Lost or Stolen|Whole/Module 5/Resources/1. What to Do if Your Debit Card is Lost or Stolen.pdf|ok||
+05|Additional_Resources|pdf|10. Online and Mobile Money Safety|Whole/Module 5/Resources/10. Online and Mobile Money Safety.pdf|ok||
+05|Additional_Resources|pdf|11. First Aid for Identity Theft|Whole/Module 5/Resources/11. First Aid for Identity Theft.pdf|ok||
+05|Additional_Resources|docx|12. How to Spot and Avoid Card Skimmers|Whole/Module 5/Resources/12. How to Spot and Avoid Card Skimmers.docx|ok||
+05|Additional_Resources|pdf|12. How to Spot and Avoid Card Skimmers|Whole/Module 5/Resources/12. How to Spot and Avoid Card Skimmers.pdf|ok||
+05|Additional_Resources|pdf|13. IRS Tips for Protecting Your Identity|Whole/Module 5/Resources/13. IRS Tips for Protecting Your Identity.pdf|ok||
+05|Additional_Resources|pdf|14. Repairing Identity Theft|Whole/Module 5/Resources/14. Repairing Identity Theft.pdf|ok||
+05|Additional_Resources|pdf|15. What To Do if You ve Been Scammed|Whole/Module 5/Resources/15. What To Do if You_ve Been Scammed.pdf|ok||
+05|Additional_Resources|pdf|16. What is ATM Skimming|Whole/Module 5/Resources/16. What is ATM Skimming.pdf|ok||
+05|Additional_Resources|docx|2. Debit Card Safety Online|Whole/Module 5/Resources/2. Debit Card Safety Online.docx|ok||
+05|Additional_Resources|pdf|2. Debit Card Safety Online|Whole/Module 5/Resources/2. Debit Card Safety Online.pdf|ok||
+05|Additional_Resources|pdf|3. Best Online Banks|Whole/Module 5/Resources/3. Best Online Banks.pdf|ok||
+05|Additional_Resources|docx|4. Alternatives to Traditional Banks|Whole/Module 5/Resources/4. Alternatives to Traditional Banks.docx|ok||
+05|Additional_Resources|pdf|4. Alternatives to Traditional Banks|Whole/Module 5/Resources/4. Alternatives to Traditional Banks.pdf|ok||
+05|Additional_Resources|docx|5. Pros and Cons of Internet Banks|Whole/Module 5/Resources/5. Pros and Cons of Internet Banks.docx|ok||
+05|Additional_Resources|pdf|5. Pros and Cons of Internet Banks|Whole/Module 5/Resources/5. Pros and Cons of Internet Banks.pdf|ok||
+05|Additional_Resources|pdf|6. What are Credit Unions|Whole/Module 5/Resources/6. What are Credit Unions.pdf|ok||
+05|Additional_Resources|docx|7. Online Banking Definition, Pros and Cons|Whole/Module 5/Resources/7. Online Banking Definition, Pros and Cons.docx|ok||
+05|Additional_Resources|pdf|7. Online Banking Definition, Pros and Cons|Whole/Module 5/Resources/7. Online Banking Definition, Pros and Cons.pdf|ok||
+05|Additional_Resources|docx|8. Things to Consider When Choosing an Online Bank|Whole/Module 5/Resources/8. Things to Consider When Choosing an Online Bank.docx|ok||
+05|Additional_Resources|pdf|8. Things to Consider When Choosing an Online Bank|Whole/Module 5/Resources/8. Things to Consider When Choosing an Online Bank.pdf|ok||
+05|Additional_Resources|pdf|9. List of Virtual Banks and Their Benefits|Whole/Module 5/Resources/9. List of Virtual Banks and Their Benefits.pdf|ok||
+05|Additional_Resources|docx|ATM Safety Scenarios|Whole/Module 5/Resources/ATM Safety Scenarios.docx|ok||
+05|Additional_Resources|pdf|ATM Safety Scenarios|Whole/Module 5/Resources/ATM Safety Scenarios.pdf|ok||
+05|Additional_Resources|pdf|Internet.Banking.Safety.Tips|Whole/Module 5/Resources/Internet.Banking.Safety.Tips.pdf|ok||
+05|Additional_Resources|pdf|Safe Virtual Banking|Whole/Module 5/Resources/Safe Virtual Banking.pdf|ok||
+05|Additional_Resources|pdf|Workshop 5 Additional Resources|Whole/Module 5/Resources/Workshop 5 Additional Resources.pdf|ok||
+05||pdf|WSP 5 FG |Whole/Module 5/WSP_5_FG .pdf|review||missing_bucket
+05||docx|WSP 5 FT|Whole/Module 5/WSP_5_FT.docx|review||missing_bucket
+05||txt|manifest|Whole/Module 5/manifest.txt|review||missing_bucket
+06||docx|How Credit Scores Work|Whole/Module 6/How Credit Scores Work.docx|review||missing_bucket
+06||docx|How to Choose a Credit Card|Whole/Module 6/How to Choose a Credit Card.docx|review||missing_bucket
+06||docx|How to Get Preapproved for a Loan|Whole/Module 6/How to Get Preapproved for a Loan.docx|review||missing_bucket
+06||docx|How to Get the Best Car Loan|Whole/Module 6/How to Get the Best Car Loan.docx|review||missing_bucket
+06||docx|How to Raise a Low Credit Score|Whole/Module 6/How to Raise a Low Credit Score.docx|review||missing_bucket
+06||docx|MB FTS 6|Whole/Module 6/MB_FTS_ 6.docx|review||missing_bucket
+06||docx|Module 6 Additional Resources|Whole/Module 6/Module 6 Additional Resources.docx|review||missing_bucket
+06||docx|What You Should Know About Credit Card Interest Rates|Whole/Module 6/What You Should Know About Credit Card Interest Rates.docx|review||missing_bucket
+06||docx|Why Payday Loans Can Be Costly|Whole/Module 6/Why Payday Loans Can Be Costly.docx|review||missing_bucket
+06||pdf|Workshop 06 Credit & Loans|Whole/Module 6/Workshop 06 - Credit & Loans.pdf|review||missing_bucket
+06||txt|manifest|Whole/Module 6/manifest.txt|review||missing_bucket
+07||docx|5 Ways to Get out of Debt|Whole/Module 7/5 Ways to Get out of Debt.docx|review||missing_bucket
+07||docx|73 Tips for Eliminating Debt|Whole/Module 7/73 Tips for Eliminating Debt.docx|review||missing_bucket
+07||docx|How to Create a Debt Elimination Plan|Whole/Module 7/How to Create a Debt Elimination Plan.docx|review||missing_bucket
+07||docx|MB FTS 7|Whole/Module 7/MB_FTS_ 7.docx|review||missing_bucket
+07||pdf|MB FTS 7|Whole/Module 7/MB_FTS_ 7.pdf|review||missing_bucket
+07||docx|Module 7 Additional Resources|Whole/Module 7/Module 7 Additional Resources.docx|review||missing_bucket
+07||docx|The Effects of Debt on Your Health|Whole/Module 7/The Effects of Debt on Your Health.docx|review||missing_bucket
+07||pdf|Workshop 07 Debt & Tools|Whole/Module 7/Workshop 07 - Debt & Tools.pdf|review||missing_bucket
+07||pdf|pg1|Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PDFs/pg1.pdf|review||missing_bucket
+07||pdf|pg2|Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PDFs/pg2.pdf|review||missing_bucket
+07||pdf|pg3|Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PDFs/pg3.pdf|review||missing_bucket
+07||pdf|pg4|Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PDFs/pg4.pdf|review||missing_bucket
+07||pdf|pg5|Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PDFs/pg5.pdf|review||missing_bucket
+07||pdf|pg6|Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PDFs/pg6.pdf|review||missing_bucket
+07||pdf|pg7|Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PDFs/pg7.pdf|review||missing_bucket
+07||png|pg1|Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PNGs/pg1.png|review||missing_bucket
+07||png|pg2|Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PNGs/pg2.png|review||missing_bucket
+07||png|pg3|Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PNGs/pg3.png|review||missing_bucket
+07||png|pg4|Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PNGs/pg4.png|review||missing_bucket
+07||png|pg5|Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PNGs/pg5.png|review||missing_bucket
+07||png|pg6|Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PNGs/pg6.png|review||missing_bucket
+07||png|pg7|Whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PNGs/pg7.png|review||missing_bucket
+07||pdf|pg1|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg1.pdf|review||missing_bucket
+07||pdf|pg10|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg10.pdf|review||missing_bucket
+07||pdf|pg11|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg11.pdf|review||missing_bucket
+07||pdf|pg12|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg12.pdf|review||missing_bucket
+07||pdf|pg13|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg13.pdf|review||missing_bucket
+07||pdf|pg14|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg14.pdf|review||missing_bucket
+07||pdf|pg15|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg15.pdf|review||missing_bucket
+07||pdf|pg2|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg2.pdf|review||missing_bucket
+07||pdf|pg3|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg3.pdf|review||missing_bucket
+07||pdf|pg4|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg4.pdf|review||missing_bucket
+07||pdf|pg5|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg5.pdf|review||missing_bucket
+07||pdf|pg6|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg6.pdf|review||missing_bucket
+07||pdf|pg7|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg7.pdf|review||missing_bucket
+07||pdf|pg8|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg8.pdf|review||missing_bucket
+07||pdf|pg9|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg9.pdf|review||missing_bucket
+07||png|pg1|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg1.png|review||missing_bucket
+07||png|pg10|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg10.png|review||missing_bucket
+07||png|pg11|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg11.png|review||missing_bucket
+07||png|pg12|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg12.png|review||missing_bucket
+07||png|pg13|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg13.png|review||missing_bucket
+07||png|pg14|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg14.png|review||missing_bucket
+07||png|pg15|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg15.png|review||missing_bucket
+07||png|pg16|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg16.png|review||missing_bucket
+07||png|pg2|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg2.png|review||missing_bucket
+07||png|pg3|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg3.png|review||missing_bucket
+07||png|pg4|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg4.png|review||missing_bucket
+07||png|pg5|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg5.png|review||missing_bucket
+07||png|pg6|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg6.png|review||missing_bucket
+07||png|pg7|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg7.png|review||missing_bucket
+07||png|pg8|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg8.png|review||missing_bucket
+07||png|pg9|Whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg9.png|review||missing_bucket
+08|Handouts|pdf|1. The 2 Way Connnection Between Poverty and Mental Health Issues|Whole/Module 8/Handouts/1. The 2 Way Connnection Between Poverty and Mental Health Issues.pdf|ok||
+08|Handouts|docx|2. Tips for Talking With Your Partner About Finances|Whole/Module 8/Handouts/2. Tips for Talking With Your Partner About Finances.docx|ok||
+08|Handouts|pdf|2. Tips for Talking With Your Partner About Finances|Whole/Module 8/Handouts/2. Tips for Talking With Your Partner About Finances.pdf|ok||
+08|Handouts|pdf|3. Steps to Healthy Finances in Your Relationship|Whole/Module 8/Handouts/3. Steps to Healthy Finances in Your Relationship.pdf|ok||
+08|Handouts|pdf|4. Understanding Representative Payees|Whole/Module 8/Handouts/4. Understanding Representative Payees.pdf|ok||
+08|Handouts|pdf|5. When a Representative Payee Manages Your Money|Whole/Module 8/Handouts/5. When a Representative Payee Manages Your Money.pdf|ok||
+08|Handouts|docx|6. Understanding Financial Abuse & Safety Planning|Whole/Module 8/Handouts/6. Understanding Financial Abuse & Safety Planning.docx|ok||
+08|Handouts|pdf|6. Understanding Financial Abuse & Safety Planning|Whole/Module 8/Handouts/6. Understanding Financial Abuse & Safety Planning.pdf|ok||
+08|Handouts|pdf|7. Information and Services for Survivors|Whole/Module 8/Handouts/7. Information and Services for Survivors.pdf|ok||
+08|Handouts|docx|Effects of Income Inequality on Health|Whole/Module 8/Handouts/Effects of Income Inequality on Health.docx|ok||
+08|Handouts|docx|Elder Financial Abuse|Whole/Module 8/Handouts/Elder Financial Abuse.docx|ok||
+08|Handouts|pdf|FAQ.Representative.Payees|Whole/Module 8/Handouts/FAQ.Representative.Payees.pdf|ok||
+08|Handouts|pdf|Financial Abuse FAQs|Whole/Module 8/Handouts/Financial Abuse FAQs.pdf|ok||
+08|Handouts|pdf|Financial Abuse Fact Sheet|Whole/Module 8/Handouts/Financial Abuse Fact Sheet.pdf|ok||
+08|Handouts|docx|Financial Stress and Health Risks|Whole/Module 8/Handouts/Financial Stress and Health Risks.docx|ok||
+08|Handouts|docx|How to Prevent and Recover from Domestic Financial Abuse|Whole/Module 8/Handouts/How to Prevent and Recover from Domestic Financial Abuse.docx|ok||
+08|Handouts|docx|Workshop 8 Worksheets|Whole/Module 8/Handouts/Workshop 8 Worksheets.docx|ok||
+08|Handouts|pdf|Workshop 8 Worksheets|Whole/Module 8/Handouts/Workshop 8 Worksheets.pdf|ok||
+08||docx|MB FTS 8|Whole/Module 8/MB_FTS_ 8.docx|review||missing_bucket
+08||pdf|MB FTS 8|Whole/Module 8/MB_FTS_ 8.pdf|review||missing_bucket
+08|Core_Resources|pptx|Money Basics PPT Workshop 8|Whole/Module 8/Money Basics PPT Workshop 8.pptx|ok||
+08|Additional_Resources|pdf|1. Mental Health and Money|Whole/Module 8/Resources/1. Mental Health and Money.pdf|ok||
+08|Additional_Resources|pdf|10. Poverty and Poor Health Worldwide|Whole/Module 8/Resources/10. Poverty and Poor Health Worldwide.pdf|ok||
+08|Additional_Resources|docx|11. How to Talk to Your Partner About Money|Whole/Module 8/Resources/11. How to Talk to Your Partner About Money.docx|ok||
+08|Additional_Resources|pdf|11. How to Talk to Your Partner About Money|Whole/Module 8/Resources/11. How to Talk to Your Partner About Money.pdf|ok||
+08|Additional_Resources|pdf|12. Money Problems and Relationship Problems|Whole/Module 8/Resources/12. Money Problems and Relationship Problems.pdf|ok||
+08|Additional_Resources|pdf|13. How to Prevent Arguments About Money|Whole/Module 8/Resources/13. How to Prevent Arguments About Money.pdf|ok||
+08|Additional_Resources|pdf|14. How to Talk to Your Spouse About Money|Whole/Module 8/Resources/14. How to Talk to Your Spouse About Money.pdf|ok||
+08|Additional_Resources|pdf|15. Common Financially Abusive Behaviors|Whole/Module 8/Resources/15. Common Financially Abusive Behaviors.pdf|ok||
+08|Additional_Resources|docx|16. How to Spot Financial Abuse of an Elder|Whole/Module 8/Resources/16. How to Spot Financial Abuse of an Elder.docx|ok||
+08|Additional_Resources|pdf|16. How to Spot Financial Abuse of an Elder|Whole/Module 8/Resources/16. How to Spot Financial Abuse of an Elder.pdf|ok||
+08|Additional_Resources|pdf|18. Tackling social inequalities to reduce mental health problems|Whole/Module 8/Resources/18. Tackling social inequalities to reduce mental health problems.pdf|ok||
+08|Additional_Resources|pdf|2. Poverty, Social Inequality and Mental Health|Whole/Module 8/Resources/2. Poverty, Social Inequality and Mental Health.pdf|ok||
+08|Additional_Resources|pdf|3. Recovering Your Finances After Rehab|Whole/Module 8/Resources/3. Recovering Your Finances After Rehab.pdf|ok||
+08|Additional_Resources|pdf|4. The Poverty Mindset|Whole/Module 8/Resources/4. The Poverty Mindset.pdf|ok||
+08|Additional_Resources|pdf|5. FAQs on Problem Gambling|Whole/Module 8/Resources/5. FAQs on Problem Gambling.pdf|ok||
+08|Additional_Resources|pdf|6. Resources for Problem Gambling|Whole/Module 8/Resources/6. Resources for Problem Gambling.pdf|ok||
+08|Additional_Resources|docx|7. Income Inequality and Health Care|Whole/Module 8/Resources/7. Income Inequality and Health Care.docx|ok||
+08|Additional_Resources|pdf|7. Income Inequality and Health Care|Whole/Module 8/Resources/7. Income Inequality and Health Care.pdf|ok||
+08|Additional_Resources|docx|8. How to Avoid the Health Risks that Come from Financial Stress|Whole/Module 8/Resources/8. How to Avoid the Health Risks that Come from Financial Stress.docx|ok||
+08|Additional_Resources|pdf|8. How to Avoid the Health Risks that Come from Financial Stress|Whole/Module 8/Resources/8. How to Avoid the Health Risks that Come from Financial Stress.pdf|ok||
+08|Additional_Resources|pdf|9. Poverty s Effect on Children s Health|Whole/Module 8/Resources/9. Poverty_s Effect on Children_s Health.pdf|ok||
+08|Additional_Resources|pdf|Effects of Childhood Poverty|Whole/Module 8/Resources/Effects of Childhood Poverty.pdf|ok||
+08|Additional_Resources|pdf|Financial Abuse and Rebuilding your Finances|Whole/Module 8/Resources/Financial Abuse and Rebuilding your Finances.pdf|ok||
+08|Additional_Resources|pdf|Money.Smart.for.Older.Adults.Prevent.Financial.Exploitation|Whole/Module 8/Resources/Money.Smart.for.Older.Adults.Prevent.Financial.Exploitation.pdf|ok||
+08|Additional_Resources|pdf|Poverty and Health|Whole/Module 8/Resources/Poverty and Health.pdf|ok||
+08|Additional_Resources|pdf|Statistics on Mental Illness and Poverty|Whole/Module 8/Resources/Statistics on Mental Illness and Poverty.pdf|ok||
+08|Additional_Resources|docx|Workshop 8 Additional Resources|Whole/Module 8/Resources/Workshop 8 Additional Resources.docx|ok||
+08|Additional_Resources|pdf|Workshop 8 Additional Resources|Whole/Module 8/Resources/Workshop 8 Additional Resources.pdf|ok||
+08||pdf|Workshop 08 Mental Health, Relationships & Money|Whole/Module 8/Workshop 08 - Mental Health, Relationships & Money.pdf|review||missing_bucket
+08||pdf|Workshop 08 Mental Health, Relationships & Money; Financial Crisis Planning|Whole/Module 8/Workshop 08 - Mental Health, Relationships & Money; Financial Crisis Planning.pdf|review||missing_bucket
+08||pdf|pg1|Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PDFs/pg1.pdf|review||missing_bucket
+08||pdf|pg2|Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PDFs/pg2.pdf|review||missing_bucket
+08||pdf|pg3|Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PDFs/pg3.pdf|review||missing_bucket
+08||pdf|pg4|Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PDFs/pg4.pdf|review||missing_bucket
+08||pdf|pg5|Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PDFs/pg5.pdf|review||missing_bucket
+08||pdf|pg6|Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PDFs/pg6.pdf|review||missing_bucket
+08||pdf|pg7|Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PDFs/pg7.pdf|review||missing_bucket
+08||pdf|pg8|Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PDFs/pg8.pdf|review||missing_bucket
+08||pdf|pg9|Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PDFs/pg9.pdf|review||missing_bucket
+08||png|pg1|Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PNGs/pg1.png|review||missing_bucket
+08||png|pg2|Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PNGs/pg2.png|review||missing_bucket
+08||png|pg3|Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PNGs/pg3.png|review||missing_bucket
+08||png|pg4|Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PNGs/pg4.png|review||missing_bucket
+08||png|pg5|Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PNGs/pg5.png|review||missing_bucket
+08||png|pg6|Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PNGs/pg6.png|review||missing_bucket
+08||png|pg7|Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PNGs/pg7.png|review||missing_bucket
+08||png|pg8|Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PNGs/pg8.png|review||missing_bucket
+08||png|pg9|Whole/Module 8/Workshop_08_pages/Facilitator_Guide/Workshop_08/PNGs/pg9.png|review||missing_bucket
+08||pdf|pg1|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg1.pdf|review||missing_bucket
+08||pdf|pg10|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg10.pdf|review||missing_bucket
+08||pdf|pg11|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg11.pdf|review||missing_bucket
+08||pdf|pg12|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg12.pdf|review||missing_bucket
+08||pdf|pg13|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg13.pdf|review||missing_bucket
+08||pdf|pg14|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg14.pdf|review||missing_bucket
+08||pdf|pg15|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg15.pdf|review||missing_bucket
+08||pdf|pg16|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg16.pdf|review||missing_bucket
+08||pdf|pg17|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg17.pdf|review||missing_bucket
+08||pdf|pg18|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg18.pdf|review||missing_bucket
+08||pdf|pg19|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg19.pdf|review||missing_bucket
+08||pdf|pg2|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg2.pdf|review||missing_bucket
+08||pdf|pg20|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg20.pdf|review||missing_bucket
+08||pdf|pg21|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg21.pdf|review||missing_bucket
+08||pdf|pg3|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg3.pdf|review||missing_bucket
+08||pdf|pg4|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg4.pdf|review||missing_bucket
+08||pdf|pg5|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg5.pdf|review||missing_bucket
+08||pdf|pg6|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg6.pdf|review||missing_bucket
+08||pdf|pg7|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg7.pdf|review||missing_bucket
+08||pdf|pg8|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg8.pdf|review||missing_bucket
+08||pdf|pg9|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PDFs/pg9.pdf|review||missing_bucket
+08||png|pg1|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg1.png|review||missing_bucket
+08||png|pg10|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg10.png|review||missing_bucket
+08||png|pg11|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg11.png|review||missing_bucket
+08||png|pg12|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg12.png|review||missing_bucket
+08||png|pg13|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg13.png|review||missing_bucket
+08||png|pg14|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg14.png|review||missing_bucket
+08||png|pg15|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg15.png|review||missing_bucket
+08||png|pg16|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg16.png|review||missing_bucket
+08||png|pg17|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg17.png|review||missing_bucket
+08||png|pg18|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg18.png|review||missing_bucket
+08||png|pg19|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg19.png|review||missing_bucket
+08||png|pg2|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg2.png|review||missing_bucket
+08||png|pg20|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg20.png|review||missing_bucket
+08||png|pg21|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg21.png|review||missing_bucket
+08||png|pg3|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg3.png|review||missing_bucket
+08||png|pg4|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg4.png|review||missing_bucket
+08||png|pg5|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg5.png|review||missing_bucket
+08||png|pg6|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg6.png|review||missing_bucket
+08||png|pg7|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg7.png|review||missing_bucket
+08||png|pg8|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg8.png|review||missing_bucket
+08||png|pg9|Whole/Module 8/Workshop_08_pages/Student_Guide/Workshop_08/PNGs/pg9.png|review||missing_bucket
+09|Handouts|pdf|1. IRS Tips to Take the Stress out of Tax Season|Whole/Module 9/Handouts/1. IRS Tips to Take the Stress out of Tax Season.pdf|ok||
+09|Handouts|pdf|2. IRS Free File|Whole/Module 9/Handouts/2. IRS Free File.pdf|ok||
+09|Handouts|pdf|3. 6 Steps for First Time Tax Filers|Whole/Module 9/Handouts/3. 6 Steps for First-Time Tax Filers.pdf|ok||
+09|Handouts|pdf|4. The Three Basic Tax Types|Whole/Module 9/Handouts/4. The Three Basic Tax Types.pdf|ok||
+09|Handouts|pdf|5. Credits & Deductions|Whole/Module 9/Handouts/5. Credits & Deductions.pdf|ok||
+09|Handouts|pdf|6. Common Tax Write Offs You Can Claim|Whole/Module 9/Handouts/6. Common Tax Write-Offs You Can Claim.pdf|ok||
+09|Handouts|pdf|Who Qualifies for the Earned Income Tax Credit (EITC) Internal Revenue Service|Whole/Module 9/Handouts/Who Qualifies for the Earned Income Tax Credit (EITC) _ Internal Revenue Service.pdf|ok||
+09||docx|How to Cope with Tax Season Stress|Whole/Module 9/How to Cope with Tax Season Stress.docx|review||missing_bucket
+09||docx|MB FTS 9|Whole/Module 9/MB_FTS_ 9.docx|review||missing_bucket
+09||docx|Module Nine Additional Resources|Whole/Module 9/Module Nine Additional Resources.docx|review||missing_bucket
+09|Core_Resources|pptx|Money Basics PPT Workshop 9|Whole/Module 9/Money Basics PPT Workshop 9.pptx|ok||
+09||docx|Regressive, Proportional, and Progressive Taxes|Whole/Module 9/Regressive, Proportional, and Progressive Taxes.docx|review||missing_bucket
+09|Additional_Resources|docx|1. What to Know About How to File Taxes|Whole/Module 9/Resources/1. What to Know About How to File Taxes.docx|ok||
+09|Additional_Resources|pdf|1. What to Know About How to File Taxes|Whole/Module 9/Resources/1. What to Know About How to File Taxes.pdf|ok||
+09|Additional_Resources|docx|2. How to Cope with Tax Season Stress|Whole/Module 9/Resources/2. How to Cope with Tax Season Stress.docx|ok||
+09|Additional_Resources|pdf|2. How to Cope with Tax Season Stress|Whole/Module 9/Resources/2. How to Cope with Tax Season Stress.pdf|ok||
+09|Additional_Resources|pdf|3. How to File Your Taxes|Whole/Module 9/Resources/3. How to File Your Taxes.pdf|ok||
+09|Additional_Resources|pdf|4. Tax Basics|Whole/Module 9/Resources/4. Tax Basics.pdf|ok||
+09|Additional_Resources|pdf|5. Why We Pay Taxes|Whole/Module 9/Resources/5. Why We Pay Taxes.pdf|ok||
+09|Additional_Resources|docx|6. Regressive Vs. Progressive Taxes|Whole/Module 9/Resources/6. Regressive Vs. Progressive Taxes.docx|ok||
+09|Additional_Resources|pdf|6. Regressive Vs. Progressive Taxes|Whole/Module 9/Resources/6. Regressive Vs. Progressive Taxes.pdf|ok||
+09|Additional_Resources|pdf|7. Federal Tax Revenue|Whole/Module 9/Resources/7. Federal Tax Revenue.pdf|ok||
+09|Additional_Resources|pdf|Form 1040|Whole/Module 9/Resources/Form 1040.pdf|ok||
+09|Additional_Resources|docx|Workshop 9 Additional Resources|Whole/Module 9/Resources/Workshop 9 Additional Resources.docx|ok||
+09|Additional_Resources|pdf|Workshop 9 Additional Resources|Whole/Module 9/Resources/Workshop 9 Additional Resources.pdf|ok||
+09||docx|What to Know About How to File Taxes|Whole/Module 9/What to Know About How to File Taxes.docx|review||missing_bucket
+09||pdf|Workshop 09 Tax Returns|Whole/Module 9/Workshop 09 - Tax Returns.pdf|review||missing_bucket
