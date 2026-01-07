@@ -1,5 +1,41 @@
-.DS_Store
-.vscode/extensions.json
+DS_Store
+Materials/.DS_Store
+Materials/_core_clean/.DS_Store
+Materials/_core_clean/Workshop_03/.DS_Store
+Materials/_core_clean/Workshop_03/Additional_Resources/1. How to Make a Budget.pdf
+Materials/_core_clean/Workshop_03/Additional_Resources/10.  How to Buy a House with Low Income.pdf
+Materials/_core_clean/Workshop_03/Additional_Resources/11. How To File For SSDI Benefits If Homeless.pdf
+Materials/_core_clean/Workshop_03/Additional_Resources/12. SSI Ticket to Work and PASS Accounts.pdf
+Materials/_core_clean/Workshop_03/Additional_Resources/13. SSI Elibility Requirements and Asset Limits.pdf
+Materials/_core_clean/Workshop_03/Additional_Resources/2. Free Online Budgeting Tools.pdf
+Materials/_core_clean/Workshop_03/Additional_Resources/25 Ways to Live on Less.pdf
+Materials/_core_clean/Workshop_03/Additional_Resources/3. How to Create a Successful Budget.pdf
+Materials/_core_clean/Workshop_03/Additional_Resources/4. How to Create a Budget in Six Steps.pdf
+Materials/_core_clean/Workshop_03/Additional_Resources/5. 190 Online Resources for Saving Money.pdf
+Materials/_core_clean/Workshop_03/Additional_Resources/6. 10 Easy Ways to Save Money.pdf
+Materials/_core_clean/Workshop_03/Additional_Resources/7. 99 Great Ways to Save Money.pdf
+Materials/_core_clean/Workshop_03/Additional_Resources/8. No-brainer Money-Saving Tips.pdf
+Materials/_core_clean/Workshop_03/Additional_Resources/9. 11 Frugal Living Tips.pdf
+Materials/_core_clean/Workshop_03/Additional_Resources/Guide to SSI.pdf
+Materials/_core_clean/Workshop_03/Additional_Resources/The Social Security Administration Red Book (2020).pdf
+Materials/_core_clean/Workshop_03/Additional_Resources/Tips for Family Money Management.pdf
+Materials/_core_clean/Workshop_03/Additional_Resources/Tips for Successful Budgeting.pdf
+Materials/_core_clean/Workshop_03/Additional_Resources/Workshop 3 Additional Resources.pdf
+Materials/_core_clean/Workshop_03/Core_Resources/Guides/Student_Guide-Workshop_03-Creating_a_ Budget.pdf
+Materials/_core_clean/Workshop_03/Core_Resources/Slides/Money Basics PPT Workshop 3.pdf
+Materials/_core_clean/Workshop_03/Handouts/1. Budgeting Apps.pdf
+Materials/_core_clean/Workshop_03/Handouts/2. Budgeting Tips.pdf
+Materials/_core_clean/Workshop_03/Handouts/3. Money Saving Resources Handout.pdf
+Materials/_core_clean/Workshop_03/Handouts/Fact-Sheet-Benefits-Counseling.pdf
+Materials/_core_clean/Workshop_03/Worksheets/Budget Worksheet 1.pdf
+Materials/_core_clean/Workshop_03/Worksheets/Budget Worksheet 2.pdf
+Materials/_core_clean/Workshop_03/Worksheets/Budget Worksheet 3.pdf
+Materials/_core_clean/Workshop_03/Worksheets/Budget Worksheet 4_ Income & Expenses.pdf
+Materials/_core_clean/Workshop_03/Worksheets/Personal Balance Sheet.xlsx
+Materials/_core_clean/Workshop_03/Worksheets/Personal Monthly Budget.xlsx
+Materials/_inventory/inventory_v1.csv
+Materials/_inventory/inventory_v1_validated.csv
+Materials/_inventory/inventory_workshop_03_clean.csv
 Parts/.DS_Store
 Parts/FG:SG_Splits/.DS_Store
 Parts/FG:SG_Splits/Wksp Pages/.DS_Store
@@ -619,7 +655,6 @@ Parts/FG:SG_Splits/Wksp/Facilitator Guide/.DS_Store
 Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/.DS_Store
 Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 01 - Introduction.pdf
 Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 02 - Setting Financial Goals.pdf
-Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 03 - Creating a Budget.pdf
 Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 04 - Banking Basics.pdf
 Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 05 - Debit Cards, ATMs, Online Banking.pdf
 Parts/FG:SG_Splits/Wksp/Facilitator Guide/Wksp PDFs/Workshop 06 - Credit & Loans.pdf
@@ -688,7 +723,7 @@ Parts/Script_Guides_Combined/Workshop 6/Parts_with_repo_snippets2/Part4_Managing
 Parts/Script_Guides_Combined/Workshop 6/Parts_with_repo_snippets2/Part5_Understanding_Loans copy.docx
 Parts/Script_Guides_Combined/Workshop 6/Parts_with_repo_snippets2/Part6_Loan_Contracts_and_Interest copy.docx
 Parts/Script_Guides_Combined/Workshop 6/Parts_with_repo_snippets2/Part7_Predatory_Lending_and_Wrap_Up copy.docx
-"Parts/Script_Guides_Combined/~$rt 1 \342\200\223 Workshop 6 Orientation & Framing.docx"
+Parts/Script_Guides_Combined/~$rt 1 – Workshop 6 Orientation & Framing.docx
 Parts/Script_Guides_Combined/~$rt1_Orientation_vB.docx
 Parts/Teaching Materials/.DS_Store
 Parts/Teaching Materials/Facilitator & Student Guides/.DS_Store
@@ -731,7 +766,7 @@ Parts/Teaching Materials/Workshop 1/Resources/3. How to Reduce Financial Stress.
 Parts/Teaching Materials/Workshop 1/Resources/4. Income Inequality in America.pdf
 Parts/Teaching Materials/Workshop 1/Resources/5. Poverty in America Statistics.pdf
 Parts/Teaching Materials/Workshop 1/Resources/6. Data Illustrating the Intersectional Nature of Poverty.pdf
-"Parts/Teaching Materials/Workshop 1/Resources/7. Bruce\342\200\231s Beach Systemic Racism and Reparations.pdf"
+Parts/Teaching Materials/Workshop 1/Resources/7. Bruce’s Beach Systemic Racism and Reparations.pdf
 Parts/Teaching Materials/Workshop 1/Resources/8. Race and the lack of intergenerational economic mobility in the US.pdf
 Parts/Teaching Materials/Workshop 1/Resources/9. Displacement in Portland.pdf
 Parts/Teaching Materials/Workshop 1/Resources/Workshop 1 Additional Resources.pdf
@@ -768,16 +803,12 @@ Parts/Teaching Materials/Workshop 2/Resources/2. Person-Centered Planning Tools.
 Parts/Teaching Materials/Workshop 2/Resources/Workshop 2 Additional Resources.docx
 Parts/Teaching Materials/Workshop 2/Resources/Workshop 2 Additional Resources.pdf
 Parts/Teaching Materials/Workshop 3/.DS_Store
+Parts/Teaching Materials/Workshop 3/Handouts/.DS_Store
 Parts/Teaching Materials/Workshop 3/Handouts/1. Budgeting Apps.docx
-Parts/Teaching Materials/Workshop 3/Handouts/1. Budgeting Apps.pdf
-Parts/Teaching Materials/Workshop 3/Handouts/2. Budgeting Tips.pdf
 Parts/Teaching Materials/Workshop 3/Handouts/3. Money Saving Resources Handout.docx
-Parts/Teaching Materials/Workshop 3/Handouts/3. Money Saving Resources Handout.pdf
 Parts/Teaching Materials/Workshop 3/Handouts/Budget Worksheet 1.pdf
 Parts/Teaching Materials/Workshop 3/Handouts/Budget Worksheet 2.pdf
 Parts/Teaching Materials/Workshop 3/Handouts/Budget Worksheet 3.pdf
-Parts/Teaching Materials/Workshop 3/Handouts/Budget Worksheet 4_ Income & Expenses.pdf
-Parts/Teaching Materials/Workshop 3/Handouts/Fact-Sheet-Benefits-Counseling.pdf
 Parts/Teaching Materials/Workshop 3/Handouts/Personal Balance Sheet.xlsx
 Parts/Teaching Materials/Workshop 3/Handouts/Personal Monthly Budget.xlsx
 Parts/Teaching Materials/Workshop 3/Handouts/Workshop 3 Worksheets.docx
@@ -785,34 +816,15 @@ Parts/Teaching Materials/Workshop 3/Handouts/Workshop 3 Worksheets.pdf
 Parts/Teaching Materials/Workshop 3/Money Basics PPT Workshop 3.pdf
 Parts/Teaching Materials/Workshop 3/Money Basics PPT Workshop 3.pptx
 Parts/Teaching Materials/Workshop 3/Resources/1. How to Make a Budget.docx
-Parts/Teaching Materials/Workshop 3/Resources/1. How to Make a Budget.pdf
 Parts/Teaching Materials/Workshop 3/Resources/10.  How to Buy a House with Low Income.docx
-Parts/Teaching Materials/Workshop 3/Resources/10.  How to Buy a House with Low Income.docx.pdf
 Parts/Teaching Materials/Workshop 3/Resources/11. How To File For SSDI Benefits If Homeless.docx
-Parts/Teaching Materials/Workshop 3/Resources/11. How To File For SSDI Benefits If Homeless.docx.pdf
-Parts/Teaching Materials/Workshop 3/Resources/12. SSI Ticket to Work and PASS Accounts.pdf
 Parts/Teaching Materials/Workshop 3/Resources/13. SSI Elibility Requirements and Asset Limits.docx
-Parts/Teaching Materials/Workshop 3/Resources/13. SSI Elibility Requirements and Asset Limits.docx.pdf
 Parts/Teaching Materials/Workshop 3/Resources/2. Free Online Budgeting Tools.docx
-Parts/Teaching Materials/Workshop 3/Resources/2. Free Online Budgeting Tools.pdf
-Parts/Teaching Materials/Workshop 3/Resources/25 Ways to Live on Less.pdf
 Parts/Teaching Materials/Workshop 3/Resources/3. How to Create a Successful Budget.docx
-Parts/Teaching Materials/Workshop 3/Resources/3. How to Create a Successful Budget.pdf
-Parts/Teaching Materials/Workshop 3/Resources/4. How to Create a Budget in Six Steps.pdf
-Parts/Teaching Materials/Workshop 3/Resources/5. 190 Online Resources for Saving Money.pdf
 Parts/Teaching Materials/Workshop 3/Resources/6. 10 Easy Ways to Save Money.docx
-Parts/Teaching Materials/Workshop 3/Resources/6. 10 Easy Ways to Save Money.docx.pdf
-Parts/Teaching Materials/Workshop 3/Resources/7. 99 Great Ways to Save Money.pdf
 Parts/Teaching Materials/Workshop 3/Resources/8. No-brainer Money-Saving Tips.docx
-Parts/Teaching Materials/Workshop 3/Resources/8. No-brainer Money-Saving Tips.pdf
 Parts/Teaching Materials/Workshop 3/Resources/9. 11 Frugal Living Tips.docx
-Parts/Teaching Materials/Workshop 3/Resources/9. 11 Frugal Living Tips.pdf
-Parts/Teaching Materials/Workshop 3/Resources/Guide to SSI.pdf
-Parts/Teaching Materials/Workshop 3/Resources/The Social Security Administration Red Book (2020).pdf
-Parts/Teaching Materials/Workshop 3/Resources/Tips for Family Money Management.pdf
-Parts/Teaching Materials/Workshop 3/Resources/Tips for Successful Budgeting.pdf
 Parts/Teaching Materials/Workshop 3/Resources/Workshop 3 Additional Resources.docx
-Parts/Teaching Materials/Workshop 3/Resources/Workshop 3 Additional Resources.pdf
 Parts/Teaching Materials/Workshop 4/.DS_Store
 Parts/Teaching Materials/Workshop 4/Handouts/1. Second Chance Checking Accounts.docx
 Parts/Teaching Materials/Workshop 4/Handouts/1. Second Chance Checking Accounts.docx.pdf
@@ -997,7 +1009,7 @@ Parts/Teaching Materials/Workshop 9/Handouts/3. 6 Steps for First-Time Tax Filer
 Parts/Teaching Materials/Workshop 9/Handouts/4. The Three Basic Tax Types.pdf
 Parts/Teaching Materials/Workshop 9/Handouts/5. Credits & Deductions.pdf
 Parts/Teaching Materials/Workshop 9/Handouts/6. Common Tax Write-Offs You Can Claim.pdf
-"Parts/Teaching Materials/Workshop 9/Handouts/7. 8 Things to Know about Oregon\342\200\231s Tax System.pdf"
+Parts/Teaching Materials/Workshop 9/Handouts/7. 8 Things to Know about Oregon’s Tax System.pdf
 Parts/Teaching Materials/Workshop 9/Handouts/Who Qualifies for the Earned Income Tax Credit (EITC) _ Internal Revenue Service.pdf
 Parts/Teaching Materials/Workshop 9/Money Basics PPT Workshop 9.pptx
 Parts/Teaching Materials/Workshop 9/Resources/1. What to Know About How to File Taxes.docx
@@ -1067,7 +1079,7 @@ Whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/15. Dism
 Whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/4. Income Inequality in America.pdf
 Whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/5. Poverty in America Statistics.pdf
 Whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/6. Data Illustrating the Intersectional Nature of Poverty.pdf
-"Whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/7. Bruce\342\200\231s Beach Systemic Racism and Reparations.pdf"
+Whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/7. Bruce’s Beach Systemic Racism and Reparations.pdf
 Whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/8. Race and the lack of intergenerational economic mobility in the US.pdf
 Whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/9. Displacement in Portland.pdf
 Whole/Module 1/WS1 Resources/Workshop 01 - Introduction.pdf
@@ -1131,8 +1143,8 @@ Whole/Module 10/Student_Guide/Workshop_10/Sections/PDF/Different_Kinds_of_Saving
 Whole/Module 10/Visuals/Budgeting Table.png
 Whole/Module 10/Visuals/IDAs.png
 Whole/Module 10/Visuals/Savings Activity_Jars.png
-"Whole/Module 10/Visuals/Screenshot 2025-10-29 at 10.26.47\342\200\257AM.png"
-"Whole/Module 10/Visuals/Screenshot 2025-10-29 at 2.03.55\342\200\257PM.png"
+Whole/Module 10/Visuals/Screenshot 2025-10-29 at 10.26.47 AM.png
+Whole/Module 10/Visuals/Screenshot 2025-10-29 at 2.03.55 PM.png
 Whole/Module 10/Visuals/money trees.png
 Whole/Module 10/Workshop 10 - Savings Accounts & Goals.pdf
 Whole/Module 10/Workshop 10 - Savings Accounts & Savings Goals copy.pdf
@@ -1408,7 +1420,7 @@ Whole/Module 9/Handouts/3. 6 Steps for First-Time Tax Filers.pdf
 Whole/Module 9/Handouts/4. The Three Basic Tax Types.pdf
 Whole/Module 9/Handouts/5. Credits & Deductions.pdf
 Whole/Module 9/Handouts/6. Common Tax Write-Offs You Can Claim.pdf
-"Whole/Module 9/Handouts/7. 8 Things to Know about Oregon\342\200\231s Tax System.pdf"
+Whole/Module 9/Handouts/7. 8 Things to Know about Oregon’s Tax System.pdf
 Whole/Module 9/Handouts/Who Qualifies for the Earned Income Tax Credit (EITC) _ Internal Revenue Service.pdf
 Whole/Module 9/How to Cope with Tax Season Stress.docx
 Whole/Module 9/MB_FTS_ 9.docx
@@ -1959,5 +1971,6 @@ tools/inject_repo_paths_into_docx.py
 tools/pg-merge
 tools/render_glossary_pdf.mjs
 tree.out
+vscode/extensions.json
 worksheets/wksp_7/action_plan_future.html
 worksheets/wksp_7/money_basics_github_repo.code-workspace
