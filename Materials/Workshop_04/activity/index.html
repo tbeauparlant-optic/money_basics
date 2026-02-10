@@ -1,12 +1,262 @@
-<!doctype html>
-<html><head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Workshop 04 Interactive Activity</title>
-<link rel="stylesheet" href="../../_assets/materials.css"/>
-</head><body><div class="container">
-<h1>Workshop 4 Interactive Activity Placeholder</h1><nav><a href="../../index.html">Home</a><a href="../index.html">Workshop 04</a></nav>
-<p class="meta">This page will host the interactive activity app.</p>
-<p><a href="../index.html">Back to Workshop 4</a></p>
-<div id="app"></div>
-</div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workshop 4 Interactive Activity - Check Explainer</title>
+
+  <link rel="stylesheet" href="../../_assets/materials.css" />
+
+  <style>
+    .page-header { margin-bottom: 16px; }
+    .page-header h1 { margin: 0 0 6px; }
+    .page-header p { margin: 0; color: #444; }
+
+    .check-wrap {
+      margin-top: 18px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+      background: #fff;
+    }
+
+    .check-stage {
+      position: relative;
+      width: 100%;
+    }
+
+    .check-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hotspot {
+      position: absolute;
+      cursor: help;
+      z-index: 10;
+      border-radius: 6px;
+      background-color: rgba(255, 255, 0, 0.0);
+      outline: none;
+    }
+
+    .hotspot:focus,
+    .hotspot.is-active,
+    .hotspot:hover {
+      background-color: rgba(0, 123, 255, 0.12);
+      border: 2px dashed rgba(0, 123, 255, 0.55);
+    }
+
+    .hotspot[data-num]::after {
+      content: attr(data-num);
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: 22px;
+      height: 22px;
+      display: grid;
+      place-items: center;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 999px;
+      background: rgba(0,0,0,0.75);
+      color: #fff;
+      opacity: 0;
+      transform: scale(0.9);
+      transition: opacity 0.15s, transform 0.15s;
+      pointer-events: none;
+    }
+
+    .hotspot:focus[data-num]::after,
+    .hotspot.is-active[data-num]::after,
+    .hotspot:hover[data-num]::after {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    #tooltip {
+      position: fixed;
+      background: #222;
+      color: #fff;
+      padding: 10px 12px;
+      border-radius: 8px;
+      font-size: clamp(12px, 1.2vw, 14px);
+      line-height: 1.35;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.12s;
+      z-index: 1000;
+      max-width: 280px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+    }
+
+    .hint {
+      margin-top: 10px;
+      color: #444;
+      font-size: 0.95rem;
+    }
+
+    .zone-date       { top: 12%; left: 72%; width: 20%; height: 10%; }
+    .zone-payee      { top: 28%; left: 12%; width: 55%; height: 10%; }
+    .zone-amount-num { top: 28%; left: 70%; width: 22%; height: 10%; }
+    .zone-amount-txt { top: 42%; left: 8%;  width: 75%; height: 10%; }
+    .zone-memo       { top: 75%; left: 10%; width: 30%; height: 10%; }
+    .zone-sig        { top: 70%; left: 65%; width: 30%; height: 15%; }
+    .zone-routing    { top: 88%; left: 10%; width: 20%; height: 8%; }
+    .zone-account    { top: 88%; left: 32%; width: 20%; height: 8%; }
+
+    .actions-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 0; }
+    .btn {
+      text-decoration: none;
+      padding: 8px 12px;
+      border: 1px solid #333;
+      border-radius: 999px;
+      color: #111;
+      background: #fff;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div id="tooltip" role="status" aria-live="polite"></div>
+
+  <div class="container">
+    <nav aria-label="Primary">
+      <a href="../../index.html">Home</a>
+      <a href="../index.html">Back to Workshop 4</a>
+    </nav>
+
+    <header class="page-header">
+      <h1>Interactive Check Explainer</h1>
+      <p>Hover, focus (Tab), or tap fields on the check to learn what each part means.</p>
+    </header>
+
+    <div class="check-wrap">
+      <div class="check-stage" aria-label="Interactive check diagram">
+        <img
+          class="check-image"
+          src="../../_assets/images/check-how-to-read.png"
+          alt="Example check with labeled fields"
+        />
+
+        <div class="hotspot zone-date" tabindex="0" role="button" aria-label="Date field" data-num="1" data-info="Date: The date the check was written. Some checks may become stale after a period of time (often months)."></div>
+        <div class="hotspot zone-payee" tabindex="0" role="button" aria-label="Payee line" data-num="2" data-info="Payee: Who the check is written to. Only the named person or business should deposit or cash it."></div>
+        <div class="hotspot zone-amount-num" tabindex="0" role="button" aria-label="Numeric amount" data-num="3" data-info="Amount (numbers): The value written in numbers (e.g., $100.00)."></div>
+        <div class="hotspot zone-amount-txt" tabindex="0" role="button" aria-label="Written amount" data-num="4" data-info="Amount (words): The value written in words. This is often treated as the controlling amount if there is a discrepancy."></div>
+        <div class="hotspot zone-memo" tabindex="0" role="button" aria-label="Memo line" data-num="5" data-info="Memo: Optional note about what the check is for (e.g., rent, utilities)."></div>
+        <div class="hotspot zone-sig" tabindex="0" role="button" aria-label="Signature line" data-num="6" data-info="Signature: The account holder signs here to authorize payment. Unsigned checks generally are not valid."></div>
+        <div class="hotspot zone-routing" tabindex="0" role="button" aria-label="Routing number" data-num="7" data-info="Routing number: A 9-digit code that identifies the bank or credit union."></div>
+        <div class="hotspot zone-account" tabindex="0" role="button" aria-label="Account number" data-num="8" data-info="Account number: Identifies the specific account the money will come from."></div>
+      </div>
+    </div>
+
+    <p class="hint">Tip: On phones or tablets, tap a field to show the explanation, then tap anywhere else to dismiss.</p>
+
+    <div class="actions-row">
+      <a class="btn" href="../index.html">Back to Workshop 4</a>
+      <a class="btn" href="../../index.html">Home</a>
+    </div>
+  </div>
+
+  <script>
+    const tooltip = document.getElementById('tooltip');
+    const hotspots = Array.from(document.querySelectorAll('.hotspot'));
+    let activeSpot = null;
+
+    function clampToViewport(x, y) {
+      const pad = 12;
+      const rect = tooltip.getBoundingClientRect();
+      let nx = x;
+      let ny = y;
+
+      if (nx + rect.width + pad > window.innerWidth) nx = window.innerWidth - rect.width - pad;
+      if (ny + rect.height + pad > window.innerHeight) ny = window.innerHeight - rect.height - pad;
+      if (nx < pad) nx = pad;
+      if (ny < pad) ny = pad;
+
+      return { x: nx, y: ny };
+    }
+
+    function showTooltip(text, clientX, clientY) {
+      tooltip.textContent = text;
+      tooltip.style.opacity = '1';
+      const pos = clampToViewport(clientX + 15, clientY + 15);
+      tooltip.style.left = pos.x + 'px';
+      tooltip.style.top = pos.y + 'px';
+    }
+
+    function hideTooltip() {
+      tooltip.style.opacity = '0';
+    }
+
+    function activateSpot(spot) {
+      hotspots.forEach((hs) => hs.classList.remove('is-active'));
+      activeSpot = spot;
+      if (spot) spot.classList.add('is-active');
+    }
+
+    hotspots.forEach((spot) => {
+      const text = spot.dataset.info || '';
+
+      spot.addEventListener('mouseenter', (e) => {
+        activateSpot(spot);
+        showTooltip(text, e.clientX, e.clientY);
+      });
+
+      spot.addEventListener('mousemove', (e) => {
+        showTooltip(text, e.clientX, e.clientY);
+      });
+
+      spot.addEventListener('mouseleave', () => {
+        if (document.activeElement !== spot) {
+          activateSpot(null);
+          hideTooltip();
+        }
+      });
+
+      spot.addEventListener('focus', () => {
+        const r = spot.getBoundingClientRect();
+        activateSpot(spot);
+        showTooltip(text, r.right, r.top);
+      });
+
+      spot.addEventListener('blur', () => {
+        activateSpot(null);
+        hideTooltip();
+      });
+
+      spot.addEventListener('click', (e) => {
+        e.stopPropagation();
+        activateSpot(spot);
+        showTooltip(text, e.clientX, e.clientY);
+      });
+    });
+
+    document.addEventListener('click', () => {
+      if (activeSpot) {
+        activeSpot.classList.remove('is-active');
+        activeSpot = null;
+      }
+      hideTooltip();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        if (activeSpot) {
+          activeSpot.classList.remove('is-active');
+          activeSpot = null;
+        }
+        hideTooltip();
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      if (activeSpot && tooltip.style.opacity === '1') {
+        const r = activeSpot.getBoundingClientRect();
+        showTooltip(activeSpot.dataset.info || '', r.right, r.top);
+      }
+    });
+  </script>
+</body>
+</html>
