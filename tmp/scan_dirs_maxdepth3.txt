@@ -1,0 +1,80 @@
+.
+.vscode
+Materials
+Materials/Workshop_02
+Materials/Workshop_02/activity
+Materials/Workshop_03
+Materials/Workshop_03/activity
+Materials/Workshop_04
+Materials/Workshop_04/activity
+Materials/_assets
+Materials/_assets/images
+Materials/_inventory
+Materials/core
+Materials/core/Workshop_02
+Materials/core/Workshop_03
+PDP_Activity
+PDP_Activity/Financial PDP Activity_files
+Parts
+Parts/FG:SG_Splits
+Parts/FG:SG_Splits/Wksp
+Parts/FG:SG_Splits/Wksp Pages
+Parts/MB_FT_Script
+Parts/MB_FT_Script/Notes
+Parts/NEW Facilitator:Peer Resources
+Parts/Script_Guides_Combined
+Parts/Script_Guides_Combined/Test
+Parts/Script_Guides_Combined/Workshop 6
+Parts/Teaching Materials
+Parts/Teaching Materials/Facilitator & Student Guides
+Parts/Teaching Materials/Glossaries
+Parts/Teaching Materials/Workshop 1
+Parts/Teaching Materials/Workshop 10
+Parts/Teaching Materials/Workshop 11
+Parts/Teaching Materials/Workshop 2
+Parts/Teaching Materials/Workshop 3
+Parts/Teaching Materials/Workshop 4
+Parts/Teaching Materials/Workshop 5
+Parts/Teaching Materials/Workshop 6
+Parts/Teaching Materials/Workshop 7
+Parts/Teaching Materials/Workshop 8
+Parts/Teaching Materials/Workshop 9
+Parts/Workshop_06_Parts__Synth_With_Embeds
+Whole
+Whole/Module 0
+Whole/Module 1
+Whole/Module 1/Course Introduction
+Whole/Module 1/SG:FG
+Whole/Module 1/Visuals
+Whole/Module 1/WS1 Handouts
+Whole/Module 1/WS1 Resources
+Whole/Module 1/Worksheets
+Whole/Module 10
+Whole/Module 10/Facilitator Guide
+Whole/Module 10/HO PNGs
+Whole/Module 10/Sections ( PDF )
+Whole/Module 10/Student_Guide
+Whole/Module 10/Visuals
+Whole/Module 11
+Whole/Module 2
+Whole/Module 3
+Whole/Module 4
+Whole/Module 4/check_writing_activity
+Whole/Module 5
+Whole/Module 5/Handouts
+Whole/Module 5/Resources
+Whole/Module 6
+Whole/Module 7
+Whole/Module 7/Workshop_07
+Whole/Module 8
+Whole/Module 8/Handouts
+Whole/Module 8/Resources
+Whole/Module 8/Workshop_08_pages
+Whole/Module 9
+Whole/Module 9/Handouts
+Whole/Module 9/Resources
+glossary
+tmp
+tools
+worksheets
+worksheets/wksp_7
