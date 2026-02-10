@@ -1,262 +1,326 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Workshop 4 Interactive Activity - Check Explainer</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Check Explainer</title>
+    <link rel="stylesheet" href="../../_assets/materials.css" />
+    <style>
+      :root {
+        --hotspot-size: 46px;
+      }
 
-  <link rel="stylesheet" href="../../_assets/materials.css" />
+      body {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 18px;
+      }
 
-  <style>
-    .page-header { margin-bottom: 16px; }
-    .page-header h1 { margin: 0 0 6px; }
-    .page-header p { margin: 0; color: #444; }
+      .wrap {
+        display: grid;
+        gap: 14px;
+      }
 
-    .check-wrap {
-      margin-top: 18px;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-      background: #fff;
-    }
+      .topbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+      }
 
-    .check-stage {
-      position: relative;
-      width: 100%;
-    }
+      .topbar nav {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        align-items: center;
+      }
 
-    .check-image {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+      .btn {
+        display: inline-block;
+        padding: 10px 14px;
+        border-radius: 10px;
+        border: 1px solid rgba(0,0,0,0.25);
+        text-decoration: none;
+        background: white;
+        color: inherit;
+      }
 
-    .hotspot {
-      position: absolute;
-      cursor: help;
-      z-index: 10;
-      border-radius: 6px;
-      background-color: rgba(255, 255, 0, 0.0);
-      outline: none;
-    }
+      .btn:hover {
+        filter: brightness(0.98);
+      }
 
-    .hotspot:focus,
-    .hotspot.is-active,
-    .hotspot:hover {
-      background-color: rgba(0, 123, 255, 0.12);
-      border: 2px dashed rgba(0, 123, 255, 0.55);
-    }
+      .card {
+        background: white;
+        border: 1px solid rgba(0,0,0,0.18);
+        border-radius: 14px;
+        padding: 14px;
+        box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+      }
 
-    .hotspot[data-num]::after {
-      content: attr(data-num);
-      position: absolute;
-      top: -10px;
-      left: -10px;
-      width: 22px;
-      height: 22px;
-      display: grid;
-      place-items: center;
-      font-size: 12px;
-      font-weight: 700;
-      border-radius: 999px;
-      background: rgba(0,0,0,0.75);
-      color: #fff;
-      opacity: 0;
-      transform: scale(0.9);
-      transition: opacity 0.15s, transform 0.15s;
-      pointer-events: none;
-    }
+      .hint {
+        margin: 0;
+        opacity: 0.85;
+      }
 
-    .hotspot:focus[data-num]::after,
-    .hotspot.is-active[data-num]::after,
-    .hotspot:hover[data-num]::after {
-      opacity: 1;
-      transform: scale(1);
-    }
+      .stage {
+        position: relative;
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        border-radius: 14px;
+        overflow: hidden;
+        border: 1px solid rgba(0,0,0,0.18);
+        background: #fff;
+      }
 
-    #tooltip {
-      position: fixed;
-      background: #222;
-      color: #fff;
-      padding: 10px 12px;
-      border-radius: 8px;
-      font-size: clamp(12px, 1.2vw, 14px);
-      line-height: 1.35;
-      pointer-events: none;
-      opacity: 0;
-      transition: opacity 0.12s;
-      z-index: 1000;
-      max-width: 280px;
-      box-shadow: 0 8px 18px rgba(0,0,0,0.35);
-    }
+      .stage img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
 
-    .hint {
-      margin-top: 10px;
-      color: #444;
-      font-size: 0.95rem;
-    }
+      .hotspot {
+        position: absolute;
+        width: var(--hotspot-size);
+        height: var(--hotspot-size);
+        border-radius: 999px;
+        transform: translate(-50%, -50%);
+        border: 2px solid rgba(0,0,0,0.75);
+        background: rgba(255,255,255,0.90);
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        user-select: none;
+      }
 
-    .zone-date       { top: 12%; left: 72%; width: 20%; height: 10%; }
-    .zone-payee      { top: 28%; left: 12%; width: 55%; height: 10%; }
-    .zone-amount-num { top: 28%; left: 70%; width: 22%; height: 10%; }
-    .zone-amount-txt { top: 42%; left: 8%;  width: 75%; height: 10%; }
-    .zone-memo       { top: 75%; left: 10%; width: 30%; height: 10%; }
-    .zone-sig        { top: 70%; left: 65%; width: 30%; height: 15%; }
-    .zone-routing    { top: 88%; left: 10%; width: 20%; height: 8%; }
-    .zone-account    { top: 88%; left: 32%; width: 20%; height: 8%; }
+      .hotspot:focus {
+        outline: 3px solid rgba(0, 95, 204, 0.9);
+        outline-offset: 2px;
+      }
 
-    .actions-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 0; }
-    .btn {
-      text-decoration: none;
-      padding: 8px 12px;
-      border: 1px solid #333;
-      border-radius: 999px;
-      color: #111;
-      background: #fff;
-      display: inline-block;
-    }
-  </style>
-</head>
-<body>
-  <div id="tooltip" role="status" aria-live="polite"></div>
+      .hotspot span {
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 1;
+      }
 
-  <div class="container">
-    <nav aria-label="Primary">
-      <a href="../../index.html">Home</a>
-      <a href="../index.html">Back to Workshop 4</a>
-    </nav>
+      /* Modal */
+      .modal-backdrop {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.55);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 18px;
+        z-index: 9999;
+      }
 
-    <header class="page-header">
-      <h1>Interactive Check Explainer</h1>
-      <p>Hover, focus (Tab), or tap fields on the check to learn what each part means.</p>
-    </header>
+      .modal {
+        width: min(720px, 100%);
+        background: #fff;
+        border-radius: 16px;
+        border: 1px solid rgba(0,0,0,0.2);
+        box-shadow: 0 16px 60px rgba(0,0,0,0.25);
+        overflow: hidden;
+      }
 
-    <div class="check-wrap">
-      <div class="check-stage" aria-label="Interactive check diagram">
+      .modal header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 14px 16px;
+        border-bottom: 1px solid rgba(0,0,0,0.12);
+      }
+
+      .modal header h2 {
+        margin: 0;
+        font-size: 18px;
+      }
+
+      .modal .body {
+        padding: 16px;
+      }
+
+      .modal .body p {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 1.5;
+      }
+
+      .close {
+        border: 1px solid rgba(0,0,0,0.25);
+        background: white;
+        border-radius: 10px;
+        padding: 8px 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="topbar">
+        <div>
+          <h1 style="margin:0;">Interactive Check Explainer</h1>
+          <p class="hint" style="margin-top:6px;">
+            Click a number on the check to learn what it means.
+          </p>
+        </div>
+
+        <nav>
+          <a class="btn" href="../../index.html">Home</a>
+          <a class="btn" href="../index.html">Back to Workshop 4</a>
+        </nav>
+      </div>
+
+      <div class="card">
+        <p class="hint">
+          Tip: You can also use the <strong>Tab</strong> key to move through numbers, then press <strong>Enter</strong>.
+        </p>
+      </div>
+
+      <div class="stage" id="stage">
         <img
-          class="check-image"
           src="../../_assets/images/check-how-to-read.png"
-          alt="Example check with labeled fields"
+          alt="A sample check with numbered callouts."
         />
-
-        <div class="hotspot zone-date" tabindex="0" role="button" aria-label="Date field" data-num="1" data-info="Date: The date the check was written. Some checks may become stale after a period of time (often months)."></div>
-        <div class="hotspot zone-payee" tabindex="0" role="button" aria-label="Payee line" data-num="2" data-info="Payee: Who the check is written to. Only the named person or business should deposit or cash it."></div>
-        <div class="hotspot zone-amount-num" tabindex="0" role="button" aria-label="Numeric amount" data-num="3" data-info="Amount (numbers): The value written in numbers (e.g., $100.00)."></div>
-        <div class="hotspot zone-amount-txt" tabindex="0" role="button" aria-label="Written amount" data-num="4" data-info="Amount (words): The value written in words. This is often treated as the controlling amount if there is a discrepancy."></div>
-        <div class="hotspot zone-memo" tabindex="0" role="button" aria-label="Memo line" data-num="5" data-info="Memo: Optional note about what the check is for (e.g., rent, utilities)."></div>
-        <div class="hotspot zone-sig" tabindex="0" role="button" aria-label="Signature line" data-num="6" data-info="Signature: The account holder signs here to authorize payment. Unsigned checks generally are not valid."></div>
-        <div class="hotspot zone-routing" tabindex="0" role="button" aria-label="Routing number" data-num="7" data-info="Routing number: A 9-digit code that identifies the bank or credit union."></div>
-        <div class="hotspot zone-account" tabindex="0" role="button" aria-label="Account number" data-num="8" data-info="Account number: Identifies the specific account the money will come from."></div>
+        <!-- Hotspots injected by JS -->
       </div>
     </div>
 
-    <p class="hint">Tip: On phones or tablets, tap a field to show the explanation, then tap anywhere else to dismiss.</p>
-
-    <div class="actions-row">
-      <a class="btn" href="../index.html">Back to Workshop 4</a>
-      <a class="btn" href="../../index.html">Home</a>
+    <!-- Modal -->
+    <div class="modal-backdrop" id="backdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal">
+        <header>
+          <h2 id="modalTitle">Item</h2>
+          <button class="close" id="closeBtn" type="button" aria-label="Close">Close</button>
+        </header>
+        <div class="body">
+          <p id="modalText"></p>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <script>
-    const tooltip = document.getElementById('tooltip');
-    const hotspots = Array.from(document.querySelectorAll('.hotspot'));
-    let activeSpot = null;
+    <script>
+      /**
+       * Hotspot positions are based on the cropped check image produced from pg11_12.pdf.
+       * Positions are percentages of the image dimensions.
+       */
+      const HOTSPOTS = [
+        { num: 1, xPct: 19.5783, yPct: 18.2353 },
+        { num: 2, xPct: 62.1084, yPct: 18.9412 },
+        { num: 3, xPct: 70.1807, yPct: 18.9412 },
+        { num: 4, xPct: 25.8434, yPct: 25.2941 },
+        { num: 5, xPct: 10.3012, yPct: 28.5882 },
+        { num: 6, xPct: 19.5783, yPct: 30.4706 },
+        { num: 7, xPct: 7.4096,  yPct: 43.1765 },
+        { num: 8, xPct: 9.6988,  yPct: 80.5882 },
+        { num: 9, xPct: 20.4217, yPct: 80.5882 },
+        { num: 10, xPct: 28.8554, yPct: 80.8235 },
+        { num: 11, xPct: 39.2169, yPct: 86.7059 },
+        { num: 12, xPct: 48.1325, yPct: 86.9412 },
+      ];
 
-    function clampToViewport(x, y) {
-      const pad = 12;
-      const rect = tooltip.getBoundingClientRect();
-      let nx = x;
-      let ny = y;
-
-      if (nx + rect.width + pad > window.innerWidth) nx = window.innerWidth - rect.width - pad;
-      if (ny + rect.height + pad > window.innerHeight) ny = window.innerHeight - rect.height - pad;
-      if (nx < pad) nx = pad;
-      if (ny < pad) ny = pad;
-
-      return { x: nx, y: ny };
-    }
-
-    function showTooltip(text, clientX, clientY) {
-      tooltip.textContent = text;
-      tooltip.style.opacity = '1';
-      const pos = clampToViewport(clientX + 15, clientY + 15);
-      tooltip.style.left = pos.x + 'px';
-      tooltip.style.top = pos.y + 'px';
-    }
-
-    function hideTooltip() {
-      tooltip.style.opacity = '0';
-    }
-
-    function activateSpot(spot) {
-      hotspots.forEach((hs) => hs.classList.remove('is-active'));
-      activeSpot = spot;
-      if (spot) spot.classList.add('is-active');
-    }
-
-    hotspots.forEach((spot) => {
-      const text = spot.dataset.info || '';
-
-      spot.addEventListener('mouseenter', (e) => {
-        activateSpot(spot);
-        showTooltip(text, e.clientX, e.clientY);
-      });
-
-      spot.addEventListener('mousemove', (e) => {
-        showTooltip(text, e.clientX, e.clientY);
-      });
-
-      spot.addEventListener('mouseleave', () => {
-        if (document.activeElement !== spot) {
-          activateSpot(null);
-          hideTooltip();
+      /**
+       * Explanations (you can edit text freely later without touching coordinates).
+       * Kept simple + practical; no repo restructuring required.
+       */
+      const EXPLAIN = {
+        1: {
+          title: "1. Date",
+          text: "The date the check is written (month/day/year)."
+        },
+        2: {
+          title: "2. Pay to the Order of",
+          text: "Who the check is being paid to (a person or an organization)."
+        },
+        3: {
+          title: "3. Amount (Numbers)",
+          text: "The payment amount written in numbers. This should match the written amount."
+        },
+        4: {
+          title: "4. Amount (Words)",
+          text: "The payment amount written out in words. If there’s ever a mismatch, banks typically rely on the written amount."
+        },
+        5: {
+          title: "5. Memo / For",
+          text: "Optional note describing what the payment is for (rent, utilities, invoice #, etc.)."
+        },
+        6: {
+          title: "6. Signature",
+          text: "The payer’s signature. Without it, the check is usually not valid."
+        },
+        7: {
+          title: "7. Your Information / Bank Information",
+          text: "Typically includes the payer’s name/address and/or bank name (format varies by check design)."
+        },
+        8: {
+          title: "8. Routing Number",
+          text: "Identifies the bank. This is the first set of numbers in the MICR line at the bottom."
+        },
+        9: {
+          title: "9. Account Number",
+          text: "Identifies the specific bank account the money comes from (second set in the MICR line)."
+        },
+        10: {
+          title: "10. Check Number (MICR / Header)",
+          text: "The check’s ID number. Often appears at the top and again at the bottom (format varies)."
+        },
+        11: {
+          title: "11. Check Number (Top Corner)",
+          text: "Another location where the check number may appear for easier reference."
+        },
+        12: {
+          title: "12. MICR Line (Bottom Line)",
+          text: "The machine-readable line that contains routing/account/check-number information for processing."
         }
-      });
+      };
 
-      spot.addEventListener('focus', () => {
-        const r = spot.getBoundingClientRect();
-        activateSpot(spot);
-        showTooltip(text, r.right, r.top);
-      });
+      const stage = document.getElementById("stage");
+      const backdrop = document.getElementById("backdrop");
+      const modalTitle = document.getElementById("modalTitle");
+      const modalText = document.getElementById("modalText");
+      const closeBtn = document.getElementById("closeBtn");
 
-      spot.addEventListener('blur', () => {
-        activateSpot(null);
-        hideTooltip();
-      });
-
-      spot.addEventListener('click', (e) => {
-        e.stopPropagation();
-        activateSpot(spot);
-        showTooltip(text, e.clientX, e.clientY);
-      });
-    });
-
-    document.addEventListener('click', () => {
-      if (activeSpot) {
-        activeSpot.classList.remove('is-active');
-        activeSpot = null;
+      function openModal(n) {
+        const info = EXPLAIN[n] || { title: `Item ${n}`, text: "" };
+        modalTitle.textContent = info.title;
+        modalText.textContent = info.text;
+        backdrop.style.display = "flex";
+        closeBtn.focus();
       }
-      hideTooltip();
-    });
 
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        if (activeSpot) {
-          activeSpot.classList.remove('is-active');
-          activeSpot = null;
-        }
-        hideTooltip();
+      function closeModal() {
+        backdrop.style.display = "none";
       }
-    });
 
-    window.addEventListener('resize', () => {
-      if (activeSpot && tooltip.style.opacity === '1') {
-        const r = activeSpot.getBoundingClientRect();
-        showTooltip(activeSpot.dataset.info || '', r.right, r.top);
+      function buildHotspots() {
+        HOTSPOTS.forEach(h => {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "hotspot";
+          btn.style.left = `${h.xPct}%`;
+          btn.style.top = `${h.yPct}%`;
+          btn.setAttribute("aria-label", `Open explanation for number ${h.num}`);
+          btn.innerHTML = `<span>${h.num}</span>`;
+          btn.addEventListener("click", () => openModal(h.num));
+          stage.appendChild(btn);
+        });
       }
-    });
-  </script>
-</body>
+
+      // Close interactions
+      closeBtn.addEventListener("click", closeModal);
+      backdrop.addEventListener("click", (e) => {
+        if (e.target === backdrop) closeModal();
+      });
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && backdrop.style.display === "flex") closeModal();
+      });
+
+      buildHotspots();
+    </script>
+  </body>
 </html>
