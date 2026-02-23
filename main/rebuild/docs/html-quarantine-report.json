@@ -1,0 +1,338 @@
+{
+  "removed_count": 28,
+  "kept_count": 27,
+  "removed": [
+    {
+      "from": "content/legacy/pdp_activity/Financial PDP Activity_files/saved_resource(2).html",
+      "to": "legacy/html-with-dead-links/content/legacy/pdp_activity/Financial PDP Activity_files/saved_resource(2).html",
+      "broken_count": 202,
+      "examples": [
+        "/courses",
+        "/courses",
+        "/payment?product_id=10-secrets-of-ux-design",
+        "/payment?product_id=10-secrets-of-ux-design",
+        "/payment?product_id=10-secrets-of-ux-design"
+      ]
+    },
+    {
+      "from": "content/legacy/pdp_activity/Financial PDP Activity_files/saved_resource(3).html",
+      "to": "legacy/html-with-dead-links/content/legacy/pdp_activity/Financial PDP Activity_files/saved_resource(3).html",
+      "broken_count": 1,
+      "examples": [
+        "{{=embed_url}}"
+      ]
+    },
+    {
+      "from": "content/workshops/workshop-02/activities/activity/index.html",
+      "to": "legacy/html-with-dead-links/content/workshops/workshop-02/activities/activity/index.html",
+      "broken_count": 4,
+      "examples": [
+        "../../_assets/materials.css",
+        "../../index.html",
+        "../index.html",
+        "../index.html"
+      ]
+    },
+    {
+      "from": "content/workshops/workshop-02/pages/additional-resources.html",
+      "to": "legacy/html-with-dead-links/content/workshops/workshop-02/pages/additional-resources.html",
+      "broken_count": 2,
+      "examples": [
+        "../_assets/materials.css",
+        "../index.html"
+      ]
+    },
+    {
+      "from": "content/workshops/workshop-02/pages/core-resources.html",
+      "to": "legacy/html-with-dead-links/content/workshops/workshop-02/pages/core-resources.html",
+      "broken_count": 3,
+      "examples": [
+        "../_assets/materials.css",
+        "../index.html",
+        "additional-resources.html"
+      ]
+    },
+    {
+      "from": "content/workshops/workshop-02/pages/handouts.html",
+      "to": "legacy/html-with-dead-links/content/workshops/workshop-02/pages/handouts.html",
+      "broken_count": 4,
+      "examples": [
+        "../_assets/materials.css",
+        "../index.html",
+        "core-resources.html",
+        "additional-resources.html"
+      ]
+    },
+    {
+      "from": "content/workshops/workshop-02/pages/index.html",
+      "to": "legacy/html-with-dead-links/content/workshops/workshop-02/pages/index.html",
+      "broken_count": 9,
+      "examples": [
+        "../_assets/materials.css",
+        "../index.html",
+        "handouts.html",
+        "core-resources.html",
+        "additional-resources.html"
+      ]
+    },
+    {
+      "from": "content/workshops/workshop-02/pages/worksheets.html",
+      "to": "legacy/html-with-dead-links/content/workshops/workshop-02/pages/worksheets.html",
+      "broken_count": 6,
+      "examples": [
+        "../_assets/materials.css",
+        "../index.html",
+        "index.html",
+        "handouts.html",
+        "core-resources.html"
+      ]
+    },
+    {
+      "from": "content/workshops/workshop-03/activities/activity/index.html",
+      "to": "legacy/html-with-dead-links/content/workshops/workshop-03/activities/activity/index.html",
+      "broken_count": 4,
+      "examples": [
+        "../../_assets/materials.css",
+        "../../index.html",
+        "../index.html",
+        "../index.html"
+      ]
+    },
+    {
+      "from": "content/workshops/workshop-03/pages/additional-resources.html",
+      "to": "legacy/html-with-dead-links/content/workshops/workshop-03/pages/additional-resources.html",
+      "broken_count": 21,
+      "examples": [
+        "../_assets/materials.css",
+        "../index.html",
+        "../core/Workshop_03/Additional_Resources/1.%20How%20to%20Make%20a%20Budget.pdf",
+        "../core/Workshop_03/Additional_Resources/10.%20%20How%20to%20Buy%20a%20House%20with%20Low%20Income.pdf",
+        "../core/Workshop_03/Additional_Resources/11.%20How%20To%20File%20For%20SSDI%20Benefits%20If%20Homeless.pdf"
+      ]
+    },
+    {
+      "from": "content/workshops/workshop-03/pages/core-resources.html",
+      "to": "legacy/html-with-dead-links/content/workshops/workshop-03/pages/core-resources.html",
+      "broken_count": 5,
+      "examples": [
+        "../_assets/materials.css",
+        "../index.html",
+        "additional-resources.html",
+        "../core/Workshop_03/Core_Resources/Guides/Student_Guide-Workshop_03-Creating_a_%20Budget.pdf",
+        "../core/Workshop_03/Core_Resources/Slides/Money%20Basics%20PPT%20Workshop%203.pdf"
+      ]
+    },
+    {
+      "from": "content/workshops/workshop-03/pages/handouts.html",
+      "to": "legacy/html-with-dead-links/content/workshops/workshop-03/pages/handouts.html",
+      "broken_count": 8,
+      "examples": [
+        "../_assets/materials.css",
+        "../index.html",
+        "core-resources.html",
+        "additional-resources.html",
+        "../core/Workshop_03/Handouts/1.%20Budgeting%20Apps.pdf"
+      ]
+    },
+    {
+      "from": "content/workshops/workshop-03/pages/index.html",
+      "to": "legacy/html-with-dead-links/content/workshops/workshop-03/pages/index.html",
+      "broken_count": 9,
+      "examples": [
+        "../_assets/materials.css",
+        "../index.html",
+        "handouts.html",
+        "core-resources.html",
+        "additional-resources.html"
+      ]
+    },
+    {
+      "from": "content/workshops/workshop-03/pages/worksheets.html",
+      "to": "legacy/html-with-dead-links/content/workshops/workshop-03/pages/worksheets.html",
+      "broken_count": 13,
+      "examples": [
+        "../_assets/materials.css",
+        "../index.html",
+        "index.html",
+        "handouts.html",
+        "core-resources.html"
+      ]
+    },
+    {
+      "from": "content/workshops/workshop-04/activities/activity/index.html",
+      "to": "legacy/html-with-dead-links/content/workshops/workshop-04/activities/activity/index.html",
+      "broken_count": 3,
+      "examples": [
+        "../../_assets/materials.css",
+        "../../index.html",
+        "../index.html"
+      ]
+    },
+    {
+      "from": "content/workshops/workshop-04/pages/additional-resources.html",
+      "to": "legacy/html-with-dead-links/content/workshops/workshop-04/pages/additional-resources.html",
+      "broken_count": 2,
+      "examples": [
+        "../_assets/materials.css",
+        "../index.html"
+      ]
+    },
+    {
+      "from": "content/workshops/workshop-04/pages/core-resources.html",
+      "to": "legacy/html-with-dead-links/content/workshops/workshop-04/pages/core-resources.html",
+      "broken_count": 55,
+      "examples": [
+        "../_assets/materials.css",
+        "../index.html",
+        "additional-resources.html",
+        "../../Parts/FG%3ASG_Splits/Wksp%20Pages/Workshop_04/Student_Guide/Workshop_04/PDFs/pg1.pdf",
+        "../../Parts/FG%3ASG_Splits/Wksp%20Pages/Workshop_04/Student_Guide/Workshop_04/PDFs/pg10.pdf"
+      ]
+    },
+    {
+      "from": "content/workshops/workshop-04/pages/handouts.html",
+      "to": "legacy/html-with-dead-links/content/workshops/workshop-04/pages/handouts.html",
+      "broken_count": 4,
+      "examples": [
+        "../_assets/materials.css",
+        "../index.html",
+        "core-resources.html",
+        "additional-resources.html"
+      ]
+    },
+    {
+      "from": "content/workshops/workshop-04/pages/index.html",
+      "to": "legacy/html-with-dead-links/content/workshops/workshop-04/pages/index.html",
+      "broken_count": 9,
+      "examples": [
+        "../_assets/materials.css",
+        "../index.html",
+        "handouts.html",
+        "core-resources.html",
+        "additional-resources.html"
+      ]
+    },
+    {
+      "from": "content/workshops/workshop-04/pages/worksheets.html",
+      "to": "legacy/html-with-dead-links/content/workshops/workshop-04/pages/worksheets.html",
+      "broken_count": 6,
+      "examples": [
+        "../_assets/materials.css",
+        "../index.html",
+        "index.html",
+        "handouts.html",
+        "core-resources.html"
+      ]
+    },
+    {
+      "from": "legacy/root/index.html",
+      "to": "legacy/html-with-dead-links/legacy/root/index.html",
+      "broken_count": 1408,
+      "examples": [
+        ".DS_Store",
+        ".vscode/extensions.json",
+        "Parts/.DS_Store",
+        "Parts/FG%3ASG_Splits/.DS_Store",
+        "Parts/FG%3ASG_Splits/Wksp%20Pages/.DS_Store"
+      ]
+    },
+    {
+      "from": "legacy/root/student_index.html",
+      "to": "legacy/html-with-dead-links/legacy/root/student_index.html",
+      "broken_count": 670,
+      "examples": [
+        "Parts/FG%3ASG_Splits/Wksp/Student%20Guide/Wksps/Workshop%2001%20-%20Introduction%20%26%20Course%20Overview.pdf",
+        "Parts/FG%3ASG_Splits/Wksp/Student%20Guide/Wksps/Workshop%2002%20-%20Setting%20Financial%20Goals%3B%20Person%20Directed%20Planning.pdf",
+        "Parts/FG%3ASG_Splits/Wksp/Student%20Guide/Wksps/Workshop%2003%20-%20Creating%20a%20Budget%20%26%20Resources%20to%20Save%20Money.pdf",
+        "Parts/FG%3ASG_Splits/Wksp/Student%20Guide/Wksps/Workshop%2004%20-%20Banking%20Basics%20%26%20Checking%20Accounts.pdf",
+        "Parts/FG%3ASG_Splits/Wksp/Student%20Guide/Wksps/Workshop%2005%20-%20Debit%20Cards%2C%20ATMs%2C%20Online%20Banking%20%26%20Money%20Safety.pdf"
+      ]
+    },
+    {
+      "from": "src/site/materials/Workshop_03/worksheets.html",
+      "to": "legacy/html-with-dead-links/src/site/materials/Workshop_03/worksheets.html",
+      "broken_count": 1,
+      "examples": [
+        "../../Parts/Teaching%20Materials/Workshop%203/Handouts/Workshop%203%20Worksheets.pdf"
+      ]
+    },
+    {
+      "from": "src/site/materials/Workshop_04/core-resources.html",
+      "to": "legacy/html-with-dead-links/src/site/materials/Workshop_04/core-resources.html",
+      "broken_count": 52,
+      "examples": [
+        "../../Parts/FG%3ASG_Splits/Wksp%20Pages/Workshop_04/Student_Guide/Workshop_04/PDFs/pg1.pdf",
+        "../../Parts/FG%3ASG_Splits/Wksp%20Pages/Workshop_04/Student_Guide/Workshop_04/PDFs/pg10.pdf",
+        "../../Parts/FG%3ASG_Splits/Wksp%20Pages/Workshop_04/Student_Guide/Workshop_04/PDFs/pg11.pdf",
+        "../../Parts/FG%3ASG_Splits/Wksp%20Pages/Workshop_04/Student_Guide/Workshop_04/PDFs/pg11_12.pdf",
+        "../../Parts/FG%3ASG_Splits/Wksp%20Pages/Workshop_04/Student_Guide/Workshop_04/PDFs/pg12.pdf"
+      ]
+    },
+    {
+      "from": "src/site/materials/Workshop_04/handouts.html",
+      "to": "legacy/html-with-dead-links/src/site/materials/Workshop_04/handouts.html",
+      "broken_count": 1,
+      "examples": [
+        "core-resources.html"
+      ]
+    },
+    {
+      "from": "src/site/materials/Workshop_04/index.html",
+      "to": "legacy/html-with-dead-links/src/site/materials/Workshop_04/index.html",
+      "broken_count": 4,
+      "examples": [
+        "handouts.html",
+        "core-resources.html",
+        "handouts.html",
+        "core-resources.html"
+      ]
+    },
+    {
+      "from": "src/site/materials/Workshop_04/worksheets.html",
+      "to": "legacy/html-with-dead-links/src/site/materials/Workshop_04/worksheets.html",
+      "broken_count": 3,
+      "examples": [
+        "index.html",
+        "handouts.html",
+        "core-resources.html"
+      ]
+    },
+    {
+      "from": "src/site/materials/index.html",
+      "to": "legacy/html-with-dead-links/src/site/materials/index.html",
+      "broken_count": 1,
+      "examples": [
+        "Workshop_04/index.html"
+      ]
+    }
+  ],
+  "kept": [
+    "content/glossary/raw/glossary_of_financial_terms.html",
+    "content/legacy/parts/Teaching Materials/Facilitator & Student Guides/Glossaries/financial-terms-glossary.filtered.html",
+    "content/legacy/parts/Teaching Materials/Facilitator & Student Guides/Glossaries/money-basics-student-glossary.html",
+    "content/legacy/pdp_activity/Financial PDP Activity.html",
+    "content/legacy/pdp_activity/Financial PDP Activity_files/inner.html",
+    "content/legacy/pdp_activity/Financial PDP Activity_files/m-outer-3437aaddcdf6922d623e172c2d6f9278.html",
+    "content/legacy/pdp_activity/Financial PDP Activity_files/saved_resource(1).html",
+    "content/legacy/pdp_activity/Financial PDP Activity_files/saved_resource(4).html",
+    "content/legacy/pdp_activity/Financial PDP Activity_files/saved_resource.html",
+    "content/legacy/whole/Module 1/Visuals/poverty_intersectionality_privilege_excerpt.html",
+    "content/legacy/worksheets/wksp_7/action_plan_future.html",
+    "content/workshops/workshop-01/pages/Visuals/poverty_intersectionality_privilege_excerpt.html",
+    "src/activities/check-explainer/index.html",
+    "src/site/materials/Workshop_02/activity/index.html",
+    "src/site/materials/Workshop_02/additional-resources.html",
+    "src/site/materials/Workshop_02/core-resources.html",
+    "src/site/materials/Workshop_02/handouts.html",
+    "src/site/materials/Workshop_02/index.html",
+    "src/site/materials/Workshop_02/worksheets.html",
+    "src/site/materials/Workshop_03/activity/index.html",
+    "src/site/materials/Workshop_03/additional-resources.html",
+    "src/site/materials/Workshop_03/core-resources.html",
+    "src/site/materials/Workshop_03/handouts.html",
+    "src/site/materials/Workshop_03/index.html",
+    "src/site/materials/Workshop_04/activity/index.html",
+    "src/site/materials/Workshop_04/additional-resources.html",
+    "src/site/materials/core/Workshop_02/pdp-activity.html"
+  ]
+}

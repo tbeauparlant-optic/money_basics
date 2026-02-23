@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Check Explainer</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="topbar">
+        <div>
+          <h1 style="margin: 0">Interactive Check Explainer</h1>
+          <p class="hint" style="margin-top: 6px">Click a number on the check to learn what it means.</p>
+        </div>
+        <nav>
+          <a class="btn" href="#">Home</a>
+          <a class="btn" href="#">Back to Workshop 4</a>
+        </nav>
+      </div>
+
+      <div class="card">
+        <p class="hint">
+          Tip: You can also use the <strong>Tab</strong> key to move through numbers, then press
+          <strong>Enter</strong>.
+        </p>
+      </div>
+
+      <div class="stage" id="stage">
+        <img id="checkImage" src="" alt="" />
+      </div>
+    </div>
+
+    <div class="modal-backdrop" id="backdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal">
+        <header>
+          <h2 id="modalTitle">Item</h2>
+          <button class="close" id="closeBtn" type="button" aria-label="Close">Close</button>
+        </header>
+        <div class="body">
+          <p id="modalText"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>

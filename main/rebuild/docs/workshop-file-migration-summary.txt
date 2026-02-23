@@ -1,0 +1,44 @@
+Generated: 2026-02-23T22:22:08Z
+Total mapped files: 394
+
+By category:
+- Facilitator_Guide: 40
+- Student_Guide: 105
+- activities: 10
+- archives: 2
+- pages: 16
+- resources: 214
+- worksheets: 7
+
+By resource_role:
+- additional_resource: 16
+- archive: 2
+- core_resource: 3
+- handout: 48
+- resource: 83
+- worksheet: 5
+
+By page_role:
+- additional_resources_page: 3
+- content_page: 1
+- core_resources_page: 3
+- handouts_page: 3
+- index_page: 6
+- worksheets_page: 3
+
+By workshop:
+- workshop-00: 1
+- workshop-01: 46
+- workshop-02: 10
+- workshop-03: 20
+- workshop-04: 21
+- workshop-05: 37
+- workshop-06: 11
+- workshop-07: 53
+- workshop-08: 111
+- workshop-09: 28
+- workshop-10: 55
+- workshop-11: 1
+
+JSON report: main/rebuild/docs/workshop-file-migration-report.json
+CSV report: main/rebuild/docs/workshop-file-migration-report.csv

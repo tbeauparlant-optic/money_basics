@@ -1,0 +1,537 @@
+{
+  "generatedAt": "2026-02-23T22:22:08Z",
+  "workshop": "workshop-07",
+  "count": 53,
+  "files": [
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/MB_FTS_ 7.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-07/resources/MB_FTS_ 7.pdf",
+      "workshop": "workshop-07",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/How to Create a Debt Elimination Plan.docx",
+      "dest": "main/rebuild/content/workshops/workshop-07/resources/How to Create a Debt Elimination Plan.docx",
+      "workshop": "workshop-07",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/73 Tips for Eliminating Debt.docx",
+      "dest": "main/rebuild/content/workshops/workshop-07/resources/73 Tips for Eliminating Debt.docx",
+      "workshop": "workshop-07",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/5 Ways to Get out of Debt.docx",
+      "dest": "main/rebuild/content/workshops/workshop-07/resources/5 Ways to Get out of Debt.docx",
+      "workshop": "workshop-07",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/The Effects of Debt on Your Health.docx",
+      "dest": "main/rebuild/content/workshops/workshop-07/resources/The Effects of Debt on Your Health.docx",
+      "workshop": "workshop-07",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Module 7 Additional Resources.docx",
+      "dest": "main/rebuild/content/workshops/workshop-07/resources/Module 7 Additional Resources.docx",
+      "workshop": "workshop-07",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "additional_resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop 07 - Debt & Tools.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-07/resources/Workshop 07 - Debt & Tools.pdf",
+      "workshop": "workshop-07",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/MB_FTS_ 7.docx",
+      "dest": "main/rebuild/content/workshops/workshop-07/resources/MB_FTS_ 7.docx",
+      "workshop": "workshop-07",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PDFs/pg1.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-07/Facilitator_Guide/PDFs/pg1.pdf",
+      "workshop": "workshop-07",
+      "category": "Facilitator_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PDFs/pg2.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-07/Facilitator_Guide/PDFs/pg2.pdf",
+      "workshop": "workshop-07",
+      "category": "Facilitator_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PDFs/pg4.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-07/Facilitator_Guide/PDFs/pg4.pdf",
+      "workshop": "workshop-07",
+      "category": "Facilitator_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PDFs/pg7.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-07/Facilitator_Guide/PDFs/pg7.pdf",
+      "workshop": "workshop-07",
+      "category": "Facilitator_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PDFs/pg6.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-07/Facilitator_Guide/PDFs/pg6.pdf",
+      "workshop": "workshop-07",
+      "category": "Facilitator_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PDFs/pg5.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-07/Facilitator_Guide/PDFs/pg5.pdf",
+      "workshop": "workshop-07",
+      "category": "Facilitator_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PDFs/pg3.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-07/Facilitator_Guide/PDFs/pg3.pdf",
+      "workshop": "workshop-07",
+      "category": "Facilitator_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PNGs/pg5.png",
+      "dest": "main/rebuild/content/workshops/workshop-07/Facilitator_Guide/PNGs/pg5.png",
+      "workshop": "workshop-07",
+      "category": "Facilitator_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PNGs/pg1.png",
+      "dest": "main/rebuild/content/workshops/workshop-07/Facilitator_Guide/PNGs/pg1.png",
+      "workshop": "workshop-07",
+      "category": "Facilitator_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PNGs/pg2.png",
+      "dest": "main/rebuild/content/workshops/workshop-07/Facilitator_Guide/PNGs/pg2.png",
+      "workshop": "workshop-07",
+      "category": "Facilitator_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PNGs/pg4.png",
+      "dest": "main/rebuild/content/workshops/workshop-07/Facilitator_Guide/PNGs/pg4.png",
+      "workshop": "workshop-07",
+      "category": "Facilitator_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PNGs/pg7.png",
+      "dest": "main/rebuild/content/workshops/workshop-07/Facilitator_Guide/PNGs/pg7.png",
+      "workshop": "workshop-07",
+      "category": "Facilitator_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PNGs/pg6.png",
+      "dest": "main/rebuild/content/workshops/workshop-07/Facilitator_Guide/PNGs/pg6.png",
+      "workshop": "workshop-07",
+      "category": "Facilitator_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Facilitator_Guide/Workshop_07/PNGs/pg3.png",
+      "dest": "main/rebuild/content/workshops/workshop-07/Facilitator_Guide/PNGs/pg3.png",
+      "workshop": "workshop-07",
+      "category": "Facilitator_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg10.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PDFs/pg10.pdf",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg1.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PDFs/pg1.pdf",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg8.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PDFs/pg8.pdf",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg2.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PDFs/pg2.pdf",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg4.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PDFs/pg4.pdf",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg12.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PDFs/pg12.pdf",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg13.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PDFs/pg13.pdf",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg11.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PDFs/pg11.pdf",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg7.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PDFs/pg7.pdf",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg6.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PDFs/pg6.pdf",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg14.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PDFs/pg14.pdf",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg9.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PDFs/pg9.pdf",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg5.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PDFs/pg5.pdf",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg15.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PDFs/pg15.pdf",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PDFs/pg3.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PDFs/pg3.pdf",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg5.png",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PNGs/pg5.png",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg16.png",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PNGs/pg16.png",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg1.png",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PNGs/pg1.png",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg9.png",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PNGs/pg9.png",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg2.png",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PNGs/pg2.png",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg4.png",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PNGs/pg4.png",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg7.png",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PNGs/pg7.png",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg12.png",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PNGs/pg12.png",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg8.png",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PNGs/pg8.png",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg11.png",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PNGs/pg11.png",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg15.png",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PNGs/pg15.png",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg6.png",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PNGs/pg6.png",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg3.png",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PNGs/pg3.png",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg13.png",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PNGs/pg13.png",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg10.png",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PNGs/pg10.png",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 7/Workshop_07/Student_Guide/Workshop_07/PNGs/pg14.png",
+      "dest": "main/rebuild/content/workshops/workshop-07/Student_Guide/PNGs/pg14.png",
+      "workshop": "workshop-07",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    }
+  ]
+}

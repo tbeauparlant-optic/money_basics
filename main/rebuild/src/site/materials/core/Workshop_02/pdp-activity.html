@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Workshop 02 PDP Activity Wireframe</title>
+  <link rel="stylesheet" href="../../_assets/materials.css"/>
+  <style>
+    .hero { border: 2px dashed #999; padding: 16px; margin-bottom: 20px; }
+    .meta-line { color: #555; margin: 6px 0 0; }
+    .section { border: 1px solid #ddd; padding: 16px; margin: 18px 0; }
+    .section h2 { margin-top: 0; }
+    .two-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+    .card { border: 1px dashed #bbb; padding: 12px; }
+    .step { border: 2px solid #222; padding: 16px; margin: 18px 0; }
+    .step-meta { font-size: 0.95rem; color: #333; margin-bottom: 8px; }
+    .question-list { margin: 8px 0 12px 18px; }
+    .input-block { margin: 10px 0; }
+    label { display: block; font-weight: 600; margin-bottom: 6px; }
+    textarea, input[type="text"] { width: 100%; padding: 8px; border: 1px solid #444; border-radius: 4px; font: inherit; }
+    textarea { min-height: 120px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+    .wire-btn { border: 1px solid #111; padding: 6px 12px; background: #f6f6f6; cursor: pointer; }
+    .progress { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 0; }
+    .pill { border: 1px solid #333; padding: 4px 10px; border-radius: 999px; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <h1>Workshop 2: Setting Financial Goals</h1>
+      <p class="meta-line">Section: Creating Your Financial PDP</p>
+      <p>This wireframe outlines a guided participant flow for the Financial Person-Directed Planning (PDP) activity.</p>
+      <div class="progress">
+        <span class="pill">Step 1: Life Now</span>
+        <span class="pill">Step 2: What Works</span>
+        <span class="pill">Step 3: Strengths</span>
+        <span class="pill">Step 4: Goals &amp; Dreams</span>
+        <span class="pill">Step 5: One Year Out</span>
+        <span class="pill">Step 6: Action Plan</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Materials Covered</h2>
+      <div class="two-col">
+        <div class="card">
+          <h3>Guides</h3>
+          <ul>
+            <li>Student Guide (p. 155-158)</li>
+            <li>Facilitator Guide (p. 101-107)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Worksheets / Handouts</h3>
+          <ul>
+            <li>"What is Person Directed Planning" Handout</li>
+            <li>Person Directed Planning Worksheets</li>
+          </ul>
+        </div>
+      </div>
+      <p class="meta">All materials can be found in the Facilitator Toolkit website.</p>
+    </div>
+
+    <div class="section">
+      <h2>What Is a PDP?</h2>
+      <p>A PDP is a tool used to assist people in making life changes. It focuses on an individual's strengths and guides them to identify their long-term goals and the short-term steps they can take to get there.</p>
+      <p>Person-directed planning is directed by the participant. The goal is to keep lived experiences, strengths, skills, goals, and dreams at the center of planning for the future.</p>
+      <h3>Why Is It Useful?</h3>
+      <p>Improving one's financial well-being is a personalized process. PDP helps participants identify tools, supports, and resources that work best for them, creating a sense of agency and empowerment.</p>
+    </div>
+
+    <div class="section">
+      <h2>Learning Goals</h2>
+      <ul>
+        <li>Create their own Person-Directed Plan</li>
+        <li>Create an Action Plan for achieving their financial goals</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Instructions</h2>
+      <p>In this module, participants complete a shortened version of the PDP worksheet. Encourage them to follow along with the Student and Facilitator Guides and to type answers directly into the worksheet fields.</p>
+    </div>
+
+    <form class="section" aria-label="Financial PDP Activity">
+      <div class="step" id="step-1">
+        <h2>Step 1: Life Now</h2>
+        <div class="step-meta">Time: 3 minutes</div>
+        <p>Describe how your life is now. Pay special attention to your current financial picture and relationship with money.</p>
+        <ul class="question-list">
+          <li>What is your current source of income?</li>
+          <li>Who manages your finances?</li>
+          <li>What type of housing do you have?</li>
+          <li>Do you work? If so, where and how much do you make?</li>
+          <li>What debts are you aware of?</li>
+        </ul>
+        <div class="input-block">
+          <label for="life-now">Your notes</label>
+          <textarea id="life-now" name="life-now" placeholder="Type your answers here..."></textarea>
+        </div>
+      </div>
+
+      <div class="step" id="step-2">
+        <h2>Step 2: What Works &amp; What Doesn't</h2>
+        <div class="step-meta">Time: 5 minutes</div>
+        <p>What works well for you? What makes things run smoothly? What causes problems currently?</p>
+        <p>Think about these questions specifically in regards to money and finances.</p>
+        <div class="input-block">
+          <label for="works-well">What works well?</label>
+          <textarea id="works-well" name="works-well" placeholder="What helps you manage your money well?"></textarea>
+        </div>
+        <div class="input-block">
+          <label for="does-not-work">What doesn't work?</label>
+          <textarea id="does-not-work" name="does-not-work" placeholder="What gets in the way of your financial empowerment?"></textarea>
+        </div>
+      </div>
+
+      <div class="step" id="step-3">
+        <h2>Step 3: Strengths, Gifts, Capacities</h2>
+        <div class="step-meta">Time: 5 minutes</div>
+        <p>Identify your strengths, gifts, and capacities.</p>
+        <p><strong>Strengths</strong> are valuable abilities or qualities (ex: good at math, writing, or public speaking).</p>
+        <p><strong>Gifts</strong> are special talents or natural abilities (ex: compassionate, empathetic, good listener).</p>
+        <p><strong>Capacities</strong> are areas of potential growth or accomplishment (ex: being a quick learner or strong communicator).</p>
+        <p>Some common transferable skills include communication, dependability, teamwork, critical thinking, organization, leadership, adaptability, and empathy.</p>
+        <div class="input-block">
+          <label for="strengths">List your strengths, gifts, and capacities</label>
+          <textarea id="strengths" name="strengths" placeholder="Type your list here..."></textarea>
+        </div>
+      </div>
+
+      <div class="step" id="step-4">
+        <h2>Step 4: Financial Goals &amp; Dreams</h2>
+        <div class="step-meta">Time: 5 minutes</div>
+        <p>Describe your dreams and big goals for the next 5 to 10 years. Imagine your ideal future without barriers.</p>
+        <div class="input-block">
+          <label for="dreams">Goals &amp; dreams</label>
+          <textarea id="dreams" name="dreams" placeholder="What are a few big goals you hope to achieve?"></textarea>
+        </div>
+      </div>
+
+      <div class="step" id="step-5">
+        <h2>Step 5: Life One Year from Now</h2>
+        <div class="step-meta">Time: 3 minutes</div>
+        <p>Imagine your life one year from now, knowing you are one year closer to your financial dreams.</p>
+        <div class="input-block">
+          <label for="one-year">One-year vision</label>
+          <textarea id="one-year" name="one-year" placeholder="What will your life look like one year from now?"></textarea>
+        </div>
+      </div>
+
+      <div class="step" id="step-6">
+        <h2>Step 6: Action Plan</h2>
+        <div class="step-meta">Time: 5 minutes</div>
+        <p>Create an Action Plan for achieving short-term and long-term financial goals. Focus on small steps that build toward a larger goal.</p>
+        <div class="input-block">
+          <label for="goal">Goal</label>
+          <input type="text" id="goal" name="goal" placeholder="Example: Improve my credit score"/>
+        </div>
+        <div class="input-block">
+          <label for="steps">Actions / steps</label>
+          <textarea id="steps" name="steps" placeholder="List the steps you will take..."></textarea>
+        </div>
+        <div class="input-block">
+          <label for="timeline">Timeline</label>
+          <input type="text" id="timeline" name="timeline" placeholder="Example: 3-6 months"/>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button type="button" class="wire-btn">Save Draft</button>
+        <button type="button" class="wire-btn">Previous Step</button>
+        <button type="button" class="wire-btn">Next Step</button>
+        <button type="submit" class="wire-btn">Submit PDP</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

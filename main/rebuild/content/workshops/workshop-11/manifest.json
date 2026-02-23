@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-02-23T22:22:08Z",
+  "workshop": "workshop-11",
+  "count": 1,
+  "files": [
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 11/Workshop 11 - Course Graduation.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-11/resources/Workshop 11 - Course Graduation.pdf",
+      "workshop": "workshop-11",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    }
+  ]
+}

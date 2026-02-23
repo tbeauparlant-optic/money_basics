@@ -1,0 +1,4 @@
+source,dest,workshop,category,page_role,resource_role,result,source_type,review_reasons
+main/rebuild/content/legacy/whole/Module 1/SG:FG/W1_SG.pdf,main/rebuild/content/workshops/workshop-01/Student_Guide/W1_SG.pdf,workshop-01,Student_Guide,,,copied,whole_legacy,legacy_path_contains_colon
+main/rebuild/content/legacy/whole/Module 1/SG:FG/W1_FG.pdf,main/rebuild/content/workshops/workshop-01/Facilitator_Guide/W1_FG.pdf,workshop-01,Facilitator_Guide,,,copied,whole_legacy,legacy_path_contains_colon
+main/rebuild/content/legacy/whole/Module 10/Facilitator Guide/Sections/Saving Money w: Limited Resources.pdf,main/rebuild/content/workshops/workshop-10/Facilitator_Guide/Sections/Saving Money w - Limited Resources.pdf,workshop-10,Facilitator_Guide,,resource,copied,whole_legacy,legacy_path_contains_colon

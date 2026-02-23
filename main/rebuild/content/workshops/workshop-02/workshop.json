@@ -1,0 +1,11 @@
+{
+  "id": "workshop-02",
+  "order": 2,
+  "title": "Workshop 2",
+  "legacy": {
+    "wholeModulePath": "Whole/Module 2",
+    "rebuiltLegacyPath": "main/rebuild/content/legacy/whole/Module 2"
+  },
+  "status": "imported",
+  "notes": "Auto-generated scaffold; refine title/metadata during migration."
+}

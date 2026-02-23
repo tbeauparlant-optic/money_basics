@@ -1,0 +1,557 @@
+{
+  "generatedAt": "2026-02-23T22:22:08Z",
+  "workshop": "workshop-10",
+  "count": 55,
+  "files": [
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/23 Easy Ways To Save Money.docx",
+      "dest": "main/rebuild/content/workshops/workshop-10/resources/23 Easy Ways To Save Money.docx",
+      "workshop": "workshop-10",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/A Beginner_s Guide to Saving Money.docx",
+      "dest": "main/rebuild/content/workshops/workshop-10/resources/A Beginner_s Guide to Saving Money.docx",
+      "workshop": "workshop-10",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Workshop_10.zip",
+      "dest": "main/rebuild/content/workshops/workshop-10/archives/Workshop_10.zip",
+      "workshop": "workshop-10",
+      "category": "archives",
+      "page_role": null,
+      "resource_role": "archive",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/MB_FTS_ 10.docx",
+      "dest": "main/rebuild/content/workshops/workshop-10/resources/MB_FTS_ 10.docx",
+      "workshop": "workshop-10",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Module 10 Additional Resources.docx",
+      "dest": "main/rebuild/content/workshops/workshop-10/resources/Module 10 Additional Resources.docx",
+      "workshop": "workshop-10",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "additional_resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/How to Save Money On A Low Income.docx",
+      "dest": "main/rebuild/content/workshops/workshop-10/resources/How to Save Money On A Low Income.docx",
+      "workshop": "workshop-10",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Workshop 10 - Savings Accounts & Goals.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-10/resources/Workshop 10 - Savings Accounts & Goals.pdf",
+      "workshop": "workshop-10",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Asset Building For Low-Income Families.docx",
+      "dest": "main/rebuild/content/workshops/workshop-10/resources/Asset Building For Low-Income Families.docx",
+      "workshop": "workshop-10",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/IDA Basics & Resources.docx",
+      "dest": "main/rebuild/content/workshops/workshop-10/resources/IDA Basics & Resources.docx",
+      "workshop": "workshop-10",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Workshop 10 - Savings Accounts & Savings Goals.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-10/resources/Workshop 10 - Savings Accounts & Savings Goals.pdf",
+      "workshop": "workshop-10",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Visuals/money trees.png",
+      "dest": "main/rebuild/content/workshops/workshop-10/resources/Visuals/money trees.png",
+      "workshop": "workshop-10",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Visuals/Screenshot 2025-10-29 at 2.03.55\u202fPM.png",
+      "dest": "main/rebuild/content/workshops/workshop-10/resources/Visuals/Screenshot 2025-10-29 at 2.03.55 PM.png",
+      "workshop": "workshop-10",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Visuals/Screenshot 2025-10-29 at 10.26.47\u202fAM.png",
+      "dest": "main/rebuild/content/workshops/workshop-10/resources/Visuals/Screenshot 2025-10-29 at 10.26.47 AM.png",
+      "workshop": "workshop-10",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Visuals/Savings Activity_Jars.png",
+      "dest": "main/rebuild/content/workshops/workshop-10/activities/Visuals/Savings Activity_Jars.png",
+      "workshop": "workshop-10",
+      "category": "activities",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Visuals/IDAs.png",
+      "dest": "main/rebuild/content/workshops/workshop-10/resources/Visuals/IDAs.png",
+      "workshop": "workshop-10",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Visuals/Budgeting Table.png",
+      "dest": "main/rebuild/content/workshops/workshop-10/resources/Visuals/Budgeting Table.png",
+      "workshop": "workshop-10",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/HO PNGs/3. IDA Basics & Resources.png",
+      "dest": "main/rebuild/content/workshops/workshop-10/resources/HO PNGs/3. IDA Basics & Resources.png",
+      "workshop": "workshop-10",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Sections ( PDF )/Savings_Accounts.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-10/resources/Sections ( PDF )/Savings_Accounts.pdf",
+      "workshop": "workshop-10",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PDFs/pg10.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PDFs/pg10.pdf",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PDFs/pg1.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PDFs/pg1.pdf",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PDFs/pg8.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PDFs/pg8.pdf",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PDFs/pg2.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PDFs/pg2.pdf",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PDFs/pg4.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PDFs/pg4.pdf",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PDFs/pg12.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PDFs/pg12.pdf",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PDFs/pg13.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PDFs/pg13.pdf",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PDFs/pg11.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PDFs/pg11.pdf",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PDFs/pg7.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PDFs/pg7.pdf",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PDFs/pg6.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PDFs/pg6.pdf",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PDFs/pg14.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PDFs/pg14.pdf",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PDFs/pg9.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PDFs/pg9.pdf",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PDFs/pg5.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PDFs/pg5.pdf",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PDFs/pg3.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PDFs/pg3.pdf",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PNGs/pg5.png",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PNGs/pg5.png",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PNGs/pg1.png",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PNGs/pg1.png",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PNGs/pg9.png",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PNGs/pg9.png",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PNGs/pg2.png",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PNGs/pg2.png",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PNGs/pg4.png",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PNGs/pg4.png",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PNGs/pg7.png",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PNGs/pg7.png",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PNGs/pg12.png",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PNGs/pg12.png",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PNGs/pg8.png",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PNGs/pg8.png",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PNGs/pg11.png",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PNGs/pg11.png",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PNGs/pg6.png",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PNGs/pg6.png",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PNGs/pg3.png",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PNGs/pg3.png",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PNGs/pg13.png",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PNGs/pg13.png",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PNGs/pg10.png",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PNGs/pg10.png",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/PNGs/pg14.png",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/PNGs/pg14.png",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/Sections/PDF/Different_Kinds_of_Savings_Accounts_Student.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/Sections/PDF/Different_Kinds_of_Savings_Accounts_Student.pdf",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/Sections/PDF/Asset_Building_Student.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/Sections/PDF/Asset_Building_Student.pdf",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Student_Guide/Workshop_10/Sections/PDF/Creating_a_Savings_Plan_Student.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-10/Student_Guide/Sections/PDF/Creating_a_Savings_Plan_Student.pdf",
+      "workshop": "workshop-10",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Facilitator Guide/Sections/Saving Money w: Limited Resources.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-10/Facilitator_Guide/Sections/Saving Money w - Limited Resources.pdf",
+      "workshop": "workshop-10",
+      "category": "Facilitator_Guide",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Facilitator Guide/Sections/Retirement_Plans_and_Investments_Facilitator.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-10/Facilitator_Guide/Sections/Retirement_Plans_and_Investments_Facilitator.pdf",
+      "workshop": "workshop-10",
+      "category": "Facilitator_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Facilitator Guide/Sections/Individual_Development_Accounts_Facilitator.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-10/Facilitator_Guide/Sections/Individual_Development_Accounts_Facilitator.pdf",
+      "workshop": "workshop-10",
+      "category": "Facilitator_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Facilitator Guide/Sections/Asset_Building_Facilitator.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-10/Facilitator_Guide/Sections/Asset_Building_Facilitator.pdf",
+      "workshop": "workshop-10",
+      "category": "Facilitator_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Facilitator Guide/Sections/Savings_Goals_Facilitator.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-10/Facilitator_Guide/Sections/Savings_Goals_Facilitator.pdf",
+      "workshop": "workshop-10",
+      "category": "Facilitator_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 10/Facilitator Guide/Sections/Savings_Accounts_Facilitator.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-10/Facilitator_Guide/Sections/Savings_Accounts_Facilitator.pdf",
+      "workshop": "workshop-10",
+      "category": "Facilitator_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    }
+  ]
+}

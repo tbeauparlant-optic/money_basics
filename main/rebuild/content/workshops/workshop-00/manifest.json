@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-02-23T22:22:08Z",
+  "workshop": "workshop-00",
+  "count": 1,
+  "files": [
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 0/MB_FTS_ 0.docx",
+      "dest": "main/rebuild/content/workshops/workshop-00/resources/MB_FTS_ 0.docx",
+      "workshop": "workshop-00",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    }
+  ]
+}

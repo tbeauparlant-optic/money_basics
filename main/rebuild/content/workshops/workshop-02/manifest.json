@@ -1,0 +1,107 @@
+{
+  "generatedAt": "2026-02-23T22:22:08Z",
+  "workshop": "workshop-02",
+  "count": 10,
+  "files": [
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 2/Person-Centered Planning.docx",
+      "dest": "main/rebuild/content/workshops/workshop-02/resources/Person-Centered Planning.docx",
+      "workshop": "workshop-02",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 2/Module 2 Additional Resources.docx",
+      "dest": "main/rebuild/content/workshops/workshop-02/resources/Module 2 Additional Resources.docx",
+      "workshop": "workshop-02",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "additional_resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 2/Workshop 02 - Setting Financial Goals.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-02/resources/Workshop 02 - Setting Financial Goals.pdf",
+      "workshop": "workshop-02",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 2/MB_FTS_ 2.docx",
+      "dest": "main/rebuild/content/workshops/workshop-02/resources/MB_FTS_ 2.docx",
+      "workshop": "workshop-02",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/src/site/materials/Workshop_02/worksheets.html",
+      "dest": "main/rebuild/content/workshops/workshop-02/pages/worksheets.html",
+      "workshop": "workshop-02",
+      "category": "pages",
+      "page_role": "worksheets_page",
+      "resource_role": "worksheet",
+      "result": "copied",
+      "source_type": "materials"
+    },
+    {
+      "source": "main/rebuild/src/site/materials/Workshop_02/index.html",
+      "dest": "main/rebuild/content/workshops/workshop-02/pages/index.html",
+      "workshop": "workshop-02",
+      "category": "pages",
+      "page_role": "index_page",
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "materials"
+    },
+    {
+      "source": "main/rebuild/src/site/materials/Workshop_02/core-resources.html",
+      "dest": "main/rebuild/content/workshops/workshop-02/pages/core-resources.html",
+      "workshop": "workshop-02",
+      "category": "pages",
+      "page_role": "core_resources_page",
+      "resource_role": "core_resource",
+      "result": "copied",
+      "source_type": "materials"
+    },
+    {
+      "source": "main/rebuild/src/site/materials/Workshop_02/additional-resources.html",
+      "dest": "main/rebuild/content/workshops/workshop-02/pages/additional-resources.html",
+      "workshop": "workshop-02",
+      "category": "pages",
+      "page_role": "additional_resources_page",
+      "resource_role": "additional_resource",
+      "result": "copied",
+      "source_type": "materials"
+    },
+    {
+      "source": "main/rebuild/src/site/materials/Workshop_02/handouts.html",
+      "dest": "main/rebuild/content/workshops/workshop-02/pages/handouts.html",
+      "workshop": "workshop-02",
+      "category": "pages",
+      "page_role": "handouts_page",
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "materials"
+    },
+    {
+      "source": "main/rebuild/src/site/materials/Workshop_02/activity/index.html",
+      "dest": "main/rebuild/content/workshops/workshop-02/activities/activity/index.html",
+      "workshop": "workshop-02",
+      "category": "activities",
+      "page_role": "index_page",
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "materials"
+    }
+  ]
+}

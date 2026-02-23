@@ -1,0 +1,217 @@
+{
+  "generatedAt": "2026-02-23T22:22:08Z",
+  "workshop": "workshop-04",
+  "count": 21,
+  "files": [
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 4/module4photos.zip",
+      "dest": "main/rebuild/content/workshops/workshop-04/archives/module4photos.zip",
+      "workshop": "workshop-04",
+      "category": "archives",
+      "page_role": null,
+      "resource_role": "archive",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 4/Workshop 04 - Banking Basics.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-04/resources/Workshop 04 - Banking Basics.pdf",
+      "workshop": "workshop-04",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 4/How to Balance Your Checkbook.docx",
+      "dest": "main/rebuild/content/workshops/workshop-04/resources/How to Balance Your Checkbook.docx",
+      "workshop": "workshop-04",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 4/MB_FTS_ 4.docx",
+      "dest": "main/rebuild/content/workshops/workshop-04/resources/MB_FTS_ 4.docx",
+      "workshop": "workshop-04",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 4/How to Open a Bank Checking Account With Bad Credit.docx",
+      "dest": "main/rebuild/content/workshops/workshop-04/resources/How to Open a Bank Checking Account With Bad Credit.docx",
+      "workshop": "workshop-04",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 4/Second Chance Checking Accounts.docx",
+      "dest": "main/rebuild/content/workshops/workshop-04/resources/Second Chance Checking Accounts.docx",
+      "workshop": "workshop-04",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 4/Why Balancing Your Checkbook is Important.docx",
+      "dest": "main/rebuild/content/workshops/workshop-04/resources/Why Balancing Your Checkbook is Important.docx",
+      "workshop": "workshop-04",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 4/Module 4 Additional Resources.docx",
+      "dest": "main/rebuild/content/workshops/workshop-04/resources/Module 4 Additional Resources.docx",
+      "workshop": "workshop-04",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "additional_resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 4/How to Open a Bank Account.docx",
+      "dest": "main/rebuild/content/workshops/workshop-04/resources/How to Open a Bank Account.docx",
+      "workshop": "workshop-04",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 4/check_writing_activity/20251212_102910.jpg",
+      "dest": "main/rebuild/content/workshops/workshop-04/activities/check_writing_activity/20251212_102910.jpg",
+      "workshop": "workshop-04",
+      "category": "activities",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 4/check_writing_activity/20251212_102915.jpg",
+      "dest": "main/rebuild/content/workshops/workshop-04/activities/check_writing_activity/20251212_102915.jpg",
+      "workshop": "workshop-04",
+      "category": "activities",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 4/check_writing_activity/20251212_102853.jpg",
+      "dest": "main/rebuild/content/workshops/workshop-04/activities/check_writing_activity/20251212_102853.jpg",
+      "workshop": "workshop-04",
+      "category": "activities",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 4/check_writing_activity/20251212_102840.jpg",
+      "dest": "main/rebuild/content/workshops/workshop-04/activities/check_writing_activity/20251212_102840.jpg",
+      "workshop": "workshop-04",
+      "category": "activities",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/src/site/materials/Workshop_04/worksheets.html",
+      "dest": "main/rebuild/content/workshops/workshop-04/pages/worksheets.html",
+      "workshop": "workshop-04",
+      "category": "pages",
+      "page_role": "worksheets_page",
+      "resource_role": "worksheet",
+      "result": "copied",
+      "source_type": "materials"
+    },
+    {
+      "source": "main/rebuild/src/site/materials/Workshop_04/index.html",
+      "dest": "main/rebuild/content/workshops/workshop-04/pages/index.html",
+      "workshop": "workshop-04",
+      "category": "pages",
+      "page_role": "index_page",
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "materials"
+    },
+    {
+      "source": "main/rebuild/src/site/materials/Workshop_04/core-resources.html",
+      "dest": "main/rebuild/content/workshops/workshop-04/pages/core-resources.html",
+      "workshop": "workshop-04",
+      "category": "pages",
+      "page_role": "core_resources_page",
+      "resource_role": "core_resource",
+      "result": "copied",
+      "source_type": "materials"
+    },
+    {
+      "source": "main/rebuild/src/site/materials/Workshop_04/additional-resources.html",
+      "dest": "main/rebuild/content/workshops/workshop-04/pages/additional-resources.html",
+      "workshop": "workshop-04",
+      "category": "pages",
+      "page_role": "additional_resources_page",
+      "resource_role": "additional_resource",
+      "result": "copied",
+      "source_type": "materials"
+    },
+    {
+      "source": "main/rebuild/src/site/materials/Workshop_04/handouts.html",
+      "dest": "main/rebuild/content/workshops/workshop-04/pages/handouts.html",
+      "workshop": "workshop-04",
+      "category": "pages",
+      "page_role": "handouts_page",
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "materials"
+    },
+    {
+      "source": "main/rebuild/src/site/materials/Workshop_04/activity/index.html",
+      "dest": "main/rebuild/content/workshops/workshop-04/activities/activity/index.html",
+      "workshop": "workshop-04",
+      "category": "activities",
+      "page_role": "index_page",
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "materials"
+    },
+    {
+      "source": "main/rebuild/src/site/materials/Workshop_04/activity/assets/check_wksp_pg11.png",
+      "dest": "main/rebuild/content/workshops/workshop-04/activities/activity/assets/check_wksp_pg11.png",
+      "workshop": "workshop-04",
+      "category": "activities",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "materials"
+    },
+    {
+      "source": "main/rebuild/src/site/materials/Workshop_04/activity/assets/images/check-how-to-read.png",
+      "dest": "main/rebuild/content/workshops/workshop-04/activities/activity/assets/images/check-how-to-read.png",
+      "workshop": "workshop-04",
+      "category": "activities",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "materials"
+    }
+  ]
+}

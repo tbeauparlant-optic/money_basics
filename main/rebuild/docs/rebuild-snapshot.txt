@@ -1,0 +1,43 @@
+Rebuild snapshot generated on 2026-02-23T21:23:30Z
+
+Top-level under main/rebuild:
+main/rebuild
+main/rebuild/assets
+main/rebuild/assets/processed
+main/rebuild/assets/raw
+main/rebuild/config
+main/rebuild/content
+main/rebuild/content/glossary
+main/rebuild/content/legacy
+main/rebuild/content/shared
+main/rebuild/content/workshops
+main/rebuild/dist
+main/rebuild/docs
+main/rebuild/legacy
+main/rebuild/legacy/root
+main/rebuild/public
+main/rebuild/scripts
+main/rebuild/src
+main/rebuild/src/activities
+main/rebuild/src/scripts
+main/rebuild/src/site
+main/rebuild/src/styles
+main/rebuild/tests
+main/rebuild/tests/accessibility
+main/rebuild/tests/e2e
+main/rebuild/tests/unit
+main/rebuild/tools
+main/rebuild/tools/docx
+main/rebuild/tools/legacy
+main/rebuild/tools/migration
+main/rebuild/tools/pdf
+
+Legacy copy counts:
+- main/rebuild/src/site/materials: 58 files
+- main/rebuild/content/legacy/whole: 379 files
+- main/rebuild/content/legacy/parts: 939 files
+- main/rebuild/content/legacy/worksheets: 2 files
+- main/rebuild/content/legacy/pdp_activity: 339 files
+- main/rebuild/content/legacy/scorm_activities: 0 files
+- main/rebuild/content/glossary/raw: 3 files
+- main/rebuild/tools/legacy: 4 files

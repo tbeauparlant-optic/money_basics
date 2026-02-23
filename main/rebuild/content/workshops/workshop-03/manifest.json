@@ -1,0 +1,207 @@
+{
+  "generatedAt": "2026-02-23T22:22:08Z",
+  "workshop": "workshop-03",
+  "count": 20,
+  "files": [
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 3/5 No-brainer Money-Saving Tips.docx",
+      "dest": "main/rebuild/content/workshops/workshop-03/resources/5 No-brainer Money-Saving Tips.docx",
+      "workshop": "workshop-03",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 3/How to Buy a House with Low Income.docx",
+      "dest": "main/rebuild/content/workshops/workshop-03/resources/How to Buy a House with Low Income.docx",
+      "workshop": "workshop-03",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 3/Workshop 03 - Creating a Budget.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-03/resources/Workshop 03 - Creating a Budget.pdf",
+      "workshop": "workshop-03",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 3/MB Money Saving Resources Handout.docx",
+      "dest": "main/rebuild/content/workshops/workshop-03/resources/MB Money Saving Resources Handout.docx",
+      "workshop": "workshop-03",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 3/10 Easy Ways to Save Money.docx",
+      "dest": "main/rebuild/content/workshops/workshop-03/resources/10 Easy Ways to Save Money.docx",
+      "workshop": "workshop-03",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 3/What Makes for a Successful Budget.docx",
+      "dest": "main/rebuild/content/workshops/workshop-03/resources/What Makes for a Successful Budget.docx",
+      "workshop": "workshop-03",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 3/How to Make a Budget.docx",
+      "dest": "main/rebuild/content/workshops/workshop-03/resources/How to Make a Budget.docx",
+      "workshop": "workshop-03",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 3/11 Frugal Living Tips.docx",
+      "dest": "main/rebuild/content/workshops/workshop-03/resources/11 Frugal Living Tips.docx",
+      "workshop": "workshop-03",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 3/Budgeting Apps.docx",
+      "dest": "main/rebuild/content/workshops/workshop-03/resources/Budgeting Apps.docx",
+      "workshop": "workshop-03",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 3/MB_FTS_ 3.docx",
+      "dest": "main/rebuild/content/workshops/workshop-03/resources/MB_FTS_ 3.docx",
+      "workshop": "workshop-03",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 3/How To File For Social Security Disability Benefits If Homeless.docx",
+      "dest": "main/rebuild/content/workshops/workshop-03/resources/How To File For Social Security Disability Benefits If Homeless.docx",
+      "workshop": "workshop-03",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 3/Module 3 Additional Resources.docx",
+      "dest": "main/rebuild/content/workshops/workshop-03/resources/Module 3 Additional Resources.docx",
+      "workshop": "workshop-03",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "additional_resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 3/Online Budgeting Tools.docx",
+      "dest": "main/rebuild/content/workshops/workshop-03/resources/Online Budgeting Tools.docx",
+      "workshop": "workshop-03",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 3/SSI Elibility Requirements and Asset Limits.docx",
+      "dest": "main/rebuild/content/workshops/workshop-03/resources/SSI Elibility Requirements and Asset Limits.docx",
+      "workshop": "workshop-03",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/src/site/materials/Workshop_03/worksheets.html",
+      "dest": "main/rebuild/content/workshops/workshop-03/pages/worksheets.html",
+      "workshop": "workshop-03",
+      "category": "pages",
+      "page_role": "worksheets_page",
+      "resource_role": "worksheet",
+      "result": "copied",
+      "source_type": "materials"
+    },
+    {
+      "source": "main/rebuild/src/site/materials/Workshop_03/index.html",
+      "dest": "main/rebuild/content/workshops/workshop-03/pages/index.html",
+      "workshop": "workshop-03",
+      "category": "pages",
+      "page_role": "index_page",
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "materials"
+    },
+    {
+      "source": "main/rebuild/src/site/materials/Workshop_03/core-resources.html",
+      "dest": "main/rebuild/content/workshops/workshop-03/pages/core-resources.html",
+      "workshop": "workshop-03",
+      "category": "pages",
+      "page_role": "core_resources_page",
+      "resource_role": "core_resource",
+      "result": "copied",
+      "source_type": "materials"
+    },
+    {
+      "source": "main/rebuild/src/site/materials/Workshop_03/additional-resources.html",
+      "dest": "main/rebuild/content/workshops/workshop-03/pages/additional-resources.html",
+      "workshop": "workshop-03",
+      "category": "pages",
+      "page_role": "additional_resources_page",
+      "resource_role": "additional_resource",
+      "result": "copied",
+      "source_type": "materials"
+    },
+    {
+      "source": "main/rebuild/src/site/materials/Workshop_03/handouts.html",
+      "dest": "main/rebuild/content/workshops/workshop-03/pages/handouts.html",
+      "workshop": "workshop-03",
+      "category": "pages",
+      "page_role": "handouts_page",
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "materials"
+    },
+    {
+      "source": "main/rebuild/src/site/materials/Workshop_03/activity/index.html",
+      "dest": "main/rebuild/content/workshops/workshop-03/activities/activity/index.html",
+      "workshop": "workshop-03",
+      "category": "activities",
+      "page_role": "index_page",
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "materials"
+    }
+  ]
+}

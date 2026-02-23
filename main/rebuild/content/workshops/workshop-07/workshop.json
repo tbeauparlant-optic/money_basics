@@ -1,0 +1,11 @@
+{
+  "id": "workshop-07",
+  "order": 7,
+  "title": "Workshop 7",
+  "legacy": {
+    "wholeModulePath": "Whole/Module 7",
+    "rebuiltLegacyPath": "main/rebuild/content/legacy/whole/Module 7"
+  },
+  "status": "imported",
+  "notes": "Auto-generated scaffold; refine title/metadata during migration."
+}

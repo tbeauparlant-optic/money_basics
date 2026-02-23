@@ -1,0 +1,287 @@
+{
+  "generatedAt": "2026-02-23T22:22:08Z",
+  "workshop": "workshop-09",
+  "count": 28,
+  "files": [
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/How to Cope with Tax Season Stress.docx",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/How to Cope with Tax Season Stress.docx",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/What to Know About How to File Taxes.docx",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/What to Know About How to File Taxes.docx",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/Module Nine Additional Resources.docx",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/Module Nine Additional Resources.docx",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "additional_resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/MB_FTS_ 9.docx",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/MB_FTS_ 9.docx",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/Money Basics PPT Workshop 9.pptx",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/Money Basics PPT Workshop 9.pptx",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/Regressive, Proportional, and Progressive Taxes.docx",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/Regressive, Proportional, and Progressive Taxes.docx",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/Workshop 09 - Tax Returns.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/Workshop 09 - Tax Returns.pdf",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/Handouts/2. IRS Free File.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/Handouts/2. IRS Free File.pdf",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/Handouts/6. Common Tax Write-Offs You Can Claim.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/Handouts/6. Common Tax Write-Offs You Can Claim.pdf",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/Handouts/5. Credits & Deductions.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/Handouts/5. Credits & Deductions.pdf",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/Handouts/1. IRS Tips to Take the Stress out of Tax Season.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/Handouts/1. IRS Tips to Take the Stress out of Tax Season.pdf",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/Handouts/Who Qualifies for the Earned Income Tax Credit (EITC) _ Internal Revenue Service.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/Handouts/Who Qualifies for the Earned Income Tax Credit (EITC) _ Internal Revenue Service.pdf",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/Handouts/4. The Three Basic Tax Types.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/Handouts/4. The Three Basic Tax Types.pdf",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/Handouts/3. 6 Steps for First-Time Tax Filers.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/Handouts/3. 6 Steps for First-Time Tax Filers.pdf",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/Handouts/7. 8 Things to Know about Oregon\u2019s Tax System.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/Handouts/7. 8 Things to Know about Oregon\u2019s Tax System.pdf",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/Resources/6. Regressive Vs. Progressive Taxes.docx",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/Resources/6. Regressive Vs. Progressive Taxes.docx",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/Resources/Workshop 9 Additional Resources.docx",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/Resources/Workshop 9 Additional Resources.docx",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "additional_resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/Resources/Workshop 9 Additional Resources.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/Resources/Workshop 9 Additional Resources.pdf",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "additional_resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/Resources/2. How to Cope with Tax Season Stress.docx",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/Resources/2. How to Cope with Tax Season Stress.docx",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/Resources/6. Regressive Vs. Progressive Taxes.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/Resources/6. Regressive Vs. Progressive Taxes.pdf",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/Resources/7. Federal Tax Revenue.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/Resources/7. Federal Tax Revenue.pdf",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/Resources/2. How to Cope with Tax Season Stress.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/Resources/2. How to Cope with Tax Season Stress.pdf",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/Resources/Form 1040.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/Resources/Form 1040.pdf",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/Resources/1. What to Know About How to File Taxes.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/Resources/1. What to Know About How to File Taxes.pdf",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/Resources/3. How to File Your Taxes.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/Resources/3. How to File Your Taxes.pdf",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/Resources/4. Tax Basics.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/Resources/4. Tax Basics.pdf",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/Resources/1. What to Know About How to File Taxes.docx",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/Resources/1. What to Know About How to File Taxes.docx",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 9/Resources/5. Why We Pay Taxes.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-09/resources/Resources/5. Why We Pay Taxes.pdf",
+      "workshop": "workshop-09",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    }
+  ]
+}

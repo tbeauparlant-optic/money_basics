@@ -1,0 +1,467 @@
+{
+  "generatedAt": "2026-02-23T22:22:08Z",
+  "workshop": "workshop-01",
+  "count": 46,
+  "files": [
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/Money Basics PPT Workshop 1.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/Money Basics PPT Workshop 1.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/MB_FTS_ 1.docx",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/MB_FTS_ 1.docx",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/Money Basics PPT Workshop 1.pptx",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/Money Basics PPT Workshop 1.pptx",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/OR_WorkSystemsPresentation_20211006.pptx",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/OR_WorkSystemsPresentation_20211006.pptx",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/Course Introduction/Creating Community Agreements.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/Course Introduction/Creating Community Agreements.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/Course Introduction/Workshop 01 - Introduction.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/Course Introduction/Workshop 01 - Introduction.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/Course Introduction/Trauma-Informed-Care-in-the-Classroom.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/Course Introduction/Trauma-Informed-Care-in-the-Classroom.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/Course Introduction/Developing Community Agreements.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/Course Introduction/Developing Community Agreements.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Handouts/SSS_BudgetWorksheet_052023.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/worksheets/WS1 Handouts/SSS_BudgetWorksheet_052023.pdf",
+      "workshop": "workshop-01",
+      "category": "worksheets",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Handouts/3. Poverty and Intersectionality in Oregon.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/WS1 Handouts/3. Poverty and Intersectionality in Oregon.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Handouts/1. Poverty and Hunger in America.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/WS1 Handouts/1. Poverty and Hunger in America.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Handouts/5. How Poverty is Measured in the US.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/WS1 Handouts/5. How Poverty is Measured in the US.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Handouts/Workshop 1 Worksheets (extra).pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/worksheets/WS1 Handouts/Workshop 1 Worksheets (extra).pdf",
+      "workshop": "workshop-01",
+      "category": "worksheets",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Handouts/4. Hidden Rules Among Classes.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/WS1 Handouts/4. Hidden Rules Among Classes.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Handouts/6. The _American Dream_ of upward mobility is broken.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/WS1 Handouts/6. The _American Dream_ of upward mobility is broken.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Handouts/Workshop 1 Worksheets.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/worksheets/WS1 Handouts/Workshop 1 Worksheets.pdf",
+      "workshop": "workshop-01",
+      "category": "worksheets",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Handouts/Financial Literacy & African Americans_ Bridging the Gap.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/WS1 Handouts/Financial Literacy & African Americans_ Bridging the Gap.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Handouts/2. Steps Toward Financial Resilience.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/WS1 Handouts/2. Steps Toward Financial Resilience.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Handouts/7. White Privilege Invisible Knapsack.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/WS1 Handouts/7. White Privilege Invisible Knapsack.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Resources/Workshop 1 Additional Resources.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/WS1 Resources/Workshop 1 Additional Resources.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "additional_resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Resources/16. Supplemental Poverty Measure.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/WS1 Resources/16. Supplemental Poverty Measure.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Resources/Workshop 01 - Introduction.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/WS1 Resources/Workshop 01 - Introduction.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Resources/12. FAQs on Problem Gambling.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/WS1 Resources/12. FAQs on Problem Gambling.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Resources/14. Financial Strategies for Loved Ones of Gamblers.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/WS1 Resources/14. Financial Strategies for Loved Ones of Gamblers.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Resources/13. Financial Toolkit for Problem Gamblers.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/WS1 Resources/13. Financial Toolkit for Problem Gamblers.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/Visuals/workshop packet image.png",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/Visuals/workshop packet image.png",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/Visuals/2-768x512.jpg",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/Visuals/2-768x512.jpg",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/Visuals/poverty_intersectionality_privilege_excerpt.html",
+      "dest": "main/rebuild/content/workshops/workshop-01/pages/Visuals/poverty_intersectionality_privilege_excerpt.html",
+      "workshop": "workshop-01",
+      "category": "pages",
+      "page_role": "content_page",
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/Visuals/equity-apple-tree-1024x575.jpg",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/Visuals/equity-apple-tree-1024x575.jpg",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/Visuals/Wheel of Privilege and Power.png",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/Visuals/Wheel of Privilege and Power.png",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/SG:FG/W1_SG.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/Student_Guide/W1_SG.pdf",
+      "workshop": "workshop-01",
+      "category": "Student_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/SG:FG/W1_FG.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/Facilitator_Guide/W1_FG.pdf",
+      "workshop": "workshop-01",
+      "category": "Facilitator_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/Worksheets/Individual Course Goals.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/worksheets/Worksheets/Individual Course Goals.pdf",
+      "workshop": "workshop-01",
+      "category": "worksheets",
+      "page_role": null,
+      "resource_role": "worksheet",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/Worksheets/Money Savings Ideas and Trackers.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/worksheets/Worksheets/Money Savings Ideas and Trackers.pdf",
+      "workshop": "workshop-01",
+      "category": "worksheets",
+      "page_role": null,
+      "resource_role": "worksheet",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Resources/Behavioral Health and Mindfulness/2. How to Practice Mindfulness on a Budget.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/WS1 Resources/Behavioral Health and Mindfulness/2. How to Practice Mindfulness on a Budget.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Resources/Behavioral Health and Mindfulness/1. Tips for Managing Money When You Live With Mental Health Challenges.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/WS1 Resources/Behavioral Health and Mindfulness/1. Tips for Managing Money When You Live With Mental Health Challenges.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Resources/Behavioral Health and Mindfulness/3. How to Reduce Financial Stress.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/WS1 Resources/Behavioral Health and Mindfulness/3. How to Reduce Financial Stress.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/11. Unaffordable America. Poverty, Housing and Eviction.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/WS1 Resources/Poverty, Intersectionality, Social Justice/11. Unaffordable America. Poverty, Housing and Eviction.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/4. Income Inequality in America.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/WS1 Resources/Poverty, Intersectionality, Social Justice/4. Income Inequality in America.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/8. Race and the lack of intergenerational economic mobility in the US.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/WS1 Resources/Poverty, Intersectionality, Social Justice/8. Race and the lack of intergenerational economic mobility in the US.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/6. Data Illustrating the Intersectional Nature of Poverty.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/WS1 Resources/Poverty, Intersectionality, Social Justice/6. Data Illustrating the Intersectional Nature of Poverty.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/9. Displacement in Portland.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/WS1 Resources/Poverty, Intersectionality, Social Justice/9. Displacement in Portland.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/15. Dismantling the Poverty Trap Article.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/WS1 Resources/Poverty, Intersectionality, Social Justice/15. Dismantling the Poverty Trap Article.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/5. Poverty in America Statistics.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/WS1 Resources/Poverty, Intersectionality, Social Justice/5. Poverty in America Statistics.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/7. Bruce\u2019s Beach Systemic Racism and Reparations.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/WS1 Resources/Poverty, Intersectionality, Social Justice/7. Bruce\u2019s Beach Systemic Racism and Reparations.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 1/WS1 Resources/Poverty, Intersectionality, Social Justice/10. Brief History of Race, Racism & Colonialism.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-01/resources/WS1 Resources/Poverty, Intersectionality, Social Justice/10. Brief History of Race, Racism & Colonialism.pdf",
+      "workshop": "workshop-01",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    }
+  ]
+}

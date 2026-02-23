@@ -1,0 +1,6 @@
+{
+  "policy": "quarantine only legacy/root html files with dead links",
+  "restored_count": 26,
+  "kept_quarantined_count": 2,
+  "quarantine_root": "legacy/html-with-dead-links"
+}

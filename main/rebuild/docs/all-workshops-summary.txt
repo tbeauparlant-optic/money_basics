@@ -1,0 +1,17 @@
+All-workshops scaffold summary
+
+Scaffolded workshops:
+workshop-00
+workshop-01
+workshop-02
+workshop-03
+workshop-04
+workshop-05
+workshop-06
+workshop-07
+workshop-08
+workshop-09
+workshop-10
+workshop-11
+
+Index file: main/rebuild/content/workshops/index.json

@@ -1,0 +1,377 @@
+{
+  "generatedAt": "2026-02-23T22:22:08Z",
+  "workshop": "workshop-05",
+  "count": 37,
+  "files": [
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/WSP_5_FT.docx",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/WSP_5_FT.docx",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/WSP_5_FG .pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/Facilitator_Guide/WSP_5_FG .pdf",
+      "workshop": "workshop-05",
+      "category": "Facilitator_Guide",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/manifest.txt",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/manifest.txt",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Handouts/3. Options if You Can_t Open a Traditional Bank Account.docx",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Handouts/3. Options if You Can_t Open a Traditional Bank Account.docx",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Handouts/6. Help for Identity Theft.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Handouts/6. Help for Identity Theft.pdf",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Handouts/2. Best Online Banks of 2021.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Handouts/2. Best Online Banks of 2021.pdf",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Handouts/5. How to Avoid Identity Scams.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Handouts/5. How to Avoid Identity Scams.pdf",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Handouts/4. Common Phone Scams.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Handouts/4. Common Phone Scams.pdf",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Handouts/1. ATMs and ATM Safety.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Handouts/1. ATMs and ATM Safety.pdf",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Handouts/3. Options if You Can_t Open a Traditional Bank Account.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Handouts/3. Options if You Can_t Open a Traditional Bank Account.pdf",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "handout",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/ATM Safety Scenarios.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/ATM Safety Scenarios.pdf",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/16. What is ATM Skimming.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/16. What is ATM Skimming.pdf",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/6. What are Credit Unions.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/6. What are Credit Unions.pdf",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/4. Alternatives to Traditional Banks.docx",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/4. Alternatives to Traditional Banks.docx",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/8. Things to Consider When Choosing an Online Bank.docx",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/8. Things to Consider When Choosing an Online Bank.docx",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/7. Online Banking Definition, Pros and Cons.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/7. Online Banking Definition, Pros and Cons.pdf",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/1. What to Do if Your Debit Card is Lost or Stolen.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/1. What to Do if Your Debit Card is Lost or Stolen.pdf",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/Safe Virtual Banking.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/Safe Virtual Banking.pdf",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/Internet.Banking.Safety.Tips.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/Internet.Banking.Safety.Tips.pdf",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/12. How to Spot and Avoid Card Skimmers.docx",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/12. How to Spot and Avoid Card Skimmers.docx",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/Workshop 5 Additional Resources.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/Workshop 5 Additional Resources.pdf",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "additional_resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/ATM Safety Scenarios.docx",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/ATM Safety Scenarios.docx",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/2. Debit Card Safety Online.docx",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/2. Debit Card Safety Online.docx",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/7. Online Banking Definition, Pros and Cons.docx",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/7. Online Banking Definition, Pros and Cons.docx",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/11. First Aid for Identity Theft.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/11. First Aid for Identity Theft.pdf",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/9. List of Virtual Banks and Their Benefits.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/9. List of Virtual Banks and Their Benefits.pdf",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/5. Pros and Cons of Internet Banks.docx",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/5. Pros and Cons of Internet Banks.docx",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/5. Pros and Cons of Internet Banks.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/5. Pros and Cons of Internet Banks.pdf",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/13. IRS Tips for Protecting Your Identity.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/13. IRS Tips for Protecting Your Identity.pdf",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/8. Things to Consider When Choosing an Online Bank.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/8. Things to Consider When Choosing an Online Bank.pdf",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/15. What To Do if You_ve Been Scammed.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/15. What To Do if You_ve Been Scammed.pdf",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/14. Repairing Identity Theft.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/14. Repairing Identity Theft.pdf",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/12. How to Spot and Avoid Card Skimmers.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/12. How to Spot and Avoid Card Skimmers.pdf",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/4. Alternatives to Traditional Banks.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/4. Alternatives to Traditional Banks.pdf",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/3. Best Online Banks.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/3. Best Online Banks.pdf",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/2. Debit Card Safety Online.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/2. Debit Card Safety Online.pdf",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 5/Resources/10. Online and Mobile Money Safety.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-05/resources/Resources/10. Online and Mobile Money Safety.pdf",
+      "workshop": "workshop-05",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    }
+  ]
+}

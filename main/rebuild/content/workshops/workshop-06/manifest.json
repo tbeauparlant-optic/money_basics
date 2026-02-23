@@ -1,0 +1,117 @@
+{
+  "generatedAt": "2026-02-23T22:22:08Z",
+  "workshop": "workshop-06",
+  "count": 11,
+  "files": [
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 6/What You Should Know About Credit Card Interest Rates.docx",
+      "dest": "main/rebuild/content/workshops/workshop-06/resources/What You Should Know About Credit Card Interest Rates.docx",
+      "workshop": "workshop-06",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 6/How to Raise a Low Credit Score.docx",
+      "dest": "main/rebuild/content/workshops/workshop-06/resources/How to Raise a Low Credit Score.docx",
+      "workshop": "workshop-06",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 6/Workshop 06 - Credit & Loans.pdf",
+      "dest": "main/rebuild/content/workshops/workshop-06/resources/Workshop 06 - Credit & Loans.pdf",
+      "workshop": "workshop-06",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 6/How to Get the Best Car Loan.docx",
+      "dest": "main/rebuild/content/workshops/workshop-06/resources/How to Get the Best Car Loan.docx",
+      "workshop": "workshop-06",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 6/Why Payday Loans Can Be Costly.docx",
+      "dest": "main/rebuild/content/workshops/workshop-06/resources/Why Payday Loans Can Be Costly.docx",
+      "workshop": "workshop-06",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 6/manifest.txt",
+      "dest": "main/rebuild/content/workshops/workshop-06/resources/manifest.txt",
+      "workshop": "workshop-06",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 6/How to Choose a Credit Card.docx",
+      "dest": "main/rebuild/content/workshops/workshop-06/resources/How to Choose a Credit Card.docx",
+      "workshop": "workshop-06",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 6/MB_FTS_ 6.docx",
+      "dest": "main/rebuild/content/workshops/workshop-06/resources/MB_FTS_ 6.docx",
+      "workshop": "workshop-06",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 6/Module 6 Additional Resources.docx",
+      "dest": "main/rebuild/content/workshops/workshop-06/resources/Module 6 Additional Resources.docx",
+      "workshop": "workshop-06",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": "additional_resource",
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 6/How to Get Preapproved for a Loan.docx",
+      "dest": "main/rebuild/content/workshops/workshop-06/resources/How to Get Preapproved for a Loan.docx",
+      "workshop": "workshop-06",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    },
+    {
+      "source": "main/rebuild/content/legacy/whole/Module 6/How Credit Scores Work.docx",
+      "dest": "main/rebuild/content/workshops/workshop-06/resources/How Credit Scores Work.docx",
+      "workshop": "workshop-06",
+      "category": "resources",
+      "page_role": null,
+      "resource_role": null,
+      "result": "copied",
+      "source_type": "whole_legacy"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "image": "./assets/images/check-how-to-read.png",
+  "imageAlt": "A sample check with numbered callouts.",
+  "hotspots": [
+    { "num": 1, "xPct": 19.5783, "yPct": 18.2353, "title": "1. Date", "text": "The date the check is written (month/day/year)." },
+    { "num": 2, "xPct": 62.1084, "yPct": 18.9412, "title": "2. Pay to the Order of", "text": "Who the check is being paid to (a person or an organization)." },
+    { "num": 3, "xPct": 70.1807, "yPct": 18.9412, "title": "3. Amount (Numbers)", "text": "The payment amount written in numbers. This should match the written amount." },
+    { "num": 4, "xPct": 25.8434, "yPct": 25.2941, "title": "4. Amount (Words)", "text": "The payment amount written out in words. If there is ever a mismatch, banks typically rely on the written amount." },
+    { "num": 5, "xPct": 10.3012, "yPct": 28.5882, "title": "5. Memo / For", "text": "Optional note describing what the payment is for (rent, utilities, invoice #, etc.)." },
+    { "num": 6, "xPct": 19.5783, "yPct": 30.4706, "title": "6. Signature", "text": "The payer's signature. Without it, the check is usually not valid." },
+    { "num": 7, "xPct": 7.4096, "yPct": 43.1765, "title": "7. Your Information / Bank Information", "text": "Typically includes the payer's name/address and/or bank name (format varies by check design)." },
+    { "num": 8, "xPct": 9.6988, "yPct": 80.5882, "title": "8. Routing Number", "text": "Identifies the bank. This is the first set of numbers in the MICR line at the bottom." },
+    { "num": 9, "xPct": 20.4217, "yPct": 80.5882, "title": "9. Account Number", "text": "Identifies the specific bank account the money comes from (second set in the MICR line)." },
+    { "num": 10, "xPct": 28.8554, "yPct": 80.8235, "title": "10. Check Number (MICR / Header)", "text": "The check's ID number. Often appears at the top and again at the bottom (format varies)." },
+    { "num": 11, "xPct": 39.2169, "yPct": 86.7059, "title": "11. Check Number (Top Corner)", "text": "Another location where the check number may appear for easier reference." },
+    { "num": 12, "xPct": 48.1325, "yPct": 86.9412, "title": "12. MICR Line (Bottom Line)", "text": "The machine-readable line that contains routing/account/check-number information for processing." }
+  ]
+}
