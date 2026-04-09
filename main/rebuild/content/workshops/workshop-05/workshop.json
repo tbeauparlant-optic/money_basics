@@ -3,7 +3,7 @@
   "order": 5,
   "title": "Workshop 5",
   "legacy": {
-    "wholeModulePath": "Whole/Module 5",
+    "wholeModulePath": "main/rebuild/content/legacy/whole/Module 5",
     "rebuiltLegacyPath": "main/rebuild/content/legacy/whole/Module 5"
   },
   "status": "imported",

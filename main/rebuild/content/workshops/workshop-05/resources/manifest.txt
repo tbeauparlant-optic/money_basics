@@ -1,37 +1,37 @@
-Whole/Module 5/.DS_Store
-Whole/Module 5/Handouts/1. ATMs and ATM Safety.pdf
-Whole/Module 5/Handouts/2. Best Online Banks of 2021.pdf
-Whole/Module 5/Handouts/3. Options if You Can_t Open a Traditional Bank Account.docx
-Whole/Module 5/Handouts/3. Options if You Can_t Open a Traditional Bank Account.pdf
-Whole/Module 5/Handouts/4. Common Phone Scams.pdf
-Whole/Module 5/Handouts/5. How to Avoid Identity Scams.pdf
-Whole/Module 5/Handouts/6. Help for Identity Theft.pdf
-Whole/Module 5/Resources/1. What to Do if Your Debit Card is Lost or Stolen.pdf
-Whole/Module 5/Resources/10. Online and Mobile Money Safety.pdf
-Whole/Module 5/Resources/11. First Aid for Identity Theft.pdf
-Whole/Module 5/Resources/12. How to Spot and Avoid Card Skimmers.docx
-Whole/Module 5/Resources/12. How to Spot and Avoid Card Skimmers.pdf
-Whole/Module 5/Resources/13. IRS Tips for Protecting Your Identity.pdf
-Whole/Module 5/Resources/14. Repairing Identity Theft.pdf
-Whole/Module 5/Resources/15. What To Do if You_ve Been Scammed.pdf
-Whole/Module 5/Resources/16. What is ATM Skimming.pdf
-Whole/Module 5/Resources/2. Debit Card Safety Online.docx
-Whole/Module 5/Resources/2. Debit Card Safety Online.pdf
-Whole/Module 5/Resources/3. Best Online Banks.pdf
-Whole/Module 5/Resources/4. Alternatives to Traditional Banks.docx
-Whole/Module 5/Resources/4. Alternatives to Traditional Banks.pdf
-Whole/Module 5/Resources/5. Pros and Cons of Internet Banks.docx
-Whole/Module 5/Resources/5. Pros and Cons of Internet Banks.pdf
-Whole/Module 5/Resources/6. What are Credit Unions.pdf
-Whole/Module 5/Resources/7. Online Banking Definition, Pros and Cons.docx
-Whole/Module 5/Resources/7. Online Banking Definition, Pros and Cons.pdf
-Whole/Module 5/Resources/8. Things to Consider When Choosing an Online Bank.docx
-Whole/Module 5/Resources/8. Things to Consider When Choosing an Online Bank.pdf
-Whole/Module 5/Resources/9. List of Virtual Banks and Their Benefits.pdf
-Whole/Module 5/Resources/ATM Safety Scenarios.docx
-Whole/Module 5/Resources/ATM Safety Scenarios.pdf
-Whole/Module 5/Resources/Internet.Banking.Safety.Tips.pdf
-Whole/Module 5/Resources/Safe Virtual Banking.pdf
-Whole/Module 5/Resources/Workshop 5 Additional Resources.pdf
-Whole/Module 5/WSP_5_FG .pdf
-Whole/Module 5/WSP_5_FT.docx
+main/rebuild/content/legacy/whole/Module 5/.DS_Store
+main/rebuild/content/legacy/whole/Module 5/Handouts/1. ATMs and ATM Safety.pdf
+main/rebuild/content/legacy/whole/Module 5/Handouts/2. Best Online Banks of 2021.pdf
+main/rebuild/content/legacy/whole/Module 5/Handouts/3. Options if You Can_t Open a Traditional Bank Account.docx
+main/rebuild/content/legacy/whole/Module 5/Handouts/3. Options if You Can_t Open a Traditional Bank Account.pdf
+main/rebuild/content/legacy/whole/Module 5/Handouts/4. Common Phone Scams.pdf
+main/rebuild/content/legacy/whole/Module 5/Handouts/5. How to Avoid Identity Scams.pdf
+main/rebuild/content/legacy/whole/Module 5/Handouts/6. Help for Identity Theft.pdf
+main/rebuild/content/legacy/whole/Module 5/Resources/1. What to Do if Your Debit Card is Lost or Stolen.pdf
+main/rebuild/content/legacy/whole/Module 5/Resources/10. Online and Mobile Money Safety.pdf
+main/rebuild/content/legacy/whole/Module 5/Resources/11. First Aid for Identity Theft.pdf
+main/rebuild/content/legacy/whole/Module 5/Resources/12. How to Spot and Avoid Card Skimmers.docx
+main/rebuild/content/legacy/whole/Module 5/Resources/12. How to Spot and Avoid Card Skimmers.pdf
+main/rebuild/content/legacy/whole/Module 5/Resources/13. IRS Tips for Protecting Your Identity.pdf
+main/rebuild/content/legacy/whole/Module 5/Resources/14. Repairing Identity Theft.pdf
+main/rebuild/content/legacy/whole/Module 5/Resources/15. What To Do if You_ve Been Scammed.pdf
+main/rebuild/content/legacy/whole/Module 5/Resources/16. What is ATM Skimming.pdf
+main/rebuild/content/legacy/whole/Module 5/Resources/2. Debit Card Safety Online.docx
+main/rebuild/content/legacy/whole/Module 5/Resources/2. Debit Card Safety Online.pdf
+main/rebuild/content/legacy/whole/Module 5/Resources/3. Best Online Banks.pdf
+main/rebuild/content/legacy/whole/Module 5/Resources/4. Alternatives to Traditional Banks.docx
+main/rebuild/content/legacy/whole/Module 5/Resources/4. Alternatives to Traditional Banks.pdf
+main/rebuild/content/legacy/whole/Module 5/Resources/5. Pros and Cons of Internet Banks.docx
+main/rebuild/content/legacy/whole/Module 5/Resources/5. Pros and Cons of Internet Banks.pdf
+main/rebuild/content/legacy/whole/Module 5/Resources/6. What are Credit Unions.pdf
+main/rebuild/content/legacy/whole/Module 5/Resources/7. Online Banking Definition, Pros and Cons.docx
+main/rebuild/content/legacy/whole/Module 5/Resources/7. Online Banking Definition, Pros and Cons.pdf
+main/rebuild/content/legacy/whole/Module 5/Resources/8. Things to Consider When Choosing an Online Bank.docx
+main/rebuild/content/legacy/whole/Module 5/Resources/8. Things to Consider When Choosing an Online Bank.pdf
+main/rebuild/content/legacy/whole/Module 5/Resources/9. List of Virtual Banks and Their Benefits.pdf
+main/rebuild/content/legacy/whole/Module 5/Resources/ATM Safety Scenarios.docx
+main/rebuild/content/legacy/whole/Module 5/Resources/ATM Safety Scenarios.pdf
+main/rebuild/content/legacy/whole/Module 5/Resources/Internet.Banking.Safety.Tips.pdf
+main/rebuild/content/legacy/whole/Module 5/Resources/Safe Virtual Banking.pdf
+main/rebuild/content/legacy/whole/Module 5/Resources/Workshop 5 Additional Resources.pdf
+main/rebuild/content/legacy/whole/Module 5/WSP_5_FG .pdf
+main/rebuild/content/legacy/whole/Module 5/WSP_5_FT.docx

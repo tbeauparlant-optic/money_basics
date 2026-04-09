@@ -13,7 +13,7 @@ OUTPUT_DIR = Path("Parts_with_repo_snippets")
 BASE_URL = "{{BASE_URL}}"             # later replace once (e.g., GitHub Pages base)
 
 # If you want to only target Workshop 6 assets:
-WORKSHOP_FILTER = re.compile(r"Parts/Teaching Materials/Workshop 6/", re.IGNORECASE)
+WORKSHOP_FILTER = re.compile(r"main/rebuild/content/legacy/parts/Teaching Materials/Workshop 6/", re.IGNORECASE)
 
 KW_RE = re.compile(r"\b(handout|handouts|worksheet|worksheets)\b", re.IGNORECASE)
 

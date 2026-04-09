@@ -7,84 +7,84 @@
       "order": 0,
       "title": "Workshop 0",
       "path": "main/rebuild/content/workshops/workshop-00/workshop.json",
-      "legacyWholeModulePath": "Whole/Module 0"
+      "legacyWholeModulePath": "main/rebuild/content/legacy/whole/Module 0"
     },
     {
       "id": "workshop-01",
       "order": 1,
       "title": "Workshop 1",
       "path": "main/rebuild/content/workshops/workshop-01/workshop.json",
-      "legacyWholeModulePath": "Whole/Module 1"
+      "legacyWholeModulePath": "main/rebuild/content/legacy/whole/Module 1"
     },
     {
       "id": "workshop-02",
       "order": 2,
       "title": "Workshop 2",
       "path": "main/rebuild/content/workshops/workshop-02/workshop.json",
-      "legacyWholeModulePath": "Whole/Module 2"
+      "legacyWholeModulePath": "main/rebuild/content/legacy/whole/Module 2"
     },
     {
       "id": "workshop-03",
       "order": 3,
       "title": "Workshop 3",
       "path": "main/rebuild/content/workshops/workshop-03/workshop.json",
-      "legacyWholeModulePath": "Whole/Module 3"
+      "legacyWholeModulePath": "main/rebuild/content/legacy/whole/Module 3"
     },
     {
       "id": "workshop-04",
       "order": 4,
       "title": "Workshop 4",
       "path": "main/rebuild/content/workshops/workshop-04/workshop.json",
-      "legacyWholeModulePath": "Whole/Module 4"
+      "legacyWholeModulePath": "main/rebuild/content/legacy/whole/Module 4"
     },
     {
       "id": "workshop-05",
       "order": 5,
       "title": "Workshop 5",
       "path": "main/rebuild/content/workshops/workshop-05/workshop.json",
-      "legacyWholeModulePath": "Whole/Module 5"
+      "legacyWholeModulePath": "main/rebuild/content/legacy/whole/Module 5"
     },
     {
       "id": "workshop-06",
       "order": 6,
       "title": "Workshop 6",
       "path": "main/rebuild/content/workshops/workshop-06/workshop.json",
-      "legacyWholeModulePath": "Whole/Module 6"
+      "legacyWholeModulePath": "main/rebuild/content/legacy/whole/Module 6"
     },
     {
       "id": "workshop-07",
       "order": 7,
       "title": "Workshop 7",
       "path": "main/rebuild/content/workshops/workshop-07/workshop.json",
-      "legacyWholeModulePath": "Whole/Module 7"
+      "legacyWholeModulePath": "main/rebuild/content/legacy/whole/Module 7"
     },
     {
       "id": "workshop-08",
       "order": 8,
       "title": "Workshop 8",
       "path": "main/rebuild/content/workshops/workshop-08/workshop.json",
-      "legacyWholeModulePath": "Whole/Module 8"
+      "legacyWholeModulePath": "main/rebuild/content/legacy/whole/Module 8"
     },
     {
       "id": "workshop-09",
       "order": 9,
       "title": "Workshop 9",
       "path": "main/rebuild/content/workshops/workshop-09/workshop.json",
-      "legacyWholeModulePath": "Whole/Module 9"
+      "legacyWholeModulePath": "main/rebuild/content/legacy/whole/Module 9"
     },
     {
       "id": "workshop-10",
       "order": 10,
       "title": "Workshop 10",
       "path": "main/rebuild/content/workshops/workshop-10/workshop.json",
-      "legacyWholeModulePath": "Whole/Module 10"
+      "legacyWholeModulePath": "main/rebuild/content/legacy/whole/Module 10"
     },
     {
       "id": "workshop-11",
       "order": 11,
       "title": "Workshop 11",
       "path": "main/rebuild/content/workshops/workshop-11/workshop.json",
-      "legacyWholeModulePath": "Whole/Module 11"
+      "legacyWholeModulePath": "main/rebuild/content/legacy/whole/Module 11"
     }
   ]
 }

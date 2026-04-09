@@ -94,7 +94,7 @@ def main():
     pages = parse_pages(opts["pages"])
 
     guide_dir = "Student_Guide" if guide == "student" else "Facilitator_Guide"
-    base = Path("Parts/FG:SG_Splits/Wksp Pages") / f"Workshop_{wksp}" / guide_dir / f"Workshop_{wksp}" / "PDFs"
+    base = Path("main/rebuild/content/legacy/parts/FG:SG_Splits/Wksp Pages") / f"Workshop_{wksp}" / guide_dir / f"Workshop_{wksp}" / "PDFs"
     if not base.exists():
         raise SystemExit(f"PDFs folder not found: {base}")
 

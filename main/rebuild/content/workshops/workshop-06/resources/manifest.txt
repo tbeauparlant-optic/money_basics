@@ -1,11 +1,11 @@
-Whole/Module 6/.DS_Store
-Whole/Module 6/How Credit Scores Work.docx
-Whole/Module 6/How to Choose a Credit Card.docx
-Whole/Module 6/How to Get Preapproved for a Loan.docx
-Whole/Module 6/How to Get the Best Car Loan.docx
-Whole/Module 6/How to Raise a Low Credit Score.docx
-Whole/Module 6/MB_FTS_ 6.docx
-Whole/Module 6/Module 6 Additional Resources.docx
-Whole/Module 6/What You Should Know About Credit Card Interest Rates.docx
-Whole/Module 6/Why Payday Loans Can Be Costly.docx
-Whole/Module 6/Workshop 06 - Credit & Loans.pdf
+main/rebuild/content/legacy/whole/Module 6/.DS_Store
+main/rebuild/content/legacy/whole/Module 6/How Credit Scores Work.docx
+main/rebuild/content/legacy/whole/Module 6/How to Choose a Credit Card.docx
+main/rebuild/content/legacy/whole/Module 6/How to Get Preapproved for a Loan.docx
+main/rebuild/content/legacy/whole/Module 6/How to Get the Best Car Loan.docx
+main/rebuild/content/legacy/whole/Module 6/How to Raise a Low Credit Score.docx
+main/rebuild/content/legacy/whole/Module 6/MB_FTS_ 6.docx
+main/rebuild/content/legacy/whole/Module 6/Module 6 Additional Resources.docx
+main/rebuild/content/legacy/whole/Module 6/What You Should Know About Credit Card Interest Rates.docx
+main/rebuild/content/legacy/whole/Module 6/Why Payday Loans Can Be Costly.docx
+main/rebuild/content/legacy/whole/Module 6/Workshop 06 - Credit & Loans.pdf
