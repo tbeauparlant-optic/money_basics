@@ -1,0 +1,8 @@
+# macOS / editor artifacts
+.DS_Store
+**/.DS_Store
+*.swp
+
+# local temp/output scratch
+tmp/
+*.tmp
