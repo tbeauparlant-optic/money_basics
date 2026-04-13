@@ -1,0 +1,28 @@
+{
+  "title": "Debt Action Plan",
+  "description": "A minimal worksheet for planning debt payoff actions.",
+  "machineName": "H5P.DebtActionPlan",
+  "majorVersion": 0,
+  "minorVersion": 1,
+  "patchVersion": 0,
+  "runnable": 1,
+  "author": "Codex",
+  "license": "MIT",
+  "embedTypes": [
+    "div"
+  ],
+  "coreApi": {
+    "majorVersion": 1,
+    "minorVersion": 24
+  },
+  "preloadedJs": [
+    {
+      "path": "scripts/debt-action-plan.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "styles/debt-action-plan.css"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+<!-- Paste this whole block into the LearnWorlds embedded script widget -->
+<style>
+  .mb7future-wrap{max-width:860px;margin:0 auto;padding:8px;font-family:"INTER_18PT-REGULAR","Inter",Arial,sans-serif;font-size:16px;line-height:1.5;color:rgb(0,0,0)}
+  .mb7future-shell{background:transparent;border:1px solid #d8e1de;border-radius:18px;overflow:hidden}
+  .mb7future-header{padding:18px 18px 14px;background:transparent;border-bottom:1px solid #d8e1de}
+  .mb7future-title{margin:0 0 10px;font-size:1.1em;line-height:1.2}
+  .mb7future-copy{margin:0 0 10px;color:rgb(0,0,0)}
+  .mb7future-copy:last-child{margin-bottom:0}
+  .mb7future-body{padding:14px;display:grid;gap:14px}
+  .mb7future-panel{background:transparent;border:1px solid #d8e1de;border-radius:16px;padding:14px}
+  .mb7future-prompt{display:grid;gap:8px}
+  .mb7future-label{display:block;font-weight:700;color:#35525a}
+  .mb7future-money{display:flex;align-items:center;gap:8px}
+  .mb7future-dollar{display:inline-flex;align-items:center;justify-content:center;min-width:42px;height:42px;border:2px solid #000000;border-radius:14px;background:transparent;font-weight:700;color:rgb(0,0,0)}
+  .mb7future-input{display:block;width:100%;min-height:42px;padding:10px 12px;border:2px solid #000000;border-radius:14px;background:transparent;color:rgb(0,0,0);font:inherit;line-height:1.2}
+  .mb7future-input:focus-visible{outline:3px solid #ffbf47;outline-offset:2px}
+  .mb7future-note{margin:0;color:rgb(0,0,0)}
+  @media (max-width:640px){
+    .mb7future-header{padding:16px 16px 12px}
+    .mb7future-body{padding:12px}
+    .mb7future-money{align-items:stretch}
+    .mb7future-dollar{min-width:38px;height:auto}
+  }
+</style>
+
+<div id="mb7future-root" class="mb7future-wrap">
+  <div class="mb7future-shell">
+    <section class="mb7future-header">
+      <h2 class="mb7future-title">Planning for the Future</h2>
+      <p class="mb7future-copy">Think in hopeful numbers and realistic numbers.</p>
+      <p class="mb7future-copy">Use the spaces below to write down debt-reduction goals that feel meaningful to you now.</p>
+    </section>
+
+    <div class="mb7future-body">
+      <section class="mb7future-panel">
+        <div class="mb7future-prompt">
+          <label class="mb7future-label" for="mb7future-one-year-hopeful">One year from now, I would like to reduce my debt by:</label>
+          <div class="mb7future-money">
+            <span class="mb7future-dollar" aria-hidden="true">$</span>
+            <input id="mb7future-one-year-hopeful" class="mb7future-input" type="text" inputmode="decimal" autocomplete="off" aria-label="One year from now, I would like to reduce my debt by">
+          </div>
+        </div>
+      </section>
+
+      <section class="mb7future-panel">
+        <div class="mb7future-prompt">
+          <label class="mb7future-label" for="mb7future-one-year-realistic">One year from now, I realistically think I can reduce my debt by:</label>
+          <div class="mb7future-money">
+            <span class="mb7future-dollar" aria-hidden="true">$</span>
+            <input id="mb7future-one-year-realistic" class="mb7future-input" type="text" inputmode="decimal" autocomplete="off" aria-label="One year from now, I realistically think I can reduce my debt by">
+          </div>
+        </div>
+      </section>
+
+      <section class="mb7future-panel">
+        <div class="mb7future-prompt">
+          <label class="mb7future-label" for="mb7future-three-year-hopeful">Three years from now, I would like to reduce my debt by:</label>
+          <div class="mb7future-money">
+            <span class="mb7future-dollar" aria-hidden="true">$</span>
+            <input id="mb7future-three-year-hopeful" class="mb7future-input" type="text" inputmode="decimal" autocomplete="off" aria-label="Three years from now, I would like to reduce my debt by">
+          </div>
+        </div>
+      </section>
+
+      <section class="mb7future-panel">
+        <div class="mb7future-prompt">
+          <label class="mb7future-label" for="mb7future-three-year-realistic">Three years from now, I realistically think I can reduce my debt by:</label>
+          <div class="mb7future-money">
+            <span class="mb7future-dollar" aria-hidden="true">$</span>
+            <input id="mb7future-three-year-realistic" class="mb7future-input" type="text" inputmode="decimal" autocomplete="off" aria-label="Three years from now, I realistically think I can reduce my debt by">
+          </div>
+        </div>
+      </section>
+
+      <section class="mb7future-panel">
+        <p class="mb7future-note">Your answers here can help you decide which debts to focus on first.</p>
+      </section>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var root = document.getElementById('mb7future-root');
+  var inputs = Array.prototype.slice.call(root ? root.querySelectorAll('.mb7future-input') : []);
+
+  function postHeight() {
+    if (!root) return;
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        source: 'mb7future',
+        type: 'resize',
+        height: Math.ceil(root.getBoundingClientRect().height)
+      }, '*');
+    }
+  }
+
+  inputs.forEach(function (input) {
+    input.addEventListener('input', postHeight);
+  });
+
+  window.addEventListener('resize', postHeight);
+  postHeight();
+}());
+</script>

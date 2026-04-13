@@ -1,0 +1,163 @@
+<!-- Paste this whole block into the LearnWorlds embedded script widget -->
+<style>
+  .mb6loan-wrap{max-width:860px;margin:0 auto;padding:8px;font-family:"INTER_18PT-REGULAR","Inter",Arial,sans-serif;font-size:16px;line-height:1.5;color:rgb(0,0,0)}
+  .mb6loan-shell{background:transparent;border:1px solid #d8e1de;border-radius:18px;overflow:hidden}
+  .mb6loan-header{padding:18px 18px 14px;background:transparent;border-bottom:1px solid #d8e1de}
+  .mb6loan-title{margin:0 0 10px;font-size:1.15em;line-height:1.2}
+  .mb6loan-copy{margin:0 0 10px;color:rgb(0,0,0)}
+  .mb6loan-copy:last-child{margin-bottom:0}
+  .mb6loan-body{padding:14px;display:grid;gap:14px}
+  .mb6loan-panel{background:transparent;border:1px solid #d8e1de;border-radius:16px;padding:14px}
+  .mb6loan-label{display:block;margin:0 0 6px;font-size:.9em;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#35525a}
+  .mb6loan-amount{margin:0;font-size:2em;line-height:1;color:#1f4a50;font-weight:700}
+  .mb6loan-tabs{display:flex;flex-wrap:wrap;gap:8px}
+  .mb6loan-tab{appearance:none;-webkit-appearance:none;border:2px solid #1f4a50;border-radius:999px;background:transparent;color:#1f4a50;font:inherit;font-weight:700;line-height:1.2;cursor:pointer;padding:9px 14px;min-height:40px}
+  .mb6loan-tab[aria-pressed="true"]{background:#1f4a50;color:#ffffff}
+  .mb6loan-tab:focus-visible{outline:3px solid #ffbf47;outline-offset:2px}
+  .mb6loan-example{display:grid;gap:10px}
+  .mb6loan-example[hidden]{display:none}
+  .mb6loan-example-title{margin:0;font-size:1em;line-height:1.2}
+  .mb6loan-rate{margin:0;color:#1f4a50;font-weight:700}
+  .mb6loan-list{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+  .mb6loan-item{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;padding-top:10px;border-top:1px solid #d8e1de}
+  .mb6loan-item:first-child{padding-top:0;border-top:0}
+  .mb6loan-item-label{color:rgb(0,0,0)}
+  .mb6loan-item-value{font-weight:700;text-align:right;color:rgb(0,0,0)}
+  .mb6loan-takeaway{margin:0;color:rgb(0,0,0)}
+  @media (max-width:640px){
+    .mb6loan-item{grid-template-columns:1fr}
+    .mb6loan-item-value{text-align:left}
+  }
+</style>
+
+<div id="mb6loan-root" class="mb6loan-wrap">
+  <div class="mb6loan-shell">
+    <section class="mb6loan-header">
+      <h2 class="mb6loan-title">Understanding Loans: Interest Adds to the Total Cost</h2>
+      <p class="mb6loan-copy">This example shows how the total cost of the same loan can change when the interest rate changes.</p>
+      <p class="mb6loan-copy">Review each example and notice how a higher interest rate increases the total amount paid over time.</p>
+    </section>
+
+    <div class="mb6loan-body">
+      <section class="mb6loan-panel" aria-labelledby="mb6loan-amount-label">
+        <span id="mb6loan-amount-label" class="mb6loan-label">Base Loan Amount</span>
+        <p class="mb6loan-amount">$10,000</p>
+      </section>
+
+      <section class="mb6loan-panel" aria-labelledby="mb6loan-examples-title">
+        <h3 id="mb6loan-examples-title" class="mb6loan-label">Examples</h3>
+        <div class="mb6loan-tabs" aria-label="Loan examples">
+          <button class="mb6loan-tab" type="button" data-example="1" aria-pressed="true">Example 1</button>
+          <button class="mb6loan-tab" type="button" data-example="2" aria-pressed="false">Example 2</button>
+          <button class="mb6loan-tab" type="button" data-example="3" aria-pressed="false">Example 3</button>
+        </div>
+      </section>
+
+      <section class="mb6loan-panel">
+        <div class="mb6loan-example" data-panel="1">
+          <h3 class="mb6loan-example-title">Example 1</h3>
+          <p class="mb6loan-rate">Interest rate: 9.0%</p>
+          <ul class="mb6loan-list">
+            <li class="mb6loan-item">
+              <span class="mb6loan-item-label">Potential annual loan interest</span>
+              <span class="mb6loan-item-value">$900</span>
+            </li>
+            <li class="mb6loan-item">
+              <span class="mb6loan-item-label">Actual total interest</span>
+              <span class="mb6loan-item-value">$4,500</span>
+            </li>
+            <li class="mb6loan-item">
+              <span class="mb6loan-item-label">Actual total loan and interest</span>
+              <span class="mb6loan-item-value">$14,500</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mb6loan-example" data-panel="2" hidden>
+          <h3 class="mb6loan-example-title">Example 2</h3>
+          <p class="mb6loan-rate">Interest rate: 12.0%</p>
+          <ul class="mb6loan-list">
+            <li class="mb6loan-item">
+              <span class="mb6loan-item-label">Potential annual loan interest</span>
+              <span class="mb6loan-item-value">$1,200</span>
+            </li>
+            <li class="mb6loan-item">
+              <span class="mb6loan-item-label">Actual total interest</span>
+              <span class="mb6loan-item-value">$6,000</span>
+            </li>
+            <li class="mb6loan-item">
+              <span class="mb6loan-item-label">Actual total loan and interest</span>
+              <span class="mb6loan-item-value">$16,000</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mb6loan-example" data-panel="3" hidden>
+          <h3 class="mb6loan-example-title">Example 3</h3>
+          <p class="mb6loan-rate">Interest rate: 15.0%</p>
+          <ul class="mb6loan-list">
+            <li class="mb6loan-item">
+              <span class="mb6loan-item-label">Potential annual loan interest</span>
+              <span class="mb6loan-item-value">$1,500</span>
+            </li>
+            <li class="mb6loan-item">
+              <span class="mb6loan-item-label">Actual total interest</span>
+              <span class="mb6loan-item-value">$7,500</span>
+            </li>
+            <li class="mb6loan-item">
+              <span class="mb6loan-item-label">Actual total loan and interest</span>
+              <span class="mb6loan-item-value">$17,500</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mb6loan-panel">
+        <h3 class="mb6loan-label" style="margin-bottom:10px">Takeaway</h3>
+        <p class="mb6loan-takeaway">Higher-interest loans can cost much more over time, even when the original loan amount stays the same.</p>
+      </section>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var root = document.getElementById('mb6loan-root');
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.mb6loan-tab'));
+  var panels = Array.prototype.slice.call(document.querySelectorAll('.mb6loan-example'));
+
+  function postHeight() {
+    if (!root) return;
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        source: 'mb6loan',
+        type: 'resize',
+        height: Math.ceil(root.getBoundingClientRect().height)
+      }, '*');
+    }
+  }
+
+  function showExample(exampleId) {
+    tabs.forEach(function (tab) {
+      tab.setAttribute('aria-pressed', tab.getAttribute('data-example') === exampleId ? 'true' : 'false');
+    });
+
+    panels.forEach(function (panel) {
+      panel.hidden = panel.getAttribute('data-panel') !== exampleId;
+    });
+
+    postHeight();
+  }
+
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      showExample(tab.getAttribute('data-example'));
+    });
+  });
+
+  window.addEventListener('resize', postHeight);
+  postHeight();
+}());
+</script>

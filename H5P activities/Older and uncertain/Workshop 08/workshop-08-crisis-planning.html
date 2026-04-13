@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Workshop 8 Crisis Planning</title>
+    <style>
+      .h5p-crisis-planning {
+        background: #ffffff;
+        color: #1f2933;
+        font-family: Arial, sans-serif;
+        margin: 0 auto;
+        max-width: 1100px;
+        padding: 1rem;
+      }
+
+      .h5p-crisis-planning__title {
+        font-size: 1.35rem;
+        margin: 0 0 1rem;
+      }
+
+      .h5p-crisis-planning__worksheet {
+        margin-bottom: 1.4rem;
+      }
+
+      .h5p-crisis-planning__worksheet-title {
+        border-bottom: 1px solid #d9e2ec;
+        color: #102a43;
+        font-size: 1.1rem;
+        margin: 0 0 0.85rem;
+        padding-bottom: 0.35rem;
+      }
+
+      .h5p-crisis-planning__table-wrap {
+        overflow-x: auto;
+      }
+
+      .h5p-crisis-planning__table {
+        border-collapse: separate;
+        border-spacing: 0;
+        width: 100%;
+      }
+
+      .h5p-crisis-planning__table thead th {
+        background: #eef4fb;
+        border-bottom: 1px solid #d9e2ec;
+        color: #243b53;
+        font-weight: 700;
+        padding: 0.65rem;
+        text-align: left;
+      }
+
+      .h5p-crisis-planning__table tbody th,
+      .h5p-crisis-planning__table tbody td {
+        border-bottom: 1px solid #e6edf3;
+        padding: 0.65rem;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      .h5p-crisis-planning__table tbody tr:last-child th,
+      .h5p-crisis-planning__table tbody tr:last-child td {
+        border-bottom: none;
+      }
+
+      .h5p-crisis-planning__table tbody th {
+        font-weight: 600;
+      }
+
+      .h5p-crisis-planning__table--scale tbody th {
+        min-width: 18rem;
+      }
+
+      .h5p-crisis-planning__choice {
+        align-items: center;
+        display: flex;
+        gap: 0.4rem;
+        justify-content: center;
+        min-width: 5.5rem;
+      }
+
+      .h5p-crisis-planning__choice span {
+        font-size: 0.92rem;
+      }
+
+      .h5p-crisis-planning__field {
+        display: grid;
+        gap: 0.45rem;
+        margin-top: 0.8rem;
+      }
+
+      .h5p-crisis-planning__field-label {
+        color: #102a43;
+        font-weight: 600;
+      }
+
+      .h5p-crisis-planning__input,
+      .h5p-crisis-planning__textarea {
+        border: 1px solid #bcccdc;
+        border-radius: 0.55rem;
+        box-sizing: border-box;
+        display: block;
+        font: inherit;
+        padding: 0.6rem 0.7rem;
+        width: 100%;
+      }
+
+      .h5p-crisis-planning__textarea {
+        min-height: 5rem;
+        resize: vertical;
+      }
+
+      .h5p-crisis-planning__input:focus,
+      .h5p-crisis-planning__textarea:focus,
+      .h5p-crisis-planning__choice input:focus {
+        outline: 2px solid #0f4c81;
+        outline-offset: 2px;
+      }
+
+      @media (max-width: 720px) {
+        .h5p-crisis-planning {
+          padding: 0.75rem;
+        }
+
+        .h5p-crisis-planning__choice {
+          justify-content: flex-start;
+          min-width: 0;
+        }
+
+        .h5p-crisis-planning__table--scale tbody th {
+          min-width: 14rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      (function () {
+        var STORAGE_KEY = 'workshop-08-crisis-planning-html-v1';
+        var config = {
+          title: 'Financial Crisis Planning',
+          scaleLabels: {
+            option1: 'Never',
+            option2: 'Rarely',
+            option3: 'Sometimes',
+            option4: 'Often'
+          },
+          financialWorksheet: {
+            heading: 'How Financial Issues Affect Me',
+            statementColumnLabel: 'Statement',
+            statementsText: "I experience anxiety.\nMy sleep is interrupted.\nI feel hopeless.\nI can't purchase needed medication or access services.\nI can't buy the things I want.\nI do without necessities.\nI feel ashamed.\nI worry about my future.\nMy relationship with my partner is strained.\nI dread (or avoid) opening mail or answering the phone.\nI feel out of control with my spending.\nI have to work more than I would like just to pay my bills.\nI can't go out with my friends or take a vacation.\nI feel powerless over my finances."
+          },
+          healthWorksheet: {
+            heading: 'How Mental Health, Addiction, Treatment, and/or Physical Health Issues Affect My Finances',
+            statementColumnLabel: 'Statement',
+            statementsText: "Important bills don't get paid on time.\nI go on rampant spending sprees.\nI spend money I can't really afford on unnecessary things.\nI avoid opening my mail.\nI have a hard time writing and signing checks.\nI have a hard time using ATMs or debit card machines.\nI let my finances go unchecked.\nI can't physically access my finances.\nI lose important financial documents.\nI stop caring about keeping a budget and start making poor financial choices.\nI sabotage my own financial situation."
+          },
+          whenExperienceWorksheet: {
+            heading: 'When I do or experience this, I will do this instead',
+            numberHeader: '#',
+            triggerHeader: 'What happens',
+            alternativeHeader: 'What I will do instead'
+          },
+          ratherThanWorksheet: {
+            heading: 'Rather than doing this, I will do this instead',
+            numberHeader: '#',
+            triggerHeader: 'What happens',
+            alternativeHeader: 'What I will do instead'
+          },
+          replacementRowCount: 5,
+          expensesWorksheet: {
+            heading: 'Monthly Expenses and Due Dates',
+            numberHeader: '#',
+            expenseHeader: 'Expense or bill',
+            amountHeader: 'Amount',
+            dueHeader: 'Due date or timing'
+          },
+          expenseRowCount: 8,
+          supportWorksheet: {
+            heading: 'Trusted Support Person',
+            nameLabel: 'Trusted person',
+            relationshipLabel: 'Relationship to me',
+            contactLabel: 'Best way to contact them',
+            helpLabel: 'How this person can help me during a financial crisis',
+            payeeRightsLabel: 'Representative payee rights, questions, or reminders'
+          }
+        };
+
+        function loadState() {
+          try {
+            return JSON.parse(window.localStorage.getItem(STORAGE_KEY) || '{}');
+          } catch (error) {
+            return {};
+          }
+        }
+
+        function saveState(state) {
+          try {
+            window.localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+          } catch (error) {
+          }
+        }
+
+        function lines(text) {
+          return String(text || '')
+            .split(/\r?\n/)
+            .map(function (line) { return line.trim(); })
+            .filter(Boolean);
+        }
+
+        function scaleOptions() {
+          return [
+            config.scaleLabels.option1,
+            config.scaleLabels.option2,
+            config.scaleLabels.option3,
+            config.scaleLabels.option4
+          ].filter(Boolean);
+        }
+
+        var state = loadState();
+        var root = document.createElement('section');
+        root.className = 'h5p-crisis-planning';
+        document.getElementById('app').appendChild(root);
+
+        var title = document.createElement('h2');
+        title.className = 'h5p-crisis-planning__title';
+        title.textContent = config.title;
+        root.appendChild(title);
+
+        function worksheet(titleText) {
+          var section = document.createElement('section');
+          section.className = 'h5p-crisis-planning__worksheet';
+          var heading = document.createElement('h3');
+          heading.className = 'h5p-crisis-planning__worksheet-title';
+          heading.textContent = titleText;
+          section.appendChild(heading);
+          root.appendChild(section);
+          return section;
+        }
+
+        function bindValue(element, key, fallback) {
+          element.value = state[key] || fallback || '';
+          element.addEventListener('input', function () {
+            state[key] = element.value;
+            saveState(state);
+          });
+        }
+
+        function buildScaleTable(cfg, stateKey) {
+          var section = worksheet(cfg.heading);
+          var wrap = document.createElement('div');
+          wrap.className = 'h5p-crisis-planning__table-wrap';
+          section.appendChild(wrap);
+
+          var table = document.createElement('table');
+          table.className = 'h5p-crisis-planning__table h5p-crisis-planning__table--scale';
+          wrap.appendChild(table);
+
+          var thead = document.createElement('thead');
+          var headRow = document.createElement('tr');
+          thead.appendChild(headRow);
+          table.appendChild(thead);
+
+          var statementHead = document.createElement('th');
+          statementHead.scope = 'col';
+          statementHead.textContent = cfg.statementColumnLabel;
+          headRow.appendChild(statementHead);
+
+          scaleOptions().forEach(function (option) {
+            var th = document.createElement('th');
+            th.scope = 'col';
+            th.textContent = option;
+            headRow.appendChild(th);
+          });
+
+          var tbody = document.createElement('tbody');
+          table.appendChild(tbody);
+          var savedValues = state[stateKey] || [];
+
+          lines(cfg.statementsText).forEach(function (statement, index) {
+            var row = document.createElement('tr');
+            tbody.appendChild(row);
+
+            var rowHead = document.createElement('th');
+            rowHead.scope = 'row';
+            rowHead.textContent = statement;
+            row.appendChild(rowHead);
+
+            scaleOptions().forEach(function (option) {
+              var td = document.createElement('td');
+              var label = document.createElement('label');
+              var input = document.createElement('input');
+              var span = document.createElement('span');
+              input.type = 'radio';
+              input.name = stateKey + '-' + index;
+              input.value = option;
+              input.checked = savedValues[index] === option;
+              input.addEventListener('change', function () {
+                if (!state[stateKey]) {
+                  state[stateKey] = [];
+                }
+                state[stateKey][index] = option;
+                saveState(state);
+              });
+              label.className = 'h5p-crisis-planning__choice';
+              span.textContent = option;
+              label.appendChild(input);
+              label.appendChild(span);
+              td.appendChild(label);
+              row.appendChild(td);
+            });
+          });
+        }
+
+        function buildReplacementTable(cfg, stateKey, rowCount) {
+          var section = worksheet(cfg.heading);
+          var wrap = document.createElement('div');
+          wrap.className = 'h5p-crisis-planning__table-wrap';
+          section.appendChild(wrap);
+
+          var table = document.createElement('table');
+          table.className = 'h5p-crisis-planning__table';
+          wrap.appendChild(table);
+
+          var thead = document.createElement('thead');
+          var headRow = document.createElement('tr');
+          thead.appendChild(headRow);
+          table.appendChild(thead);
+
+          [cfg.numberHeader, cfg.triggerHeader, cfg.alternativeHeader].forEach(function (text) {
+            var th = document.createElement('th');
+            th.scope = 'col';
+            th.textContent = text;
+            headRow.appendChild(th);
+          });
+
+          var tbody = document.createElement('tbody');
+          table.appendChild(tbody);
+          var savedRows = state[stateKey] || [];
+
+          for (var i = 0; i < rowCount; i++) {
+            var row = document.createElement('tr');
+            tbody.appendChild(row);
+
+            var rowHead = document.createElement('th');
+            rowHead.scope = 'row';
+            rowHead.textContent = String(i + 1);
+            row.appendChild(rowHead);
+
+            var triggerCell = document.createElement('td');
+            var trigger = document.createElement('textarea');
+            trigger.className = 'h5p-crisis-planning__textarea';
+            bindValue(trigger, stateKey + '-' + i + '-trigger', (savedRows[i] || {}).trigger || '');
+            trigger.addEventListener('input', function (rowIndex, element) {
+              return function () {
+                if (!state[stateKey]) {
+                  state[stateKey] = [];
+                }
+                if (!state[stateKey][rowIndex]) {
+                  state[stateKey][rowIndex] = {};
+                }
+                state[stateKey][rowIndex].trigger = element.value;
+                saveState(state);
+              };
+            }(i, trigger));
+            triggerCell.appendChild(trigger);
+            row.appendChild(triggerCell);
+
+            var alternativeCell = document.createElement('td');
+            var alternative = document.createElement('textarea');
+            alternative.className = 'h5p-crisis-planning__textarea';
+            bindValue(alternative, stateKey + '-' + i + '-alternative', (savedRows[i] || {}).alternative || '');
+            alternative.addEventListener('input', function (rowIndex, element) {
+              return function () {
+                if (!state[stateKey]) {
+                  state[stateKey] = [];
+                }
+                if (!state[stateKey][rowIndex]) {
+                  state[stateKey][rowIndex] = {};
+                }
+                state[stateKey][rowIndex].alternative = element.value;
+                saveState(state);
+              };
+            }(i, alternative));
+            alternativeCell.appendChild(alternative);
+            row.appendChild(alternativeCell);
+          }
+        }
+
+        function buildExpenseTable(cfg, rowCount) {
+          var section = worksheet(cfg.heading);
+          var wrap = document.createElement('div');
+          wrap.className = 'h5p-crisis-planning__table-wrap';
+          section.appendChild(wrap);
+
+          var table = document.createElement('table');
+          table.className = 'h5p-crisis-planning__table';
+          wrap.appendChild(table);
+
+          var thead = document.createElement('thead');
+          var headRow = document.createElement('tr');
+          thead.appendChild(headRow);
+          table.appendChild(thead);
+
+          [cfg.numberHeader, cfg.expenseHeader, cfg.amountHeader, cfg.dueHeader].forEach(function (text) {
+            var th = document.createElement('th');
+            th.scope = 'col';
+            th.textContent = text;
+            headRow.appendChild(th);
+          });
+
+          var tbody = document.createElement('tbody');
+          table.appendChild(tbody);
+          var savedRows = state.expenseRows || [];
+
+          for (var i = 0; i < rowCount; i++) {
+            var row = document.createElement('tr');
+            tbody.appendChild(row);
+
+            var rowHead = document.createElement('th');
+            rowHead.scope = 'row';
+            rowHead.textContent = String(i + 1);
+            row.appendChild(rowHead);
+
+            ['expense', 'amount', 'due'].forEach(function (field) {
+              var td = document.createElement('td');
+              var input = document.createElement('input');
+              input.type = 'text';
+              input.className = 'h5p-crisis-planning__input';
+              bindValue(input, 'expenseRows-' + i + '-' + field, (savedRows[i] || {})[field] || '');
+              input.addEventListener('input', function (rowIndex, key, element) {
+                return function () {
+                  if (!state.expenseRows) {
+                    state.expenseRows = [];
+                  }
+                  if (!state.expenseRows[rowIndex]) {
+                    state.expenseRows[rowIndex] = {};
+                  }
+                  state.expenseRows[rowIndex][key] = element.value;
+                  saveState(state);
+                };
+              }(i, field, input));
+              td.appendChild(input);
+              row.appendChild(td);
+            });
+          }
+        }
+
+        function buildSupportFields(cfg) {
+          var section = worksheet(cfg.heading);
+
+          [
+            { key: 'supportName', label: cfg.nameLabel, multiline: false },
+            { key: 'supportRelationship', label: cfg.relationshipLabel, multiline: false },
+            { key: 'supportContact', label: cfg.contactLabel, multiline: false },
+            { key: 'supportHelp', label: cfg.helpLabel, multiline: true },
+            { key: 'payeeRights', label: cfg.payeeRightsLabel, multiline: true }
+          ].forEach(function (field) {
+            var wrapper = document.createElement('div');
+            wrapper.className = 'h5p-crisis-planning__field';
+
+            var label = document.createElement('label');
+            label.className = 'h5p-crisis-planning__field-label';
+            label.textContent = field.label;
+            wrapper.appendChild(label);
+
+            var input = field.multiline ? document.createElement('textarea') : document.createElement('input');
+            input.className = field.multiline ? 'h5p-crisis-planning__textarea' : 'h5p-crisis-planning__input';
+            if (!field.multiline) {
+              input.type = 'text';
+            }
+            bindValue(input, field.key, state[field.key] || '');
+            wrapper.appendChild(input);
+            section.appendChild(wrapper);
+          });
+        }
+
+        buildScaleTable(config.financialWorksheet, 'financialEffects');
+        buildScaleTable(config.healthWorksheet, 'healthEffects');
+        buildReplacementTable(config.whenExperienceWorksheet, 'whenExperienceRows', config.replacementRowCount);
+        buildReplacementTable(config.ratherThanWorksheet, 'ratherThanRows', config.replacementRowCount);
+        buildExpenseTable(config.expensesWorksheet, config.expenseRowCount);
+        buildSupportFields(config.supportWorksheet);
+      })();
+    </script>
+  </body>
+</html>

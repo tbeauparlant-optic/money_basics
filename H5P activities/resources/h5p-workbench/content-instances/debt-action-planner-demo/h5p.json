@@ -1,0 +1,17 @@
+{
+  "title": "Workshop 7 Debt Action Planner",
+  "language": "en",
+  "mainLibrary": "H5P.DebtActionPlanner",
+  "embedTypes": [
+    "div"
+  ],
+  "license": "U",
+  "defaultLanguage": "en",
+  "preloadedDependencies": [
+    {
+      "machineName": "H5P.DebtActionPlanner",
+      "majorVersion": 0,
+      "minorVersion": 1
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Workbench Placeholder",
+  "description": "Minimal placeholder library for H5P workbench validation.",
+  "machineName": "H5P.WorkbenchPlaceholder",
+  "majorVersion": 0,
+  "minorVersion": 1,
+  "patchVersion": 0,
+  "runnable": 1,
+  "author": "Codex",
+  "license": "MIT",
+  "embedTypes": [
+    "div"
+  ],
+  "coreApi": {
+    "majorVersion": 1,
+    "minorVersion": 24
+  },
+  "preloadedJs": [
+    {
+      "path": "scripts/workbench-placeholder.js"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "name": "title",
+    "type": "text",
+    "label": "Title",
+    "default": "Action Plan for Getting Out of Debt",
+    "importance": "high"
+  },
+  {
+    "name": "intro",
+    "type": "text",
+    "widget": "textarea",
+    "label": "Introduction",
+    "default": "Write your plan in plain language. Fill in the rows that make sense for you.",
+    "importance": "medium"
+  },
+  {
+    "name": "rowCount",
+    "type": "number",
+    "label": "Number of rows",
+    "min": 1,
+    "max": 9,
+    "default": 9,
+    "importance": "medium"
+  },
+  {
+    "name": "closingNote",
+    "type": "text",
+    "widget": "textarea",
+    "label": "Closing note",
+    "default": "Keep the plan specific enough that you can return to it later.",
+    "importance": "low"
+  }
+]

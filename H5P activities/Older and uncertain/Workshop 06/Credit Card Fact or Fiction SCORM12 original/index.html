@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshop 6: Credit Card Fact or Fiction</title>
+  <style>
+    :root {
+      --bg-a: #f5fbf6;
+      --bg-b: #d9eff6;
+      --panel: #ffffff;
+      --ink: #102a43;
+      --muted: #334e68;
+      --accent: #005f73;
+      --accent-strong: #003845;
+      --warm: #a74b00;
+      --success-bg: #e6f6ee;
+      --success-text: #0a5c3d;
+      --error-bg: #fdebec;
+      --error-text: #8d1f1f;
+      --focus: #ffbf47;
+      --border: #1f4d6b;
+      --shadow: 0 12px 28px rgba(16, 42, 67, 0.15);
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Trebuchet MS", "Gill Sans", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1100px 500px at -10% -15%, #bdeed0 0%, transparent 60%),
+        radial-gradient(900px 450px at 110% -10%, #bcdcf7 0%, transparent 60%),
+        linear-gradient(160deg, var(--bg-a), var(--bg-b));
+      line-height: 1.55;
+    }
+
+    .shell {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 28px 18px 44px;
+      animation: rise-in 350ms ease-out;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      margin: 0 0 10px;
+      line-height: 1.2;
+      font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+    }
+
+    .hero p {
+      margin: 0 auto;
+      max-width: 76ch;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: clamp(16px, 2.6vw, 30px);
+    }
+
+    .stack {
+      display: grid;
+      gap: 14px;
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 16px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .statement {
+      margin: 0;
+      font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+      font-weight: 700;
+      color: var(--ink);
+      background: #f7fbfe;
+      border-left: 6px solid var(--accent);
+      border-radius: 12px;
+      padding: 14px;
+    }
+
+    fieldset {
+      border: 0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .choices {
+      display: grid;
+      gap: 12px;
+      margin-top: 6px;
+    }
+
+    .choice {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 14px;
+      font-size: 1.08rem;
+      font-weight: 700;
+      background: #fff;
+    }
+
+    .choice input {
+      width: 22px;
+      height: 22px;
+      margin: 0;
+      accent-color: var(--accent);
+    }
+
+    .choice:has(input:checked) {
+      background: #e7f4f9;
+      border-color: var(--accent-strong);
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    button {
+      border: 2px solid var(--accent-strong);
+      border-radius: 12px;
+      padding: 12px 18px;
+      min-height: 52px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      color: #fff;
+      background: var(--accent);
+      transition: transform 140ms ease, background-color 140ms ease;
+    }
+
+    button:hover {
+      background: var(--accent-strong);
+      transform: translateY(-1px);
+    }
+
+    button.secondary {
+      background: #fff;
+      color: var(--ink);
+      border-color: var(--border);
+    }
+
+    button.secondary:hover {
+      background: #eef6fb;
+    }
+
+    button.warm {
+      background: var(--warm);
+      border-color: #7a3700;
+    }
+
+    button.warm:hover {
+      background: #7a3700;
+    }
+
+    button:focus-visible,
+    .choice:has(input:focus-visible) {
+      outline: 4px solid var(--focus);
+      outline-offset: 2px;
+    }
+
+    .feedback {
+      border-radius: 12px;
+      border: 2px solid transparent;
+      padding: 12px;
+      margin-top: 12px;
+      font-weight: 600;
+    }
+
+    .feedback strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 1.05rem;
+    }
+
+    .feedback.correct {
+      background: var(--success-bg);
+      color: var(--success-text);
+      border-color: #11804f;
+    }
+
+    .feedback.incorrect {
+      background: var(--error-bg);
+      color: var(--error-text);
+      border-color: #b3282d;
+    }
+
+    .feedback.info {
+      background: #e9f3ff;
+      color: #1d3f72;
+      border-color: #3364ad;
+    }
+
+    .summary-box {
+      border: 2px dashed var(--border);
+      border-radius: 12px;
+      padding: 14px;
+      background: #f5fbff;
+      font-size: 1.06rem;
+    }
+
+    .result-tag {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .result-pass {
+      background: var(--success-bg);
+      color: var(--success-text);
+      border: 2px solid #11804f;
+    }
+
+    .result-review {
+      background: #fff3e8;
+      color: #7a3700;
+      border: 2px solid #a74b00;
+    }
+
+    .details {
+      margin-top: 14px;
+      border-top: 2px solid #c7d7e2;
+      padding-top: 12px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+    }
+
+    th,
+    td {
+      border: 1px solid #91aabf;
+      text-align: left;
+      vertical-align: top;
+      padding: 10px;
+    }
+
+    th {
+      background: #e7f4f9;
+    }
+
+    .support-note {
+      color: var(--muted);
+      margin: 0;
+      font-size: 0.96rem;
+    }
+
+    @media (max-width: 700px) {
+      .meta-row {
+        flex-direction: column;
+      }
+
+      .controls {
+        flex-direction: column;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+
+    @keyframes rise-in {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .shell,
+      button {
+        animation: none;
+        transition: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell" aria-live="polite">
+    <header class="hero">
+      <h1>Workshop 6: Credit Card Fact or Fiction</h1>
+      <p>Read each statement and decide whether it is Fact or Fiction. After each answer, review the explanation to learn more about how credit works.</p>
+    </header>
+
+    <section id="intro-screen" class="card stack" aria-labelledby="intro-heading">
+      <h2 id="intro-heading">Ready to begin?</h2>
+      <p>You will answer 10 items. You can retry incorrect items and restart as many times as you like.</p>
+      <div class="controls">
+        <button id="start-btn" type="button">Start</button>
+      </div>
+    </section>
+
+    <section id="quiz-screen" class="card stack" aria-labelledby="question-heading" hidden>
+      <div class="meta-row">
+        <div id="progress-text" role="status" aria-live="polite"></div>
+        <div id="score-text" role="status" aria-live="polite"></div>
+      </div>
+
+      <h2 id="question-heading">Question</h2>
+      <p id="statement-text" class="statement"></p>
+
+      <form id="answer-form" class="stack" novalidate>
+        <fieldset>
+          <legend class="sr-only">Choose whether the statement is Fact or Fiction</legend>
+          <div class="choices">
+            <label class="choice" for="choice-fact">
+              <input id="choice-fact" name="response" type="radio" value="Fact">
+              <span>Fact</span>
+            </label>
+            <label class="choice" for="choice-fiction">
+              <input id="choice-fiction" name="response" type="radio" value="Fiction">
+              <span>Fiction</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="controls">
+          <button id="submit-btn" type="submit">Submit Answer</button>
+          <button id="next-btn" type="button" class="secondary" hidden>Next Question</button>
+        </div>
+      </form>
+
+      <section id="feedback-panel" class="feedback info" aria-live="assertive" hidden>
+        <strong id="feedback-title"></strong>
+        <p id="feedback-body"></p>
+      </section>
+
+      <p class="support-note">No timer is used. You can move at your own pace.</p>
+    </section>
+
+    <section id="results-screen" class="card stack" aria-labelledby="results-heading" hidden>
+      <h2 id="results-heading">Results</h2>
+      <div id="result-tag" class="result-tag"></div>
+      <div id="results-summary" class="summary-box"></div>
+
+      <div class="controls">
+        <button id="try-again-btn" type="button" class="warm">Try Again</button>
+        <button id="view-results-btn" type="button" class="secondary">View Results</button>
+        <button id="restart-btn" type="button">Restart</button>
+      </div>
+
+      <section id="results-details" class="details" hidden>
+        <h3>Answer Review</h3>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Statement</th>
+              <th scope="col">Your Answer</th>
+              <th scope="col">Correct Answer</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody id="results-tbody"></tbody>
+        </table>
+      </section>
+    </section>
+  </main>
+
+  <script src="scorm.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

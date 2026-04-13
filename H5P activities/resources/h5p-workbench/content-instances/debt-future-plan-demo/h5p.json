@@ -1,0 +1,17 @@
+{
+  "title": "Workshop 7 Future Plan",
+  "language": "en",
+  "mainLibrary": "H5P.DebtFuturePlan",
+  "embedTypes": [
+    "div"
+  ],
+  "license": "U",
+  "defaultLanguage": "en",
+  "preloadedDependencies": [
+    {
+      "machineName": "H5P.DebtFuturePlan",
+      "majorVersion": 0,
+      "minorVersion": 1
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+<!-- Paste this whole block into the LearnWorlds embedded script widget -->
+<style>
+  .mb6credit-wrap{max-width:980px;margin:0 auto;padding:8px;font-family:"INTER_18PT-REGULAR","Inter",Arial,sans-serif;font-size:16px;color:rgb(0,0,0);line-height:1.5}
+  .mb6credit-shell{background:transparent;border:1px solid #d8e3e1;border-radius:18px;overflow:hidden}
+  .mb6credit-header{padding:18px 18px 14px;background:transparent;border-bottom:1px solid #d8e3e1}
+  .mb6credit-title{margin:0 0 10px;font-size:1em;line-height:1.2}
+  .mb6credit-copy{margin:0 0 10px;font-size:1em;color:rgb(0,0,0)}
+  .mb6credit-copy:last-child{margin-bottom:0}
+  .mb6credit-body{padding:14px;display:grid;gap:14px}
+  .mb6credit-panel{background:transparent;border:1px solid #d8e3e1;border-radius:16px;padding:14px}
+  .mb6credit-panel-title{margin:0 0 8px;font-size:1em;line-height:1.2}
+  .mb6credit-list{margin:0;padding-left:20px;color:rgb(0,0,0);font-size:1em}
+  .mb6credit-list li{margin:4px 0}
+  .mb6credit-controls{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px}
+  .mb6credit-status{margin:0;font-size:1em;color:rgb(0,0,0);font-weight:700}
+  .mb6credit-actions{display:flex;flex-wrap:wrap;gap:8px}
+  .mb6credit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .mb6credit-column{border:1px solid #d8e3e1;border-radius:18px;padding:14px;background:transparent;min-width:0}
+  .mb6credit-column[data-kind="pros"]{background:transparent}
+  .mb6credit-column[data-kind="cons"]{background:transparent}
+  .mb6credit-heading{margin:0 0 6px;font-size:1em;line-height:1.2}
+  .mb6credit-helper{margin:0 0 12px;font-size:0.9em;color:rgb(0,0,0)}
+  .mb6credit-label{display:block;margin:0 0 6px;font-size:1em;font-weight:700;color:rgb(0,0,0)}
+  .mb6credit-input{display:block;width:100%;min-height:260px;padding:12px 14px;border:2px solid #000000;border-radius:14px;background:transparent;color:rgb(0,0,0);font:inherit;line-height:1.5;resize:vertical}
+  .mb6credit-input:focus-visible,.mb6credit-btn:focus-visible{outline:3px solid #ffbf47;outline-offset:2px}
+  .mb6credit-hint{margin:10px 0 0;font-size:0.85em;color:rgb(0,0,0)}
+  .mb6credit-btn{appearance:none;-webkit-appearance:none;border:2px solid #000000;border-radius:999px;background:transparent;color:rgb(0,0,0);font:inherit;line-height:1.2;cursor:pointer;padding:9px 14px;min-height:40px;text-align:center}
+  .mb6credit-btn:hover{background:rgba(255,255,255,0.12)}
+  .mb6credit-btn-primary{background:transparent;border-color:#000000;color:rgb(0,0,0)}
+  .mb6credit-btn-primary:hover{background:rgba(255,255,255,0.12)}
+  .mb6credit-btn-danger{border-color:#000000;color:rgb(0,0,0)}
+  .mb6credit-takeaway{white-space:pre-line}
+  @media (max-width:760px){
+    .mb6credit-grid{grid-template-columns:1fr}
+    .mb6credit-body{padding:12px}
+    .mb6credit-header{padding:16px 16px 12px}
+  }
+  @media (max-width:560px){
+    .mb6credit-actions{display:grid;width:100%}
+    .mb6credit-actions .mb6credit-btn{width:100%}
+  }
+</style>
+
+<div id="mb6credit-root" class="mb6credit-wrap">
+  <div class="mb6credit-shell">
+    <section class="mb6credit-header">
+      <h2 class="mb6credit-title">Pros and Cons of Credit</h2>
+      <p class="mb6credit-copy">Think about your own experience with credit, along with the examples and ideas in the Student Guide.</p>
+      <p class="mb6credit-copy">Before completing this activity, review Student Guide pages 105–107.</p>
+      <p class="mb6credit-copy">As you read, notice examples of how credit can be useful, as well as examples of how it can become expensive, stressful, or hard to manage.</p>
+      <p class="mb6credit-copy">Then use the space below to create your own list of pros and cons of credit.</p>
+      <p class="mb6credit-copy">There are no right or wrong answers here. The goal is to reflect on what stands out to you from the reading and from your own experience.</p>
+    </section>
+
+    <div class="mb6credit-body">
+      <section class="mb6credit-panel">
+        <h3 class="mb6credit-panel-title">Instructions</h3>
+        <p class="mb6credit-copy">Add your own examples of possible pros and cons of credit.</p>
+        <ul class="mb6credit-list">
+          <li>your reading of Student Guide pages 105–107</li>
+          <li>your own experience</li>
+          <li>examples you have seen in everyday life</li>
+        </ul>
+        <p class="mb6credit-copy" style="margin-top:10px">When you are done, you can download your list for later reference.</p>
+      </section>
+
+      <section class="mb6credit-panel mb6credit-controls">
+        <p id="mb6credit-status" class="mb6credit-status">Type your notes directly into the Pros and Cons boxes.</p>
+        <div class="mb6credit-actions">
+          <button id="mb6credit-download" class="mb6credit-btn mb6credit-btn-primary" type="button">Download My List</button>
+          <button id="mb6credit-clear" class="mb6credit-btn mb6credit-btn-danger" type="button">Clear All</button>
+        </div>
+      </section>
+
+      <section class="mb6credit-grid" aria-label="Pros and cons entry areas">
+        <section class="mb6credit-column" data-kind="pros">
+          <h3 class="mb6credit-heading">Pros of Credit</h3>
+          <p class="mb6credit-helper">Examples of benefits, conveniences, protections, or opportunities that credit can provide</p>
+          <label class="mb6credit-label" for="mb6credit-pros">Your Pros List</label>
+          <textarea id="mb6credit-pros" class="mb6credit-input" aria-label="Pros of Credit"></textarea>
+          <p class="mb6credit-hint">Add one item per line if that is helpful.</p>
+        </section>
+
+        <section class="mb6credit-column" data-kind="cons">
+          <h3 class="mb6credit-heading">Cons of Credit</h3>
+          <p class="mb6credit-helper">Examples of risks, costs, pressures, or problems that credit can create</p>
+          <label class="mb6credit-label" for="mb6credit-cons">Your Cons List</label>
+          <textarea id="mb6credit-cons" class="mb6credit-input" aria-label="Cons of Credit"></textarea>
+          <p class="mb6credit-hint">Add one item per line if that is helpful.</p>
+        </section>
+      </section>
+
+      <section class="mb6credit-panel">
+        <h3 class="mb6credit-panel-title">Takeaway</h3>
+        <p class="mb6credit-copy">Use this space to write any thoughts or reflections that came up while going over the content and that you would like to refer back to later on.</p>
+        <label class="mb6credit-label" for="mb6credit-takeaway">Your Takeaway Notes</label>
+        <textarea id="mb6credit-takeaway" class="mb6credit-input" aria-label="Takeaway notes"></textarea>
+      </section>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var root = document.getElementById('mb6credit-root');
+  var pros = document.getElementById('mb6credit-pros');
+  var cons = document.getElementById('mb6credit-cons');
+  var takeaway = document.getElementById('mb6credit-takeaway');
+  var downloadButton = document.getElementById('mb6credit-download');
+  var clearButton = document.getElementById('mb6credit-clear');
+  var status = document.getElementById('mb6credit-status');
+
+  function postHeight() {
+    if (!root) return;
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        source: 'mb6credit',
+        type: 'resize',
+        height: Math.ceil(root.getBoundingClientRect().height)
+      }, '*');
+    }
+  }
+
+  function formatTimestamp(date) {
+    try {
+      return date.toLocaleString(undefined, { dateStyle: 'long', timeStyle: 'short' });
+    } catch (error) {
+      return date.toLocaleString();
+    }
+  }
+
+  function buildFileName() {
+    function pad(value) {
+      return String(value).padStart(2, '0');
+    }
+    var now = new Date();
+    return 'pros-and-cons-of-credit-' +
+      now.getFullYear() +
+      pad(now.getMonth() + 1) +
+      pad(now.getDate()) +
+      '-' +
+      pad(now.getHours()) +
+      pad(now.getMinutes()) +
+      '.txt';
+  }
+
+  function downloadList() {
+    var lines = [
+      'Pros and Cons of Credit',
+      '',
+      'Generated: ' + formatTimestamp(new Date()),
+      '',
+      'Pros of Credit',
+      pros.value.trim() || 'No entries added.',
+      '',
+      'Cons of Credit',
+      cons.value.trim() || 'No entries added.',
+      '',
+      'Takeaway',
+      takeaway.value.trim() || 'No entries added.'
+    ];
+
+    var blob = new Blob([lines.join('\n')], { type: 'text/plain;charset=utf-8' });
+    var url = URL.createObjectURL(blob);
+    var link = document.createElement('a');
+    link.href = url;
+    link.download = buildFileName();
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    setTimeout(function () {
+      URL.revokeObjectURL(url);
+    }, 0);
+    status.textContent = 'Your list was downloaded.';
+  }
+
+  function clearAll() {
+    if (!pros.value.trim() && !cons.value.trim() && !takeaway.value.trim()) {
+      status.textContent = 'All boxes are already clear.';
+      return;
+    }
+    if (!window.confirm('Clear all of your pros and cons?')) {
+      return;
+    }
+    pros.value = '';
+    cons.value = '';
+    takeaway.value = '';
+    status.textContent = 'All boxes were cleared.';
+  }
+
+  downloadButton.addEventListener('click', downloadList);
+  clearButton.addEventListener('click', clearAll);
+  window.addEventListener('resize', postHeight);
+  postHeight();
+}());
+</script>

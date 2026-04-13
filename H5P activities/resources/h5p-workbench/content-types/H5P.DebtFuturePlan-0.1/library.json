@@ -1,0 +1,28 @@
+{
+  "title": "Debt Future Plan",
+  "description": "A minimal worksheet for future debt reduction planning.",
+  "machineName": "H5P.DebtFuturePlan",
+  "majorVersion": 0,
+  "minorVersion": 1,
+  "patchVersion": 0,
+  "runnable": 1,
+  "author": "Codex",
+  "license": "MIT",
+  "embedTypes": [
+    "div"
+  ],
+  "coreApi": {
+    "majorVersion": 1,
+    "minorVersion": 24
+  },
+  "preloadedJs": [
+    {
+      "path": "scripts/debt-future-plan.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "styles/debt-future-plan.css"
+    }
+  ]
+}

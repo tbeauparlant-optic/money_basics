@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshop 6 Fact or Fiction Interactive</title>
+  <style>
+    :root {
+      --bg-1: #eef7f2;
+      --bg-2: #ddeef8;
+      --panel: #ffffff;
+      --ink: #102a43;
+      --muted: #2f5068;
+      --line: #1a4d6b;
+      --primary: #0b7285;
+      --primary-strong: #084b57;
+      --focus: #ffbf47;
+      --fact-bg: #e8f7ef;
+      --fact-line: #1f7a52;
+      --fiction-bg: #fff1e6;
+      --fiction-line: #a75507;
+      --radius: 16px;
+      --shadow: 0 16px 32px rgba(16, 42, 67, 0.14);
+      --tap: 50px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Trebuchet MS", "Gill Sans", "Segoe UI", sans-serif;
+      background:
+        radial-gradient(920px 540px at -15% -12%, #c8eed9 0%, transparent 58%),
+        radial-gradient(900px 540px at 115% -14%, #cadef8 0%, transparent 58%),
+        linear-gradient(170deg, var(--bg-1), var(--bg-2));
+      line-height: 1.5;
+      display: grid;
+      place-items: center;
+      padding: 16px;
+    }
+
+    .experience {
+      width: min(96vmin, 980px);
+      aspect-ratio: 1 / 1;
+      background: var(--panel);
+      border: 2px solid var(--line);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 18px;
+      border-bottom: 2px solid #d0e0ea;
+      background: #f5fbff;
+    }
+
+    .topbar h1 {
+      margin: 0;
+      font-size: clamp(1.05rem, 2vw, 1.35rem);
+      line-height: 1.25;
+    }
+
+    .slide-meter {
+      font-weight: 700;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .content {
+      min-height: 0;
+      display: grid;
+      grid-template-rows: auto auto 1fr;
+      gap: 10px;
+      padding: 20px;
+    }
+
+    .instruction {
+      margin: 0;
+      color: var(--muted);
+      font-weight: 600;
+      padding: 10px 12px;
+      border-left: 5px solid var(--primary);
+      background: #f0f8fc;
+      border-radius: 10px;
+    }
+
+    .statement-list {
+      min-height: 0;
+      overflow: auto;
+      display: grid;
+      gap: 10px;
+      align-content: start;
+      padding-right: 4px;
+    }
+
+    .statement-card {
+      border: 2px solid #7f9cb1;
+      border-radius: 14px;
+      background: #ffffff;
+      padding: 12px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .statement-head {
+      display: grid;
+      gap: 6px;
+    }
+
+    .statement-index {
+      display: inline-block;
+      font-weight: 800;
+      color: #21496a;
+      background: #e8f3fc;
+      border: 1px solid #8fb0c9;
+      border-radius: 999px;
+      padding: 2px 8px;
+      width: fit-content;
+      font-size: 0.86rem;
+    }
+
+    .statement-text {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .choices {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .choices input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .choice-btn {
+      min-height: var(--tap);
+      border: 2px solid #416d8a;
+      border-radius: 12px;
+      background: #ffffff;
+      font-weight: 800;
+      font-size: 0.98rem;
+      color: var(--ink);
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      user-select: none;
+      padding: 6px;
+    }
+
+    .choices input:checked + .choice-btn {
+      background: #e8f4fb;
+      border-color: var(--primary-strong);
+    }
+
+    .choices input:focus-visible + .choice-btn {
+      outline: 4px solid var(--focus);
+      outline-offset: 2px;
+    }
+
+    .feedback {
+      border-radius: 12px;
+      border: 2px solid #7f9cb1;
+      background: #f8fcff;
+      padding: 10px;
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 0.94rem;
+    }
+
+    .feedback.fact {
+      border-color: var(--fact-line);
+      background: var(--fact-bg);
+      color: #1d5f42;
+    }
+
+    .feedback.fiction {
+      border-color: var(--fiction-line);
+      background: var(--fiction-bg);
+      color: #7a3a06;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 880px), (max-height: 760px) {
+      .experience {
+        width: min(98vw, 760px);
+        aspect-ratio: auto;
+        height: min(96vh, 900px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="experience" aria-label="Workshop 6 interactive slide">
+    <header class="topbar">
+      <h1>Workshop 6: Credit Card Fact or Fiction</h1>
+      <div class="slide-meter">Slide 1 of 1</div>
+    </header>
+
+    <section class="content" aria-labelledby="interactive-title">
+      <h2 id="interactive-title">Fact or Fiction Interactive Exploration</h2>
+      <p class="instruction">Choose Fact or Fiction for each statement. You can change your selection at any time, and the explanation updates instantly.</p>
+      <div id="statement-list" class="statement-list" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      "use strict";
+
+      var STATEMENTS = [
+        {
+          text: "When a credit card company sets limits on how much can be charged on a card, it's based on your ability to handle debt.",
+          truth: "Fact",
+          feedback: "This refers to your credit limit. Beginner cards often have lower limits, and limits may increase over time with responsible credit use."
+        },
+        {
+          text: "Late fees, if you don't pay your bill on time, can be as high as $35.",
+          truth: "Fact",
+          feedback: "Late fees can be costly. Automatic payments or reminders can help avoid them."
+        },
+        {
+          text: "Usually, the lower your credit score, the higher your credit card interest rates will be.",
+          truth: "Fact",
+          feedback: "Lower scores usually mean lenders see you as higher risk, so rates tend to be higher."
+        },
+        {
+          text: "The grace period for credit cards is usually about 30 days.",
+          truth: "Fiction",
+          feedback: "The grace period is usually about 25 days, not 30."
+        },
+        {
+          text: "Secured credit cards can be a good option for someone with poor credit or no credit.",
+          truth: "Fact",
+          feedback: "Secured cards are backed by a cash deposit, so they can be easier to qualify for while building credit."
+        },
+        {
+          text: "If you charge over your limit on a secured credit card, the bank can take the balance from your account.",
+          truth: "Fact",
+          feedback: "The deposit acts as collateral for the bank or card company."
+        },
+        {
+          text: "Making the minimum payments saves you money.",
+          truth: "Fiction",
+          feedback: "Minimum payments may reduce short-term pressure, but they usually cost more over time because interest keeps building."
+        },
+        {
+          text: "If you pay less than the minimum payment, your card will be deactivated.",
+          truth: "Fact",
+          feedback: "The minimum payment is the least amount needed to keep the card active."
+        },
+        {
+          text: "If your credit card is lost or stolen, or has been used without your permission, you will be responsible for only the first $100 of unauthorized charges if you report it right away.",
+          truth: "Fiction",
+          feedback: "You are responsible for only the first $50 if you report it right away."
+        },
+        {
+          text: "If you pay your bill in full during the grace period, you won't have to pay a finance charge on purchases for that bill.",
+          truth: "Fact",
+          feedback: "Paying in full during the grace period avoids finance charges on those purchases."
+        }
+      ];
+
+      var statementList = document.getElementById("statement-list");
+
+      renderStatements();
+
+      function renderStatements() {
+        var html = STATEMENTS.map(function (item, index) {
+          var id = index + 1;
+          return (
+            "<section class=\"statement-card\" aria-labelledby=\"s-title-" + id + "\">" +
+              "<div class=\"statement-head\">" +
+                "<span class=\"statement-index\">Statement " + id + "</span>" +
+                "<p id=\"s-title-" + id + "\" class=\"statement-text\">" + escapeHtml(item.text) + "</p>" +
+              "</div>" +
+              "<fieldset>" +
+                "<legend class=\"sr-only\">Choose Fact or Fiction for statement " + id + "</legend>" +
+                "<div class=\"choices\">" +
+                  "<label>" +
+                    "<input type=\"radio\" name=\"statement-" + id + "\" value=\"Fact\" data-index=\"" + index + "\">" +
+                    "<span class=\"choice-btn\">Fact</span>" +
+                  "</label>" +
+                  "<label>" +
+                    "<input type=\"radio\" name=\"statement-" + id + "\" value=\"Fiction\" data-index=\"" + index + "\">" +
+                    "<span class=\"choice-btn\">Fiction</span>" +
+                  "</label>" +
+                "</div>" +
+              "</fieldset>" +
+              "<div id=\"feedback-" + id + "\" class=\"feedback\">Select Fact or Fiction to view an explanation.</div>" +
+            "</section>"
+          );
+        }).join("");
+
+        statementList.innerHTML = html;
+
+        var radios = statementList.querySelectorAll("input[type='radio']");
+        radios.forEach(function (radio) {
+          radio.addEventListener("change", handleSelectionChange);
+        });
+      }
+
+      function handleSelectionChange(event) {
+        var selected = event.target.value;
+        var index = Number(event.target.getAttribute("data-index"));
+        var item = STATEMENTS[index];
+        var feedbackEl = document.getElementById("feedback-" + (index + 1));
+        var isFact = item.truth === "Fact";
+        var selectedMatches = selected === item.truth;
+
+        var truthPhrase = isFact ? "a Fact" : "Fiction";
+        var selectedPhrase = "You selected " + selected + ". ";
+        var realityPhrase = selectedMatches
+          ? "This statement is " + truthPhrase + ". "
+          : "This statement is actually " + truthPhrase + ". ";
+
+        feedbackEl.textContent = selectedPhrase + realityPhrase + item.feedback;
+        feedbackEl.className = "feedback " + (isFact ? "fact" : "fiction");
+      }
+
+      function escapeHtml(value) {
+        return String(value)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/\"/g, "&quot;")
+          .replace(/'/g, "&#39;");
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+.h5p-debt-action-planner {
+  color: #1f2933;
+  font-family: Arial, sans-serif;
+}
+
+.h5p-debt-action-planner__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.h5p-debt-action-planner__step,
+.h5p-debt-action-planner__button {
+  border: 1px solid #cbd2d9;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #1f2933;
+  cursor: pointer;
+  font: inherit;
+  padding: 0.55rem 0.9rem;
+}
+
+.h5p-debt-action-planner__step--active,
+.h5p-debt-action-planner__button--primary {
+  background: #e8f1fb;
+  border-color: #9fbfe3;
+  color: #0f4c81;
+  font-weight: 700;
+}
+
+.h5p-debt-action-planner__section {
+  border: 1px solid #d9e2ec;
+  border-radius: 0.875rem;
+  padding: 1rem;
+  background: #ffffff;
+}
+
+.h5p-debt-action-planner__section[hidden] {
+  display: none;
+}
+
+.h5p-debt-action-planner__kicker {
+  color: #52606d;
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin: 0 0 0.35rem;
+}
+
+.h5p-debt-action-planner__title {
+  font-size: 1.3rem;
+  margin: 0 0 0.4rem;
+}
+
+.h5p-debt-action-planner__title:focus {
+  outline: 2px solid #0f4c81;
+  outline-offset: 2px;
+}
+
+.h5p-debt-action-planner__intro,
+.h5p-debt-action-planner__note {
+  color: #52606d;
+  line-height: 1.45;
+  margin: 0 0 1rem;
+}
+
+.h5p-debt-action-planner__table-wrap {
+  overflow-x: auto;
+}
+
+.h5p-debt-action-planner__table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.h5p-debt-action-planner__table th,
+.h5p-debt-action-planner__table td {
+  border: 1px solid #d9e2ec;
+  padding: 0.65rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.h5p-debt-action-planner__table thead th {
+  background: #f5f7fa;
+}
+
+.h5p-debt-action-planner__input,
+.h5p-debt-action-planner__textarea {
+  border: 1px solid #bcccdc;
+  border-radius: 0.5rem;
+  font: inherit;
+  padding: 0.55rem 0.65rem;
+  width: 100%;
+}
+
+.h5p-debt-action-planner__textarea {
+  min-height: 5rem;
+  resize: vertical;
+}
+
+.h5p-debt-action-planner__prompt {
+  display: grid;
+  gap: 0.45rem;
+  margin-bottom: 1rem;
+}
+
+.h5p-debt-action-planner__label {
+  font-weight: 600;
+}
+
+.h5p-debt-action-planner__money {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.h5p-debt-action-planner__currency {
+  align-items: center;
+  background: #f5f7fa;
+  border: 1px solid #bcccdc;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  font-weight: 700;
+  height: 2.5rem;
+  justify-content: center;
+  min-width: 2.5rem;
+}
+
+.h5p-debt-action-planner__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.h5p-debt-action-planner__step:focus,
+.h5p-debt-action-planner__button:focus,
+.h5p-debt-action-planner__input:focus,
+.h5p-debt-action-planner__textarea:focus {
+  outline: 2px solid #0f4c81;
+  outline-offset: 2px;
+}
+
+@media (max-width: 720px) {
+  .h5p-debt-action-planner__section {
+    padding: 0.85rem;
+  }
+}

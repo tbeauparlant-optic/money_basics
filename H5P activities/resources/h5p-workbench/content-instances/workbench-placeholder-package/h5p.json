@@ -1,0 +1,17 @@
+{
+  "title": "Workbench Placeholder Package",
+  "language": "en",
+  "mainLibrary": "H5P.WorkbenchPlaceholder",
+  "embedTypes": [
+    "div"
+  ],
+  "license": "U",
+  "defaultLanguage": "en",
+  "preloadedDependencies": [
+    {
+      "machineName": "H5P.WorkbenchPlaceholder",
+      "majorVersion": 0,
+      "minorVersion": 1
+    }
+  ]
+}

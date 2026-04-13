@@ -1,0 +1,57 @@
+[
+  {
+    "name": "title",
+    "type": "text",
+    "label": "Title",
+    "default": "Planning for the Future",
+    "importance": "high"
+  },
+  {
+    "name": "intro",
+    "type": "text",
+    "widget": "textarea",
+    "label": "Introduction",
+    "default": "Think in hopeful numbers and realistic numbers.",
+    "importance": "medium"
+  },
+  {
+    "name": "prompts",
+    "type": "group",
+    "label": "Prompts",
+    "importance": "high",
+    "fields": [
+      {
+        "name": "oneYearHopeful",
+        "type": "text",
+        "label": "One-year hopeful prompt",
+        "default": "One year from now, I would like to reduce my debt by:"
+      },
+      {
+        "name": "oneYearRealistic",
+        "type": "text",
+        "label": "One-year realistic prompt",
+        "default": "One year from now, I realistically think I can reduce my debt by:"
+      },
+      {
+        "name": "threeYearHopeful",
+        "type": "text",
+        "label": "Three-year hopeful prompt",
+        "default": "Three years from now, I would like to reduce my debt by:"
+      },
+      {
+        "name": "threeYearRealistic",
+        "type": "text",
+        "label": "Three-year realistic prompt",
+        "default": "Three years from now, I realistically think I can reduce my debt by:"
+      }
+    ]
+  },
+  {
+    "name": "closingNote",
+    "type": "text",
+    "widget": "textarea",
+    "label": "Closing note",
+    "default": "Your answers here can help you decide which debts to focus on first.",
+    "importance": "low"
+  }
+]

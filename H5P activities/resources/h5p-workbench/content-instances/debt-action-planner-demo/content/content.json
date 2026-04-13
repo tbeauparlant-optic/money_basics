@@ -1,0 +1,14 @@
+{
+  "actionPlanTitle": "Action Plan for Getting Out of Debt",
+  "actionPlanIntro": "Write your plan in plain language. Fill in the rows that make sense for you.",
+  "rowCount": 9,
+  "futureTitle": "Planning for the Future",
+  "futureIntro": "Think in hopeful numbers and realistic numbers.",
+  "futurePrompts": {
+    "oneYearHopeful": "One year from now, I would like to reduce my debt by:",
+    "oneYearRealistic": "One year from now, I realistically think I can reduce my debt by:",
+    "threeYearHopeful": "Three years from now, I would like to reduce my debt by:",
+    "threeYearRealistic": "Three years from now, I realistically think I can reduce my debt by:"
+  },
+  "closingNote": "Your answers here can help you decide which debts to focus on first."
+}

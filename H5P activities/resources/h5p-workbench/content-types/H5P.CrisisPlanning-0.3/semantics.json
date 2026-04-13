@@ -1,0 +1,259 @@
+[
+  {
+    "name": "title",
+    "type": "text",
+    "label": "Title",
+    "default": "Financial Crisis Planning",
+    "importance": "high"
+  },
+  {
+    "name": "scaleLabels",
+    "type": "group",
+    "label": "Scale labels",
+    "importance": "high",
+    "fields": [
+      {
+        "name": "option1",
+        "type": "text",
+        "label": "Option 1",
+        "default": "Never"
+      },
+      {
+        "name": "option2",
+        "type": "text",
+        "label": "Option 2",
+        "default": "Rarely"
+      },
+      {
+        "name": "option3",
+        "type": "text",
+        "label": "Option 3",
+        "default": "Sometimes"
+      },
+      {
+        "name": "option4",
+        "type": "text",
+        "label": "Option 4",
+        "default": "Often"
+      }
+    ]
+  },
+  {
+    "name": "financialWorksheet",
+    "type": "group",
+    "label": "Financial issues worksheet",
+    "importance": "high",
+    "fields": [
+      {
+        "name": "heading",
+        "type": "text",
+        "label": "Worksheet heading",
+        "default": "How Financial Issues Affect Me"
+      },
+      {
+        "name": "statementColumnLabel",
+        "type": "text",
+        "label": "Statement column header",
+        "default": "Statement"
+      },
+      {
+        "name": "statementsText",
+        "type": "text",
+        "widget": "textarea",
+        "label": "Statements",
+        "default": "I experience anxiety.\nMy sleep is interrupted.\nI feel hopeless.\nI can't purchase needed medication or access services.\nI can't buy the things I want.\nI do without necessities.\nI feel ashamed.\nI worry about my future.\nMy relationship with my partner is strained.\nI dread (or avoid) opening mail or answering the phone.\nI feel out of control with my spending.\nI have to work more than I would like just to pay my bills.\nI can't go out with my friends or take a vacation.\nI feel powerless over my finances."
+      }
+    ]
+  },
+  {
+    "name": "healthWorksheet",
+    "type": "group",
+    "label": "Mental health and finances worksheet",
+    "importance": "high",
+    "fields": [
+      {
+        "name": "heading",
+        "type": "text",
+        "label": "Worksheet heading",
+        "default": "How Mental Health, Addiction, Treatment, and/or Physical Health Issues Affect My Finances"
+      },
+      {
+        "name": "statementColumnLabel",
+        "type": "text",
+        "label": "Statement column header",
+        "default": "Statement"
+      },
+      {
+        "name": "statementsText",
+        "type": "text",
+        "widget": "textarea",
+        "label": "Statements",
+        "default": "Important bills don't get paid on time.\nI go on rampant spending sprees.\nI spend money I can't really afford on unnecessary things.\nI avoid opening my mail.\nI have a hard time writing and signing checks.\nI have a hard time using ATMs or debit card machines.\nI let my finances go unchecked.\nI can't physically access my finances.\nI lose important financial documents.\nI stop caring about keeping a budget and start making poor financial choices.\nI sabotage my own financial situation."
+      }
+    ]
+  },
+  {
+    "name": "whenExperienceWorksheet",
+    "type": "group",
+    "label": "When I do or experience this worksheet",
+    "importance": "high",
+    "fields": [
+      {
+        "name": "heading",
+        "type": "text",
+        "label": "Worksheet heading",
+        "default": "When I do or experience this, I will do this instead"
+      },
+      {
+        "name": "numberHeader",
+        "type": "text",
+        "label": "Number column header",
+        "default": "#"
+      },
+      {
+        "name": "triggerHeader",
+        "type": "text",
+        "label": "Trigger column header",
+        "default": "What happens"
+      },
+      {
+        "name": "alternativeHeader",
+        "type": "text",
+        "label": "Alternative column header",
+        "default": "What I will do instead"
+      }
+    ]
+  },
+  {
+    "name": "ratherThanWorksheet",
+    "type": "group",
+    "label": "Rather than doing this worksheet",
+    "importance": "high",
+    "fields": [
+      {
+        "name": "heading",
+        "type": "text",
+        "label": "Worksheet heading",
+        "default": "Rather than doing this, I will do this instead"
+      },
+      {
+        "name": "numberHeader",
+        "type": "text",
+        "label": "Number column header",
+        "default": "#"
+      },
+      {
+        "name": "triggerHeader",
+        "type": "text",
+        "label": "Trigger column header",
+        "default": "What happens"
+      },
+      {
+        "name": "alternativeHeader",
+        "type": "text",
+        "label": "Alternative column header",
+        "default": "What I will do instead"
+      }
+    ]
+  },
+  {
+    "name": "replacementRowCount",
+    "type": "number",
+    "label": "Number of rows for each crisis response prompt",
+    "min": 2,
+    "max": 10,
+    "default": 5,
+    "importance": "medium"
+  },
+  {
+    "name": "expensesWorksheet",
+    "type": "group",
+    "label": "Expenses worksheet",
+    "importance": "high",
+    "fields": [
+      {
+        "name": "heading",
+        "type": "text",
+        "label": "Worksheet heading",
+        "default": "Monthly Expenses and Due Dates"
+      },
+      {
+        "name": "numberHeader",
+        "type": "text",
+        "label": "Number column header",
+        "default": "#"
+      },
+      {
+        "name": "expenseHeader",
+        "type": "text",
+        "label": "Expense column header",
+        "default": "Expense or bill"
+      },
+      {
+        "name": "amountHeader",
+        "type": "text",
+        "label": "Amount column header",
+        "default": "Amount"
+      },
+      {
+        "name": "dueHeader",
+        "type": "text",
+        "label": "Due date column header",
+        "default": "Due date or timing"
+      }
+    ]
+  },
+  {
+    "name": "expenseRowCount",
+    "type": "number",
+    "label": "Number of expense rows",
+    "min": 3,
+    "max": 15,
+    "default": 8,
+    "importance": "medium"
+  },
+  {
+    "name": "supportWorksheet",
+    "type": "group",
+    "label": "Trusted support worksheet",
+    "importance": "high",
+    "fields": [
+      {
+        "name": "heading",
+        "type": "text",
+        "label": "Worksheet heading",
+        "default": "Trusted Support Person"
+      },
+      {
+        "name": "nameLabel",
+        "type": "text",
+        "label": "Trusted person label",
+        "default": "Trusted person"
+      },
+      {
+        "name": "relationshipLabel",
+        "type": "text",
+        "label": "Relationship label",
+        "default": "Relationship to me"
+      },
+      {
+        "name": "contactLabel",
+        "type": "text",
+        "label": "Contact label",
+        "default": "Best way to contact them"
+      },
+      {
+        "name": "helpLabel",
+        "type": "text",
+        "label": "Help label",
+        "default": "How this person can help me during a financial crisis"
+      },
+      {
+        "name": "payeeRightsLabel",
+        "type": "text",
+        "label": "Representative payee label",
+        "default": "Representative payee rights, questions, or reminders"
+      }
+    ]
+  }
+]

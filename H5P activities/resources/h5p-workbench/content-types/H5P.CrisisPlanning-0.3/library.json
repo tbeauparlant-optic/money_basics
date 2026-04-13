@@ -1,0 +1,28 @@
+{
+  "title": "Crisis Planning",
+  "description": "A Workshop 8 worksheet for crisis planning, expense tracking, and trusted support planning.",
+  "machineName": "H5P.CrisisPlanning",
+  "majorVersion": 0,
+  "minorVersion": 3,
+  "patchVersion": 0,
+  "runnable": 1,
+  "author": "Codex",
+  "license": "MIT",
+  "embedTypes": [
+    "div"
+  ],
+  "coreApi": {
+    "majorVersion": 1,
+    "minorVersion": 24
+  },
+  "preloadedJs": [
+    {
+      "path": "scripts/crisis-planning.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "styles/crisis-planning.css"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "title": "Financial Crisis Planning",
+  "scaleLabels": {
+    "option1": "Never",
+    "option2": "Rarely",
+    "option3": "Sometimes",
+    "option4": "Often"
+  },
+  "financialWorksheet": {
+    "heading": "How Financial Issues Affect Me",
+    "statementColumnLabel": "Statement",
+    "statementsText": "I experience anxiety.\nMy sleep is interrupted.\nI feel hopeless.\nI can't purchase needed medication or access services.\nI can't buy the things I want.\nI do without necessities.\nI feel ashamed.\nI worry about my future.\nMy relationship with my partner is strained.\nI dread (or avoid) opening mail or answering the phone.\nI feel out of control with my spending.\nI have to work more than I would like just to pay my bills.\nI can't go out with my friends or take a vacation.\nI feel powerless over my finances."
+  },
+  "healthWorksheet": {
+    "heading": "How Mental Health, Addiction, Treatment, and/or Physical Health Issues Affect My Finances",
+    "statementColumnLabel": "Statement",
+    "statementsText": "Important bills don't get paid on time.\nI go on rampant spending sprees.\nI spend money I can't really afford on unnecessary things.\nI avoid opening my mail.\nI have a hard time writing and signing checks.\nI have a hard time using ATMs or debit card machines.\nI let my finances go unchecked.\nI can't physically access my finances.\nI lose important financial documents.\nI stop caring about keeping a budget and start making poor financial choices.\nI sabotage my own financial situation."
+  },
+  "whenExperienceWorksheet": {
+    "heading": "When I do or experience this, I will do this instead",
+    "numberHeader": "#",
+    "triggerHeader": "What happens",
+    "alternativeHeader": "What I will do instead"
+  },
+  "ratherThanWorksheet": {
+    "heading": "Rather than doing this, I will do this instead",
+    "numberHeader": "#",
+    "triggerHeader": "What happens",
+    "alternativeHeader": "What I will do instead"
+  },
+  "replacementRowCount": 5,
+  "expensesWorksheet": {
+    "heading": "Monthly Expenses and Due Dates",
+    "numberHeader": "#",
+    "expenseHeader": "Expense or bill",
+    "amountHeader": "Amount",
+    "dueHeader": "Due date or timing"
+  },
+  "expenseRowCount": 8,
+  "supportWorksheet": {
+    "heading": "Trusted Support Person",
+    "nameLabel": "Trusted person",
+    "relationshipLabel": "Relationship to me",
+    "contactLabel": "Best way to contact them",
+    "helpLabel": "How this person can help me during a financial crisis",
+    "payeeRightsLabel": "Representative payee rights, questions, or reminders"
+  }
+}

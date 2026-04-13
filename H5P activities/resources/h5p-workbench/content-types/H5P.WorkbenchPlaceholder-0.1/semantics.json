@@ -1,0 +1,8 @@
+[
+  {
+    "name": "message",
+    "type": "text",
+    "label": "Placeholder message",
+    "default": "Workbench scaffold placeholder"
+  }
+]

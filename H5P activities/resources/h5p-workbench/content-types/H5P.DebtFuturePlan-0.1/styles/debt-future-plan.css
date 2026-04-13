@@ -1,0 +1,69 @@
+.h5p-debt-future-plan {
+  color: #1f2933;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  border: 1px solid #d9e2ec;
+  border-radius: 0.875rem;
+  padding: 1rem;
+}
+
+.h5p-debt-future-plan__title {
+  font-size: 1.3rem;
+  margin: 0 0 0.4rem;
+}
+
+.h5p-debt-future-plan__intro,
+.h5p-debt-future-plan__note {
+  color: #52606d;
+  line-height: 1.45;
+  margin: 0 0 1rem;
+}
+
+.h5p-debt-future-plan__prompt {
+  display: grid;
+  gap: 0.45rem;
+  margin-bottom: 1rem;
+}
+
+.h5p-debt-future-plan__label {
+  font-weight: 600;
+}
+
+.h5p-debt-future-plan__money {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.h5p-debt-future-plan__currency {
+  align-items: center;
+  background: #f5f7fa;
+  border: 1px solid #bcccdc;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  font-weight: 700;
+  height: 2.5rem;
+  justify-content: center;
+  min-width: 2.5rem;
+}
+
+.h5p-debt-future-plan__input {
+  border: 1px solid #bcccdc;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  display: block;
+  font: inherit;
+  padding: 0.55rem 0.65rem;
+  width: 100%;
+}
+
+.h5p-debt-future-plan__input:focus {
+  outline: 2px solid #0f4c81;
+  outline-offset: 2px;
+}
+
+@media (max-width: 720px) {
+  .h5p-debt-future-plan {
+    padding: 0.85rem;
+  }
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshop 6 Fact or Fiction Intro</title>
+  <style>
+    :root {
+      --bg-1: #eef7f2;
+      --bg-2: #ddeef8;
+      --panel: #ffffff;
+      --ink: #102a43;
+      --muted: #2f5068;
+      --line: #1a4d6b;
+      --focus: #ffbf47;
+      --radius: 16px;
+      --shadow: 0 16px 32px rgba(16, 42, 67, 0.14);
+      --tap: 50px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Trebuchet MS", "Gill Sans", "Segoe UI", sans-serif;
+      background:
+        radial-gradient(920px 540px at -15% -12%, #c8eed9 0%, transparent 58%),
+        radial-gradient(900px 540px at 115% -14%, #cadef8 0%, transparent 58%),
+        linear-gradient(170deg, var(--bg-1), var(--bg-2));
+      line-height: 1.5;
+      display: grid;
+      place-items: center;
+      padding: 16px;
+    }
+
+    .experience {
+      width: min(96vmin, 980px);
+      aspect-ratio: 1 / 1;
+      background: var(--panel);
+      border: 2px solid var(--line);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 18px;
+      border-bottom: 2px solid #d0e0ea;
+      background: #f5fbff;
+    }
+
+    .topbar h1 {
+      margin: 0;
+      font-size: clamp(1.05rem, 2vw, 1.35rem);
+      line-height: 1.25;
+    }
+
+    .slide-meter {
+      font-weight: 700;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .slide {
+      padding: 20px;
+      display: grid;
+      gap: 14px;
+      grid-template-rows: auto auto 1fr;
+      min-height: 0;
+    }
+
+    .lead {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    .transition-note {
+      margin: 0;
+      padding: 10px 12px;
+      border: 2px dashed #6f8da3;
+      border-radius: 12px;
+      background: #f4fbff;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    .terms-grid {
+      min-height: 0;
+      overflow: auto;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-content: start;
+      padding-right: 4px;
+    }
+
+    .term-card {
+      border: 2px solid var(--line);
+      border-radius: 14px;
+      padding: 12px;
+      background: #ffffff;
+    }
+
+    .term-card h3 {
+      margin: 0 0 6px;
+      font-size: 1rem;
+      line-height: 1.25;
+    }
+
+    .term-card p {
+      margin: 0;
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 0.96rem;
+    }
+
+    .footer-note {
+      border-top: 2px solid #d0e0ea;
+      background: #f7fcff;
+      padding: 12px 18px;
+      color: var(--muted);
+      font-weight: 700;
+      min-height: var(--tap);
+      display: flex;
+      align-items: center;
+    }
+
+    @media (max-width: 880px), (max-height: 760px) {
+      .experience {
+        width: min(98vw, 760px);
+        aspect-ratio: auto;
+        height: min(96vh, 900px);
+      }
+
+      .terms-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="experience" aria-label="Workshop 6 intro slide">
+    <header class="topbar">
+      <h1>Workshop 6: Credit Card Fact or Fiction</h1>
+      <div class="slide-meter">Slide 1 of 1</div>
+    </header>
+
+    <section class="slide" aria-labelledby="slide1-title">
+      <h2 id="slide1-title">Welcome and Key Terms</h2>
+      <p class="lead">In this activity, you'll review a few important credit terms and then explore a series of statements about credit. Select Fact or Fiction for each one and read the feedback to build your understanding. The goal is to learn and reflect, not to be tested.</p>
+      <p class="transition-note">These ideas will help you make sense of the statements in the interactive slide.</p>
+      <div class="terms-grid" id="terms-grid" role="list" aria-label="Key terms"></div>
+    </section>
+
+    <footer class="footer-note">Key terms are ready for discussion and reflection.</footer>
+  </main>
+
+  <script>
+    (function () {
+      "use strict";
+
+      var TERMS = [
+        {
+          term: "Credit limit",
+          definition: "The maximum amount you can charge on a credit card."
+        },
+        {
+          term: "Late fees",
+          definition: "Extra fees you may be charged if you do not pay on time."
+        },
+        {
+          term: "Secured credit card",
+          definition: "A credit card backed by money you deposit upfront, often used to build or rebuild credit."
+        },
+        {
+          term: "Grace period",
+          definition: "The period of time after your bill is issued when you can pay in full and avoid finance charges on purchases."
+        },
+        {
+          term: "Interest rate",
+          definition: "The cost of borrowing money, usually shown as a percentage."
+        }
+      ];
+
+      var termsGrid = document.getElementById("terms-grid");
+
+      termsGrid.innerHTML = TERMS.map(function (item) {
+        return (
+          "<article class=\"term-card\" role=\"listitem\">" +
+            "<h3>" + escapeHtml(item.term) + "</h3>" +
+            "<p>" + escapeHtml(item.definition) + "</p>" +
+          "</article>"
+        );
+      }).join("");
+
+      function escapeHtml(value) {
+        return String(value)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/\"/g, "&quot;")
+          .replace(/'/g, "&#39;");
+      }
+    })();
+  </script>
+</body>
+</html>

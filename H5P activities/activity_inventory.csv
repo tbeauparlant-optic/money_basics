@@ -1,0 +1,88 @@
+workshop,item_status,artifact_type,relative_path,notes
+,older_or_uncertain,doc,Older and uncertain/README.txt,
+Workshop 06,older_or_uncertain,html,Older and uncertain/Workshop 06/Credit Card Fact or Fiction HTML5 V2/index.html,
+Workshop 06,older_or_uncertain,js,Older and uncertain/Workshop 06/Credit Card Fact or Fiction SCORM12 V2/app.js,
+Workshop 06,older_or_uncertain,scorm_manifest,Older and uncertain/Workshop 06/Credit Card Fact or Fiction SCORM12 V2/imsmanifest.xml,
+Workshop 06,older_or_uncertain,html,Older and uncertain/Workshop 06/Credit Card Fact or Fiction SCORM12 V2/index.html,
+Workshop 06,older_or_uncertain,scorm_support,Older and uncertain/Workshop 06/Credit Card Fact or Fiction SCORM12 V2/scorm.js,
+Workshop 06,older_or_uncertain,js,Older and uncertain/Workshop 06/Credit Card Fact or Fiction SCORM12 original/app.js,
+Workshop 06,older_or_uncertain,scorm_manifest,Older and uncertain/Workshop 06/Credit Card Fact or Fiction SCORM12 original/imsmanifest.xml,
+Workshop 06,older_or_uncertain,html,Older and uncertain/Workshop 06/Credit Card Fact or Fiction SCORM12 original/index.html,
+Workshop 06,older_or_uncertain,scorm_support,Older and uncertain/Workshop 06/Credit Card Fact or Fiction SCORM12 original/scorm.js,
+Workshop 06,older_or_uncertain,zip,Older and uncertain/Workshop 06/Workshop6_CreditCard_Fact_or_Fiction_SCORM12.zip,
+Workshop 06,older_or_uncertain,zip,Older and uncertain/Workshop 06/Workshop6_CreditCard_Fact_or_Fiction_SCORM12_V2.zip,
+Workshop 06,older_or_uncertain,html,Older and uncertain/Workshop 06/workshop6_credit_pros_cons_learnworlds_embed.html,
+Workshop 06,older_or_uncertain,html,Older and uncertain/Workshop 06/workshop6_fact_or_fiction_full.html,
+Workshop 06,older_or_uncertain,html,Older and uncertain/Workshop 06/workshop6_fact_or_fiction_interactive.html,
+Workshop 06,older_or_uncertain,html,Older and uncertain/Workshop 06/workshop6_fact_or_fiction_intro.html,
+Workshop 07,older_or_uncertain,html,Older and uncertain/Workshop 07/ActionPlanWksp7.html,
+Workshop 07,older_or_uncertain,html,Older and uncertain/Workshop 07/future plan.html,
+Workshop 07,older_or_uncertain,h5p,Older and uncertain/Workshop 07/workshop-07-debt-action-planner.h5p,
+Workshop 08,working_draft,doc,Older and uncertain/Workshop 08/README.txt,working_draft_not_complete
+Workshop 08,working_draft,html,Older and uncertain/Workshop 08/crisis_planning_learnworlds_embed.html,working_draft_not_complete
+Workshop 08,working_draft,html,Older and uncertain/Workshop 08/financial_issues_affect_me_learnworlds_embed.html,working_draft_not_complete
+Workshop 08,working_draft,html,Older and uncertain/Workshop 08/health_issues_affect_finances_learnworlds_embed.html,working_draft_not_complete
+Workshop 08,working_draft,html,Older and uncertain/Workshop 08/monthly_expenses_due_dates_learnworlds_embed.html,working_draft_not_complete
+Workshop 08,working_draft,html,Older and uncertain/Workshop 08/rather_than_doing_this_learnworlds_embed.html,working_draft_not_complete
+Workshop 08,working_draft,html,Older and uncertain/Workshop 08/trusted_support_person_learnworlds_embed.html,working_draft_not_complete
+Workshop 08,working_draft,html,Older and uncertain/Workshop 08/when_i_do_or_experience_this_learnworlds_embed.html,working_draft_not_complete
+Workshop 08,working_draft,h5p,Older and uncertain/Workshop 08/workshop-08-crisis-planning.h5p,working_draft_not_complete
+Workshop 08,working_draft,html,Older and uncertain/Workshop 08/workshop-08-crisis-planning.html,working_draft_not_complete
+,meta,doc,README.txt,
+Workshop 04,final,html,Workshop 04/C-E_activity_all_in_one.html,user_designated_final_workshop_4
+Workshop 04,final,doc,Workshop 04/README.txt,
+Workshop 06,final,js,Workshop 06/Credit Card Fact or Fiction SCORM12 V2/app.js,final_scorm_for_workshop_6
+Workshop 06,final,scorm_manifest,Workshop 06/Credit Card Fact or Fiction SCORM12 V2/imsmanifest.xml,final_scorm_for_workshop_6
+Workshop 06,final,html,Workshop 06/Credit Card Fact or Fiction SCORM12 V2/index.html,final_scorm_for_workshop_6
+Workshop 06,final,scorm_support,Workshop 06/Credit Card Fact or Fiction SCORM12 V2/scorm.js,final_scorm_for_workshop_6
+Workshop 06,final,html,Workshop 06/Credit_Fact_or_Fiction_Activity.html,user_designated_final_workshop_6
+Workshop 06,final,doc,Workshop 06/README.txt,
+Workshop 06,final,zip,Workshop 06/Workshop6_CreditCard_Fact_or_Fiction_SCORM12_V2.zip,final_scorm_for_workshop_6
+Workshop 07,final,doc,Workshop 07/README.txt,selected_final_workshop_7_artifact
+Workshop 07,final,html,Workshop 07/future_plan_learnworlds_embed.html,selected_final_workshop_7_artifact
+Workshop 07,final,html,Workshop 07/understanding_loans_how_interest_changes_total_cost.html,selected_final_workshop_7_artifact
+Workshop 07,final,h5p,Workshop 07/workshop-07-action-plan.h5p,selected_final_workshop_7_artifact
+Workshop 07,final,h5p,Workshop 07/workshop-07-future-plan.h5p,selected_final_workshop_7_artifact
+,meta,file,activity_inventory.csv,
+resources,resource,doc,resources/README.txt,supporting_build_or_reference_material
+resources,resource,doc,resources/h5p-workbench/README.md,supporting_build_or_reference_material
+resources,resource,json,resources/h5p-workbench/content-instances/crisis-planning-demo/content/content.json,supporting_build_or_reference_material
+resources,resource,json,resources/h5p-workbench/content-instances/crisis-planning-demo/h5p.json,supporting_build_or_reference_material
+resources,resource,json,resources/h5p-workbench/content-instances/debt-action-plan-demo/content/content.json,supporting_build_or_reference_material
+resources,resource,json,resources/h5p-workbench/content-instances/debt-action-plan-demo/h5p.json,supporting_build_or_reference_material
+resources,resource,json,resources/h5p-workbench/content-instances/debt-action-planner-demo/content/content.json,supporting_build_or_reference_material
+resources,resource,json,resources/h5p-workbench/content-instances/debt-action-planner-demo/h5p.json,supporting_build_or_reference_material
+resources,resource,json,resources/h5p-workbench/content-instances/debt-future-plan-demo/content/content.json,supporting_build_or_reference_material
+resources,resource,json,resources/h5p-workbench/content-instances/debt-future-plan-demo/h5p.json,supporting_build_or_reference_material
+resources,resource,json,resources/h5p-workbench/content-instances/workbench-placeholder-package/content/content.json,supporting_build_or_reference_material
+resources,resource,json,resources/h5p-workbench/content-instances/workbench-placeholder-package/h5p.json,supporting_build_or_reference_material
+resources,resource,json,resources/h5p-workbench/content-types/H5P.CrisisPlanning-0.3/library.json,supporting_build_or_reference_material
+resources,resource,js,resources/h5p-workbench/content-types/H5P.CrisisPlanning-0.3/scripts/crisis-planning.js,supporting_build_or_reference_material
+resources,resource,json,resources/h5p-workbench/content-types/H5P.CrisisPlanning-0.3/semantics.json,supporting_build_or_reference_material
+resources,resource,css,resources/h5p-workbench/content-types/H5P.CrisisPlanning-0.3/styles/crisis-planning.css,supporting_build_or_reference_material
+resources,resource,json,resources/h5p-workbench/content-types/H5P.DebtActionPlan-0.1/library.json,supporting_build_or_reference_material
+resources,resource,js,resources/h5p-workbench/content-types/H5P.DebtActionPlan-0.1/scripts/debt-action-plan.js,supporting_build_or_reference_material
+resources,resource,json,resources/h5p-workbench/content-types/H5P.DebtActionPlan-0.1/semantics.json,supporting_build_or_reference_material
+resources,resource,css,resources/h5p-workbench/content-types/H5P.DebtActionPlan-0.1/styles/debt-action-plan.css,supporting_build_or_reference_material
+resources,resource,json,resources/h5p-workbench/content-types/H5P.DebtActionPlanner-0.1/library.json,supporting_build_or_reference_material
+resources,resource,js,resources/h5p-workbench/content-types/H5P.DebtActionPlanner-0.1/scripts/debt-action-planner.js,supporting_build_or_reference_material
+resources,resource,json,resources/h5p-workbench/content-types/H5P.DebtActionPlanner-0.1/semantics.json,supporting_build_or_reference_material
+resources,resource,css,resources/h5p-workbench/content-types/H5P.DebtActionPlanner-0.1/styles/debt-action-planner.css,supporting_build_or_reference_material
+resources,resource,json,resources/h5p-workbench/content-types/H5P.DebtFuturePlan-0.1/library.json,supporting_build_or_reference_material
+resources,resource,js,resources/h5p-workbench/content-types/H5P.DebtFuturePlan-0.1/scripts/debt-future-plan.js,supporting_build_or_reference_material
+resources,resource,json,resources/h5p-workbench/content-types/H5P.DebtFuturePlan-0.1/semantics.json,supporting_build_or_reference_material
+resources,resource,css,resources/h5p-workbench/content-types/H5P.DebtFuturePlan-0.1/styles/debt-future-plan.css,supporting_build_or_reference_material
+resources,resource,json,resources/h5p-workbench/content-types/H5P.WorkbenchPlaceholder-0.1/library.json,supporting_build_or_reference_material
+resources,resource,js,resources/h5p-workbench/content-types/H5P.WorkbenchPlaceholder-0.1/scripts/workbench-placeholder.js,supporting_build_or_reference_material
+resources,resource,json,resources/h5p-workbench/content-types/H5P.WorkbenchPlaceholder-0.1/semantics.json,supporting_build_or_reference_material
+resources,resource,doc,resources/h5p-workbench/docs/debt-action-planner.md,supporting_build_or_reference_material
+resources,resource,doc,resources/h5p-workbench/docs/exportability-analysis.md,supporting_build_or_reference_material
+resources,resource,doc,resources/h5p-workbench/docs/minimal-scaffold.md,supporting_build_or_reference_material
+resources,resource,doc,resources/h5p-workbench/docs/package-validation.md,supporting_build_or_reference_material
+resources,resource,doc,resources/h5p-workbench/docs/setup-notes.md,supporting_build_or_reference_material
+resources,resource,doc,resources/h5p-workbench/docs/workshop-07-split-activities.md,supporting_build_or_reference_material
+resources,resource,doc,resources/h5p-workbench/docs/workshop-08-crisis-planning.md,supporting_build_or_reference_material
+resources,resource,h5p,resources/h5p-workbench/packages/workbench-placeholder-test.h5p,supporting_build_or_reference_material
+resources,resource,doc,resources/info.txt,supporting_build_or_reference_material
+resources,resource,doc,resources/legacy-README.md,supporting_build_or_reference_material
+resources,resource,doc,resources/tools/README.txt,supporting_build_or_reference_material

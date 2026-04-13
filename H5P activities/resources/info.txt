@@ -1,0 +1,215 @@
+Duplicate Location Report
+Generated: 2026-03-09 (America/Los_Angeles)
+Volume: /Volumes/the big show
+
+Status
+- No files were deleted, moved, or hard-linked in this step.
+
+Confirmed Photo Duplicates
+- Scan scope: /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals
+- Duplicate groups: 26
+- Extra duplicate files: 27
+- Reclaim if purged: 40662206 bytes (~0.04 GiB)
+- Duplicate files to remove (photo set):
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/7/77A29E1E-30BE-47F1-86E3-E6A6B0C0C2A7.jpeg
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/6/6D8908DA-C669-4F3D-899D-E0C76372F94D.heic
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/8/8E4AF3F2-D79E-4A32-B2B3-28924EA6810F.heic
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/8/84D5FCF9-F0FC-423A-BA35-F6D9EDF11CAB.jpeg
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/A/A584AC13-4D2E-4813-9301-CFA5D49B38D8.heic
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/A/A6189C3A-5CD3-4A73-B97B-034350831044.heic
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/A/A216135B-D2A3-4AB6-9E6D-5BF63B35AD2F.heic
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/A/ACE013D9-A2FE-49D5-A0D2-4C14DB2D06D2.jpeg
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/A/A0D454F1-68B0-4501-81D2-3BA8156E8514.heic
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/F/F1911224-5F62-44E1-B600-FFD327CC5E23.heic
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/C/C3B0A6C7-BB8B-4909-9BAC-A1B7B54B1C8F.heic
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/4/40D64C8B-C962-453B-B783-C51F551BC482.jpeg
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/4/40D64C8B-C962-453B-B783-C51F551BC482_3.mov
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/4/45E1F266-0B37-4E6F-A080-E60FC8CC5DC2.jpeg
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/3/35721076-AD09-428F-9B23-3744961D2C12.jpeg
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/3/3A7AF1EE-7CB6-4E02-B7FD-7198CFF58E2A.heic
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/3/3DFC2951-6B77-4845-83CF-D1ED4FE43BE9.jpeg
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/B/BD5604D7-5974-43C4-BF45-211405CF5DAE.heic
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/B/B2B50CC7-944D-4F57-8C9F-925955F2EE62.jpeg
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/2/222F3849-004C-49D8-AEAB-C2975EC5B4A9.heic
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/2/282A2446-670A-49E1-B818-3571334C0068.jpeg
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/2/2048DD9B-0596-4CDF-BC44-D7E25AC7ABB1.heic
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/5/594FB87C-4318-4717-BABC-589409FF6F2C.heic
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/5/50BE95FC-EA85-4F6E-80E0-552B272481C2_3.mov
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/5/50BE95FC-EA85-4F6E-80E0-552B272481C2.jpeg
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/5/5FF4109A-CE61-46E3-956E-09F98CBF96AA.heic
+  /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals/5/5179FDB6-5C73-4F89-B283-9FCD30AF40BF.heic
+
+Confirmed Archive Duplicates (All files under /archives)
+- Duplicate groups: 28
+- Extra duplicate files: 29
+- Reclaim if purged: 40759601 bytes (~0.038 GiB)
+- Non-photo duplicates in this set:
+  /Volumes/the big show/archives/Teddy_music_definitely_unique_51/Library/Mobile Documents/com~apple~CloudDocs/Ableton/Ableton/Current.txt
+  /Volumes/the big show/archives/Teddy_music_definitely_unique_51/Library/Mobile Documents/com~apple~CloudDocs/Logic/bendemo.logicx/Alternatives/000/MetaData.plist
+
+Confirmed Sample Duplicates (Large)
+- Compared folders:
+  A: /Volumes/the big show/Music/Live/Recent Projects/Fall Session Project/Samples
+  B: /Volumes/the big show/Ray's Library/Recent Projects/Fall Session Project/Samples
+- Files in B: 144
+- Matched in A: 144
+- Identical: 144
+- Different: 0
+- Reclaim if deleting duplicate copy in B: 6946913070 bytes (~6.470 GiB)
+- Identical relative paths (present in both A and B):
+  Recorded/Guitar ( Nick) 0001 [2025-10-18 123656].wav
+  Recorded/Drummers Right 0001 [2025-10-18 123654].wav.asd
+  Recorded/Drummers Right 0001 [2025-10-18 123654].wav
+  Recorded/Center 0001 [2025-10-18 123652].wav.asd
+  Recorded/Guitar ( Nick) 0001 [2025-10-18 123656].wav.asd
+  Recorded/Drummers Left 0001 [2025-10-18 123655].wav
+  Recorded/Drummers Left 0001 [2025-10-18 123655].wav.asd
+  Recorded/Center 0001 [2025-10-18 123652].wav
+  Processed/Crop/Drummers Left [2025-10-18 194200].wav
+  Processed/Crop/Drummers Right-1 [2025-11-03 080037].wav.asd
+  Processed/Crop/Center [2025-10-18 194116].wav
+  Processed/Crop/Drummers Right-1 [2025-11-03 075420].wav.asd
+  Processed/Crop/Drummers Right-1 [2025-11-03 075420].wav
+  Processed/Crop/Center -1  [2025-11-12 115412].wav.asd
+  Processed/Crop/Drummers Left [2025-10-18 194200].wav.asd
+  Processed/Crop/Drummers Right [2025-10-18 193315].wav.asd
+  Processed/Crop/Left - 1 [2025-11-12 115423].wav.asd
+  Processed/Crop/Drummers Right [2025-10-18 203123].wav
+  Processed/Crop/Drummers Right [2025-10-18 194032].wav
+  Processed/Crop/Left - 1 [2025-11-12 115423].wav
+  Processed/Crop/Drummers Right [2025-10-18 203123].wav.asd
+  Processed/Crop/Right - 1 [2025-11-12 115432].wav.asd
+  Processed/Crop/Center [2025-10-18 203124].wav
+  Processed/Crop/Drummers Left-1 [2025-11-03 075858].wav.asd
+  Processed/Crop/Center -1  [2025-11-12 115412].wav
+  Processed/Crop/Drummers Right [2025-10-18 193315].wav
+  Processed/Crop/Drummers Right-1 [2025-11-03 080037].wav
+  Processed/Crop/Drummers Left [2025-10-18 193457].wav.asd
+  Processed/Crop/Right - 1 [2025-11-12 115432].wav
+  Processed/Crop/Center-1 [2025-11-03 075649].wav.asd
+  Processed/Crop/Drummers Left [2025-10-18 193457].wav
+  Processed/Crop/Center-1 [2025-11-03 075649].wav
+  Processed/Crop/Drummers Left-1 [2025-11-03 075858].wav
+  Processed/Crop/Drummers Right [2025-10-18 194032].wav.asd
+  Processed/Crop/Drummers Left [2025-10-18 203125].wav
+  Processed/Crop/Center [2025-10-18 193412].wav
+  Processed/Crop/Drummers Left [2025-10-18 203125].wav.asd
+  Processed/Crop/Center [2025-10-18 193412].wav.asd
+  Processed/Crop/Center [2025-10-18 203124].wav.asd
+  Processed/Crop/Center [2025-10-18 194116].wav.asd
+  Processed/Consolidate/Drummers Left [2025-11-03 081826]-2.wav
+  Processed/Consolidate/Right - 1 [2025-11-12 114829].wav.asd
+  Processed/Consolidate/Drummers Right [2025-11-03 080922]-1.wav
+  Processed/Consolidate/Center [2025-11-03 074921].wav.asd
+  Processed/Consolidate/Drummers Right [2025-11-03 080922]-2.wav.asd
+  Processed/Consolidate/Fun_Stopper [2025-11-12 124854].wav.asd
+  Processed/Consolidate/Drummers Right [2025-11-03 081826]-1.wav.asd
+  Processed/Consolidate/Drummers Left [2025-11-03 081826]-3.wav
+  Processed/Consolidate/Drummers Left [2025-11-03 080922]-2.wav.asd
+  Processed/Consolidate/Drummers Left [2025-11-03 081826]-1.wav.asd
+  Processed/Consolidate/Drummers Left [2025-11-03 081826]-1.wav
+  Processed/Consolidate/Drummers Right [2025-11-03 080922]-2.wav
+  Processed/Consolidate/Fun_Stopper [2025-11-12 131102].wav.asd
+  Processed/Consolidate/Drummers Left [2025-11-03 074921].wav.asd
+  Processed/Consolidate/Center [2025-11-03 074921].wav
+  Processed/Consolidate/Drummers Right [2025-11-03 080922]-3.wav
+  Processed/Consolidate/Center [2025-11-03 081826]-1.wav.asd
+  Processed/Consolidate/Center [2025-11-03 080922]-2.wav.asd
+  Processed/Consolidate/Drummers Left [2025-11-03 080922]-3.wav.asd
+  Processed/Consolidate/Drummers Left [2025-11-03 080922]-3.wav
+  Processed/Consolidate/Fun_Stopper [2025-11-12 130111].wav
+  Processed/Consolidate/Left - 1 [2025-11-12 114829].wav.asd
+  Processed/Consolidate/Drummers Right [2025-11-03 081826]-1.wav
+  Processed/Consolidate/Drummers Left [2025-11-03 080922]-2.wav
+  Processed/Consolidate/Center [2025-11-03 074921]-1.wav
+  Processed/Consolidate/Drummers Right [2025-11-03 074921].wav
+  Processed/Consolidate/Fun_Stopper [2025-11-12 130727].wav.asd
+  Processed/Consolidate/Center [2025-11-03 080922]-3.wav.asd
+  Processed/Consolidate/Center [2025-11-03 074921]-3.wav
+  Processed/Consolidate/Drummers Right [2025-11-03 081826]-3.wav
+  Processed/Consolidate/Left - 1 [2025-11-12 114829].wav
+  Processed/Consolidate/Drummers Right [2025-11-03 080922]-3.wav.asd
+  Processed/Consolidate/Drummers Right [2025-11-03 081826]-2.wav
+  Processed/Consolidate/Drummers Left [2025-11-03 080922]-1.wav
+  Processed/Consolidate/Center [2025-11-03 074921]-2.wav
+  Processed/Consolidate/Center [2025-11-03 081826]-2.wav
+  Processed/Consolidate/Drummers Right [2025-11-03 074921]-2.wav
+  Processed/Consolidate/Drummers Left [2025-11-03 081826]-2.wav.asd
+  Processed/Consolidate/Drummers Left [2025-11-03 080922]-1.wav.asd
+  Processed/Consolidate/Center [2025-11-03 080922]-1.wav.asd
+  Processed/Consolidate/Center [2025-11-03 081826]-2.wav.asd
+  Processed/Consolidate/Drummers Right [2025-11-03 074921]-3.wav
+  Processed/Consolidate/Center [2025-11-03 081826]-3.wav
+  Processed/Consolidate/Center [2025-11-03 081826]-1.wav
+  Processed/Consolidate/Drummers Right [2025-11-03 074921]-1.wav
+  Processed/Consolidate/Drummers Left [2025-10-18 202140].wav
+  Processed/Consolidate/Drummers Left [2025-11-03 080922].wav
+  Processed/Consolidate/Fun_Stopper [2025-11-12 130111].wav.asd
+  Processed/Consolidate/Drummers Right [2025-11-03 081826]-2.wav.asd
+  Processed/Consolidate/Drummers Right [2025-11-03 080922]-1.wav.asd
+  Processed/Consolidate/Center [2025-11-03 080922]-3.wav
+  Processed/Consolidate/Fun_Stopper [2025-11-12 130727].wav
+  Processed/Consolidate/Drummers Left [2025-11-03 074921]-1.wav
+  Processed/Consolidate/Center [2025-11-03 081826].wav.asd
+  Processed/Consolidate/Center [2025-11-03 080922]-2.wav
+  Processed/Consolidate/Drummers Right [2025-11-03 081826]-3.wav.asd
+  Processed/Consolidate/Drummers Left [2025-11-03 081826].wav
+  Processed/Consolidate/Drummers Right [2025-10-18 202140].wav.asd
+  Processed/Consolidate/Center -1  [2025-11-12 114829].wav
+  Processed/Consolidate/Drummers Left [2025-11-03 074921]-3.wav
+  Processed/Consolidate/Drummers Left [2025-11-03 081826]-3.wav.asd
+  Processed/Consolidate/Drummers Left [2025-11-03 081826].wav.asd
+  Processed/Consolidate/Center [2025-11-03 081826]-3.wav.asd
+  Processed/Consolidate/Drummers Left [2025-11-03 074921]-2.wav
+  Processed/Consolidate/Fun_Stopper [2025-11-12 130221].wav.asd
+  Processed/Consolidate/Center [2025-11-03 080922]-1.wav
+  Processed/Consolidate/Drummers Right [2025-11-03 080922].wav.asd
+  Processed/Consolidate/Fun_Stopper [2025-11-12 124854].wav
+  Processed/Consolidate/Drummers Right [2025-11-03 074921]-1.wav.asd
+  Processed/Consolidate/Drummers Left [2025-10-18 202140].wav.asd
+  Processed/Consolidate/Center [2025-11-03 080922].wav.asd
+  Processed/Consolidate/Drummers Left [2025-11-03 074921].wav
+  Processed/Consolidate/Fun_Stopper [2025-11-12 125921].wav.asd
+  Processed/Consolidate/Drummers Right [2025-11-03 081826].wav.asd
+  Processed/Consolidate/Center [2025-11-03 074921]-1.wav.asd
+  Processed/Consolidate/Drummers Left [2025-11-03 080922].wav.asd
+  Processed/Consolidate/Center [2025-10-18 202140].wav.asd
+  Processed/Consolidate/Fun_Stopper [2025-11-12 130000].wav.asd
+  Processed/Consolidate/Fun_Stopper [2025-11-12 131102].wav
+  Processed/Consolidate/Drummers Left [2025-11-03 074921]-1.wav.asd
+  Processed/Consolidate/Right - 1 [2025-11-12 114829].wav
+  Processed/Consolidate/Drummers Right [2025-11-03 074921]-3.wav.asd
+  Processed/Consolidate/Center -1  [2025-11-12 114829].wav.asd
+  Processed/Consolidate/Fun_Stopper [2025-11-12 130221].wav
+  Processed/Consolidate/Drummers Right [2025-11-03 080922].wav
+  Processed/Consolidate/Center [2025-11-03 081826].wav
+  Processed/Consolidate/Center [2025-11-03 074921]-3.wav.asd
+  Processed/Consolidate/Drummers Left [2025-11-03 074921]-3.wav.asd
+  Processed/Consolidate/Fun_Stopper [2025-11-12 130000].wav
+  Processed/Consolidate/Drummers Right [2025-11-03 074921].wav.asd
+  Processed/Consolidate/Drummers Right [2025-10-18 202140].wav
+  Processed/Consolidate/Center [2025-11-03 074921]-2.wav.asd
+  Processed/Consolidate/Drummers Right [2025-11-03 081826].wav
+  Processed/Consolidate/Center [2025-11-03 080922].wav
+  Processed/Consolidate/Center [2025-10-18 202140].wav
+  Processed/Consolidate/Drummers Left [2025-11-03 074921]-2.wav.asd
+  Processed/Consolidate/Fun_Stopper [2025-11-12 125921].wav
+  Processed/Consolidate/Drummers Right [2025-11-03 074921]-2.wav.asd
+  Processed/Bounce/Bounce Drummers Left [2025-10-18 193905]-2.wav.asd
+  Processed/Bounce/Bounce Center [2025-10-18 193905]-2.wav
+  Processed/Bounce/Bounce Center [2025-10-18 193905]-2.wav.asd
+  Processed/Bounce/Bounce Drummers Left [2025-10-18 193905]-2.wav
+  Processed/Bounce/Bounce Drummers Right [2025-10-18 193905]-2.wav
+  Processed/Bounce/Bounce Drummers Right [2025-10-18 193905]-2.wav.asd
+
+Notes
+- A full-drive hash scan was started but not used for actions; only the confirmed sections above are included for decision-making.
+
+DMG vs Staging (Verified 2026-03-09)
+- DMG mounted at: /Volumes/Teddy Photos Originals 2025-03-13
+- Compared against: /Volumes/the big show/archives/Teddy_Photos_Originals_2025-03-13_staging/originals
+- File counts: 8425 vs 8425
+- Path differences: 0
+- Same-path size differences: 0
+- SHA-256 mismatches across all files: 0
+- Conclusion: the DMG contents and staging originals are byte-for-byte identical.
