@@ -264,6 +264,7 @@ H5P.RequestQueue=((n,t)=>{function e(e){t.call(this),this.processingQueue=!1,thi
     var self = this;
     var params = self.params;
     var $summary = $('<section class="fpdp-summary"></section>');
+    var printUrl = self.getPrintablePlanUrl(steps);
 
     $summary.append($('<h3></h3>').text(params.completionHeading || 'Your Financial PDP Draft'));
     $summary.append($('<p></p>').text(params.completionText || 'Review your answers and choose one next step you can take this week.'));
@@ -271,7 +272,9 @@ H5P.RequestQueue=((n,t)=>{function e(e){t.call(this),this.processingQueue=!1,thi
 
     var $controls = $('<div class="fpdp-controls fpdp-summary-tools"></div>');
     var $render = $('<button type="button" class="fpdp-secondary"></button>').text(params.renderPlanButtonLabel || 'Render Plan Preview');
-    var $print = $('<button type="button" class="fpdp-primary"></button>').text(params.printPlanButtonLabel || params.downloadPdfButtonLabel || 'Print / Save as PDF');
+    var $print = $('<a class="fpdp-primary fpdp-link-button" target="_blank" rel="noopener"></a>')
+      .attr('href', printUrl)
+      .text(params.printPlanButtonLabel || params.downloadPdfButtonLabel || 'Print / Save as PDF');
     var $back = $('<button type="button" class="fpdp-secondary"></button>').text(params.reviewPreviousButtonLabel || 'Review Previous Step');
     var $restart = $('<button type="button" class="fpdp-secondary"></button>').text(params.restartButtonLabel || 'Start Over');
 
@@ -282,8 +285,7 @@ H5P.RequestQueue=((n,t)=>{function e(e){t.call(this),this.processingQueue=!1,thi
     });
 
     $print.on('click', function () {
-      self.printPlan();
-      self.$container.find('.fpdp-status').text('Print dialog opened. Choose Save as PDF to keep a copy.');
+      self.$container.find('.fpdp-status').text('Printable plan opened. Choose Print or Save as PDF.');
       self.triggerResize();
     });
 
@@ -353,8 +355,16 @@ H5P.RequestQueue=((n,t)=>{function e(e){t.call(this),this.processingQueue=!1,thi
     };
   };
 
-  H5P.FinancialPDP.prototype.printPlan = function () {
-    window.print();
+  H5P.FinancialPDP.prototype.getPrintablePlanUrl = function (steps) {
+    var planData = this.buildPlanData(steps);
+    var printHtml = buildPrintablePlanHtml(planData);
+
+    if (this.printFallbackUrl) {
+      URL.revokeObjectURL(this.printFallbackUrl);
+    }
+
+    this.printFallbackUrl = URL.createObjectURL(new Blob([printHtml], { type: 'text/html' }));
+    return this.printFallbackUrl;
   };
 
   H5P.FinancialPDP.prototype.triggerResize = function () {
@@ -374,7 +384,52 @@ H5P.RequestQueue=((n,t)=>{function e(e){t.call(this),this.processingQueue=!1,thi
     return title.replace(/^Step\s+\d+:\s*/i, '');
   }
 
+  function buildPrintablePlanHtml(planData) {
+    var sections = planData.sections.map(function (section) {
+      var answers = section.answers.map(function (answer) {
+        return '<div class="answer"><strong>' + escapeHtml(answer.label) + '</strong><p>' + escapeHtml(answer.value || 'No answer entered yet.') + '</p></div>';
+      }).join('');
+
+      return '<section><h2>' + escapeHtml(section.heading) + '</h2>' + answers + '</section>';
+    }).join('');
+
+    return '<!doctype html><html lang="en"><head><meta charset="utf-8"><title>' + escapeHtml(planData.title) + '</title><style>' +
+      'body{background:#f7f3ea;color:#18212f;font-family:Arial,Helvetica,sans-serif;line-height:1.5;margin:0;padding:24px;}' +
+      'main{background:#fff;border:1px solid #e4dbc9;border-radius:18px;margin:0 auto;max-width:820px;padding:24px;}' +
+      'h1{color:#173a5e;font-size:28px;line-height:1.15;margin:0 0 6px;}' +
+      '.subtitle{color:#5d6470;font-weight:700;margin:0 0 20px;}' +
+      '.toolbar{background:#fbfaf6;border:1px solid #d8ccb9;border-radius:12px;margin:0 0 20px;padding:12px;}' +
+      'button{background:#173a5e;border:0;border-radius:999px;color:#fff;cursor:pointer;font:inherit;font-weight:700;padding:10px 16px;}' +
+      'section{border-top:1px solid #e4dbc9;margin-top:18px;padding-top:16px;page-break-inside:avoid;}' +
+      'h2{color:#2f5e57;font-size:18px;margin:0 0 10px;}' +
+      '.answer{background:#fbfaf6;border:1px solid #e4dbc9;border-radius:12px;margin:10px 0;padding:12px;page-break-inside:avoid;}' +
+      '.answer strong{color:#173a5e;display:block;margin-bottom:4px;}' +
+      '.answer p{margin:0;white-space:pre-wrap;}' +
+      '@media print{body{background:#fff;padding:0;}main{border:0;border-radius:0;max-width:none;padding:0;}.toolbar{display:none;}}' +
+      '</style></head><body><main><div class="toolbar"><button type="button" onclick="window.print()">Print / Save as PDF</button></div><h1>' +
+      escapeHtml(planData.title) + '</h1><p class="subtitle">' + escapeHtml(planData.subtitle) + '</p>' + sections +
+      '</main><script>window.addEventListener("load",function(){setTimeout(function(){window.focus();window.print();},300);});<\/script></body></html>';
+  }
+
+  function escapeHtml(text) {
+    var entityMap = {
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#39;'
+    };
+
+    return String(text || '').replace(/[&<>"']/g, function (character) {
+      return entityMap[character];
+    });
+  }
+
 })(H5P.jQuery);
+
+
+
+
 
 
 ;let realH5PGetPath=H5P.getPath;H5P.getPath=function(e,t){return e.startsWith("data:")?e:realH5PGetPath(e,t)};</script>
@@ -580,13 +635,16 @@ H5P.RequestQueue=((n,t)=>{function e(e){t.call(this),this.processingQueue=!1,thi
   margin-top: 18px;
 }
 
-.fpdp-controls button {
+.fpdp-controls button,
+.fpdp-link-button {
   border: 0;
   border-radius: 999px;
   cursor: pointer;
+  display: inline-block;
   font: inherit;
   font-weight: 800;
   padding: 11px 18px;
+  text-decoration: none;
 }
 
 .fpdp-controls button:disabled {
@@ -608,6 +666,21 @@ H5P.RequestQueue=((n,t)=>{function e(e){t.call(this),this.processingQueue=!1,thi
   color: #2f5e57;
   font-weight: 700;
   margin: 12px 0 0;
+}
+
+.fpdp-print-fallback {
+  background: #fbfaf6;
+  border: 1px solid #d8ccb9;
+  border-radius: 12px;
+  color: #173a5e;
+  font-weight: 700;
+  margin: 12px 0 0;
+  padding: 12px;
+}
+
+.fpdp-print-fallback a {
+  color: #173a5e;
+  text-decoration: underline;
 }
 
 .fpdp-summary-step {
