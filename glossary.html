@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Financial Terms Glossary</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght=400;600;700&display=swap');
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9fafb;
+      color: #374151;
+      padding: 20px !important; /* Explicitly forced 20px padding on the body */
+    }
+
+    /* Print-specific layout styling to ensure standard margins when exported/printed as a PDF */
+    @media print {
+      body {
+        background-color: #ffffff;
+        padding: 0 !important;
+      }
+      .max-w-5xl {
+        box-shadow: none !important;
+        padding: 0 !important;
+        max-w-none !important;
+      }
+      .term {
+        page-break-inside: avoid;
+        margin-bottom: 2rem;
+      }
+      @page {
+        size: letter;
+        margin: 20mm 15mm 20mm 15mm; /* Standard top, right, bottom, left page margins */
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Added mb-16 to ensure a healthy bottom margin at the page layout level -->
+  <div class="max-w-5xl mx-auto bg-white rounded-xl shadow-lg p-6 sm:p-10 mb-16">
+    <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900">Financial Terms Glossary</h1>
+    <p class="text-sm text-gray-500 mt-1 mb-8">Key financial concepts referenced in the Money Basics Student Guide.</p>
+
+    <div id="results" class="space-y-8">
+      <div class="term" data-term="adjustable rate mortgage arm variable">
+        <h3 class="font-semibold text-gray-900 text-lg">Adjustable Rate Mortgage (ARM)</h3>
+        <p class="text-gray-700 mt-1">
+          A variable or adjustable-rate mortgage is a mortgage with an interest rate that the lender can increase or decrease from time to time, depending on changes to an outside standard (such as the prime rate, the interest rate on United States Treasury securities, or the rate of inflation). Traditional, fixed-rate mortgages have an agreed-upon interest rate that stays the same for the entire duration of the loan, whereas an adjustable-rate mortgage allows the lender to increase or decrease the interest rate at specified intervals based on changing market conditions. The lender often begins the loan with a very low interest rate, then raises the rate as time goes on.
+        </p>
+      </div>
+
+      <div class="term" data-term="annuities annuity retirement income">
+        <h3 class="font-semibold text-gray-900 text-lg">Annuities</h3>
+        <p class="text-gray-700 mt-1">
+          An annuity is an insurance contract that can provide you with a predictable, steady stream of income during retirement. It works like this: you pay a lump-sum or monthly payment to a bank, insurance company, or investment broker, and when you retire they will pay you back in regular income payments. By making these payments now, you will have income to live off of in the future when you retire. Annuities are complex life insurance contracts with fees, costs, terms, and features that can vary widely. Because of this, make sure to shop around, compare contracts and companies, and understand how the annuity works, what fees and charges you will pay, and all the terms and conditions before signing a contract.
+        </p>
+      </div>
+
+      <div class="term" data-term="annual percentage rate apr interest">
+        <h3 class="font-semibold text-gray-900 text-lg">Annual Percentage Rate (APR)</h3>
+        <p class="text-gray-700 mt-1">
+          APR is the interest rate for a whole year, rather than each month, applied on a loan, mortgage, or credit card, or earned by an investment. Financial institutions must always disclose the APR before any agreement is signed. In the context of credit cards, APR is the periodic rate (usually monthly) multiplied by the number of periods in a year. For example, a 1.5% monthly rate has an APR of 18% (1.5% a month multiplied by 12 months). In the context of consumer lending, the APR takes into account more than the interest rate applied to the principal per period.
+        </p>
+      </div>
+
+      <div class="term" data-term="annual percentage yield apy">
+        <h3 class="font-semibold text-gray-900 text-lg">Annual Percentage Yield (APY)</h3>
+        <p class="text-gray-700 mt-1">
+          The Annual Percentage Yield (APY) is the true rate of return of an investment in one year, taking into account the effect of compounding interest. Because of this, a loan’s APY is higher than its APR. Unlike simple interest, compounding interest is calculated periodically and immediately added to the balance, making the account balance and interest paid on the account balance get a little bigger after each period.
+        </p>
+      </div>
+
+      <div class="term" data-term="assets asset">
+        <h3 class="font-semibold text-gray-900 text-lg">Assets</h3>
+        <p class="text-gray-700 mt-1">
+          Assets are objects of value that a person or organization owns that can be used for the payments of debts. For a company, this may be investments, cash, or property; whereas for a person or family, assets are often one’s car, home, land, savings accounts or retirement funds, or personal investments. Attributes, such as special skills and higher education, may also be included as assets. When we think of asset-building, we are thinking of building useful qualities and skills, such as learning new money management skills and resources.
+        </p>
+      </div>
+
+      <div class="term" data-term="automated teller machine atm">
+        <h3 class="font-semibold text-gray-900 text-lg">Automated Teller Machine (ATM)</h3>
+        <p class="text-gray-700 mt-1">
+          A terminal that allows you to withdraw money from your checking or savings account, to check your balance, to make transfers from accounts, or to make deposits. ATMs allow you to complete basic transactions without the help of a teller. Nearly all ATMs allow anyone with a debit card to withdraw cash.
+        </p>
+      </div>
+
+      <div class="term" data-term="balance inquiry">
+        <h3 class="font-semibold text-gray-900 text-lg">Balance Inquiry</h3>
+        <p class="text-gray-700 mt-1">
+          Consumers can determine their available account balance using their bank’s website, smartphone app, or by calling a teller. You can also check your balance at most ATMs, although out-of-network ATMs might require a balance inquiry fee.
+        </p>
+      </div>
+
+      <div class="term" data-term="balloon payment loan">
+        <h3 class="font-semibold text-gray-900 text-lg">Balloon Payment</h3>
+        <p class="text-gray-700 mt-1">
+          An oversized payment due at the end of a loan. In a balloon loan, the entire loan amount was not fully amortized, so the remaining balance is due in full in the final payment. Amortized loans are loans with scheduled, periodic payments applied to both the loan’s principal and its accrued interest. Balloon loans are usually set-up for a relatively short term, in which the borrower enjoys smaller payments for most of the loan’s life until they are required to pay a very large amount, often at least twice the amount of the previous payments, at the end of the loan’s term.
+        </p>
+      </div>
+
+      <div class="term" data-term="bankruptcy">
+        <h3 class="font-semibold text-gray-900 text-lg">Bankruptcy</h3>
+        <p class="text-gray-700 mt-1">
+          A legal process in which a person or business is unable to pay off their debts, so the court decides whether or not – and how – to forgive their debts and repay their creditors (often by seizing some of their assets). In a bankruptcy case, all of the debtor’s assets are evaluated and some are usually used to pay the creditors. There are two kinds of bankruptcy: involuntary (the creditors petition to have a debtor judged by a court) and voluntary (the debtor brings the petition). In both cases, the objective is an orderly and equitable settlement of debt obligations. Voluntary bankruptcy is more common, as it can sometimes be the only option for individuals to be free from their debts.
+        </p>
+      </div>
+
+      <div class="term" data-term="bonds bond">
+        <h3 class="font-semibold text-gray-900 text-lg">Bonds</h3>
+        <p class="text-gray-700 mt-1">
+          A bond is a debt-security that is similar to an IOU. When you buy a bond, you are lending money to a corporation, municipality, or government (the issuer). In return, the issuer pays you a specified interest rate during the life of the bond, and will eventually repay the principal amount when the bond “matures.” Bonds vary widely in maturity, security, and type of issuer, although most are sold in $1,000 denominations or, if a municipal bond, $5,000 denominations.
+        </p>
+      </div>
+
+      <div class="term" data-term="budget">
+        <h3 class="font-semibold text-gray-900 text-lg">Budget</h3>
+        <p class="text-gray-700 mt-1">
+          A budget is an estimate of income and expenses over a specified period of time. Budgets can be made for individuals, families, businesses, and governments. For individuals and families, personalized budgets act as a plan to track and control spending and encourage saving.
+        </p>
+      </div>
+
+      <div class="term" data-term="capital gains tax">
+        <h3 class="font-semibold text-gray-900 text-lg">Capital Gains Tax</h3>
+        <p class="text-gray-700 mt-1">
+          Capital gains are the profits made – when the sale price is higher than the initial purchase price – from the sale of an asset (stocks, bonds, a business, a piece of land). Capital gains are considered taxable income, and as such, the capital gains tax takes a percentage of the realized capital gain (the profits once the asset is sold). An unrealized capital gain is an asset that has increased in value, but has not yet been sold. For most assets held for over a year, capital gains taxes are either 0%, 15% or 20%.
+        </p>
+      </div>
+
+      <div class="term" data-term="capitalization student loans">
+        <h3 class="font-semibold text-gray-900 text-lg">Capitalization</h3>
+        <p class="text-gray-700 mt-1">
+          Capitalization applies to federal student loans. When interest is capitalized, the unpaid interest on your student loan account is added to the initial student loan balance, increasing the amount you have to pay back. Not only does your loan balance become larger, you’ll pay interest on top of that capitalized interest.
+        </p>
+      </div>
+
+      <div class="term" data-term="certificate of deposit cd savings">
+        <h3 class="font-semibold text-gray-900 text-lg">Certificate of Deposit (CD)</h3>
+        <p class="text-gray-700 mt-1">
+          A type of savings account in which your bank holds your money for a certain period of time and in exchange, pays you interest, guaranteeing the same rate of return (interest) for the entire period. When you take your money out of the CD, you receive your initial investment, plus interest. CDs usually require a minimum deposit and charge penalty fees for early withdrawal.
+        </p>
+      </div>
+
+      <div class="term" data-term="certified check">
+        <h3 class="font-semibold text-gray-900 text-lg">Certified Check</h3>
+        <p class="text-gray-700 mt-1">
+          A certified check is a personal check for which your bank has verified is legitimate and has guaranteed payment. When a check is certified, it becomes an obligation of the bank, and the funds are immediately withdrawn from the account. With a certified check, the recipient knows the bank has verified the check, signature, and available funds.
+        </p>
+      </div>
+
+      <div class="term" data-term="check hold">
+        <h3 class="font-semibold text-gray-900 text-lg">Check Hold</h3>
+        <p class="text-gray-700 mt-1">
+          When you deposit a check, your bank may delay crediting the funds to your account during the check hold period. It is a temporary hold that usually lasts between 1 and 5 business days, depending on the size of the deposit.
+        </p>
+      </div>
+
+      <div class="term" data-term="charge off charged-off">
+        <h3 class="font-semibold text-gray-900 text-lg">Charge-Off</h3>
+        <p class="text-gray-700 mt-1">
+          If a loan or credit card is deemed "uncollectable,” it may be charged-off. This means the lender or creditor has written off the account as a loss, and has closed the account to future charges. The account may then be transferred to a collection agency or sold to a debt buyer. The individual with the credit card or loan payment is still required to pay off the debt, however now their payments go to the agency or debt buyer. Accounts can be charged-off when an individual has fallen behind on their loan or credit card payments, and being charged-off will have a very negative affect on your credit report and credit score.
+        </p>
+      </div>
+
+      <div class="term" data-term="chapter 7 bankruptcy liquidation">
+        <h3 class="font-semibold text-gray-900 text-lg">Chapter 7</h3>
+        <p class="text-gray-700 mt-1">
+          Chapter 7, also called “liquidation bankruptcy,” is the most common type of bankruptcy in the United States. It requires an individual or a company to liquidate their assets in order to pay off their creditors. Individuals are allowed to keep certain assets, called “exempt property.”
+        </p>
+      </div>
+
+      <div class="term" data-term="chapter 11 bankruptcy reorganization">
+        <h3 class="font-semibold text-gray-900 text-lg">Chapter 11</h3>
+        <p class="text-gray-700 mt-1">
+          Chapter 11 allows a bankrupt company to remain in business while its owners attempt to pay off its debts. The company does not have to sell all of its assets, and instead is given the chance to come out of bankruptcy and become a healthy business.
+        </p>
+      </div>
+
+      <div class="term" data-term="chapter 13 bankruptcy">
+        <h3 class="font-semibold text-gray-900 text-lg">Chapter 13</h3>
+        <p class="text-gray-700 mt-1">
+          Chapter 13 allows an individual who has regular income to develop a payment plan for their debts (either a part of or all of their debts). This enables the individual to repay creditors over an extended period of time, and usually allows the person to retain their property.
+        </p>
+      </div>
+
+      <div class="term" data-term="collateral">
+        <h3 class="font-semibold text-gray-900 text-lg">Collateral</h3>
+        <p class="text-gray-700 mt-1">
+          An asset (such as a car or a piece of property) that a person uses to take out a loan, promising to give the asset to the lender if loan payments cannot be met. Collateral is accepted as security for the loan, acting as a form of protection for the lender in case the borrower does not keep up with their payments.
+        </p>
+      </div>
+
+      <div class="term" data-term="compounding compound">
+        <h3 class="font-semibold text-gray-900 text-lg">Compounding</h3>
+        <p class="text-gray-700 mt-1">
+          Compound interest is interest you earn based on your balance plus the interest that your money has already accrued. It is essentially earning “interest on top of interest” and will make your account grow at a quicker rate than simple interest. Many types of savings accounts compound yearly or quarterly.
+        </p>
+      </div>
+
+      <div class="term" data-term="co-signer cosigner">
+        <h3 class="font-semibold text-gray-900 text-lg">Co-Signer</h3>
+        <p class="text-gray-700 mt-1">
+          A person, other than the principal borrower, who also signs for a loan (oftentimes a parent, partner, or friend). The co-signer(s) promises to pay back the loan if the borrower does not.
+        </p>
+      </div>
+
+      <div class="term" data-term="credit">
+        <h3 class="font-semibold text-gray-900 text-lg">Credit</h3>
+        <p class="text-gray-700 mt-1">
+          An agreement – defined in a contract – between a borrower and a lender, in which the borrower receives money and promises to repay the lender this money, plus interest, at a later date. Credit is the ability for a person to obtain goods or services before actually paying for them by borrowing from the lender, based on trust that they will pay the lender back in the future.
+        </p>
+      </div>
+
+      <div class="term" data-term="credit history">
+        <h3 class="font-semibold text-gray-900 text-lg">Credit History</h3>
+        <p class="text-gray-700 mt-1">
+          A record of an individual’s payment history on current and previous debt, which shows their ability, and responsibility, when it comes to repaying debts. A person’s credit history is recorded in their credit report. If you make payments on time and do not acquire an excessive amount of debt, your credit history is likely to be good. Good credit history makes it more likely that potential creditors will lend to you and enables you to have better loan choices, lower interest rates, and access to opening up new lines of credit. If a person has a bad credit history (history of late or missed payments, not being able to meet the terms of the credit agreement/loan), then they are likely to encounter low credit limits, high interest rates, security deposits, difficulty in getting a loan or credit card, and increased car insurance premiums.
+        </p>
+      </div>
+
+      <div class="term" data-term="credit rating score">
+        <h3 class="font-semibold text-gray-900 text-lg">Credit Rating</h3>
+        <p class="text-gray-700 mt-1">
+          A measurement of a person or business’s ability to repay a lender, based on their income and credit history. Credit ratings are usually expressed as a credit score, and are assigned by the three major credit bureaus.
+        </p>
+      </div>
+
+      <div class="term" data-term="debit card">
+        <h3 class="font-semibold text-gray-900 text-lg">Debit Card</h3>
+        <p class="text-gray-700 mt-1">
+          A card that allows a person to deduct money directly from their checking account to make purchases. Debit cards allow you to pay for goods and services or to withdraw cash from an ATM or store. Even if a debit card has a credit card logo, it does not function as a credit card (where a person borrows the money from their credit card company to make a purchase and pays them back later).
+        </p>
+      </div>
+
+      <div class="term" data-term="debt">
+        <h3 class="font-semibold text-gray-900 text-lg">Debt</h3>
+        <p class="text-gray-700 mt-1">
+          Money borrowed from, and owed to, an individual, company, bank, or other organization. Debt arrangements allow the borrower to use borrowed money under the condition that it will be paid back in the future, usually with interest. Credit card balances, student loans, mortgage loans, and medical bills are examples of common debts.
+        </p>
+      </div>
+
+      <div class="term" data-term="debt-to-income ratio dti">
+        <h3 class="font-semibold text-gray-900 text-lg">Debt-to-Income Ratio</h3>
+        <p class="text-gray-700 mt-1">
+          A percentage number that compares your total monthly payments on your debts to your monthly income. This number is one way for lenders to measure your ability to manage monthly debt payments, and is a way for individuals to identify whether their current debts are becoming difficult to pay off with their current income.
+        </p>
+      </div>
+
+      <div class="term" data-term="default loan">
+        <h3 class="font-semibold text-gray-900 text-lg">Default</h3>
+        <p class="text-gray-700 mt-1">
+          When a borrower fails to repay a debt – including the principal or interest – on a loan, credit card, or security. A default on a loan can occur when a borrower misses payments, is unable to make payments on time, or stops making payments altogether.
+        </p>
+      </div>
+
+      <div class="term" data-term="deferment student loans">
+        <h3 class="font-semibold text-gray-900 text-lg">Deferment</h3>
+        <p class="text-gray-700 mt-1">
+          A temporary postponement on repaying federal student loans. Deferment allows you to temporarily stop making payments on your student loans, though with some student loans you may have to pay interest during the deferment period. There are a number of categories of deferment a person may be eligible for, including unemployment deferment or economic hardship deferment.
+        </p>
+      </div>
+
+      <div class="term" data-term="delinquency delinquent">
+        <h3 class="font-semibold text-gray-900 text-lg">Delinquency</h3>
+        <p class="text-gray-700 mt-1">
+          Failure to make timely payments on a debt, such as a loan or a credit card. Delinquency often leads to default.
+        </p>
+      </div>
+
+      <div class="term" data-term="diversification diversified portfolio">
+        <h3 class="font-semibold text-gray-900 text-lg">Diversification</h3>
+        <p class="text-gray-700 mt-1">
+          A method of balancing investment risk by mixing a wide variety of investments, such as stocks, bonds, real estate, and cash equivalents (Treasury bills, CDs), in one portfolio. The idea is that by investing in a variety of assets instead of just one, positive investment performances will balance out any negative performances, reducing risk.
+        </p>
+      </div>
+
+      <div class="term" data-term="dividend">
+        <h3 class="font-semibold text-gray-900 text-lg">Dividend</h3>
+        <p class="text-gray-700 mt-1">
+          A portion of a company’s profits that is paid to its shareholders (individuals who own share(s) of stock in a company). These earnings are usually paid out in cash, though sometimes they are paid in the form of additional shares of stock.
+        </p>
+      </div>
+
+      <div class="term" data-term="equity">
+        <h3 class="font-semibold text-gray-900 text-lg">Equity</h3>
+        <p class="text-gray-700 mt-1">
+          In investment terms, equity is the ownership of an asset (a car, home, investment portfolio, etc.) after its associated debts are paid off. It is the value of the asset minus its liabilities. In corporate finance, equity represents the amount of money that would be returned to shareholders if all of a company’s assets were liquidated and all of its debts were paid off.
+        </p>
+      </div>
+
+      <div class="term" data-term="fair credit reporting act fcra">
+        <h3 class="font-semibold text-gray-900 text-lg">Fair Credit Reporting Act</h3>
+        <p class="text-gray-700 mt-1">
+          A federal law that protects consumers from false or deceptive credit reporting. The law regulates the way the three credit reporting bureaus collect, use, and share the data in your credit report.
+        </p>
+      </div>
+
+      <div class="term" data-term="fdic federal deposit insurance corporation">
+        <h3 class="font-semibold text-gray-900 text-lg">FDIC</h3>
+        <p class="text-gray-700 mt-1">
+          The Federal Deposit Insurance Corporation (FDIC) is an agency created by Congress to maintain stability, safety, and confidence in the United States’ banks. The FDIC insures your deposits (generally up to $250,000 per account), meaning even if your bank closes, you will not lose your money. Similarly, your money kept in non-profit credit unions is insured by the National Credit Union Share Insurance Fund (NCUSIF), which is also backed by the US Government.
+        </p>
+      </div>
+
+      <div class="term" data-term="federal student loans">
+        <h3 class="font-semibold text-gray-900 text-lg">Federal Student Loans</h3>
+        <p class="text-gray-700 mt-1">
+          Student loans that are made by the federal government, in which the borrower repays the money they used for school, plus interest, back to the United States government. Federal student loans are usually offered after you apply for financial aid. These loans have a fixed interest rate, as well as deferment and forbearance options. There are different loan types whether you are an undergraduate or graduate student.
+        </p>
+      </div>
+
+      <div class="term" data-term="finance charge">
+        <h3 class="font-semibold text-gray-900 text-lg">Finance Charge</h3>
+        <p class="text-gray-700 mt-1">
+          A fee charged for the use of credit (or the extension of existing credit) that enables lenders to make a profit from lending their money to borrowers. The most common type of finance charge is interest rates. For credit services like loans, mortgages, and credit cards, finance charges have known ranges (like APR) and depend on a person’s credit history.
+        </p>
+      </div>
+
+      <div class="term" data-term="financial literacy education">
+        <h3 class="font-semibold text-gray-900 text-lg">Financial Literacy</h3>
+        <p class="text-gray-700 mt-1">
+          The possession of knowledge and skills to effectively manage financial resources, with the goal of life-long economic well-being. Financial literacy involves educating individuals about economics and finances, usually with the goal of assisting low-income families in their efforts to become financially resilient and self-sufficient.
+        </p>
+      </div>
+
+      <div class="term" data-term="fixed rate interest">
+        <h3 class="font-semibold text-gray-900 text-lg">Fixed Rate</h3>
+        <p class="text-gray-700 mt-1">
+          A predetermined and specified interest rate applied to the principal that stays the same during the life of a loan. Loans with fixed interest rates provide payment stability.
+        </p>
+      </div>
+
+      <div class="term" data-term="forbearance student loans mortgage">
+        <h3 class="font-semibold text-gray-900 text-lg">Forbearance</h3>
+        <p class="text-gray-700 mt-1">
+          A temporary postponement or reduction of student loan payments or mortgage payments. This doesn’t mean your payments owed are forgiven – it is just a pause or reduction that you may qualify for in times of financial struggle.
+        </p>
+      </div>
+
+      <div class="term" data-term="home equity">
+        <h3 class="font-semibold text-gray-900 text-lg">Home Equity</h3>
+        <p class="text-gray-700 mt-1">
+          The difference between what you owe on your mortgage and what your home is currently worth (or what you get when you sell it). As you pay down your mortgage, your equity in your home will rise. If you decide to sell your home, you can use the equity you've built (the profit made) as a down payment for another home. However, there may be complex tax implications with this, such as capital gains tax.
+        </p>
+      </div>
+
+      <div class="term" data-term="individual development account ida">
+        <h3 class="font-semibold text-gray-900 text-lg">Individual Development Account (IDA)</h3>
+        <p class="text-gray-700 mt-1">
+          A savings account and asset-building strategy for low-income individuals and families. The funds put into an IDA are matched by a public or private organization to promote savings and future spending on educational purposes, starting a business, or homeownership. IDAs are accompanied by programs for credit improvement and other financial literacy classes to help account holders get out of poverty. Studies have shown the success of IDAs in helping individuals become homeowners, which is the primary way lower-income families can build wealth.
+        </p>
+      </div>
+
+      <div class="term" data-term="individual retirement account ira">
+        <h3 class="font-semibold text-gray-900 text-lg">Individual Retirement Account (IRA)</h3>
+        <p class="text-gray-700 mt-1">
+          A tax-advantaged investment account, usually set up through a financial services company or bank, that helps you save for retirement.
+        </p>
+      </div>
+
+      <div class="term" data-term="inflation">
+        <h3 class="font-semibold text-gray-900 text-lg">Inflation</h3>
+        <p class="text-gray-700 mt-1">
+          The rate of increase in the prices of goods and services over a given time period, usually a year. Inflation measures how much more expensive goods and services have become over a year, which influences the cost of living for consumers.
+        </p>
+      </div>
+
+      <div class="term" data-term="installment loan">
+        <h3 class="font-semibold text-gray-900 text-lg">Installment Loan</h3>
+        <p class="text-gray-700 mt-1">
+          A loan in which you receive a lump-sum payment and pay it back in equal parts over a period of time. Banks and credit unions, as well as online lenders, offer installment loans. The best installment loans have low interest rates and affordable monthly payments.
+        </p>
+      </div>
+
+      <div class="term" data-term="interest">
+        <h3 class="font-semibold text-gray-900 text-lg">Interest</h3>
+        <p class="text-gray-700 mt-1">
+          For loans and credit cards, interest is the additional amount you will pay to a lending institution to borrow money. It is the money a lender or financial institution receives for lending out money. In terms of savings, interest is the additional amount you will earn for having your money in a savings account, CD, or other savings vehicle.
+        </p>
+      </div>
+
+      <div class="term" data-term="simple interest">
+        <h3 class="font-semibold text-gray-900 text-lg">Simple Interest</h3>
+        <p class="text-gray-700 mt-1">
+          Simple interest is interest paid only on the "principal" – the amount originally borrowed – and not on the interest owed on the loan.
+        </p>
+      </div>
+
+      <div class="term" data-term="compound interest">
+        <h3 class="font-semibold text-gray-900 text-lg">Compound Interest</h3>
+        <p class="text-gray-700 mt-1">
+          Compound interest is interest calculated not only on the principal but also on the interest that has accrued, or built up, at the time of the calculation. It is essentially “interest on interest.” Compound interest – where the borrower pays even more interest – is more common than simple interest. It is beneficial when the bank borrowing your money pays compounded interest on your savings account, and is not beneficial when you’re the one paying compounded interest on a loan. Compound interest can earn you money in savings or investment accounts but not on loan or debt payments.
+        </p>
+      </div>
+
+      <div class="term" data-term="interest rate">
+        <h3 class="font-semibold text-gray-900 text-lg">Interest Rate</h3>
+        <p class="text-gray-700 mt-1">
+          Interest rates can refer to a percentage of the principal (the amount loaned) that the lender charges the borrower as well as the percentage a savings account or CD has earned at a bank or credit union. APR typically refers to the interest rate on a loan, and APY typically refers to the interest rate for savings accounts. Interest rates depend on whether they’re for savings accounts, retirement accounts, and investments, or loans, mortgage payments, or debts. Low interest rates make it cheaper to borrow money and are intended to boost economic activity and growth. The Federal Reserve usually lowers interest rates when the economy is struggling. Low interest rates usually mean lower returns on savings accounts and investments, and the possibility of increased debt when interest rates rise again. High interest rates typically mean the economy is doing well, though they can discourage big purchases, such as a house.
+        </p>
+      </div>
+
+      <div class="term" data-term="liability liabilities">
+        <h3 class="font-semibold text-gray-900 text-lg">Liability</h3>
+        <p class="text-gray-700 mt-1">
+          A liability is something an individual or company owes someone else, usually an amount of money that is paid off over time. Liabilities include loans, mortgages, and other debts. Liability refers to being responsible for something, thus it can apply not only to company and individual loans and debt payments but to taxes as well. When you owe the government money in taxes, you are liable (responsible) to pay it.
+        </p>
+      </div>
+
+      <div class="term" data-term="lien">
+        <h3 class="font-semibold text-gray-900 text-lg">Lien</h3>
+        <p class="text-gray-700 mt-1">
+          A creditor's claim or legal right against an asset – usually property – which may entitle the creditor to seize and sell the property if a debt is not repaid. Liens act as collateral to ensure a debt is repaid.
+        </p>
+      </div>
+
+      <div class="term" data-term="maturity">
+        <h3 class="font-semibold text-gray-900 text-lg">Maturity</h3>
+        <p class="text-gray-700 mt-1">
+          The agreed-upon date when a loan, bond, or other investment option becomes due for payment to investors or creditors.
+        </p>
+      </div>
+
+      <div class="term" data-term="minimum payment">
+        <h3 class="font-semibold text-gray-900 text-lg">Minimum Payment</h3>
+        <p class="text-gray-700 mt-1">
+          The minimum monthly payment required on a credit card or loan. For credit cards, this is typically 2% of your balance (changes month to month). Credit card companies will send you your minimum payment amount in your monthly bill.
+        </p>
+      </div>
+
+      <div class="term" data-term="money market accounts">
+        <h3 class="font-semibold text-gray-900 text-lg">Money Market Accounts</h3>
+        <p class="text-gray-700 mt-1">
+          A type of savings account that tends to offer higher interest rates than basic savings accounts as well as check writing and debit card options. However, they tend to have more restrictions than regular savings accounts and lower rates of return than other savings vehicles (e.g. bonds, mutual funds).
+        </p>
+      </div>
+
+      <div class="term" data-term="mortgage">
+        <h3 class="font-semibold text-gray-900 text-lg">Mortgage</h3>
+        <p class="text-gray-700 mt-1">
+          A loan used for the purchase of a house, property, or other real estate. Borrowers pay lenders back over time (usually many years) at regular intervals that include payments on the initial amount and interest accumulated. The property itself serves as collateral for the loan. Mortgages enable individuals, families, and businesses to buy property without needing to pay for the entire purchase up-front.
+        </p>
+      </div>
+
+      <div class="term" data-term="mutual funds mutual fund">
+        <h3 class="font-semibold text-gray-900 text-lg">Mutual Funds</h3>
+        <p class="text-gray-700 mt-1">
+          A mutual fund is a pool of money (fund) run by a professional or group of professionals who have experience in picking investments (a mutual fund company). Mutual fund investors pool the money from numerous investors and invest the funds in a variety of securities, such as stocks and bonds, to generate income for investors. Mutual funds are an example of diversified investment portfolios, which are thought to be less risky investments. Mutual funds can be a profitable investment but like all investments, there is the possibility of losing some or all of the money you invested.
+        </p>
+      </div>
+
+      <div class="term" data-term="net worth">
+        <h3 class="font-semibold text-gray-900 text-lg">Net Worth</h3>
+        <p class="text-gray-700 mt-1">
+          The total wealth of an individual, household, or company, based on the value of all their financial assets and liabilities. Net worth is the difference between a person or company’s total assets and total liabilities (the value of total assets minus total liabilities).
+        </p>
+      </div>
+
+      <div class="term" data-term="overdraft">
+        <h3 class="font-semibold text-gray-900 text-lg">Overdraft</h3>
+        <p class="text-gray-700 mt-1">
+          Overdraft occurs when a person withdraws money when there isn’t enough in their account to cover it and the bank allows the transaction to go through anyway. For example, if an account holder has $1,000 in the account and withdraws $1,200, there is an overdraft of $200. The overdraft acts like a loan – the bank allows the customer to keep using their account, even with insufficient funds, but the customer will likely have to pay interest on the loan and a steep penalty fee ($35 or more).
+        </p>
+      </div>
+
+      <div class="term" data-term="prime rate">
+        <h3 class="font-semibold text-gray-900 text-lg">Prime Rate</h3>
+        <p class="text-gray-700 mt-1">
+          Prime rate is the lowest interest rate on bank loans, offered to preferred borrowers. It is the rate commercial banks charge their most “creditworthy” customers. Interest rates for personal loans, small business loans, and mortgages are based around the prime rate. The prime interest rate is determined by the federal funds rate (the overnight interest rate banks use to lend to one another) and the most important prime rate is published daily by The Wall Journal.
+        </p>
+      </div>
+
+      <div class="term" data-term="principal">
+        <h3 class="font-semibold text-gray-900 text-lg">Principal</h3>
+        <p class="text-gray-700 mt-1">
+          The principal is the unpaid balance on a loan, not including interest. All loans begin as a principal (the initial amount) and accrue interest over time.
+        </p>
+      </div>
+
+      <div class="term" data-term="promissory note">
+        <h3 class="font-semibold text-gray-900 text-lg">Promissory Note</h3>
+        <p class="text-gray-700 mt-1">
+          A loan document that the lender and borrower both sign that indicates a promise to repay a loan under agreed-upon terms. Promissory notes typically contain the terms of the debt, such as the principal, interest rate, and the date the loan was issued and the date it will mature. Although some banks issue promissory notes, they are more common with other lenders and enable any individual or company to become a lender.
+        </p>
+      </div>
+
+      <div class="term" data-term="rate of return return on investment roi ror">
+        <h3 class="font-semibold text-gray-900 text-lg">Rate of Return</h3>
+        <p class="text-gray-700 mt-1">
+          The Rate of Return (ROR) or Return on Investment (ROI) is a percentage figure that measures how money grows in an investment. ROR is the total gain or loss of an investment from the beginning to the end of a specified period.
+        </p>
+      </div>
+
+      <div class="term" data-term="rule of 72">
+        <h3 class="font-semibold text-gray-900 text-lg">Rule of 72</h3>
+        <p class="text-gray-700 mt-1">
+          The rule of 72 is a trick to calculate how much money you can earn from the interest on an investment. It is a simple way to calculate how long it will take your investment to double at a specified rate of return. To calculate, divide 72 by the interest rate of your account. The result is the number of years it will take to double your investment. For example, if your account earns 4% interest, 72% divided by 4% = 18 years to double your investment.
+        </p>
+      </div>
+
+      <div class="term" data-term="service charge fee">
+        <h3 class="font-semibold text-gray-900 text-lg">Service Charge</h3>
+        <p class="text-gray-700 mt-1">
+          A specific fee charged by a financial institution, such as an out-of-network ATM fee, a fee for falling below a minimum balance, or the fee for triggering an overdraft checking account into use. Some companies also charge service fees for specific goods or services or for using a credit or debit card.
+        </p>
+      </div>
+
+      <div class="term" data-term="simple ira individual retirement account savings incentive match plan for employees">
+        <h3 class="font-semibold text-gray-900 text-lg">SIMPLE IRA (Individual Retirement Account)</h3>
+        <p class="text-gray-700 mt-1">
+          A Savings Incentive Match Plan for Employees (SIMPLE) IRA is a type of tax-deferred retirement savings account for employees offered by employers. An employer may match employee contributions in a SIMPLE. SIMPLE IRAs are relatively easy to set up and work best for small businesses.
+        </p>
+      </div>
+
+      <div class="term" data-term="simplified employee pension sep ira">
+        <h3 class="font-semibold text-gray-900 text-lg">Simplified Employee Pension (SEP) IRA</h3>
+        <p class="text-gray-700 mt-1">
+          A Simplified Employee Pension IRA is a retirement savings account for small business employers and for self-employed people (people who have their own businesses). SEP IRAs usually have higher annual contribution limits compared to standard IRAs.
+        </p>
+      </div>
+
+      <div class="term" data-term="stocks stock shares shareholder">
+        <h3 class="font-semibold text-gray-900 text-lg">Stocks</h3>
+        <p class="text-gray-700 mt-1">
+          A security that represents ownership of a portion of a corporation, which means the owner of the stock receives a fraction of the corporation’s profits and assets depending on how much stock they own. When you buy stock in a company, you share in its ownership – making you a “shareholder.” Stock is purchased in units called "shares." Your share of the company depends on how many shares of the company's stock you own. The price of a stock goes up and down, depending on how the company performs and how investors think the company will perform in the future.
+        </p>
+      </div>
+
+      <div class="term" data-term="subsidized loans student">
+        <h3 class="font-semibold text-gray-900 text-lg">Subsidized Loans</h3>
+        <p class="text-gray-700 mt-1">
+          There are two types of student loans: subsidized and unsubsidized. Subsidized loans are only for undergraduate students who demonstrate financial need. With subsidized loans, the federal government pays the interest that accrues on the loan (“subsidizes” the loan) while the student is in school, during the 6-month grace period after they leave school, and during periods of deferment.
+        </p>
+      </div>
+
+      <div class="term" data-term="total cost of borrowing">
+        <h3 class="font-semibold text-gray-900 text-lg">Total Cost of Borrowing</h3>
+        <p class="text-gray-700 mt-1">
+          When you take out a loan, it is important to know the Total Cost of Borrowing. This will be the total monetary amount you will pay over the life of the loan and includes the principal, loan fees, and interest.
+        </p>
+      </div>
+
+      <div class="term" data-term="truth in lending act tila">
+        <h3 class="font-semibold text-gray-900 text-lg">Truth in Lending Act</h3>
+        <p class="text-gray-700 mt-1">
+          The Truth in Lending Act (TILA) protects consumers against unfair lending practices. Loans under TILA must provide a Disclosure Statement of all of the terms and conditions of a loan or credit agreement, including APR, the loan term, and total costs of borrowing.
+        </p>
+      </div>
+
+      <div class="term" data-term="representative payee">
+        <h3 class="font-semibold text-gray-900 text-lg">Representative Payee</h3>
+        <p class="text-gray-700 mt-1">
+          A family member, friend, legal guardian, or member of an organization who is appointed by a government agency, such as the Social Security Administration (SSA) or the Department of Veteran Affairs (VA), to receive and manage public benefits on behalf of someone who cannot manage them on their own.
+        </p>
+      </div>
+
+      <div class="term" data-term="loan term">
+        <h3 class="font-semibold text-gray-900 text-lg">Loan Term</h3>
+        <p class="text-gray-700 mt-1">
+          A loan term is the period from when a loan is issued until it is fully paid. It is the length of time it takes for a loan to be paid off when the borrower is making regular payments. Loan terms can also refer to the provisions specified in a loan agreement. These are the terms you review before you sign a loan contract.
+        </p>
+      </div>
+
+      <div class="term" data-term="401k 401(k)">
+        <h3 class="font-semibold text-gray-900 text-lg">401(k)</h3>
+        <p class="text-gray-700 mt-1">
+          A 401(k) is an employer-sponsored retirement savings plan that is tax deferred and that employees can contribute to. Many American employers offer 401(k) plans to their employees. When you sign up for a 401(k), you agree for a percentage of your paychecks to be deposited into an investment account. Your employer might match a portion, or all, of that contribution. You can choose between different investment options (usually mutual funds) to put your money in. Traditional 401(k) plans are pre-tax, which means that you don’t pay taxes on the funds until you withdraw them for retirement. There are also Roth 401(k) plans, in which the money is deducted from your after-tax income, so you don’t have to pay additional taxes on the funds when you withdraw them for retirement. Saver’s Credit: If you have a low income and are contributing to a 401(k), you may qualify for the Saver’s Credit. This is a tax credit of 50%, 20% or 10% (depending on your income) of your contributions to a 401(k), 403(b), SIMPLE plan, traditional or Roth IRA, or ABLE account. For more information, visit: https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-savings-contributions-savers-credit
+        </p>
+      </div>
+
+      <div class="term" data-term="403b 403(b)">
+        <h3 class="font-semibold text-gray-900 text-lg">403(b)</h3>
+        <p class="text-gray-700 mt-1">
+          A 403(b) is an employer-sponsored retirement savings plan very similar to a 401(k) but offered by nonprofit (tax-exempt) and government employers. People who can receive 403(b) plans include government employees, teachers, professors, librarians, nurses, doctors, and nonprofit employees.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-10 pt-6 border-t text-xs text-gray-400 text-center">
+      <p>© Money Basics — Financial Terms Glossary</p>
+    </div>
+  </div>
+</body>
+</html>
