@@ -1,3 +1,54 @@
+
+<div class="mb-page-tools" aria-label="Activity tools">
+  <button type="button" data-mb-page-download>Download</button>
+  <button type="button" data-mb-page-print>Print</button>
+</div>
+<script id="mb-page-tools-script">
+(function(){
+  function textValue(el){
+    if(!el) return '';
+    if(el.type === 'checkbox' || el.type === 'radio') return el.checked ? 'Yes' : '';
+    return (el.value || '').trim();
+  }
+  function labelFor(el){
+    if(!el) return 'Response';
+    if(el.id){
+      var label = document.querySelector('label[for="' + CSS.escape(el.id) + '"]');
+      if(label && label.textContent.trim()) return label.textContent.trim();
+    }
+    return el.getAttribute('aria-label') || el.placeholder || el.name || 'Response';
+  }
+  function downloadResponses(){
+    var title = (document.querySelector('h1,h2,[data-title]') || document).textContent.trim().replace(/\s+/g,' ') || document.title || 'Activity responses';
+    var lines = [title, ''];
+    Array.prototype.forEach.call(document.querySelectorAll('input, textarea, select'), function(el){
+      if(el.type === 'hidden' || el.closest('.mb-page-tools')) return;
+      var value = textValue(el);
+      if(value) lines.push(labelFor(el) + ':', value, '');
+    });
+    if(lines.length === 2) lines.push('No responses entered yet.');
+    var blob = new Blob([lines.join('\n')], {type:'text/plain'});
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = (title.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'') || 'activity-responses') + '.txt';
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function(){URL.revokeObjectURL(a.href); a.remove();}, 0);
+  }
+  document.addEventListener('click', function(event){
+    if(event.target.matches('[data-mb-page-download]')) downloadResponses();
+    if(event.target.matches('[data-mb-page-print]')) window.print();
+  });
+})();
+</script>
+
+<style id="mb-page-tools-style">
+  .mb-page-tools{display:flex;gap:8px;align-items:center;margin:12px auto 14px;max-width:960px;padding:0 16px;font-family:Arial,Helvetica,sans-serif}
+  .mb-page-tools button{appearance:none;border:0;border-radius:6px;background:#164e63;color:#fff;font:700 14px/1 Arial,Helvetica,sans-serif;padding:10px 14px;cursor:pointer}
+  .mb-page-tools button:hover{background:#0f3f50}
+  .mb-page-tools button:focus{outline:3px solid #facc15;outline-offset:2px}
+  @media print{.mb-page-tools{display:none!important}}
+</style>
 <!-- Paste this whole block into the LearnWorlds embedded script widget -->
 <style>
   .mb7future-wrap{max-width:860px;margin:0 auto;padding:8px;font-family:"INTER_18PT-REGULAR","Inter",Arial,sans-serif;font-size:16px;line-height:1.5;color:rgb(0,0,0)}

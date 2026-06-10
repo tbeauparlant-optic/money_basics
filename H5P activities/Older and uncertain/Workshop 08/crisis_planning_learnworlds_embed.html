@@ -2,10 +2,6 @@
 <style>
   .mb8crisis-wrap{max-width:1100px;margin:0 auto;padding:8px;font-family:"INTER_18PT-REGULAR","Inter",Arial,sans-serif;font-size:16px;line-height:1.5;color:rgb(0,0,0)}
   .mb8crisis-title{margin:0 0 16px;font-size:1.2em;line-height:1.2}
-  .mb8crisis-tools{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
-  .mb8crisis-tool{padding:9px 14px;border:1px solid #094725;border-radius:999px;background:#094725;color:#ffffff;font:inherit;font-weight:700;line-height:1.1;cursor:pointer}
-  .mb8crisis-tool:hover{background:#0b5a2f}
-  .mb8crisis-tool:focus-visible{outline:3px solid #ffbf47;outline-offset:2px}
   .mb8crisis-worksheet{margin:0 0 22px}
   .mb8crisis-worksheet-title{margin:0 0 12px;padding-bottom:6px;border-bottom:1px solid #d8e1de;color:#35525a;font-size:1.05em;line-height:1.25}
   .mb8crisis-table-wrap{overflow-x:auto}
@@ -27,7 +23,6 @@
     .mb8crisis-table--scale tbody th{min-width:14rem}
     .mb8crisis-choice{justify-content:flex-start;min-width:0}
   }
-  @media print{.mb8crisis-tools{display:none}}
 </style>
 
 <div id="mb8crisis-root" class="mb8crisis-wrap"></div>
@@ -324,7 +319,6 @@
   }
 
   root.appendChild(create('h2', 'mb8crisis-title', config.title));
-  addTools();
   buildScaleTable(config.financialWorksheet, 'financialEffects');
   buildScaleTable(config.healthWorksheet, 'healthEffects');
   buildReplacementTable(config.whenExperienceWorksheet, 'whenExperienceRows', config.replacementRowCount);
@@ -334,96 +328,5 @@
 
   window.addEventListener('resize', postHeight);
   postHeight();
-
-  function addTools() {
-    var tools = create('div', 'mb8crisis-tools');
-    var download = create('button', 'mb8crisis-tool', 'Download');
-    var print = create('button', 'mb8crisis-tool', 'Print');
-
-    tools.setAttribute('aria-label', 'Activity tools');
-    download.type = 'button';
-    print.type = 'button';
-    download.addEventListener('click', function () {
-      downloadText('financial-crisis-planning.txt', collectResponses());
-    });
-    print.addEventListener('click', function () {
-      window.print();
-    });
-    tools.appendChild(download);
-    tools.appendChild(print);
-    root.appendChild(tools);
-  }
-
-  function collectResponses() {
-    var currentState = loadState();
-    var lines = [config.title, ''];
-
-    appendScale(lines, config.financialWorksheet.heading, linesFromConfig(config.financialWorksheet.statementsText), currentState.financialEffects || []);
-    appendScale(lines, config.healthWorksheet.heading, linesFromConfig(config.healthWorksheet.statementsText), currentState.healthEffects || []);
-    appendRows(lines, config.whenExperienceWorksheet.heading, config.whenExperienceWorksheet.triggerHeader, config.whenExperienceWorksheet.alternativeHeader, currentState.whenExperienceRows || []);
-    appendRows(lines, config.ratherThanWorksheet.heading, config.ratherThanWorksheet.triggerHeader, config.ratherThanWorksheet.alternativeHeader, currentState.ratherThanRows || []);
-    appendExpenses(lines, currentState.expenseRows || []);
-    appendSupport(lines, currentState);
-
-    return lines.join('\n');
-  }
-
-  function linesFromConfig(text) {
-    return String(text || '')
-      .split(/\r?\n/)
-      .map(function (line) { return line.trim(); })
-      .filter(Boolean);
-  }
-
-  function appendScale(lines, heading, statements, values) {
-    lines.push(heading);
-    statements.forEach(function (statement, index) {
-      lines.push(statement + ': ' + (values[index] || ''));
-    });
-    lines.push('');
-  }
-
-  function appendRows(lines, heading, leftHeader, rightHeader, rows) {
-    lines.push(heading);
-    lines.push(leftHeader + '\t' + rightHeader);
-    for (var i = 0; i < config.replacementRowCount; i++) {
-      var row = rows[i] || {};
-      lines.push([(row.trigger || '').replace(/\r?\n/g, ' '), (row.alternative || '').replace(/\r?\n/g, ' ')].join('\t'));
-    }
-    lines.push('');
-  }
-
-  function appendExpenses(lines, rows) {
-    lines.push(config.expensesWorksheet.heading);
-    lines.push(config.expensesWorksheet.expenseHeader + '\t' + config.expensesWorksheet.amountHeader + '\t' + config.expensesWorksheet.dueHeader);
-    for (var i = 0; i < config.expenseRowCount; i++) {
-      var row = rows[i] || {};
-      lines.push([row.expense || '', row.amount || '', row.due || ''].join('\t'));
-    }
-    lines.push('');
-  }
-
-  function appendSupport(lines, currentState) {
-    lines.push(config.supportWorksheet.heading);
-    lines.push(config.supportWorksheet.nameLabel + ': ' + (currentState.supportName || ''));
-    lines.push(config.supportWorksheet.relationshipLabel + ': ' + (currentState.supportRelationship || ''));
-    lines.push(config.supportWorksheet.contactLabel + ': ' + (currentState.supportContact || ''));
-    lines.push(config.supportWorksheet.helpLabel + ': ' + (currentState.supportHelp || ''));
-    lines.push(config.supportWorksheet.payeeRightsLabel + ': ' + (currentState.payeeRights || ''));
-    lines.push('');
-  }
-
-  function downloadText(filename, text) {
-    var blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
-    var url = URL.createObjectURL(blob);
-    var link = document.createElement('a');
-
-    link.href = url;
-    link.download = filename;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url);
-  }
 }());
 </script>
