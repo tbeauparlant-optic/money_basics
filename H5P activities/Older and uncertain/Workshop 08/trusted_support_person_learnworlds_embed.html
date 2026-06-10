@@ -2,6 +2,10 @@
 <style>
   .mb8support-wrap{max-width:900px;margin:0 auto;padding:8px;font-family:"INTER_18PT-REGULAR","Inter",Arial,sans-serif;font-size:16px;line-height:1.5;color:rgb(0,0,0)}
   .mb8support-title{margin:0 0 12px;padding-bottom:6px;border-bottom:1px solid #d8e1de;color:#35525a;font-size:1.05em;line-height:1.25}
+  .mb8module-tools{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+  .mb8module-tool{padding:9px 14px;border:1px solid #094725;border-radius:999px;background:#094725;color:#ffffff;font:inherit;font-weight:700;line-height:1.1;cursor:pointer}
+  .mb8module-tool:hover{background:#0b5a2f}
+  .mb8module-tool:focus-visible{outline:3px solid #ffbf47;outline-offset:2px}
   .mb8support-field{display:grid;gap:8px;margin-top:12px}
   .mb8support-label{display:block;font-weight:700;color:#35525a}
   .mb8support-input,.mb8support-textarea{display:block;width:100%;box-sizing:border-box;padding:10px 12px;border:2px solid #000000;border-radius:14px;background:transparent;color:rgb(0,0,0);font:inherit;line-height:1.2}
@@ -10,10 +14,15 @@
   @media (max-width:720px){
     .mb8support-wrap{padding:6px}
   }
+  @media print{.mb8module-tools{display:none}}
 </style>
 
 <div id="mb8support-root" class="mb8support-wrap">
   <h2 class="mb8support-title">Trusted Support Person</h2>
+  <div class="mb8module-tools" aria-label="Activity tools">
+    <button class="mb8module-tool" type="button" data-mb8-download>Download</button>
+    <button class="mb8module-tool" type="button" data-mb8-print>Print</button>
+  </div>
   <div class="mb8support-field">
     <label class="mb8support-label" for="mb8support-name">Trusted person</label>
     <input id="mb8support-name" class="mb8support-input" type="text" autocomplete="off">
@@ -59,6 +68,37 @@
   });
 
   window.addEventListener('resize', postHeight);
+  addTools(root, 'trusted-support-person.txt');
   postHeight();
+
+  function addTools(container, filename) {
+    var download = container ? container.querySelector('[data-mb8-download]') : null;
+    var print = container ? container.querySelector('[data-mb8-print]') : null;
+    if (download) download.addEventListener('click', function () { downloadText(filename, collectResponses(container)); });
+    if (print) print.addEventListener('click', function () { window.print(); });
+  }
+
+  function collectResponses(container) {
+    var lines = [container.querySelector('h2').textContent, ''];
+    fields.forEach(function (field) {
+      var label = container.querySelector('label[for="' + field.id + '"]');
+      lines.push((label ? label.textContent : field.id) + ':');
+      lines.push(field.value || '');
+      lines.push('');
+    });
+    return lines.join('\n');
+  }
+
+  function downloadText(filename, text) {
+    var blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+    var url = URL.createObjectURL(blob);
+    var link = document.createElement('a');
+    link.href = url;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  }
 }());
 </script>

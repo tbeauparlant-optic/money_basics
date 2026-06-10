@@ -2,6 +2,10 @@
 <style>
   .mb8expenses-wrap{max-width:1100px;margin:0 auto;padding:8px;font-family:"INTER_18PT-REGULAR","Inter",Arial,sans-serif;font-size:16px;line-height:1.5;color:rgb(0,0,0)}
   .mb8expenses-title{margin:0 0 12px;padding-bottom:6px;border-bottom:1px solid #d8e1de;color:#35525a;font-size:1.05em;line-height:1.25}
+  .mb8module-tools{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+  .mb8module-tool{padding:9px 14px;border:1px solid #094725;border-radius:999px;background:#094725;color:#ffffff;font:inherit;font-weight:700;line-height:1.1;cursor:pointer}
+  .mb8module-tool:hover{background:#0b5a2f}
+  .mb8module-tool:focus-visible{outline:3px solid #ffbf47;outline-offset:2px}
   .mb8expenses-table-wrap{overflow-x:auto}
   .mb8expenses-table{width:100%;border-collapse:separate;border-spacing:0}
   .mb8expenses-table thead th{background:#eef4fb;border-bottom:1px solid #d8e1de;color:#243b53;font-weight:700;padding:10px;text-align:left}
@@ -12,10 +16,15 @@
   @media (max-width:720px){
     .mb8expenses-wrap{padding:6px}
   }
+  @media print{.mb8module-tools{display:none}}
 </style>
 
 <div id="mb8expenses-root" class="mb8expenses-wrap">
   <h2 class="mb8expenses-title">Monthly Expenses and Due Dates</h2>
+  <div class="mb8module-tools" aria-label="Activity tools">
+    <button class="mb8module-tool" type="button" data-mb8-download>Download</button>
+    <button class="mb8module-tool" type="button" data-mb8-print>Print</button>
+  </div>
   <div class="mb8expenses-table-wrap">
     <table class="mb8expenses-table">
       <thead>
@@ -71,6 +80,36 @@
   }
 
   window.addEventListener('resize', postHeight);
+  addTools(root, 'monthly-expenses-due-dates.txt');
   postHeight();
+
+  function addTools(container, filename) {
+    var download = container ? container.querySelector('[data-mb8-download]') : null;
+    var print = container ? container.querySelector('[data-mb8-print]') : null;
+    if (download) download.addEventListener('click', function () { downloadText(filename, collectResponses(container)); });
+    if (print) print.addEventListener('click', function () { window.print(); });
+  }
+
+  function collectResponses(container) {
+    var headings = Array.prototype.map.call(container.querySelectorAll('thead th'), function (th) { return th.textContent; });
+    var lines = [container.querySelector('h2').textContent, '', headings.slice(1).join('\t')];
+    Array.prototype.forEach.call(container.querySelectorAll('tbody tr'), function (row) {
+      var values = Array.prototype.map.call(row.querySelectorAll('input'), function (field) { return field.value; });
+      lines.push(values.join('\t'));
+    });
+    return lines.join('\n');
+  }
+
+  function downloadText(filename, text) {
+    var blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+    var url = URL.createObjectURL(blob);
+    var link = document.createElement('a');
+    link.href = url;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  }
 }());
 </script>

@@ -6,6 +6,10 @@
   .mb7future-title{margin:0 0 10px;font-size:1.1em;line-height:1.2}
   .mb7future-copy{margin:0 0 10px;color:rgb(0,0,0)}
   .mb7future-copy:last-child{margin-bottom:0}
+  .mb7future-tools{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .mb7future-tool{padding:9px 14px;border:1px solid #094725;border-radius:999px;background:#094725;color:#ffffff;font:inherit;font-weight:700;line-height:1.1;cursor:pointer}
+  .mb7future-tool:hover{background:#0b5a2f}
+  .mb7future-tool:focus-visible{outline:3px solid #ffbf47;outline-offset:2px}
   .mb7future-body{padding:14px;display:grid;gap:14px}
   .mb7future-panel{background:transparent;border:1px solid #d8e1de;border-radius:16px;padding:14px}
   .mb7future-prompt{display:grid;gap:8px}
@@ -21,6 +25,7 @@
     .mb7future-money{align-items:stretch}
     .mb7future-dollar{min-width:38px;height:auto}
   }
+  @media print{.mb7future-tools{display:none}}
 </style>
 
 <div id="mb7future-root" class="mb7future-wrap">
@@ -29,6 +34,10 @@
       <h2 class="mb7future-title">Planning for the Future</h2>
       <p class="mb7future-copy">Think in hopeful numbers and realistic numbers.</p>
       <p class="mb7future-copy">Use the spaces below to write down debt-reduction goals that feel meaningful to you now.</p>
+      <div class="mb7future-tools" aria-label="Activity tools">
+        <button class="mb7future-tool" type="button" data-mb7future-download>Download</button>
+        <button class="mb7future-tool" type="button" data-mb7future-print>Print</button>
+      </div>
     </section>
 
     <div class="mb7future-body">
@@ -85,6 +94,8 @@
 
   var root = document.getElementById('mb7future-root');
   var inputs = Array.prototype.slice.call(root ? root.querySelectorAll('.mb7future-input') : []);
+  var downloadButton = root ? root.querySelector('[data-mb7future-download]') : null;
+  var printButton = root ? root.querySelector('[data-mb7future-print]') : null;
 
   function postHeight() {
     if (!root) return;
@@ -100,6 +111,40 @@
   inputs.forEach(function (input) {
     input.addEventListener('input', postHeight);
   });
+
+  function downloadText(filename, text) {
+    var blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+    var url = URL.createObjectURL(blob);
+    var link = document.createElement('a');
+
+    link.href = url;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  }
+
+  function collectResponses() {
+    var lines = ['Planning for the Future', ''];
+    inputs.forEach(function (input) {
+      var label = root.querySelector('label[for="' + input.id + '"]');
+      lines.push((label ? label.textContent : input.getAttribute('aria-label')) + ' $' + input.value);
+    });
+    return lines.join('\n');
+  }
+
+  if (downloadButton) {
+    downloadButton.addEventListener('click', function () {
+      downloadText('future-action-plan.txt', collectResponses());
+    });
+  }
+
+  if (printButton) {
+    printButton.addEventListener('click', function () {
+      window.print();
+    });
+  }
 
   window.addEventListener('resize', postHeight);
   postHeight();
