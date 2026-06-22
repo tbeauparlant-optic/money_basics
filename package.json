@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "refresh:final-index": "python3 tools/update_final_activity_index.py"
+  },
   "devDependencies": {
     "playwright": "^1.57.0"
   }
