@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Money Basics Activity HTML Packages</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17202a;
+      --muted: #5b6673;
+      --line: #d7dee8;
+      --paper: #ffffff;
+      --soft: #f6f8fb;
+      --accent: #0b6b7c;
+      --accent-strong: #084b57;
+      --focus: #b54708;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+      color: var(--ink);
+      background: var(--soft);
+    }
+
+    main {
+      width: min(1040px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0 56px;
+    }
+
+    header {
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 20px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .lede {
+      max-width: 760px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .activity-list {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .activity-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 16px;
+      align-items: center;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+
+    .activity-card h2 {
+      margin: 0 0 6px;
+      font-size: 1.05rem;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    .activity-card p {
+      margin: 0;
+      color: var(--muted);
+      overflow-wrap: anywhere;
+      font-size: 0.92rem;
+    }
+
+    .open-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 40px;
+      padding: 0 14px;
+      border: 1px solid var(--accent);
+      border-radius: 6px;
+      color: #ffffff;
+      background: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .open-link:hover {
+      background: var(--accent-strong);
+      border-color: var(--accent-strong);
+    }
+
+    .open-link:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    footer {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 700px) {
+      main {
+        width: min(100% - 24px, 1040px);
+        padding-top: 28px;
+      }
+
+      .activity-card {
+        grid-template-columns: 1fr;
+      }
+
+      .open-link {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Activity HTML Packages</h1>
+      <p class="lede">Final Money Basics activity packages hosted on GitHub Pages.</p>
+    </header>
+
+    <ul class="activity-list" aria-label="Final activity links">
+      <li class="activity-card">
+        <div>
+          <h2>Workshop 2: Setting Financial Goals</h2>
+          <p>https://tbeauparlant-optic.github.io/money_basics/H5P%20activities/final/workshop-02-financial-pdp/workshop-02-financial-pdp.html</p>
+        </div>
+        <a class="open-link" href="workshop-02-financial-pdp/workshop-02-financial-pdp.html">Open</a>
+      </li>
+      <li class="activity-card">
+        <div>
+          <h2>Workshop 6: Credit Card Fact or Fiction</h2>
+          <p>https://tbeauparlant-optic.github.io/money_basics/H5P%20activities/final/workshop-06-credit-fact-fiction/workshop-06-credit-fact-fiction.html</p>
+        </div>
+        <a class="open-link" href="workshop-06-credit-fact-fiction/workshop-06-credit-fact-fiction.html">Open</a>
+      </li>
+      <li class="activity-card">
+        <div>
+          <h2>Pros and Cons of Credit</h2>
+          <p>https://tbeauparlant-optic.github.io/money_basics/H5P%20activities/final/workshop-06-credit-pros-cons/workshop-06-credit-pros-cons.html</p>
+        </div>
+        <a class="open-link" href="workshop-06-credit-pros-cons/workshop-06-credit-pros-cons.html">Open</a>
+      </li>
+      <li class="activity-card">
+        <div>
+          <h2>Action Plan for Getting Out of Debt</h2>
+          <p>https://tbeauparlant-optic.github.io/money_basics/H5P%20activities/final/workshop-07-action-plan/workshop-07-action-plan.html</p>
+        </div>
+        <a class="open-link" href="workshop-07-action-plan/workshop-07-action-plan.html">Open</a>
+      </li>
+      <li class="activity-card">
+        <div>
+          <h2>Planning for the Future</h2>
+          <p>https://tbeauparlant-optic.github.io/money_basics/H5P%20activities/final/workshop-07-future-plan/workshop-07-future-plan.html</p>
+        </div>
+        <a class="open-link" href="workshop-07-future-plan/workshop-07-future-plan.html">Open</a>
+      </li>
+      <li class="activity-card">
+        <div>
+          <h2>Understanding Loans: Interest Adds to the Total Cost</h2>
+          <p>https://tbeauparlant-optic.github.io/money_basics/H5P%20activities/final/workshop-07-understanding-loans/workshop-07-understanding-loans.html</p>
+        </div>
+        <a class="open-link" href="workshop-07-understanding-loans/workshop-07-understanding-loans.html">Open</a>
+      </li>
+      <li class="activity-card">
+        <div>
+          <h2>Workshop 8: Allies and Supports</h2>
+          <p>https://tbeauparlant-optic.github.io/money_basics/H5P%20activities/final/workshop-08-allies-and-supports/workshop-08-allies-and-supports.html</p>
+        </div>
+        <a class="open-link" href="workshop-08-allies-and-supports/workshop-08-allies-and-supports.html">Open</a>
+      </li>
+      <li class="activity-card">
+        <div>
+          <h2>Workshop 8: Crisis Response Plan</h2>
+          <p>https://tbeauparlant-optic.github.io/money_basics/H5P%20activities/final/workshop-08-crisis-response-plan/workshop-08-crisis-response-plan.html</p>
+        </div>
+        <a class="open-link" href="workshop-08-crisis-response-plan/workshop-08-crisis-response-plan.html">Open</a>
+      </li>
+      <li class="activity-card">
+        <div>
+          <h2>Workshop 8: Debt Repayment Plan</h2>
+          <p>https://tbeauparlant-optic.github.io/money_basics/H5P%20activities/final/workshop-08-debt-repayment-plan/workshop-08-debt-repayment-plan.html</p>
+        </div>
+        <a class="open-link" href="workshop-08-debt-repayment-plan/workshop-08-debt-repayment-plan.html">Open</a>
+      </li>
+      <li class="activity-card">
+        <div>
+          <h2>Workshop 8: Financial Crisis Planning</h2>
+          <p>https://tbeauparlant-optic.github.io/money_basics/H5P%20activities/final/workshop-08-financial-crisis-plan/workshop-08-financial-crisis-plan.html</p>
+        </div>
+        <a class="open-link" href="workshop-08-financial-crisis-plan/workshop-08-financial-crisis-plan.html">Open</a>
+      </li>
+      <li class="activity-card">
+        <div>
+          <h2>Workshop 8: Reflection Checklists</h2>
+          <p>https://tbeauparlant-optic.github.io/money_basics/H5P%20activities/final/workshop-08-reflection-checklists/workshop-08-reflection-checklists.html</p>
+        </div>
+        <a class="open-link" href="workshop-08-reflection-checklists/workshop-08-reflection-checklists.html">Open</a>
+      </li>
+    </ul>
+
+    <footer>Updated June 17, 2026.</footer>
+  </main>
+</body>
+</html>
