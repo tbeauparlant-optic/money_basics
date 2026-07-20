@@ -1,0 +1,1800 @@
+<!doctype html>
+<!-- "metadata": {"title":"Workshop 3: Basic Budget Worksheet"} -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Basic Budget Worksheet (Interactive v2)</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+    :root {
+      --bg: #f8fafc;
+      --paper: #ffffff;
+      --line: #cbd5e1;
+      --line-soft: #e2e8f0;
+      --line-dark: #334155;
+      --header-fill: #f1f5f9;
+      --text: #0f172a;
+      --muted: #64748b;
+      --focus: #0f766e;
+      --focus-glow: rgba(15, 118, 110, 0.12);
+      --negative: #e11d48;
+      --positive: #10b981;
+    }
+
+    * { box-sizing: border-box; }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Outfit', Calibri, "Avenir Next", "Segoe UI", sans-serif;
+      font-size: 11pt;
+      line-height: 1.4;
+    }
+
+    .adaptive-frame {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: clamp(16px, 3vw, 32px);
+    }
+
+    .sheet {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .sheet:hover {
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -6px rgba(0, 0, 0, 0.08);
+    }
+
+    .sheet-header {
+      padding: 24px 28px;
+      border-bottom: 1px solid var(--line-soft);
+      background: linear-gradient(to bottom right, #fcfcfd, #f8fafc);
+      display: grid;
+      gap: 12px;
+    }
+
+    .sheet-title {
+      margin: 0;
+      font-size: 18pt;
+      line-height: 1.2;
+      font-weight: 700;
+      color: #0f172a;
+      letter-spacing: -0.02em;
+    }
+
+    .sheet-subtitle {
+      margin: 0;
+      font-size: 11pt;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .sheet-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 8px 16px;
+      background: #fff;
+      color: var(--text);
+      font: inherit;
+      font-size: 10pt;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    button:hover {
+      background: #f8fafc;
+      border-color: #94a3b8;
+    }
+
+    button.primary {
+      border-color: var(--focus);
+      background: var(--focus);
+      color: #fff;
+      box-shadow: 0 4px 6px -1px rgba(15, 118, 110, 0.1), 0 2px 4px -1px rgba(15, 118, 110, 0.06);
+    }
+
+    button.primary:hover {
+      background: #0d635c;
+      border-color: #0d635c;
+      box-shadow: 0 10px 15px -3px rgba(15, 118, 110, 0.15), 0 4px 6px -2px rgba(15, 118, 110, 0.05);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      font-size: 11pt;
+    }
+
+    colgroup col:nth-child(1) { width: 50%; }
+    colgroup col:nth-child(2),
+    colgroup col:nth-child(3),
+    colgroup col:nth-child(4) { width: 16.666%; }
+
+    thead th {
+      background: var(--header-fill);
+      font-size: 9.5pt;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      text-align: left;
+      font-weight: 700;
+      border: 1px solid var(--line-soft);
+      padding: 12px 14px;
+      color: var(--muted);
+    }
+
+    tbody td {
+      border: 1px solid var(--line-soft);
+      padding: 10px 14px;
+      vertical-align: middle;
+    }
+
+    .category {
+      font-size: 11pt;
+      font-weight: 500;
+      color: #334155;
+      overflow-wrap: anywhere;
+    }
+
+    .money {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 8px 10px;
+      text-align: right;
+      font: inherit;
+      font-size: 10.5pt;
+      background: #fff;
+      min-width: 0;
+      transition: all 0.2s ease;
+      color: var(--text);
+    }
+
+    .money:focus {
+      outline: none;
+      border-color: var(--focus);
+      box-shadow: 0 0 0 3px var(--focus-glow);
+    }
+
+    .computed {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+      font-size: 10.5pt;
+      font-weight: 600;
+      color: #334155;
+    }
+
+    .total-row td {
+      background: #f8fafc;
+      font-weight: 700;
+      border-top: 2px solid var(--line);
+      border-bottom: 2px double var(--line);
+      padding: 14px;
+    }
+
+    .total-row td.category {
+      color: #0f172a;
+    }
+
+    .negative { color: var(--negative); }
+
+    .sheet-footer {
+      border-top: 1px solid var(--line-soft);
+      padding: 16px 28px;
+      background: #f8fafc;
+      color: var(--muted);
+      font-size: 10pt;
+      font-weight: 400;
+    }
+
+    /* Tabs Navigation */
+    .sheet-tabs {
+      display: flex;
+      background: var(--header-fill);
+      border-bottom: 1px solid var(--line-soft);
+      padding: 0 16px;
+      gap: 4px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .sheet-tabs::-webkit-scrollbar {
+      display: none;
+    }
+    .tab-link {
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      border-bottom: 3px solid transparent;
+      color: var(--muted);
+      padding: 14px 16px;
+      font-size: 10.5pt;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+    }
+    .tab-link:hover {
+      background: rgba(15, 118, 110, 0.04);
+      color: var(--text);
+    }
+    .tab-link.active {
+      color: var(--focus);
+      border-bottom-color: var(--focus);
+      background: transparent;
+    }
+
+    /* Tab Panels animation */
+    .tab-panel {
+      animation: fadeIn 0.25s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(3px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Tab 2: Savings Checklist */
+    .checklist-section {
+      padding: 24px 28px;
+      border-bottom: 1px solid var(--line-soft);
+    }
+    .checklist-section:last-child {
+      border-bottom: none;
+    }
+    .checklist-title {
+      font-size: 13pt;
+      font-weight: 700;
+      color: #1e293b;
+      margin: 0 0 16px 0;
+    }
+    .checklist-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .checklist-row {
+      border-bottom: 1px solid var(--line-soft);
+      transition: background 0.15s ease;
+    }
+    .checklist-row:hover {
+      background: #f8fafc;
+    }
+    .checklist-row:last-child {
+      border-bottom: none;
+    }
+    .checklist-idea {
+      padding: 12px 14px;
+      font-size: 10.5pt;
+      color: #334155;
+      font-weight: 500;
+    }
+    .checklist-options {
+      padding: 12px 14px;
+      text-align: right;
+      white-space: nowrap;
+      width: 320px;
+    }
+    .btn-group {
+      display: inline-flex;
+      background: #f1f5f9;
+      border-radius: 8px;
+      padding: 2px;
+      border: 1px solid #cbd5e1;
+    }
+    .btn-group label {
+      padding: 6px 12px;
+      font-size: 9pt;
+      font-weight: 600;
+      color: #64748b;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: all 0.15s ease;
+      user-select: none;
+      display: inline-block;
+    }
+    .btn-group input[type="radio"] {
+      display: none;
+    }
+    .btn-group input[value="doing"]:checked + label {
+      background: var(--positive);
+      color: white;
+    }
+    .btn-group input[value="try"]:checked + label {
+      background: #f59e0b;
+      color: white;
+    }
+    .btn-group input[value="na"]:checked + label {
+      background: #64748b;
+      color: white;
+    }
+
+    /* Tab 3: Resource Directory */
+    .resources-container {
+      padding: 24px 28px;
+    }
+    .search-wrapper {
+      position: relative;
+      margin-bottom: 24px;
+    }
+    .search-input {
+      width: 100%;
+      padding: 12px 16px 12px 42px;
+      font-family: inherit;
+      font-size: 11pt;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      transition: all 0.2s ease;
+    }
+    .search-input:focus {
+      outline: none;
+      border-color: var(--focus);
+      box-shadow: 0 0 0 3px var(--focus-glow);
+    }
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+      font-size: 12pt;
+    }
+    .resources-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 16px;
+    }
+    .resource-card {
+      background: #fff;
+      border: 1px solid var(--line-soft);
+      border-radius: 10px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.2s ease;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    }
+    .resource-card:hover {
+      border-color: #cbd5e1;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+      transform: translateY(-1px);
+    }
+    .resource-card h3 {
+      margin: 0 0 8px 0;
+      font-size: 11pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .resource-badge {
+      display: inline-block;
+      align-self: flex-start;
+      font-size: 8.5pt;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    .badge-federal { background: #fee2e2; color: #991b1b; }
+    .badge-community { background: #e0f2fe; color: #075985; }
+    .badge-local { background: #dcfce7; color: #166534; }
+
+    .resource-desc {
+      font-size: 10pt;
+      color: #475569;
+      line-height: 1.45;
+      margin: 0 0 16px 0;
+      flex-grow: 1;
+    }
+    .resource-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 9.5pt;
+      font-weight: 600;
+      color: var(--focus);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+    .resource-action:hover {
+      color: #0d635c;
+      text-decoration: underline;
+    }
+    .resource-action-static {
+      font-size: 9.5pt;
+      font-weight: 500;
+      color: var(--muted);
+    }
+    .no-resources-msg {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 32px;
+      color: var(--muted);
+      font-size: 11pt;
+      font-weight: 500;
+    }
+
+    /* Tab 4: SSI & Behavioral Health */
+    .ssi-container {
+      padding: 24px 28px;
+      font-size: 10.5pt;
+      color: #334155;
+      line-height: 1.6;
+    }
+    .ssi-hero {
+      background: linear-gradient(to right, #0f766e, #115e59);
+      color: #ffffff;
+      padding: 24px;
+      border-radius: 10px;
+      margin-bottom: 24px;
+    }
+    .ssi-hero h2 {
+      margin: 0 0 8px 0;
+      font-size: 14pt;
+      font-weight: 700;
+      color: #fff;
+    }
+    .ssi-hero p {
+      margin: 0;
+      font-size: 10.5pt;
+      opacity: 0.95;
+    }
+    .ssi-section-title {
+      font-size: 12.5pt;
+      font-weight: 700;
+      color: #0f172a;
+      margin: 24px 0 12px 0;
+      border-bottom: 2px solid var(--line-soft);
+      padding-bottom: 6px;
+    }
+    .ssi-card-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .ssi-info-card {
+      background: #f8fafc;
+      border: 1px solid var(--line-soft);
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .ssi-info-card h3 {
+      margin: 0 0 10px 0;
+      font-size: 11pt;
+      font-weight: 700;
+      color: #0f766e;
+    }
+    .ssi-info-card ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .ssi-info-card li {
+      margin-bottom: 6px;
+    }
+    .ssi-info-card li:last-child {
+      margin-bottom: 0;
+    }
+    .ssi-alert-box {
+      background: #fef3c7;
+      border-left: 4px solid #d97706;
+      color: #92400e;
+      padding: 16px;
+      border-radius: 0 8px 8px 0;
+      margin-top: 16px;
+      font-size: 10pt;
+    }
+    .ssi-alert-box strong {
+      color: #78350f;
+    }
+
+    @media (max-width: 860px) {
+      .adaptive-frame { padding: 12px; }
+      .sheet-header { padding: 16px 20px; }
+      .sheet-title { font-size: 15pt; }
+      .sheet-subtitle { font-size: 10pt; }
+      thead th, tbody td { padding: 8px 10px; }
+      .money, .computed { font-size: 10pt; }
+      .checklist-section { padding: 16px 20px; }
+      .resources-container { padding: 16px 20px; }
+      .ssi-container { padding: 16px 20px; }
+    }
+
+    @media (max-width: 768px) {
+      .checklist-row {
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+      }
+      .checklist-idea {
+        padding: 0 0 10px 0;
+      }
+      .checklist-options {
+        padding: 0;
+        width: 100%;
+        text-align: left;
+      }
+      .btn-group {
+        width: 100%;
+        display: flex;
+      }
+      .btn-group label {
+        flex: 1;
+        text-align: center;
+        padding: 8px 4px;
+      }
+      .ssi-card-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff !important;
+        color: #000 !important;
+        font-family: 'Outfit', sans-serif !important;
+      }
+      .adaptive-frame {
+        padding: 0 !important;
+        margin: 0 !important;
+        max-width: none !important;
+        width: 100% !important;
+      }
+      .sheet {
+        border: none !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+      }
+      .sheet-actions, .sheet-tabs {
+        display: none !important;
+      }
+      .money {
+        border: none !important;
+        background: transparent !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        color: #000 !important;
+        text-align: right !important;
+      }
+      .money::placeholder {
+        color: transparent !important;
+      }
+      thead th {
+        background-color: var(--header-fill) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        border: 1px solid var(--line) !important;
+        color: var(--text) !important;
+      }
+      tbody td {
+        border: 1px solid var(--line) !important;
+      }
+      .total-row td {
+        background-color: #f8fafc !important;
+        border-top: 2px solid var(--line) !important;
+        border-bottom: 2px double var(--line) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="adaptive-frame">
+    <section class="sheet" aria-label="Workshop 3 Interactive Content">
+      <header class="sheet-header">
+        <h1 class="sheet-title">Step 5: Basic Budget Worksheet</h1>
+        <p class="sheet-subtitle">Enter budget and actual amounts. Differences and totals calculate automatically.</p>
+        <div class="sheet-actions">
+          <button type="button" id="clear-btn">Clear Inputs</button>
+          <button type="button" class="primary" id="download-btn">Print / Save PDF</button>
+        </div>
+      </header>
+
+      <div class="sheet-tabs" role="tablist">
+        <button class="tab-link active" role="tab" aria-selected="true" aria-controls="worksheet-tab" id="tab-worksheet">1. Budget Worksheet</button>
+        <button class="tab-link" role="tab" aria-selected="false" aria-controls="checklist-tab" id="tab-checklist">2. Savings Checklist</button>
+        <button class="tab-link" role="tab" aria-selected="false" aria-controls="resources-tab" id="tab-resources">3. Savings Resources</button>
+        <button class="tab-link" role="tab" aria-selected="false" aria-controls="ssi-tab" id="tab-ssi">4. Social Security Guide</button>
+      </div>
+
+      <!-- Tab 1: Worksheet -->
+      <div class="tab-panel" id="worksheet-tab" role="tabpanel" aria-labelledby="tab-worksheet">
+        <table aria-label="Budget table">
+          <colgroup><col><col><col><col></colgroup>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Budget Amount</th>
+              <th>Actual Amount</th>
+              <th>Difference</th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+        <footer class="sheet-footer">
+          Difference = Actual Amount - Budget Amount. Values are saved locally in your browser.
+        </footer>
+      </div>
+
+      <!-- Tab 2: Savings Checklist -->
+      <div class="tab-panel" id="checklist-tab" role="tabpanel" aria-labelledby="tab-checklist" style="display: none;">
+        <div id="checklist-container"></div>
+        <footer class="sheet-footer">
+          Review these savings practices and select your current actions or future goals. Selections save automatically.
+        </footer>
+      </div>
+
+      <!-- Tab 3: Resource Directory -->
+      <div class="tab-panel" id="resources-tab" role="tabpanel" aria-labelledby="tab-resources" style="display: none;">
+        <div class="resources-container">
+          <div class="search-wrapper">
+            <span class="search-icon">🔍</span>
+            <input type="text" class="search-input" id="resource-search" placeholder="Search resources (e.g. SNAP, internet, food, Oregon)..." aria-label="Search resources">
+          </div>
+          <div class="resources-grid" id="resources-grid"></div>
+        </div>
+        <footer class="sheet-footer">
+          Outbound links open in a new window. Search matches titles, descriptions, and categories.
+        </footer>
+      </div>
+
+      <!-- Tab 4: Social Security Guide -->
+      <div class="tab-panel" id="ssi-tab" role="tabpanel" aria-labelledby="tab-ssi" style="display: none;">
+        <div class="ssi-container">
+          <div class="ssi-hero">
+            <h2>Applying for Social Security Benefits</h2>
+            <p>A guide for individuals experiencing behavioral health challenges, severe mental illness, or substance recovery.</p>
+          </div>
+          
+          <p>Some individuals experiencing mental health and/or addiction challenges find that there are times when working becomes too difficult. Social Security Disability Insurance Benefits (SSDI) and Supplemental Security Income (SSI) are programs by the Social Security Administration (SSA) that provide monthly income and health insurance for people with qualifying conditions, which can include severe depression, bipolar disorder, PTSD, anxiety disorders, or substance use disorder (SUD).</p>
+          
+          <div class="ssi-alert-box">
+            <strong>Important note regarding medical evidence:</strong> The SSA has strict guidelines for qualifying that can be difficult to navigate. Generally, an individual needs to have detailed medical documentation that shows how their condition prevents them from working on a regular basis, and that they are actively undergoing treatment.
+          </div>
+
+          <div class="ssi-section-title">Eligibility Criteria (SSDI vs. SSI)</div>
+          <div class="ssi-card-grid">
+            <div class="ssi-info-card">
+              <h3>Social Security Disability Insurance (SSDI)</h3>
+              <ul>
+                <li><strong>Work Requirement:</strong> Must have worked and paid into Social Security (payroll taxes/FICA) for at least 5 of the last 10 years.</li>
+                <li><strong>Duration:</strong> Impairment must prevent working for at least 12 months.</li>
+                <li><strong>Family Coverage:</strong> Spouse and children can receive your SSDI benefits.</li>
+                <li><strong>Medicare:</strong> Eligible for Medicare health coverage after 24 months.</li>
+              </ul>
+            </div>
+            
+            <div class="ssi-info-card">
+              <h3>Supplemental Security Income (SSI)</h3>
+              <ul>
+                <li><strong>Needs-Based:</strong> Must have very low income, resources, and assets.</li>
+                <li><strong>Asset Limits:</strong> Cannot exceed $2,000 in assets for individuals ($3,000 for couples), excluding primary home and one vehicle.</li>
+                <li><strong>State Supplements:</strong> May receive additional monthly payments from the state.</li>
+                <li><strong>Medicaid:</strong> Eligible for immediate Medicaid health coverage.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="ssi-section-title">Recommendations for Applying</div>
+          <p>It can be helpful to consult with your doctor, therapist, case manager, mentor, or trusted friend to help you navigate these criteria and gather all of the required information to apply for benefits. This will include:</p>
+          <ul>
+            <li>All of your medical records (hospitalizations, therapy sessions, clinical assessments).</li>
+            <li>A written doctor or psychologist recommendation.</li>
+            <li>A list of all medications you are currently taking and any side effects.</li>
+            <li>Work history details and financial statements.</li>
+          </ul>
+          
+          <p>You can apply for SSDI or SSI online at <a href="https://www.ssa.gov/" target="_blank" rel="noopener noreferrer" style="color: var(--focus); font-weight: 600;">www.ssa.gov ↗</a>, over the phone, or in person at your local Social Security office. If you are approved, your case will be reviewed periodically.</p>
+          
+          <div class="ssi-section-title">Returning to Work (Ticket to Work)</div>
+          <p>If you decide to return to work, the SSA has a program called <strong>“Ticket to Work”</strong> that provides resources, training, and assistance. A Benefits Counselor can help you identify employment opportunities, explain how returning to work affects your SSI/SSDI benefits, and connect you to resources outside of the SSA. For more information, visit <a href="https://www.ssa.gov/work/" target="_blank" rel="noopener noreferrer" style="color: var(--focus); font-weight: 600;">www.ssa.gov/work ↗</a>.</p>
+        </div>
+        <footer class="sheet-footer">
+          This guide is for informational purposes only. Consult the Social Security Administration for official claims.
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const STORAGE_KEY = "basic_budget_worksheet_v2";
+    const CHECKLIST_STORAGE_KEY = "budget_worksheet_checklist_v2";
+
+    const rowsConfig = [
+      { type: "input", id: "spendable_income", label: "Spendable Income" },
+      { type: "input", id: "rent_mortgage", label: "Rent or Mortgage" },
+      { type: "input", id: "electricity", label: "Electricity" },
+      { type: "input", id: "natural_gas_oil", label: "Natural Gas or Oil" },
+      { type: "input", id: "water_sewer", label: "Water & Sewer" },
+      { type: "input", id: "garbage_recycling", label: "Garbage & Recycling Service" },
+      { type: "input", id: "phones", label: "Phone(s)" },
+      { type: "input", id: "internet", label: "Internet" },
+      { type: "input", id: "cable_satellite", label: "Cable/Satellite" },
+      { type: "input", id: "subscriptions", label: "Subscriptions (Netflix, Spotify, Amazon, etc.)" },
+      { type: "input", id: "credit_cards", label: "Credit Card Payments" },
+      { type: "input", id: "other_loans", label: "Other Loan Payments" },
+      { type: "input", id: "transportation", label: "Transportation (Bus Pass or Gas for Car)" },
+      { type: "input", id: "childcare", label: "Childcare" },
+      { type: "input", id: "insurance", label: "Insurance (Auto, Health, Home, Life)" },
+      { type: "input", id: "medical", label: "Out of Pocket Medical Expenses" },
+      { type: "input", id: "groceries", label: "Groceries" },
+      { type: "input", id: "household", label: "Toiletries/Household Goods" },
+      { type: "input", id: "pet_care", label: "Pet Care" },
+      { type: "input", id: "dining_out", label: "Dining Out" },
+      { type: "input", id: "entertainment", label: "Entertainment" },
+      { type: "input", id: "other_expenses", label: "Other Expenses" },
+      { type: "total", id: "expenses_total", label: "Total" }
+    ];
+
+    const checklistConfig = {
+      shopping: {
+        title: "Shopping Savings",
+        items: [
+          { id: "gen_prod", text: "Buy generic products" },
+          { id: "sale_menu", text: "Make weekly/bi-weekly menu from items on sale" },
+          { id: "use_home", text: "Use what you have at home before you shop for more" },
+          { id: "buy_need_short", text: "Buy only what you need to get by the next 1-2 weeks" },
+          { id: "make_list", text: "Make a list before you go shopping" },
+          { id: "perish_date", text: "Watch out for expiration dates on perishable goods" },
+          { id: "gen_med", text: "Buy generic over-the-counter medicines" },
+          { id: "buy_bulk", text: "Buy bulk whenever possible" },
+          { id: "impulse_24h", text: "Avoid impulse buying: follow the 24 hour rule" },
+          { id: "free_first", text: "Don’t buy anything if you can get it for free" },
+          { id: "coupons", text: "Use coupons and services like Groupon" },
+          { id: "farmers_mkt", text: "Go to a farmer’s market" },
+          { id: "free_fridges_pantries", text: "Find free fridges and food pantries in your neighborhood" },
+          { id: "apply_snap", text: "Apply for SNAP benefits if you’re eligible and not on it already" },
+          { id: "clothing_swap", text: "Do a clothing swap with friends instead of buying new" },
+          { id: "thrift_stores", text: "Shop at second-hand / thrift stores" },
+          { id: "buy_nothing_mkt", text: "Utilize Facebook Marketplace and Buy Nothing Groups" }
+        ]
+      },
+      lifestyle: {
+        title: "Lifestyle Changes",
+        items: [
+          { id: "cook_home", text: "Cook at home as often as you can" },
+          { id: "own_coffee", text: "Make your own coffee" },
+          { id: "matinee_movies", text: "Go to the matinee rather than evening movies" },
+          { id: "sub_recipe_cheaper", text: "Substitute ingredients in recipes with cheaper alternatives" },
+          { id: "taste_little_money", text: "Choose foods that offer high taste value for little money" },
+          { id: "water_meals", text: "Serve water with meals" },
+          { id: "rehang_towels", text: "Rehang towels after showers to use them more than once" },
+          { id: "rags_old_clothes", text: "Turn old clothes into usable rags" },
+          { id: "walk_bike_carpool", text: "Walk, ride your bike, or carpool whenever possible" },
+          { id: "library_books_dvds", text: "Get books and DVDs from the public library" },
+          { id: "limit_gifts", text: "Agree with family/friends to limit gift-giving" },
+          { id: "lunch_work", text: "Take your lunch to work one more day a week" },
+          { id: "sell_unused", text: "Sell items you no longer use" },
+          { id: "one_time_income", text: "Seek 1-time income opportunities (surveys, pet sitting, yard work)" },
+          { id: "meal_prep", text: "Meal prep large portions at the start of the week and freeze extras" },
+          { id: "reduced_bus_pass", text: "Get a reduced bus pass and use public transit" }
+        ]
+      },
+      bills: {
+        title: "Getting Smart About Bills",
+        items: [
+          { id: "slow_internet", text: "Slow down your internet speed or apply for reduced Wi-Fi costs" },
+          { id: "consolidate_debts", text: "Consolidate and pay off debts as soon as possible" },
+          { id: "bill_on_time", text: "Pay your bills on time to avoid late fees" },
+          { id: "car_insurance_semi", text: "Pay car insurance semi-annually instead of monthly" },
+          { id: "no_landline", text: "Get rid of your home landline telephone" },
+          { id: "no_premium_tv", text: "Remove premium channels from your cable package" },
+          { id: "auto_pay", text: "Enroll in automatic bill-paying to avoid missing dates" },
+          { id: "cancel_non_essential", text: "Cancel non-essential subscriptions (Netflix, Hulu, Spotify, HBO, etc.)" }
+        ]
+      },
+      energy: {
+        title: "Home Energy Efficiency",
+        items: [
+          { id: "check_insulation", text: "Check the insulation in your home" },
+          { id: "shut_vents", text: "Shut heating/cooling vents in unused rooms" },
+          { id: "regulate_electric", text: "Regulate electric use: turn off lights and devices when not needed" },
+          { id: "efficient_appliances", text: "Buy energy efficient appliances when replacing old ones" },
+          { id: "unplug_vampire", text: "Unplug standby electronics and appliances when not in use" },
+          { id: "weatherization_program", text: "Sign up for the federal Weatherization Assistance Program (WAP)" }
+        ]
+      }
+    };
+
+    const resourcesData = [
+      {
+        category: "federal",
+        badge: "Federal & State Support",
+        title: "Supplemental Nutrition Assistance Program (SNAP)",
+        desc: "The national food assistance program (formerly called Food Stamps). Benefits are deposited directly to an EBT account to buy groceries. Residents of Oregon can apply online.",
+        url: "https://one.oregon.gov/",
+        linkText: "Apply via Oregon ONE"
+      },
+      {
+        category: "federal",
+        badge: "Federal & State Support",
+        title: "Social Security Disability benefits (SSDI & SSI)",
+        desc: "Social Security offers disability insurance (SSDI) and Supplemental Security Income (SSI) for people with qualifying conditions, including mental health conditions.",
+        url: "https://secure.ssa.gov/iClaim/rib",
+        linkText: "Apply online at SSA"
+      },
+      {
+        category: "federal",
+        badge: "Federal & State Support",
+        title: "Medicare & Medicaid (Oregon Health Plan)",
+        desc: "Medicaid is a state-run program assisting low-income individuals with healthcare costs. The Oregon Health Plan (OHP) is Oregon’s Medicaid program.",
+        url: "https://www.oregon.gov/oha/hsd/ohp/pages/apply.aspx",
+        linkText: "Apply for OHP Coverage"
+      },
+      {
+        category: "federal",
+        badge: "Federal & State Support",
+        title: "Free or Reduced-Cost Healthcare Clinics",
+        desc: "Most cities and towns have free or sliding scale healthcare clinics providing emergency care, checkups, and dentist appointments.",
+        url: "https://www.freeclinics.com/",
+        linkText: "Find a Clinic Near You"
+      },
+      {
+        category: "federal",
+        badge: "Federal & State Support",
+        title: "Individual Development Accounts (IDAs)",
+        desc: "Special asset-building savings accounts matching the deposits of low-income families to save for higher education, homeownership, or business startups.",
+        url: "",
+        linkText: "Learn more in Workshop 10"
+      },
+      {
+        category: "federal",
+        badge: "Federal & State Support",
+        title: "Reduced Public Transit Fares",
+        desc: "Public transit systems often offer reduced fare options for low-income riders. Portland residents can apply online for an Honored Citizen Hop Card.",
+        url: "https://trimet.org/lowincome/index.htm",
+        linkText: "Apply for Low-Income TriMet Fare"
+      },
+      {
+        category: "federal",
+        badge: "Federal & State Support",
+        title: "Partnership for Prescription Assistance",
+        desc: "Pharmaceutical companies offer medication scholarships and subsidies for low-income individuals to help pay for vital prescriptions.",
+        url: "http://www.PPARX.org",
+        linkText: "Find Prescription Assistance"
+      },
+      {
+        category: "federal",
+        badge: "Federal & State Support",
+        title: "U.S. Department of Veterans Affairs (VA Benefits)",
+        desc: "Veterans are eligible for dental, physical, and mental health services, career training, education assistance, pension plans, and housing assistance.",
+        url: "https://www.va.gov/",
+        linkText: "Check VA Benefits"
+      },
+      {
+        category: "federal",
+        badge: "Federal & State Support",
+        title: "Reduced Internet (Comcast Internet Essentials)",
+        desc: "Low-cost high-speed internet service for $9.95/month, with free equipment rentals and options to buy computers for eligible public assistance recipients.",
+        url: "https://www.xfinity.com/support/articles/comcast-broadband-opportunity-program",
+        linkText: "Check Comcast Eligibility"
+      },
+      {
+        category: "federal",
+        badge: "Federal & State Support",
+        title: "Weatherization Assistance Program (WAP)",
+        desc: "Provides free energy audits and structural upgrades (adding insulation, plugging leaks, weather-stripping) to help low-income households lower heating bills.",
+        url: "https://www.energy.gov/eere/wap/how-apply-weatherization-assistance",
+        linkText: "Learn How to Apply"
+      },
+      {
+        category: "community",
+        badge: "Community Resource",
+        title: "Mutual Aid Funds",
+        desc: "Community pools of donations providing emergency cash assistance directly to neighbors for rent, medical bills, groceries, or utilities.",
+        url: "",
+        linkText: "Search Facebook or Local Directories"
+      },
+      {
+        category: "community",
+        badge: "Community Resource",
+        title: "Free Fridges & Pantries",
+        desc: "Take-what-you-need, leave-what-you-can pantries and refrigerators situated in neighborhoods, churches, and school shelters.",
+        url: "",
+        linkText: "Check local community boards"
+      },
+      {
+        category: "community",
+        badge: "Community Resource",
+        title: "Farmers Markets Double Up program",
+        desc: "Many farmers markets accept SNAP cards, with match programs like Double Up Food Bucks that double your purchasing power for fresh produce.",
+        url: "",
+        linkText: "Search your local Farmers Market"
+      },
+      {
+        category: "community",
+        badge: "Community Resource",
+        title: "Second-hand & Thrift Stores",
+        desc: "Goodwill, Salvation Army, St. Vincent de Paul, and local thrift stores offer low-cost clothing and household goods.",
+        url: "",
+        linkText: "Find local stores in your area"
+      },
+      {
+        category: "community",
+        badge: "Community Resource",
+        title: "Community Credit Unions",
+        desc: "Nonprofit financial cooperatives providing lower fees, free checking, and higher interest rates on savings compared to traditional banks.",
+        url: "",
+        linkText: "Look up local Credit Unions"
+      },
+      {
+        category: "community",
+        badge: "Community Resource",
+        title: "Community Development Financial Institutions (CDFI)",
+        desc: "Community-focused institutions promoting economic development by providing banking services to low-income populations.",
+        url: "https://www.cdfi.org/wp-content/uploads/2015/02/Oregon.pdf",
+        linkText: "View Oregon CDFI Directory"
+      },
+      {
+        category: "community",
+        badge: "Community Resource",
+        title: "The Buy Nothing Project",
+        desc: "A cashless sharing network where neighbors post items to lend, share, or give away, and ask for items they need. Available on Facebook and the app.",
+        url: "https://buynothingproject.org/join/",
+        linkText: "Join Buy Nothing Project"
+      },
+      {
+        category: "local",
+        badge: "Oregon Local Resource",
+        title: "Rose City Resource (Street Roots)",
+        desc: "Find free or reduced-cost food, shelter, healthcare, and utility resources in the Portland Metro Area.",
+        url: "https://rosecityresource.streetroots.org/#/",
+        linkText: "Search Rose City Resource"
+      },
+      {
+        category: "local",
+        badge: "Oregon Local Resource",
+        title: "Oregon Food Bank",
+        desc: "Find emergency food distribution sites, pantries, and meals near you by typing in your ZIP code.",
+        url: "https://www.oregonfoodbank.org/",
+        linkText: "Search Oregon Food Bank"
+      },
+      {
+        category: "local",
+        badge: "Oregon Local Resource",
+        title: "PDX Free Fridge",
+        desc: "A decentralized network of community fridges and pantries in the Portland area offering 24/7 free food access.",
+        url: "https://linktr.ee/pdxfreefridge",
+        linkText: "View PDX Fridge Map"
+      },
+      {
+        category: "local",
+        badge: "Oregon Local Resource",
+        title: "Oregon Emergency Rental Assistance Program",
+        desc: "Resources and administrative contacts for state-wide emergency rental assistance programs.",
+        url: "https://www.oregon.gov/ohcs/housing-assistance/Documents/05-13-2021-OERAP-program-admin-contact.pdf",
+        linkText: "View Rental Contacts"
+      },
+      {
+        category: "local",
+        badge: "Oregon Local Resource",
+        title: "Mid-Willamette Valley Community Action Agency",
+        desc: "Provides energy assistance, housing support, weatherization, nutrition, and youth services in the Salem/Marion/Polk area.",
+        url: "https://mwvcaa.org/programs/",
+        linkText: "View MWVCAA Programs"
+      },
+      {
+        category: "local",
+        badge: "Oregon Local Resource",
+        title: "Multnomah County Library E-Services",
+        desc: "Borrow books, e-books, audiobooks, movies, and DVDs for free with a public library card.",
+        url: "https://multcolib.org/e-books-and-more",
+        linkText: "Access Library Catalog"
+      },
+      {
+        category: "local",
+        badge: "Oregon Local Resource",
+        title: "Portland Living on the Cheap",
+        desc: "A calendar and directory of deals, discounts, and cheap events around the Portland area.",
+        url: "https://portlandlivingonthecheap.com/",
+        linkText: "Visit Portland on the Cheap"
+      },
+      {
+        category: "local",
+        badge: "Oregon Local Resource",
+        title: "Double Up Food Bucks Oregon",
+        desc: "Doubles the SNAP dollars spent at participating farmers markets so you can buy more fresh fruits and vegetables.",
+        url: "https://doubleuporegon.org/",
+        linkText: "Double Up Food Bucks Markets"
+      },
+      {
+        category: "local",
+        badge: "Oregon Local Resource",
+        title: "Swap Positive Clothing Swaps",
+        desc: "Information about local community clothing swaps and sustainable fashion options in Portland.",
+        url: "https://swappositive.wordpress.com/",
+        linkText: "View Swap Positive Info"
+      },
+      {
+        category: "local",
+        badge: "Oregon Local Resource",
+        title: "Biketown for All",
+        desc: "Portland residents who receive public assistance (SNAP, OHP, SSI, etc.) qualify for free/heavily discounted Biketown memberships.",
+        url: "https://www.biketownpdx.com/pricing/biketown-for-all",
+        linkText: "Apply for Biketown for All"
+      },
+      {
+        category: "local",
+        badge: "Oregon Local Resource",
+        title: "Oregon Head Start Association",
+        desc: "Early childhood education, health, and family support resources for low-income families in Oregon.",
+        url: "https://www.ohsa.net/",
+        linkText: "Find a Head Start Program"
+      },
+      {
+        category: "local",
+        badge: "Oregon Local Resource",
+        title: "OHCS Home Energy & Weatherization",
+        desc: "State-wide portal for home energy bill assistance and weatherization programs.",
+        url: "https://www.oregon.gov/ohcs/energy-weatherization/pages/index.aspx",
+        linkText: "Check Energy Programs"
+      }
+    ];
+
+    function asMoney(value) {
+      if (!Number.isFinite(value)) return "$0.00";
+      return value.toLocaleString("en-US", {
+        style: "currency",
+        currency: "USD",
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      });
+    }
+
+    function parseNumber(raw) {
+      if (!raw) return 0;
+      const normalized = String(raw).replace(/[^0-9.-]/g, "");
+      const n = Number.parseFloat(normalized);
+      return Number.isFinite(n) ? n : 0;
+    }
+
+    function createInputRow(row) {
+      return `
+        <tr data-row-id="${row.id}">
+          <td class="category">${row.label}</td>
+          <td><input class="money" inputmode="decimal" aria-label="${row.label} budget amount" data-kind="budget" data-id="${row.id}" placeholder="0.00"></td>
+          <td><input class="money" inputmode="decimal" aria-label="${row.label} actual amount" data-kind="actual" data-id="${row.id}" placeholder="0.00"></td>
+          <td class="computed" data-kind="difference" data-id="${row.id}">$0.00</td>
+        </tr>
+      `;
+    }
+
+    function createTotalRow(row) {
+      return `
+        <tr class="total-row" data-row-id="${row.id}">
+          <td class="category">${row.label}</td>
+          <td class="computed" data-kind="total-budget">$0.00</td>
+          <td class="computed" data-kind="total-actual">$0.00</td>
+          <td class="computed" data-kind="total-diff">$0.00</td>
+        </tr>
+      `;
+    }
+
+    function renderRows() {
+      const tbody = document.getElementById("rows");
+      tbody.innerHTML = rowsConfig.map((row) => {
+        if (row.type === "input") return createInputRow(row);
+        return createTotalRow(row);
+      }).join("");
+    }
+
+    function getInputs() {
+      return Array.from(document.querySelectorAll("input.money"));
+    }
+
+    function collectData() {
+      const data = {};
+      getInputs().forEach((input) => {
+        data[`${input.dataset.id}__${input.dataset.kind}`] = input.value;
+      });
+      return data;
+    }
+
+    function applyData(data) {
+      getInputs().forEach((input) => {
+        const key = `${input.dataset.id}__${input.dataset.kind}`;
+        if (Object.prototype.hasOwnProperty.call(data, key)) input.value = data[key];
+      });
+    }
+
+    function saveData() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(collectData()));
+    }
+
+    function loadData() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) return;
+        applyData(JSON.parse(raw));
+      } catch (error) {
+        console.warn("Unable to load saved budget data.", error);
+      }
+    }
+
+    function setAmountCell(selector, value) {
+      const cell = document.querySelector(selector);
+      if (!cell) return;
+      cell.textContent = asMoney(value);
+      cell.classList.toggle("negative", value < 0);
+    }
+
+    function recalc() {
+      const expenseRows = rowsConfig.filter((r) => r.type === "input" && r.id !== "spendable_income");
+
+      rowsConfig.forEach((row) => {
+        if (row.type !== "input") return;
+        const budget = parseNumber(document.querySelector(`[data-id="${row.id}"][data-kind="budget"]`).value);
+        const actual = parseNumber(document.querySelector(`[data-id="${row.id}"][data-kind="actual"]`).value);
+        setAmountCell(`[data-id="${row.id}"][data-kind="difference"]`, actual - budget);
+      });
+
+      let totalBudget = 0;
+      let totalActual = 0;
+      expenseRows.forEach((row) => {
+        totalBudget += parseNumber(document.querySelector(`[data-id="${row.id}"][data-kind="budget"]`).value);
+        totalActual += parseNumber(document.querySelector(`[data-id="${row.id}"][data-kind="actual"]`).value);
+      });
+
+      setAmountCell('[data-kind="total-budget"]', totalBudget);
+      setAmountCell('[data-kind="total-actual"]', totalActual);
+      setAmountCell('[data-kind="total-diff"]', totalActual - totalBudget);
+    }
+
+    function loadSharedDataFromQuery() {
+      const params = new URLSearchParams(window.location.search);
+      const dataParam = params.get("data");
+      if (!dataParam) return;
+      try {
+        const parsed = JSON.parse(decodeURIComponent(dataParam));
+        applyData(parsed);
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(parsed));
+      } catch (error) {
+        console.warn("Unable to load query-string worksheet data.", error);
+      }
+    }
+
+    function generatePrintHtml() {
+      let rowsHtml = "";
+      
+      rowsConfig.forEach((row) => {
+        if (row.type === "input") {
+          const budgetVal = document.querySelector(`[data-id="${row.id}"][data-kind="budget"]`).value;
+          const actualVal = document.querySelector(`[data-id="${row.id}"][data-kind="actual"]`).value;
+          
+          const budgetNum = parseNumber(budgetVal);
+          const actualNum = parseNumber(actualVal);
+          const diffNum = actualNum - budgetNum;
+          
+          const budgetText = budgetVal ? asMoney(budgetNum) : "$0.00";
+          const actualText = actualVal ? asMoney(actualNum) : "$0.00";
+          const diffText = asMoney(diffNum);
+          
+          rowsHtml += `
+            <tr>
+              <td class="category">${row.label}</td>
+              <td class="computed">${budgetText}</td>
+              <td class="computed">${actualText}</td>
+              <td class="computed ${diffNum < 0 ? 'negative' : ''}">${diffText}</td>
+            </tr>
+          `;
+        } else {
+          const totalBudget = document.querySelector('[data-kind="total-budget"]').textContent;
+          const totalActual = document.querySelector('[data-kind="total-actual"]').textContent;
+          const totalDiff = document.querySelector('[data-kind="total-diff"]').textContent;
+          const diffNum = parseNumber(totalDiff);
+          
+          rowsHtml += `
+            <tr class="total-row">
+              <td class="category">${row.label}</td>
+              <td class="computed">${totalBudget}</td>
+              <td class="computed">${totalActual}</td>
+              <td class="computed ${diffNum < 0 ? 'negative' : ''}">${totalDiff}</td>
+            </tr>
+          `;
+        }
+      });
+
+      return `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Basic Budget Worksheet</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+    :root {
+      --line: #cbd5e1;
+      --header-fill: #f1f5f9;
+      --text: #0f172a;
+      --muted: #64748b;
+      --negative: #e11d48;
+    }
+    body {
+      margin: 0;
+      padding: 40px 24px;
+      background: #ffffff;
+      color: var(--text);
+      font-family: 'Outfit', sans-serif;
+      font-size: 11pt;
+      line-height: 1.4;
+    }
+    .print-container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .sheet-header {
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 20px;
+    }
+    .sheet-title {
+      margin: 0;
+      font-size: 18pt;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .sheet-subtitle {
+      margin: 4px 0 0 0;
+      font-size: 11pt;
+      color: var(--muted);
+    }
+    .no-print {
+      margin-bottom: 20px;
+      display: flex;
+      gap: 10px;
+    }
+    button {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 8px 16px;
+      background: #0f766e;
+      color: #fff;
+      font: inherit;
+      font-size: 10pt;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    button:hover { background: #0d635c; }
+    button.secondary {
+      background: #fff;
+      color: var(--text);
+      border-color: #cbd5e1;
+    }
+    button.secondary:hover { background: #f8fafc; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      font-size: 11pt;
+    }
+    colgroup col:nth-child(1) { width: 50%; }
+    colgroup col:nth-child(2),
+    colgroup col:nth-child(3),
+    colgroup col:nth-child(4) { width: 16.666%; }
+    thead th {
+      background: var(--header-fill);
+      font-size: 9.5pt;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      text-align: left;
+      font-weight: 700;
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      color: var(--muted);
+    }
+    tbody td {
+      border: 1px solid var(--line);
+      padding: 9px 12px;
+      vertical-align: middle;
+    }
+    .category {
+      font-size: 11pt;
+      font-weight: 500;
+      color: #334155;
+      overflow-wrap: anywhere;
+    }
+    .computed {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+      font-size: 10.5pt;
+      font-weight: 600;
+      color: #334155;
+    }
+    .total-row td {
+      background: #f8fafc;
+      font-weight: 700;
+      border-top: 2px solid var(--line);
+      border-bottom: 2px double var(--line);
+    }
+    .total-row td.category {
+      color: #0f172a;
+    }
+    .negative { color: var(--negative); }
+    .sheet-footer {
+      border-top: 1px solid var(--line);
+      padding: 12px 0;
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 10pt;
+    }
+    @media print {
+      .no-print {
+        display: none !important;
+      }
+      body {
+        padding: 0;
+      }
+      thead th {
+        background-color: var(--header-fill) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .total-row td {
+        background-color: #f8fafc !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="print-container">
+    <div class="no-print">
+      <button type="button" onclick="window.print()">Print / Save as PDF</button>
+      <button type="button" class="secondary" onclick="window.close()">Close Preview</button>
+    </div>
+    <header class="sheet-header">
+      <h1 class="sheet-title">Step 5: Basic Budget Worksheet</h1>
+      <p class="sheet-subtitle">Enter budget and actual amounts. Differences and totals calculate automatically.</p>
+    </header>
+    <table>
+      <colgroup><col><col><col><col></colgroup>
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th style="text-align: right;">Budget Amount</th>
+          <th style="text-align: right;">Actual Amount</th>
+          <th style="text-align: right;">Difference</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${rowsHtml}
+      </tbody>
+    </table>
+    <footer class="sheet-footer">
+      Difference = Actual Amount - Budget Amount. Printed on ${new Date().toLocaleDateString()}.
+    </footer>
+  </div>
+  <script>
+    setTimeout(() => {
+      window.focus();
+      window.print();
+    }, 300);
+  <\/script>
+</body>
+</html>`;
+    }
+
+    function generatePrintChecklistHtml() {
+      let rowsHtml = "";
+      
+      Object.keys(checklistConfig).forEach(catKey => {
+        const cat = checklistConfig[catKey];
+        rowsHtml += `
+          <tr class="print-category-header">
+            <td colspan="2" style="font-weight: 700; background: #f1f5f9; padding: 8px 12px; font-size: 11pt; border: 1px solid #cbd5e1; text-transform: uppercase; color: #334155;">${cat.title}</td>
+          </tr>
+        `;
+        
+        cat.items.forEach(item => {
+          const selected = document.querySelector(`input[name="chk_${item.id}"]:checked`);
+          const val = selected ? selected.value : "na";
+          
+          let statusText = "N/A";
+          let statusStyle = "color: #64748b; font-weight: 600;";
+          if (val === "doing") {
+            statusText = "Already Doing";
+            statusStyle = "color: #10b981; font-weight: 700;";
+          } else if (val === "try") {
+            statusText = "Will Try";
+            statusStyle = "color: #f59e0b; font-weight: 700;";
+          }
+          
+          rowsHtml += `
+            <tr>
+              <td style="padding: 8px 12px; font-size: 10pt; border: 1px solid #cbd5e1; color: #334155; font-weight: 500;">${item.text}</td>
+              <td style="padding: 8px 12px; font-size: 10pt; border: 1px solid #cbd5e1; text-align: right; ${statusStyle}">${statusText}</td>
+            </tr>
+          `;
+        });
+      });
+
+      return `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Workshop 3: My Savings Action Plan</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+    body {
+      margin: 0;
+      padding: 40px 24px;
+      background: #ffffff;
+      color: #0f172a;
+      font-family: 'Outfit', sans-serif;
+      font-size: 11pt;
+      line-height: 1.4;
+    }
+    .print-container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .sheet-header {
+      padding-bottom: 16px;
+      border-bottom: 1px solid #cbd5e1;
+      margin-bottom: 20px;
+    }
+    .sheet-title {
+      margin: 0;
+      font-size: 18pt;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .sheet-subtitle {
+      margin: 4px 0 0 0;
+      font-size: 11pt;
+      color: #64748b;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    .no-print {
+      margin-bottom: 20px;
+      display: flex;
+      gap: 10px;
+    }
+    button {
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 8px 16px;
+      background: #0f766e;
+      color: #fff;
+      font: inherit;
+      font-size: 10pt;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    button:hover { background: #0d635c; }
+    button.secondary {
+      background: #fff;
+      color: #0f172a;
+      border-color: #cbd5e1;
+    }
+    button.secondary:hover { background: #f8fafc; }
+    @media print {
+      .no-print {
+        display: none !important;
+      }
+      body {
+        padding: 0;
+      }
+      .print-category-header td {
+        background-color: #f1f5f9 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="print-container">
+    <div class="no-print">
+      <button type="button" onclick="window.print()">Print / Save as PDF</button>
+      <button type="button" class="secondary" onclick="window.close()">Close Preview</button>
+    </div>
+    <header class="sheet-header">
+      <h1 class="sheet-title">Workshop 3: My Savings Action Plan</h1>
+      <p class="sheet-subtitle">Interactive list of money-saving actions I am already doing or plan to try.</p>
+    </header>
+    <table>
+      <colgroup>
+        <col style="width: 70%;">
+        <col style="width: 30%;">
+      </colgroup>
+      <tbody>
+        ${rowsHtml}
+      </tbody>
+    </table>
+    <footer style="border-top: 1px solid #cbd5e1; padding: 12px 0; margin-top: 20px; color: #64748b; font-size: 10pt;">
+      My Savings Action Plan. Printed on ${new Date().toLocaleDateString()}.
+    </footer>
+  </div>
+  <script>
+    setTimeout(() => {
+      window.focus();
+      window.print();
+    }, 300);
+  <\/script>
+</body>
+</html>`;
+    }
+
+    function clearWorksheet() {
+      if (confirm("Are you sure you want to clear all budget worksheet inputs?")) {
+        getInputs().forEach((input) => { input.value = ""; });
+        localStorage.removeItem(STORAGE_KEY);
+        recalc();
+      }
+    }
+
+    function printWorksheet() {
+      const printWindow = window.open("", "_blank");
+      if (printWindow) {
+        printWindow.document.write(generatePrintHtml());
+        printWindow.document.close();
+      } else {
+        window.print();
+      }
+    }
+
+    function clearChecklist() {
+      if (confirm("Are you sure you want to reset all checklist selections to N/A?")) {
+        Object.keys(checklistConfig).forEach(catKey => {
+          checklistConfig[catKey].items.forEach(item => {
+            const naRadio = document.getElementById(`chk_${item.id}_na`);
+            if (naRadio) naRadio.checked = true;
+          });
+        });
+        localStorage.removeItem(CHECKLIST_STORAGE_KEY);
+      }
+    }
+
+    function printChecklist() {
+      const printWindow = window.open("", "_blank");
+      if (printWindow) {
+        printWindow.document.write(generatePrintChecklistHtml());
+        printWindow.document.close();
+      } else {
+        window.print();
+      }
+    }
+
+    function updateHeaderForTab(tabId) {
+      const title = document.querySelector(".sheet-title");
+      const subtitle = document.querySelector(".sheet-subtitle");
+      const actions = document.querySelector(".sheet-actions");
+      
+      if (tabId === "worksheet-tab") {
+        title.textContent = "Step 5: Basic Budget Worksheet";
+        subtitle.textContent = "Enter budget and actual amounts. Differences and totals calculate automatically.";
+        actions.innerHTML = `
+          <button type="button" id="clear-btn">Clear Inputs</button>
+          <button type="button" class="primary" id="download-btn">Print / Save PDF</button>
+        `;
+        document.getElementById("clear-btn").addEventListener("click", clearWorksheet);
+        document.getElementById("download-btn").addEventListener("click", printWorksheet);
+      } else if (tabId === "checklist-tab") {
+        title.textContent = "Step 6: Money Saving Ideas Checklist";
+        subtitle.textContent = "Review these tips to save money. Select 'Already Doing', 'Will Try', or 'N/A' to build your plan.";
+        actions.innerHTML = `
+          <button type="button" id="clear-checklist-btn">Clear Selections</button>
+          <button type="button" class="primary" id="print-checklist-btn">Print Savings Plan</button>
+        `;
+        document.getElementById("clear-checklist-btn").addEventListener("click", clearChecklist);
+        document.getElementById("print-checklist-btn").addEventListener("click", printChecklist);
+      } else if (tabId === "resources-tab") {
+        title.textContent = "Step 7: Savings Resources Directory";
+        subtitle.textContent = "Explore federal, state-wide, and community resources to help save money.";
+        actions.innerHTML = "";
+      } else if (tabId === "ssi-tab") {
+        title.textContent = "Step 8: Social Security Benefits Guide";
+        subtitle.textContent = "Applying for SSI/SSDI benefits when an individual has a behavioral health diagnosis.";
+        actions.innerHTML = "";
+      }
+    }
+
+    function initTabs() {
+      const tabs = document.querySelectorAll(".tab-link");
+      tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+          tabs.forEach(t => {
+            t.classList.remove("active");
+            t.setAttribute("aria-selected", "false");
+          });
+          tab.classList.add("active");
+          tab.setAttribute("aria-selected", "true");
+          
+          const targetPanelId = tab.getAttribute("aria-controls");
+          const panels = document.querySelectorAll(".tab-panel");
+          panels.forEach(p => {
+            if (p.id === targetPanelId) {
+              p.style.display = "block";
+            } else {
+              p.style.display = "none";
+            }
+          });
+          
+          updateHeaderForTab(targetPanelId);
+        });
+      });
+      
+      updateHeaderForTab("worksheet-tab");
+    }
+
+    function renderChecklist() {
+      const container = document.getElementById("checklist-container");
+      let html = "";
+      
+      Object.keys(checklistConfig).forEach(catKey => {
+        const cat = checklistConfig[catKey];
+        
+        let rows = cat.items.map(item => `
+          <tr class="checklist-row">
+            <td class="checklist-idea">${item.text}</td>
+            <td class="checklist-options">
+              <div class="btn-group">
+                <input type="radio" name="chk_${item.id}" id="chk_${item.id}_na" value="na" checked>
+                <label for="chk_${item.id}_na">N/A</label>
+                <input type="radio" name="chk_${item.id}" id="chk_${item.id}_doing" value="doing">
+                <label for="chk_${item.id}_doing">Already Doing</label>
+                <input type="radio" name="chk_${item.id}" id="chk_${item.id}_try" value="try">
+                <label for="chk_${item.id}_try">Will Try</label>
+              </div>
+            </td>
+          </tr>
+        `).join("");
+        
+        html += `
+          <div class="checklist-section">
+            <h3 class="checklist-title">${cat.title}</h3>
+            <table class="checklist-table">
+              <tbody>
+                ${rows}
+              </tbody>
+            </table>
+          </div>
+        `;
+      });
+      
+      container.innerHTML = html;
+    }
+
+    function collectChecklistData() {
+      const data = {};
+      Object.keys(checklistConfig).forEach(catKey => {
+        checklistConfig[catKey].items.forEach(item => {
+          const selected = document.querySelector(`input[name="chk_${item.id}"]:checked`);
+          if (selected) {
+            data[item.id] = selected.value;
+          }
+        });
+      });
+      return data;
+    }
+
+    function applyChecklistData(data) {
+      if (!data) return;
+      Object.keys(data).forEach(itemId => {
+        const value = data[itemId];
+        const radio = document.querySelector(`input[name="chk_${itemId}"][value="${value}"]`);
+        if (radio) {
+          radio.checked = true;
+        }
+      });
+    }
+
+    function saveChecklistData() {
+      localStorage.setItem(CHECKLIST_STORAGE_KEY, JSON.stringify(collectChecklistData()));
+    }
+
+    function loadChecklistData() {
+      try {
+        const raw = localStorage.getItem(CHECKLIST_STORAGE_KEY);
+        if (!raw) return;
+        applyChecklistData(JSON.parse(raw));
+      } catch (error) {
+        console.warn("Unable to load saved checklist data.", error);
+      }
+    }
+
+    function attachChecklistEvents() {
+      Object.keys(checklistConfig).forEach(catKey => {
+        checklistConfig[catKey].items.forEach(item => {
+          const radios = document.querySelectorAll(`input[name="chk_${item.id}"]`);
+          radios.forEach(radio => {
+            radio.addEventListener("change", () => {
+              saveChecklistData();
+            });
+          });
+        });
+      });
+    }
+
+    function renderResources(filterText = "") {
+      const grid = document.getElementById("resources-grid");
+      const normalizedQuery = filterText.toLowerCase().trim();
+      
+      const filtered = resourcesData.filter(res => {
+        return (
+          res.title.toLowerCase().includes(normalizedQuery) ||
+          res.desc.toLowerCase().includes(normalizedQuery) ||
+          res.badge.toLowerCase().includes(normalizedQuery) ||
+          res.category.toLowerCase().includes(normalizedQuery)
+        );
+      });
+      
+      if (filtered.length === 0) {
+        grid.innerHTML = `<div class="no-resources-msg">No resources found matching "${filterText}". Try searching something else!</div>`;
+        return;
+      }
+      
+      grid.innerHTML = filtered.map(res => {
+        const linkHtml = res.url 
+          ? `<a href="${res.url}" target="_blank" class="resource-action" rel="noopener noreferrer">${res.linkText} ↗</a>`
+          : `<span class="resource-action-static">${res.linkText}</span>`;
+          
+        return `
+          <div class="resource-card" data-category="${res.category}">
+            <span class="resource-badge badge-${res.category}">${res.badge}</span>
+            <h3>${res.title}</h3>
+            <p class="resource-desc">${res.desc}</p>
+            ${linkHtml}
+          </div>
+        `;
+      }).join("");
+    }
+
+    function attachEvents() {
+      getInputs().forEach((input) => {
+        input.addEventListener("input", () => {
+          recalc();
+          saveData();
+        });
+      });
+    }
+
+    // Initialize Page Content & Data
+    renderRows();
+    loadData();
+    loadSharedDataFromQuery();
+    attachEvents();
+    recalc();
+
+    // Initialize Custom Features
+    initTabs();
+    renderChecklist();
+    loadChecklistData();
+    attachChecklistEvents();
+    renderResources();
+
+    document.getElementById("resource-search").addEventListener("input", (e) => {
+      renderResources(e.target.value);
+    });
+  </script>
+</body>
+</html>
