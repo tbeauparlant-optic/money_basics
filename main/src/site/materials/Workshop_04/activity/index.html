@@ -1,326 +1,448 @@
-  <!doctype html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Interactive Check Explainer</title>
-      <link rel="stylesheet" href="../../_assets/materials.css" />
-      <style>
-        :root {
-          --hotspot-size: 46px;
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Check Explainer</title>
+    <link rel="stylesheet" href="../../_assets/materials.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+      :root {
+        --hotspot-size: 42px;
+        --purple-primary: #981d99;
+        --purple-hover: #b525b6;
+        --purple-light: rgba(152, 29, 153, 0.08);
+        --gray-bg: #f8f9fa;
+        --gray-border: rgba(0, 0, 0, 0.12);
+        --text-main: #2D3748;
+      }
+
+      body {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 24px;
+        font-family: 'Inter', Arial, sans-serif;
+        color: var(--text-main);
+        background: #f7fafc;
+      }
+
+      .wrap {
+        display: grid;
+        gap: 20px;
+      }
+
+      .topbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .topbar h1 {
+        font-weight: 800;
+        font-size: 28px;
+        letter-spacing: -0.5px;
+      }
+
+      .topbar nav {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 10px 18px;
+        border-radius: 12px;
+        border: 1px solid var(--gray-border);
+        text-decoration: none;
+        background: white;
+        color: var(--text-main);
+        font-weight: 500;
+        transition: all 0.2s ease;
+      }
+
+      .btn:hover {
+        background: #edf2f7;
+        transform: translateY(-1px);
+      }
+
+      .card {
+        background: white;
+        border: 1px solid var(--gray-border);
+        border-radius: 16px;
+        padding: 16px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+      }
+
+      .hint {
+        margin: 0;
+        color: #718096;
+        font-size: 14px;
+      }
+
+      /* Split Explainer Container */
+      .explainer-container {
+        display: grid;
+        grid-template-columns: 7fr 5fr;
+        gap: 24px;
+        align-items: start;
+      }
+
+      @media (max-width: 868px) {
+        .explainer-container {
+          grid-template-columns: 1fr;
         }
+      }
 
-        body {
-          max-width: 1100px;
-          margin: 0 auto;
-          padding: 18px;
-        }
+      .stage-wrapper {
+        background: white;
+        border: 1px solid var(--gray-border);
+        border-radius: 16px;
+        padding: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+      }
 
-        .wrap {
-          display: grid;
-          gap: 14px;
-        }
+      .stage {
+        position: relative;
+        width: 100%;
+        border-radius: 12px;
+        overflow: hidden;
+        background: #fdfdfd;
+      }
 
-        .topbar {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 10px;
-          align-items: center;
-          justify-content: space-between;
-        }
+      .stage img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
 
-        .topbar nav {
-          display: flex;
-          gap: 10px;
-          flex-wrap: wrap;
-          align-items: center;
-        }
+      /* Hotspot Buttons */
+      .hotspot {
+        position: absolute;
+        width: var(--hotspot-size);
+        height: var(--hotspot-size);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        border: 3px solid white;
+        background: var(--purple-primary);
+        color: white;
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(152, 29, 153, 0.45);
+        transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.2s, box-shadow 0.2s;
+        z-index: 10;
+        user-select: none;
+      }
 
-        .btn {
-          display: inline-block;
-          padding: 10px 14px;
-          border-radius: 10px;
-          border: 1px solid rgba(0,0,0,0.25);
-          text-decoration: none;
-          background: white;
-          color: inherit;
-        }
+      .hotspot:focus {
+        outline: 3px solid rgba(152, 29, 153, 0.6);
+        outline-offset: 2px;
+      }
 
-        .btn:hover {
-          filter: brightness(0.98);
-        }
+      .hotspot:hover {
+        background: var(--purple-hover);
+        transform: translate(-50%, -50%) scale(1.15);
+        box-shadow: 0 6px 14px rgba(152, 29, 153, 0.65);
+      }
 
-        .card {
-          background: white;
-          border: 1px solid rgba(0,0,0,0.18);
-          border-radius: 14px;
-          padding: 14px;
-          box-shadow: 0 6px 24px rgba(0,0,0,0.06);
-        }
+      .hotspot.active {
+        background: white;
+        color: var(--purple-primary);
+        border-color: var(--purple-primary);
+        transform: translate(-50%, -50%) scale(1.15);
+        box-shadow: 0 0 0 4px rgba(152, 29, 153, 0.25);
+        z-index: 20;
+      }
 
-        .hint {
-          margin: 0;
-          opacity: 0.85;
-        }
+      .hotspot span {
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 1;
+      }
 
-        .stage {
-          position: relative;
-          width: 100%;
-          max-width: 1100px;
-          margin: 0 auto;
-          border-radius: 14px;
-          overflow: hidden;
-          border: 1px solid rgba(0,0,0,0.18);
-          background: #fff;
-        }
+      /* Details Panel on the Right */
+      .details-panel {
+        background: white;
+        border: 1px solid var(--gray-border);
+        border-radius: 16px;
+        padding: 24px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+        min-height: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: all 0.3s ease;
+      }
 
-        .stage img {
-          display: block;
-          width: 100%;
-          height: auto;
-        }
+      .panel-placeholder {
+        margin: auto;
+        text-align: center;
+        color: #a0aec0;
+      }
 
-        .hotspot {
-          position: absolute;
-          width: var(--hotspot-size);
-          height: var(--hotspot-size);
-          border-radius: 999px;
-          transform: translate(-50%, -50%);
-          border: 2px solid rgba(0,0,0,0.75);
-          background: rgba(255,255,255,0.90);
-          display: grid;
-          place-items: center;
-          cursor: pointer;
-          user-select: none;
-        }
+      .panel-placeholder h2 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #4a5568;
+      }
 
-        .hotspot:focus {
-          outline: 3px solid rgba(0, 95, 204, 0.9);
-          outline-offset: 2px;
-        }
+      .panel-placeholder p {
+        font-size: 14px;
+        line-height: 1.5;
+      }
 
-        .hotspot span {
-          font-weight: 800;
-          font-size: 16px;
-          line-height: 1;
-        }
+      .panel-content h2 {
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--purple-primary);
+        margin-top: 0;
+        margin-bottom: 18px;
+        border-bottom: 2px solid var(--purple-light);
+        padding-bottom: 10px;
+      }
 
-        /* Modal */
-        .modal-backdrop {
-          position: fixed;
-          inset: 0;
-          background: rgba(0,0,0,0.55);
-          display: none;
-          align-items: center;
-          justify-content: center;
-          padding: 18px;
-          z-index: 9999;
-        }
+      .panel-content ul {
+        margin: 0;
+        padding-left: 20px;
+        list-style-type: none;
+      }
 
-        .modal {
-          width: min(720px, 100%);
-          background: #fff;
-          border-radius: 16px;
-          border: 1px solid rgba(0,0,0,0.2);
-          box-shadow: 0 16px 60px rgba(0,0,0,0.25);
-          overflow: hidden;
-        }
+      .panel-content li {
+        position: relative;
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 12px;
+        color: #4a5568;
+      }
 
-        .modal header {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          gap: 12px;
-          padding: 14px 16px;
-          border-bottom: 1px solid rgba(0,0,0,0.12);
-        }
+      .panel-content li::before {
+        content: "•";
+        color: var(--purple-primary);
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+        position: absolute;
+        left: 0;
+        font-size: 20px;
+        line-height: 1;
+        top: -1px;
+      }
+    </style>
+  </head>
 
-        .modal header h2 {
-          margin: 0;
-          font-size: 18px;
-        }
-
-        .modal .body {
-          padding: 16px;
-        }
-
-        .modal .body p {
-          margin-top: 0;
-          margin-bottom: 0;
-          line-height: 1.5;
-        }
-
-        .close {
-          border: 1px solid rgba(0,0,0,0.25);
-          background: white;
-          border-radius: 10px;
-          padding: 8px 10px;
-          cursor: pointer;
-        }
-      </style>
-    </head>
-
-    <body>
-      <div class="wrap">
-        <div class="topbar">
-          <div>
-            <h1 style="margin:0;">Interactive Check Explainer</h1>
-            <p class="hint" style="margin-top:6px;">
-              Click a number on the check to learn what it means.
-            </p>
-          </div>
-
-          <nav>
-            <a class="btn" href="../../index.html">Home</a>
-            <a class="btn" href="../index.html">Back to Workshop 4</a>
-          </nav>
+  <body>
+    <div class="wrap">
+      <div class="topbar">
+        <div>
+          <h1 style="margin: 0; color: #333;">Interactive Check Explainer</h1>
+          <p class="hint" style="margin-top: 6px">Click a number on the check to learn what it means.</p>
         </div>
-
-        <div class="card">
-          <p class="hint">
-            Tip: You can also use the <strong>Tab</strong> key to move through numbers, then press <strong>Enter</strong>.
-          </p>
-        </div>
-
-        <div class="stage" id="stage">
-          <img
-            src="../../_assets/images/check-how-to-read.png"
-            alt="A sample check with numbered callouts."
-          />
-          <!-- Hotspots injected by JS -->
-        </div>
+        <nav>
+          <a class="btn" href="../../index.html">Home</a>
+          <a class="btn" href="../index.html">Back to Workshop 4</a>
+        </nav>
       </div>
 
-      <!-- Modal -->
-      <div class="modal-backdrop" id="backdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-        <div class="modal">
-          <header>
-            <h2 id="modalTitle">Item</h2>
-            <button class="close" id="closeBtn" type="button" aria-label="Close">Close</button>
-          </header>
-          <div class="body">
-            <p id="modalText"></p>
+      <div class="card">
+        <p class="hint">
+          Tip: You can also use the <strong>Tab</strong> key to move through numbers, then press
+          <strong>Enter</strong>.
+        </p>
+      </div>
+
+      <div class="explainer-container">
+        <!-- Left Side: Check with Hotspots -->
+        <div class="stage-wrapper">
+          <div class="stage" id="stage">
+            <img id="checkImage" src="../../_assets/images/check-how-to-read.png" alt="A sample check with numbered callouts." />
+          </div>
+        </div>
+
+        <!-- Right Side: Details Panel -->
+        <div class="details-panel" id="detailsPanel">
+          <div class="panel-placeholder" id="panelPlaceholder">
+            <h2>Select an item</h2>
+            <p>Click any numbered hotspot on the check to view its explanation here.</p>
+          </div>
+          <div class="panel-content" id="panelContent" style="display: none;">
+            <h2 id="panelTitle"></h2>
+            <ul id="panelBullets"></ul>
           </div>
         </div>
       </div>
+    </div>
 
-      <script>
-        /**
-        * Hotspot positions are based on the cropped check image produced from pg11_12.pdf.
-        * Positions are percentages of the image dimensions.
-        */
-        const HOTSPOTS = [
-          { num: 1, xPct: 29.6974, yPct: 21.168 },
-          { num: 2, xPct: 70.8976, yPct: 25.8188 },
-          { num: 3, xPct: 80.8976, yPct: 16.2255 },
-          { num: 4, xPct: 18.4974, yPct: 34.4319 },
-          { num: 5, xPct: 86.8977, yPct: 41.8378 },
-          { num: 6, xPct: 20.0974, yPct: 47.8663 },
-          { num: 7, xPct: 16.9573, yPct: 56.9072 },
-          { num: 8, xPct: 80.0976, yPct: 57.3604 },
-          { num: 9, xPct: 28.0974, yPct: 77.1646 },
-          { num: 10, xPct: 46.0975, yPct: 77.9025 },
-          { num: 11, xPct: 86.4977, yPct: 34.3397 },
-          { num: 12, xPct: 52.0975, yPct: 34.3888 },
-        ];
+    <script>
+      /**
+      * Hotspot positions are based on the H5P check image coordinates.
+      */
+      const HOTSPOTS = [
+        { num: 1, xPct: 29.6974, yPct: 21.168 },
+        { num: 2, xPct: 70.8976, yPct: 25.8188 },
+        { num: 3, xPct: 80.8976, yPct: 16.2255 },
+        { num: 4, xPct: 18.4974, yPct: 34.4319 },
+        { num: 5, xPct: 86.8977, yPct: 41.8378 },
+        { num: 6, xPct: 20.0974, yPct: 47.8663 },
+        { num: 7, xPct: 16.9573, yPct: 56.9072 },
+        { num: 8, xPct: 80.0976, yPct: 57.3604 },
+        { num: 9, xPct: 28.0974, yPct: 77.1646 },
+        { num: 10, xPct: 46.0975, yPct: 77.9025 },
+        { num: 11, xPct: 86.4977, yPct: 34.3397 },
+        { num: 12, xPct: 52.0975, yPct: 34.3888 }
+      ];
 
-        /**
-        * Explanations (you can edit text freely later without touching coordinates).
-        * Kept simple + practical; no repo restructuring required.
-        */
-        const EXPLAIN = {
-          1: {
-            title: "1. Address Field",
-            text: "Account holder's name, address, phone number, and email address can appear in this section of the check, called the Address Field."
-          },
-          2: {
-            title: "2. Bank Information",
-            text: "The bank name, city and state of the processing facility, or the city and state of the account holder's branch; the bank's phone number; the bank's website address and/or the bank's email address may appear in this section. This section can also be located above field 7 (the memo field)."
-          },
-          3: {
-            title: "3. Check Number",
-            text: "The check number appears at the top right, shown here as 101."
-          },
-          4: {
-            title: "4. Pay to the Order of",
-            text: "Pay to the order of. This section should have the name of the person or company that is being paid (the name of the party receiving the check)."
-          },
-          5: {
-            title: "5. Amount (Numbers)",
-            text: "The amount written numerically. If this check were for one hundred dollars, within the box labeled \"5\" in the example above, it should read, \"$100.00.\""
-          },
-          6: {
-            title: "6. Amount (Words)",
-            text: "The amount written in words. If this check were for $100, in the blank section labeled \"6,\" you would write, \"One Hundred and 00/100.\" Many people will then draw a line to the preprinted \"Dollars\" to discourage alteration. If the check were for $101.59, it would be written, \"One Hundred One and 59/100.\""
-          },
-          7: {
-            title: "7. Memo / For",
-            text: "The \"For\" or \"Memo\" section can be left blank, or you can enter any information about the payment. Some people note an account number or invoice number that is being paid with the check, others may just write, \"For Birthday\" or another note to remind them what the check was for. This field is not read by the bank and does not change how the check is processed."
-          },
-          8: {
-            title: "8. Payer Signature",
-            text: "The signature line. This is where the account holder would sign the check. On a check draft, the signature is not required, although it is common to have a signature disclaimer in this section."
-          },
-          9: {
-            title: "9. Routing Number",
-            text: "This MICR field is the routing number. This is the 9 digit code that routes the check to the issuing bank. The routing number should match the bank name and the fraction code. This number is needed when providing direct deposit information to an employer."
-          },
-          10: {
-            title: "10. Account Number",
-            text: "This is an MICR field that lists the account holder's account number at the bank. This number is also needed when providing direct deposit information to an employer."
-          },
-          11: {
-            title: "11. Fraction Code",
-            text: "Fraction Code. This field is the fraction that denotes the routing for the check. The fraction code is another way to write the 9-digit routing number. If the MICR line on the check is mutilated, the fraction code will be used in its place."
-          },
-          12: {
-            title: "12. Date Field",
-            text: "The date field. Fill this in with the date the check is created"
+      const EXPLAIN = {
+        1: {
+          title: "1. Address Field",
+          bullets: [
+            "Contains the account holder's name and address.",
+            "May also include phone number and email address.",
+            "Located in the top-left corner of the check."
+          ]
+        },
+        2: {
+          title: "2. Bank Information",
+          bullets: [
+            "Lists the bank name, city, state, or phone number.",
+            "May include the bank's website and branch information.",
+            "Can also be located above the memo field."
+          ]
+        },
+        3: {
+          title: "3. Check Number",
+          bullets: [
+            "A unique identification number for this specific check.",
+            "Used for tracking and security.",
+            "Appears at the top right (shown here as 101)."
+          ]
+        },
+        4: {
+          title: "4. Pay to the Order of",
+          bullets: [
+            "Specifies the person or company receiving the payment.",
+            "Only the named recipient can cash or deposit the check."
+          ]
+        },
+        5: {
+          title: "5. Amount (Numbers)",
+          bullets: [
+            "The check amount written numerically in figures.",
+            "Example: '$100.00' is written in the designated box."
+          ]
+        },
+        6: {
+          title: "6. Amount (Words)",
+          bullets: [
+            "The check amount written fully in words.",
+            "Example: 'One Hundred and 00/100'.",
+            "Banks use the written words to confirm the correct value if there is a mismatch with numerical figures.",
+            "Often a line is drawn to the word 'Dollars' to prevent unauthorized changes."
+          ]
+        },
+        7: {
+          title: "7. Memo / For",
+          bullets: [
+            "An optional line to note the purpose of the payment.",
+            "Useful for reference numbers (e.g., account or invoice details).",
+            "Not used or read by the bank for processing."
+          ]
+        },
+        8: {
+          title: "8. Payer Signature",
+          bullets: [
+            "The signature of the account holder authorizing the transaction.",
+            "A check is invalid and cannot be processed without a signature."
+          ]
+        },
+        9: {
+          title: "9. Routing Number",
+          bullets: [
+            "A 9-digit code identifying the bank that issued the check.",
+            "Found on the bottom-left inside the machine-readable MICR line.",
+            "Used for setting up direct deposit and electronic payments."
+          ]
+        },
+        10: {
+          title: "10. Account Number",
+          bullets: [
+            "Identifies the specific checking account the money is drawn from.",
+            "Found in the middle of the MICR line at the bottom."
+          ]
+        },
+        11: {
+          title: "11. Fraction Code",
+          bullets: [
+            "An alternative representation of the routing and bank code.",
+            "Printed as a fraction in the upper right.",
+            "Used as a backup if the bottom MICR line is unreadable."
+          ]
+        },
+        12: {
+          title: "12. Date Field",
+          bullets: [
+            "The date (month/day/year) the check is written and becomes valid."
+          ]
+        }
+      };
+
+      const stage = document.getElementById("stage");
+      const panelPlaceholder = document.getElementById("panelPlaceholder");
+      const panelContent = document.getElementById("panelContent");
+      const panelTitle = document.getElementById("panelTitle");
+      const panelBullets = document.getElementById("panelBullets");
+
+      function showDetails(num) {
+        const item = EXPLAIN[num];
+        if (!item) return;
+
+        // Toggle active class on hotspots
+        document.querySelectorAll(".hotspot").forEach((btn) => {
+          const btnNum = parseInt(btn.getAttribute("data-num"), 10);
+          if (btnNum === num) {
+            btn.classList.add("active");
+          } else {
+            btn.classList.remove("active");
           }
-        };
-
-        const stage = document.getElementById("stage");
-        const backdrop = document.getElementById("backdrop");
-        const modalTitle = document.getElementById("modalTitle");
-        const modalText = document.getElementById("modalText");
-        const closeBtn = document.getElementById("closeBtn");
-
-        function openModal(n) {
-          const info = EXPLAIN[n] || { title: `Item ${n}`, text: "" };
-          modalTitle.textContent = info.title;
-          modalText.textContent = info.text;
-          backdrop.style.display = "flex";
-          closeBtn.focus();
-        }
-
-        function closeModal() {
-          backdrop.style.display = "none";
-        }
-
-        function buildHotspots() {
-          HOTSPOTS.forEach(h => {
-            const btn = document.createElement("button");
-            btn.type = "button";
-            btn.className = "hotspot";
-            btn.style.left = `${h.xPct}%`;
-            btn.style.top = `${h.yPct}%`;
-            btn.setAttribute("aria-label", `Open explanation for number ${h.num}`);
-            btn.innerHTML = `<span>${h.num}</span>`;
-            btn.addEventListener("click", () => openModal(h.num));
-            stage.appendChild(btn);
-          });
-        }
-
-        // Close interactions
-        closeBtn.addEventListener("click", closeModal);
-        backdrop.addEventListener("click", (e) => {
-          if (e.target === backdrop) closeModal();
-        });
-        window.addEventListener("keydown", (e) => {
-          if (e.key === "Escape" && backdrop.style.display === "flex") closeModal();
         });
 
-        buildHotspots();
-      </script>
-    </body>
-  </html>
+        // Populate panel content
+        panelTitle.textContent = item.title;
+        panelBullets.innerHTML = "";
+
+        item.bullets.forEach((bulletText) => {
+          const li = document.createElement("li");
+          li.textContent = bulletText;
+          panelBullets.appendChild(li);
+        });
+
+        // Hide placeholder and show content
+        panelPlaceholder.style.display = "none";
+        panelContent.style.display = "block";
+      }
+
+      function buildHotspots() {
+        HOTSPOTS.forEach((h) => {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "hotspot";
+          btn.style.left = `${h.xPct}%`;
+          btn.style.top = `${h.yPct}%`;
+          btn.setAttribute("data-num", h.num);
+          btn.setAttribute("aria-label", `Show explanation for number ${h.num}`);
+          btn.innerHTML = `<span>${h.num}</span>`;
+          btn.addEventListener("click", () => showDetails(h.num));
+          stage.appendChild(btn);
+        });
+      }
+
+      buildHotspots();
+    </script>
+  </body>
+</html>

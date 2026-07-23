@@ -7,84 +7,127 @@
       "xPct": 29.6974,
       "yPct": 21.168,
       "title": "1. Address Field",
-      "text": "Account holder's name, address, phone number, and email address can appear in this section of the check, called the Address Field."
+      "bullets": [
+        "Contains the account holder's name and address.",
+        "May also include phone number and email address.",
+        "Located in the top-left corner of the check."
+      ]
     },
     {
       "num": 2,
       "xPct": 70.8976,
       "yPct": 25.8188,
       "title": "2. Bank Information",
-      "text": "The bank name, city and state of the processing facility, or the city and state of the account holder's branch; the bank's phone number; the bank's website address and/or the bank's email address may appear in this section. This section can also be located above field 7 (the memo field)."
+      "bullets": [
+        "Lists the bank name, city, state, or phone number.",
+        "May include the bank's website and branch information.",
+        "Can also be located above the memo field."
+      ]
     },
     {
       "num": 3,
       "xPct": 80.8976,
       "yPct": 16.2255,
       "title": "3. Check Number",
-      "text": "The check number appears at the top right, shown here as 101."
+      "bullets": [
+        "A unique identification number for this specific check.",
+        "Used for tracking and security.",
+        "Appears at the top right (shown here as 101)."
+      ]
     },
     {
       "num": 4,
       "xPct": 18.4974,
       "yPct": 34.4319,
       "title": "4. Pay to the Order of",
-      "text": "Pay to the order of. This section should have the name of the person or company that is being paid (the name of the party receiving the check)."
+      "bullets": [
+        "Specifies the person or company receiving the payment.",
+        "Only the named recipient can cash or deposit the check."
+      ]
     },
     {
       "num": 5,
       "xPct": 86.8977,
       "yPct": 41.8378,
       "title": "5. Amount (Numbers)",
-      "text": "The amount written numerically. If this check were for one hundred dollars, within the box labeled \"5\" in the example above, it should read, \"$100.00.\""
+      "bullets": [
+        "The check amount written numerically in figures.",
+        "Example: '$100.00' is written in the designated box."
+      ]
     },
     {
       "num": 6,
       "xPct": 20.0974,
       "yPct": 47.8663,
       "title": "6. Amount (Words)",
-      "text": "The amount written in words. If this check were for $100, in the blank section labeled \"6,\" you would write, \"One Hundred and 00/100.\" Many people will then draw a line to the preprinted \"Dollars\" to discourage alteration. If the check were for $101.59, it would be written, \"One Hundred One and 59/100.\""
+      "bullets": [
+        "The check amount written fully in words.",
+        "Example: 'One Hundred and 00/100'.",
+        "Banks use the written words to confirm the correct value if there is a mismatch with numerical figures.",
+        "Often a line is drawn to the word 'Dollars' to prevent unauthorized changes."
+      ]
     },
     {
       "num": 7,
       "xPct": 16.9573,
       "yPct": 56.9072,
       "title": "7. Memo / For",
-      "text": "The \"For\" or \"Memo\" section can be left blank, or you can enter any information about the payment. Some people note an account number or invoice number that is being paid with the check, others may just write, \"For Birthday\" or another note to remind them what the check was for. This field is not read by the bank and does not change how the check is processed."
+      "bullets": [
+        "An optional line to note the purpose of the payment.",
+        "Useful for reference numbers (e.g., account or invoice details).",
+        "Not used or read by the bank for processing."
+      ]
     },
     {
       "num": 8,
       "xPct": 80.0976,
       "yPct": 57.3604,
       "title": "8. Payer Signature",
-      "text": "The signature line. This is where the account holder would sign the check. On a check draft, the signature is not required, although it is common to have a signature disclaimer in this section."
+      "bullets": [
+        "The signature of the account holder authorizing the transaction.",
+        "A check is invalid and cannot be processed without a signature."
+      ]
     },
     {
       "num": 9,
       "xPct": 28.0974,
       "yPct": 77.1646,
       "title": "9. Routing Number",
-      "text": "This MICR field is the routing number. This is the 9 digit code that routes the check to the issuing bank. The routing number should match the bank name and the fraction code. This number is needed when providing direct deposit information to an employer."
+      "bullets": [
+        "A 9-digit code identifying the bank that issued the check.",
+        "Found on the bottom-left inside the machine-readable MICR line.",
+        "Used for setting up direct deposit and electronic payments."
+      ]
     },
     {
       "num": 10,
       "xPct": 46.0975,
       "yPct": 77.9025,
       "title": "10. Account Number",
-      "text": "This is an MICR field that lists the account holder's account number at the bank. This number is also needed when providing direct deposit information to an employer."
+      "bullets": [
+        "Identifies the specific checking account the money is drawn from.",
+        "Found in the middle of the MICR line at the bottom."
+      ]
     },
     {
       "num": 11,
       "xPct": 86.4977,
       "yPct": 34.3397,
       "title": "11. Fraction Code",
-      "text": "Fraction Code. This field is the fraction that denotes the routing for the check. The fraction code is another way to write the 9-digit routing number. If the MICR line on the check is mutilated, the fraction code will be used in its place."
+      "bullets": [
+        "An alternative representation of the routing and bank code.",
+        "Printed as a fraction in the upper right.",
+        "Used as a backup if the bottom MICR line is unreadable."
+      ]
     },
     {
       "num": 12,
       "xPct": 52.0975,
       "yPct": 34.3888,
       "title": "12. Date Field",
-      "text": "The date field. Fill this in with the date the check is created"
+      "bullets": [
+        "The date (month/day/year) the check is written and becomes valid."
+      ]
     }
   ]
 }

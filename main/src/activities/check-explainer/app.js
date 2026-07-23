@@ -1,24 +1,45 @@
 const stage = document.getElementById("stage");
 const checkImage = document.getElementById("checkImage");
-const backdrop = document.getElementById("backdrop");
-const modalTitle = document.getElementById("modalTitle");
-const modalText = document.getElementById("modalText");
-const closeBtn = document.getElementById("closeBtn");
+const panelPlaceholder = document.getElementById("panelPlaceholder");
+const panelContent = document.getElementById("panelContent");
+const panelTitle = document.getElementById("panelTitle");
+const panelBullets = document.getElementById("panelBullets");
 
-function openModal(item) {
-  modalTitle.textContent = item.title || `Item ${item.num}`;
-  modalText.textContent = item.text || "";
-  backdrop.style.display = "flex";
-  closeBtn.focus();
-}
+let hotspotsData = [];
 
-function closeModal() {
-  backdrop.style.display = "none";
+function showDetails(num) {
+  const item = hotspotsData.find((h) => h.num === num);
+  if (!item) return;
+
+  // Toggle active class on hotspots
+  document.querySelectorAll(".hotspot").forEach((btn) => {
+    const btnNum = parseInt(btn.getAttribute("data-num"), 10);
+    if (btnNum === num) {
+      btn.classList.add("active");
+    } else {
+      btn.classList.remove("active");
+    }
+  });
+
+  // Populate panel content
+  panelTitle.textContent = item.title;
+  panelBullets.innerHTML = "";
+
+  item.bullets.forEach((bulletText) => {
+    const li = document.createElement("li");
+    li.textContent = bulletText;
+    panelBullets.appendChild(li);
+  });
+
+  // Hide placeholder and show content
+  panelPlaceholder.style.display = "none";
+  panelContent.style.display = "block";
 }
 
 function buildHotspots(data) {
   checkImage.src = data.image;
   checkImage.alt = data.imageAlt;
+  hotspotsData = data.hotspots;
 
   data.hotspots.forEach((h) => {
     const btn = document.createElement("button");
@@ -26,9 +47,10 @@ function buildHotspots(data) {
     btn.className = "hotspot";
     btn.style.left = `${h.xPct}%`;
     btn.style.top = `${h.yPct}%`;
-    btn.setAttribute("aria-label", `Open explanation for number ${h.num}`);
+    btn.setAttribute("data-num", h.num);
+    btn.setAttribute("aria-label", `Show explanation for number ${h.num}`);
     btn.innerHTML = `<span>${h.num}</span>`;
-    btn.addEventListener("click", () => openModal(h));
+    btn.addEventListener("click", () => showDetails(h.num));
     stage.appendChild(btn);
   });
 }
@@ -38,13 +60,5 @@ async function init() {
   const data = await res.json();
   buildHotspots(data);
 }
-
-closeBtn.addEventListener("click", closeModal);
-backdrop.addEventListener("click", (e) => {
-  if (e.target === backdrop) closeModal();
-});
-window.addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && backdrop.style.display === "flex") closeModal();
-});
 
 init();

@@ -10,7 +10,7 @@
     <div class="wrap">
       <div class="topbar">
         <div>
-          <h1 style="margin: 0">Interactive Check Explainer</h1>
+          <h1 style="margin: 0; color: #333;">Interactive Check Explainer</h1>
           <p class="hint" style="margin-top: 6px">Click a number on the check to learn what it means.</p>
         </div>
         <nav>
@@ -26,19 +26,24 @@
         </p>
       </div>
 
-      <div class="stage" id="stage">
-        <img id="checkImage" src="" alt="" />
-      </div>
-    </div>
+      <div class="explainer-container">
+        <!-- Left Side: Check with Hotspots -->
+        <div class="stage-wrapper">
+          <div class="stage" id="stage">
+            <img id="checkImage" src="" alt="" />
+          </div>
+        </div>
 
-    <div class="modal-backdrop" id="backdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <div class="modal">
-        <header>
-          <h2 id="modalTitle">Item</h2>
-          <button class="close" id="closeBtn" type="button" aria-label="Close">Close</button>
-        </header>
-        <div class="body">
-          <p id="modalText"></p>
+        <!-- Right Side: Details Panel -->
+        <div class="details-panel" id="detailsPanel">
+          <div class="panel-placeholder" id="panelPlaceholder">
+            <h2>Select an item</h2>
+            <p>Click any numbered hotspot on the check to view its explanation here.</p>
+          </div>
+          <div class="panel-content" id="panelContent" style="display: none;">
+            <h2 id="panelTitle"></h2>
+            <ul id="panelBullets"></ul>
+          </div>
         </div>
       </div>
     </div>
