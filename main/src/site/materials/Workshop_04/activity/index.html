@@ -9,7 +9,7 @@
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
       :root {
-        --hotspot-size: 42px;
+        --hotspot-size: 12px;
         --purple-primary: #981d99;
         --purple-hover: #b525b6;
         --purple-light: rgba(152, 29, 153, 0.08);
@@ -127,7 +127,7 @@
         height: var(--hotspot-size);
         border-radius: 50%;
         transform: translate(-50%, -50%);
-        border: 3px solid white;
+        border: 2px solid white;
         background: var(--purple-primary);
         color: white;
         display: grid;
@@ -161,7 +161,7 @@
 
       .hotspot span {
         font-weight: 800;
-        font-size: 16px;
+        font-size: 9px;
         line-height: 1;
       }
 
@@ -436,7 +436,7 @@
           btn.style.top = `${h.yPct}%`;
           btn.setAttribute("data-num", h.num);
           btn.setAttribute("aria-label", `Show explanation for number ${h.num}`);
-          btn.innerHTML = `<span>${h.num}</span>`;
+          btn.innerHTML = `<span>+</span>`;
           btn.addEventListener("click", () => showDetails(h.num));
           stage.appendChild(btn);
         });

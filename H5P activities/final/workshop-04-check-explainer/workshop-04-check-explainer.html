@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Check Explainer</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="topbar">
+        <div>
+          <h1 style="margin: 0; color: #333;">Interactive Check Explainer</h1>
+          <p class="hint" style="margin-top: 6px">Click a number on the check to learn what it means.</p>
+        </div>
+        <nav>
+          <a class="btn" href="#">Home</a>
+          <a class="btn" href="#">Back to Workshop 4</a>
+        </nav>
+      </div>
+
+      <div class="card">
+        <p class="hint">
+          Tip: You can also use the <strong>Tab</strong> key to move through numbers, then press
+          <strong>Enter</strong>.
+        </p>
+      </div>
+
+      <div class="explainer-container">
+        <!-- Left Side: Check with Hotspots -->
+        <div class="stage-wrapper">
+          <div class="stage" id="stage">
+            <img id="checkImage" src="" alt="" />
+          </div>
+        </div>
+
+        <!-- Right Side: Details Panel -->
+        <div class="details-panel" id="detailsPanel">
+          <div class="panel-placeholder" id="panelPlaceholder">
+            <h2>Select an item</h2>
+            <p>Click any numbered hotspot on the check to view its explanation here.</p>
+          </div>
+          <div class="panel-content" id="panelContent" style="display: none;">
+            <h2 id="panelTitle"></h2>
+            <ul id="panelBullets"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
