@@ -25,11 +25,18 @@
         font-family: 'Inter', Arial, sans-serif;
         color: var(--text-main);
         background: #f7fafc;
+        height: 100vh;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
       }
 
       .wrap {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         gap: 20px;
+        flex: 1;
+        min-height: 0;
       }
 
       .topbar {
@@ -89,9 +96,8 @@
         flex-direction: column;
         gap: 16px;
         width: 100%;
-        aspect-ratio: 1 / 1;
-        max-width: 550px;
-        margin: 0 auto;
+        flex: 1;
+        min-height: 0;
         box-sizing: border-box;
       }
 

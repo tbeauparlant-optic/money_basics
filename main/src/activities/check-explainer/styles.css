@@ -81,9 +81,7 @@ body {
   flex-direction: column;
   gap: 16px;
   width: 100%;
-  aspect-ratio: 1 / 1;
-  max-width: 550px;
-  margin: 0 auto;
+  height: 100%;
   box-sizing: border-box;
 }
 
