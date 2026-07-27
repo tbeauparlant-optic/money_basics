@@ -1,0 +1,1157 @@
+<!-- "metadata": {"title":"Workshop 5: Categorizing Money Conversations"} -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workshop 5: Categorizing Money Conversations</title>
+    <link rel="stylesheet" href="../../_assets/materials.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+      :root {
+        --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+        
+        /* Premium Color Palette */
+        --bg-gradient: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        --card-bg: rgba(255, 255, 255, 0.95);
+        --text-primary: #1e293b;
+        --text-secondary: #475569;
+        --text-muted: #64748b;
+        --border-color: #cbd5e1;
+        --accent-color: #0b6b7c;
+        --accent-hover: #084b57;
+        
+        /* Category-specific accent colors */
+        --color-simple: #10b981;
+        --color-simple-light: #ecfdf5;
+        --color-simple-border: #a7f3d0;
+        
+        --color-dry: #3b82f6;
+        --color-dry-light: #eff6ff;
+        --color-dry-border: #bfdbfe;
+        
+        --color-complex: #8b5cf6;
+        --color-complex-light: #f5f3ff;
+        --color-complex-border: #ddd6fe;
+        
+        --color-hot: #f43f5e;
+        --color-hot-light: #fff1f2;
+        --color-hot-border: #fecdd3;
+        
+        /* Shadows & Borders */
+        --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+        --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.05);
+        --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+        --radius-sm: 8px;
+        --radius-md: 12px;
+        --radius-lg: 16px;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: var(--font-main);
+        background: var(--bg-gradient);
+        color: var(--text-primary);
+        min-height: 100vh;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      /* Header Panel */
+      header {
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-lg);
+        padding: 24px;
+        box-shadow: var(--shadow-md);
+        position: relative;
+        overflow: hidden;
+      }
+
+      header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(90deg, var(--color-simple), var(--color-dry), var(--color-complex), var(--color-hot));
+      }
+
+      h1 {
+        font-size: 28px;
+        font-weight: 800;
+        color: var(--text-primary);
+        letter-spacing: -0.5px;
+        margin-bottom: 8px;
+      }
+
+      .instruction {
+        font-size: 15px;
+        color: var(--text-secondary);
+        line-height: 1.6;
+      }
+
+      .instruction strong {
+        color: var(--accent-color);
+      }
+
+      /* Main Workflow Workspace */
+      .workspace {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      /* Board Grid representing the 4 Category Columns */
+      .board {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+      }
+
+      .column {
+        background: var(--card-bg);
+        border: 2px dashed var(--border-color);
+        border-radius: var(--radius-lg);
+        padding: 20px 16px;
+        min-height: 280px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        transition: all 0.25s ease;
+        box-shadow: var(--shadow-sm);
+        position: relative;
+      }
+
+      .column.drag-over {
+        border-color: var(--accent-color);
+        background: rgba(11, 107, 124, 0.04);
+        transform: translateY(-2px);
+      }
+
+      /* Style categories individually */
+      .column[data-category="simple"] {
+        border-color: var(--color-simple-border);
+      }
+      .column[data-category="simple"].active-drop {
+        background: var(--color-simple-light);
+      }
+      .column[data-category="dry"] {
+        border-color: var(--color-dry-border);
+      }
+      .column[data-category="dry"].active-drop {
+        background: var(--color-dry-light);
+      }
+      .column[data-category="complex"] {
+        border-color: var(--color-complex-border);
+      }
+      .column[data-category="complex"].active-drop {
+        background: var(--color-complex-light);
+      }
+      .column[data-category="hot"] {
+        border-color: var(--color-hot-border);
+      }
+      .column[data-category="hot"].active-drop {
+        background: var(--color-hot-light);
+      }
+
+      .column-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 12px;
+        border-bottom: 2px solid #f1f5f9;
+        margin-bottom: 4px;
+      }
+
+      .column-title {
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .column[data-category="simple"] .column-title { color: #047857; }
+      .column[data-category="dry"] .column-title { color: #1d4ed8; }
+      .column[data-category="complex"] .column-title { color: #6d28d9; }
+      .column[data-category="hot"] .column-title { color: #be123c; }
+
+      .column-badge {
+        font-size: 12px;
+        font-weight: 600;
+        padding: 2px 8px;
+        border-radius: 9999px;
+        background: #f1f5f9;
+        color: var(--text-secondary);
+      }
+
+      .drop-zone-placeholder {
+        margin: auto;
+        font-size: 13px;
+        color: var(--text-muted);
+        text-align: center;
+        pointer-events: none;
+        user-select: none;
+        padding: 40px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .drop-zone-placeholder svg {
+        width: 32px;
+        height: 32px;
+        stroke: var(--text-muted);
+        opacity: 0.5;
+      }
+
+      .column-items {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex-grow: 1;
+        min-height: 180px;
+      }
+
+      /* Item Bank */
+      .item-bank-container {
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-lg);
+        padding: 24px;
+        box-shadow: var(--shadow-md);
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .item-bank-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .item-bank-title {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--text-primary);
+      }
+
+      .item-bank {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 12px;
+        min-height: 100px;
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: var(--radius-md);
+        padding: 16px;
+      }
+
+      /* Draggable Item Card */
+      .item-card {
+        background: white;
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-md);
+        padding: 14px;
+        cursor: grab;
+        box-shadow: var(--shadow-sm);
+        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        user-select: none;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .item-card:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
+        border-color: var(--text-muted);
+      }
+
+      .item-card:active {
+        cursor: grabbing;
+      }
+
+      .item-card.dragging {
+        opacity: 0.4;
+        transform: scale(0.95);
+        box-shadow: none;
+      }
+
+      .item-card.selected {
+        border: 2px solid var(--accent-color);
+        background-color: rgba(11, 107, 124, 0.04);
+        box-shadow: 0 0 0 4px rgba(11, 107, 124, 0.15);
+      }
+
+      .item-name {
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--text-primary);
+      }
+
+      .item-desc {
+        font-size: 12px;
+        color: var(--text-secondary);
+        line-height: 1.4;
+      }
+
+      /* Control Toolbar */
+      .toolbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-lg);
+        padding: 16px 24px;
+        box-shadow: var(--shadow-md);
+      }
+
+      .tool-group {
+        display: flex;
+        gap: 12px;
+      }
+
+      .btn {
+        font-family: var(--font-main);
+        font-size: 14px;
+        font-weight: 600;
+        padding: 10px 20px;
+        border-radius: var(--radius-md);
+        border: 1px solid var(--border-color);
+        background: white;
+        color: var(--text-primary);
+        cursor: pointer;
+        transition: all 0.2s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        user-select: none;
+      }
+
+      .btn:hover:not(:disabled) {
+        background: #f8fafc;
+        transform: translateY(-1px);
+      }
+
+      .btn:active:not(:disabled) {
+        transform: translateY(0);
+      }
+
+      .btn:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
+
+      .btn-primary {
+        background: var(--accent-color);
+        color: white;
+        border-color: var(--accent-color);
+        box-shadow: 0 2px 4px rgba(11, 107, 124, 0.2);
+      }
+
+      .btn-primary:hover:not(:disabled) {
+        background: var(--accent-hover);
+        border-color: var(--accent-hover);
+      }
+
+      .btn-primary:focus-visible {
+        outline: 3px solid rgba(11, 107, 124, 0.4);
+      }
+
+      /* Results Overlay / Quadrant Screen */
+      .results-screen {
+        display: none;
+        flex-direction: column;
+        gap: 24px;
+        animation: fadeIn 0.4s ease-out forwards;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      .quadrant-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .quadrant {
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-lg);
+        padding: 24px;
+        box-shadow: var(--shadow-md);
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .quadrant::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 6px;
+        height: 100%;
+      }
+
+      .quadrant[data-q="simple"]::before { background: var(--color-simple); }
+      .quadrant[data-q="dry"]::before { background: var(--color-dry); }
+      .quadrant[data-q="complex"]::before { background: var(--color-complex); }
+      .quadrant[data-q="hot"]::before { background: var(--color-hot); }
+
+      .quadrant-header {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .quadrant-title {
+        font-size: 18px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .quadrant[data-q="simple"] .quadrant-title { color: #047857; }
+      .quadrant[data-q="dry"] .quadrant-title { color: #1d4ed8; }
+      .quadrant[data-q="complex"] .quadrant-title { color: #6d28d9; }
+      .quadrant[data-q="hot"] .quadrant-title { color: #be123c; }
+
+      .quadrant-tips-title {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--text-muted);
+        letter-spacing: 0.5px;
+        margin-top: 6px;
+      }
+
+      .quadrant-tips {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: var(--radius-md);
+        padding: 14px 16px;
+        font-size: 13.5px;
+        line-height: 1.5;
+        color: var(--text-secondary);
+      }
+
+      .quadrant-chips-container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .quadrant-chips-label {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--text-muted);
+        letter-spacing: 0.5px;
+      }
+
+      .quadrant-chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      /* Non-draggable feedback chip representing sorted items */
+      .feedback-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 14px;
+        border-radius: 9999px;
+        font-size: 13px;
+        font-weight: 600;
+        background: white;
+        border: 1px solid var(--border-color);
+        box-shadow: var(--shadow-sm);
+        position: relative;
+      }
+
+      .feedback-chip.correct {
+        border-color: var(--color-simple-border);
+        background: var(--color-simple-light);
+        color: #065f46;
+      }
+
+      .feedback-chip.incorrect {
+        border-color: var(--color-hot-border);
+        background: var(--color-hot-light);
+        color: #9f1239;
+      }
+
+      .feedback-chip .status-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        font-size: 10px;
+        font-weight: 800;
+        color: white;
+      }
+
+      .feedback-chip.correct .status-icon {
+        background: var(--color-simple);
+      }
+
+      .feedback-chip.incorrect .status-icon {
+        background: var(--color-hot);
+      }
+
+      .incorrect-badge {
+        font-size: 10px;
+        font-weight: 700;
+        padding: 1px 6px;
+        border-radius: 4px;
+        background: #ffe4e6;
+        color: #b91c1c;
+        margin-left: 4px;
+      }
+
+      /* Responsive rules */
+      @media (max-width: 900px) {
+        .board {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .quadrant-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .board {
+          grid-template-columns: 1fr;
+        }
+        body {
+          padding: 16px;
+        }
+        h1 {
+          font-size: 22px;
+        }
+        .toolbar {
+          flex-direction: column;
+          gap: 16px;
+          align-items: stretch;
+        }
+        .tool-group {
+          justify-content: space-between;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap" style="width: 100%;">
+      <div class="container">
+        
+        <!-- HEADER DESCRIPTION -->
+        <header>
+          <h1>Workshop 5: Categorizing Money Conversations</h1>
+          <p class="instruction">
+            Not all financial topics should be approached the same way. Classifying topics can help you frame the discussion effectively.
+            <strong>Drag and drop</strong> or <strong>click/tap to select</strong> each of the 9 financial topics from the bank below and sort them into their correct category column.
+          </p>
+        </header>
+
+        <!-- SCREEN 1: CATEGORIZATION WORKSPACE -->
+        <div id="workspaceScreen" class="workspace">
+          
+          <!-- Category Columns Board -->
+          <div class="board" role="region" aria-label="Sorting Categories Board">
+            
+            <!-- Simple Column -->
+            <div class="column" data-category="simple" id="col-simple">
+              <div class="column-header">
+                <span class="column-title">Simple</span>
+                <span class="column-badge" id="badge-simple">0</span>
+              </div>
+              <div class="column-items" id="items-simple">
+                <!-- Sorted cards drop here -->
+              </div>
+              <div class="drop-zone-placeholder">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+                <span>Drop Simple items</span>
+              </div>
+            </div>
+
+            <!-- Dry Column -->
+            <div class="column" data-category="dry" id="col-dry">
+              <div class="column-header">
+                <span class="column-title">Dry</span>
+                <span class="column-badge" id="badge-dry">0</span>
+              </div>
+              <div class="column-items" id="items-dry">
+                <!-- Sorted cards drop here -->
+              </div>
+              <div class="drop-zone-placeholder">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+                <span>Drop Dry items</span>
+              </div>
+            </div>
+
+            <!-- Complex Column -->
+            <div class="column" data-category="complex" id="col-complex">
+              <div class="column-header">
+                <span class="column-title">Complex</span>
+                <span class="column-badge" id="badge-complex">0</span>
+              </div>
+              <div class="column-items" id="items-complex">
+                <!-- Sorted cards drop here -->
+              </div>
+              <div class="drop-zone-placeholder">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+                <span>Drop Complex items</span>
+              </div>
+            </div>
+
+            <!-- Hot-button Column -->
+            <div class="column" data-category="hot" id="col-hot">
+              <div class="column-header">
+                <span class="column-title">Hot-button</span>
+                <span class="column-badge" id="badge-hot">0</span>
+              </div>
+              <div class="column-items" id="items-hot">
+                <!-- Sorted cards drop here -->
+              </div>
+              <div class="drop-zone-placeholder">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+                <span>Drop Hot-button items</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bottom: Item Bank -->
+          <div class="item-bank-container">
+            <div class="item-bank-header">
+              <span class="item-bank-title">Topic Bank</span>
+              <span class="column-badge" id="bank-count">9 items remaining</span>
+            </div>
+            <div class="item-bank" id="itemBank" role="listbox" aria-label="Topic Bank">
+              <!-- Draggable topic cards here -->
+            </div>
+          </div>
+
+          <!-- Actions Toolbar -->
+          <div class="toolbar">
+            <div class="tool-group">
+              <button class="btn" id="btnUndo" disabled aria-label="Undo last action">
+                <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
+                </svg>
+                Undo
+              </button>
+              <button class="btn" id="btnRedo" disabled aria-label="Redo undone action">
+                <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l6-6m0 0l-6-6m6 6H9a6 6 0 000 12h3" />
+                </svg>
+                Redo
+              </button>
+              <button class="btn" id="btnReset" aria-label="Reset sorting board">
+                Reset
+              </button>
+            </div>
+            <button class="btn btn-primary" id="btnSubmit" disabled>
+              Submit Classification
+            </button>
+          </div>
+
+        </div>
+
+        <!-- SCREEN 2: 2x2 QUADRANT RESULTS SCREEN -->
+        <div id="resultsScreen" class="results-screen">
+          
+          <div class="quadrant-grid">
+            
+            <!-- Simple Quadrant -->
+            <div class="quadrant" data-q="simple">
+              <div class="quadrant-header">
+                <span class="quadrant-title">Simple Quadrant</span>
+              </div>
+              <div class="quadrant-chips-container">
+                <span class="quadrant-chips-label">Sorted Topics</span>
+                <div class="quadrant-chips" id="results-simple">
+                  <!-- dynamically populated -->
+                </div>
+              </div>
+              <div>
+                <span class="quadrant-tips-title">Tips for How to Handle</span>
+                <div class="quadrant-tips">
+                  Keep it direct and action-oriented. These conversations are transactional. Make quick plans, follow straightforward steps, and execute them without overthinking or getting bogged down in detail.
+                </div>
+              </div>
+            </div>
+
+            <!-- Dry Quadrant -->
+            <div class="quadrant" data-q="dry">
+              <div class="quadrant-header">
+                <span class="quadrant-title">Dry Quadrant</span>
+              </div>
+              <div class="quadrant-chips-container">
+                <span class="quadrant-chips-label">Sorted Topics</span>
+                <div class="quadrant-chips" id="results-dry">
+                  <!-- dynamically populated -->
+                </div>
+              </div>
+              <div>
+                <span class="quadrant-tips-title">Tips for How to Handle</span>
+                <div class="quadrant-tips">
+                  Focus on facts and structure. Keep conversations brief and focused. Rely heavily on structured checklists, step-by-step guides, or templates to maintain clarity and prevent boredom.
+                </div>
+              </div>
+            </div>
+
+            <!-- Complex Quadrant -->
+            <div class="quadrant" data-q="complex">
+              <div class="quadrant-header">
+                <span class="quadrant-title">Complex Quadrant</span>
+              </div>
+              <div class="quadrant-chips-container">
+                <span class="quadrant-chips-label">Sorted Topics</span>
+                <div class="quadrant-chips" id="results-complex">
+                  <!-- dynamically populated -->
+                </div>
+              </div>
+              <div>
+                <span class="quadrant-tips-title">Tips for How to Handle</span>
+                <div class="quadrant-tips">
+                  Take your time. Break the topic down into smaller, bite-sized tasks. Research the rules or requirements, ask clarifying questions, and do not hesitate to consult a trusted professional when needed.
+                </div>
+              </div>
+            </div>
+
+            <!-- Hot-button Quadrant -->
+            <div class="quadrant" data-q="hot">
+              <div class="quadrant-header">
+                <span class="quadrant-title">Hot-button Quadrant</span>
+              </div>
+              <div class="quadrant-chips-container">
+                <span class="quadrant-chips-label">Sorted Topics</span>
+                <div class="quadrant-chips" id="results-hot">
+                  <!-- dynamically populated -->
+                </div>
+              </div>
+              <div>
+                <span class="quadrant-tips-title">Tips for How to Handle</span>
+                <div class="quadrant-tips">
+                  Acknowledge the emotions first. Focus on underlying values, active listening, and building trust. Take breaks if the conversation gets tense, and separate personal feelings from math/figures.
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Results Actions Toolbar -->
+          <div class="toolbar">
+            <span style="font-size: 14px; font-weight: 500; color: var(--text-secondary);" id="summaryScore"></span>
+            <button class="btn btn-primary" id="btnRestart">
+              Try Again
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- JS Logic -->
+    <script>
+      // 9 items with their correct categories
+      const ITEMS = [
+        {
+          id: "atm",
+          name: "ATMs & Cash Safety",
+          desc: "Withdrawing cash, checking balances, and avoiding card skimming.",
+          correctCategory: "simple"
+        },
+        {
+          id: "open-account",
+          name: "Opening a Savings Account",
+          desc: "Setting up a basic, secure, low-risk account with a financial institution.",
+          correctCategory: "simple"
+        },
+        {
+          id: "checking",
+          name: "Checking Accounts",
+          desc: "Managing account features, transaction limits, and standard fees.",
+          correctCategory: "dry"
+        },
+        {
+          id: "interest",
+          name: "Interest Rates",
+          desc: "The cost of borrowing or gain from saving, expressed as an annual rate.",
+          correctCategory: "dry"
+        },
+        {
+          id: "taxes",
+          name: "Filing Taxes",
+          desc: "Filing annual state and federal tax returns and identifying tax credits.",
+          correctCategory: "complex"
+        },
+        {
+          id: "loans",
+          name: "Understanding Loans",
+          desc: "Navigating terms, principal, and amortization tables over the loan duration.",
+          correctCategory: "complex"
+        },
+        {
+          id: "poverty",
+          name: "Systemic Poverty",
+          desc: "Discussing wealth gaps, socio-economic barriers, and structural inequality.",
+          correctCategory: "hot"
+        },
+        {
+          id: "debt",
+          name: "Debt Repayment",
+          desc: "Managing past-due balances, collections, and payoff strategies.",
+          correctCategory: "hot"
+        },
+        {
+          id: "relationships",
+          name: "Money & Relationships",
+          desc: "Addressing money values, family expectations, and financial alignment.",
+          correctCategory: "hot"
+        }
+      ];
+
+      // App State
+      let placements = {}; // itemId -> category (null or "simple", "dry", "complex", "hot")
+      let historyStack = [];
+      let redoStack = [];
+      let selectedItemId = null; // for tap-to-select mobile interactions
+
+      // DOM elements
+      const itemBank = document.getElementById("itemBank");
+      const btnUndo = document.getElementById("btnUndo");
+      const btnRedo = document.getElementById("btnRedo");
+      const btnReset = document.getElementById("btnReset");
+      const btnSubmit = document.getElementById("btnSubmit");
+      const workspaceScreen = document.getElementById("workspaceScreen");
+      const resultsScreen = document.getElementById("resultsScreen");
+      const btnRestart = document.getElementById("btnRestart");
+      const summaryScore = document.getElementById("summaryScore");
+      const bankCount = document.getElementById("bankCount");
+
+      // Initialize state
+      function init() {
+        placements = {};
+        ITEMS.forEach(item => {
+          placements[item.id] = null;
+        });
+        historyStack = [];
+        redoStack = [];
+        selectedItemId = null;
+        render();
+      }
+
+      // Record state change for undo/redo
+      function pushAction(itemId, prevCategory, newCategory) {
+        historyStack.push({ itemId, prevCategory, newCategory });
+        redoStack = []; // Clear redo stack on new action
+      }
+
+      // Move item logic
+      function moveItem(itemId, newCategory, isUndoRedo = false) {
+        const prevCategory = placements[itemId];
+        if (prevCategory === newCategory) return;
+
+        placements[itemId] = newCategory;
+
+        if (!isUndoRedo) {
+          pushAction(itemId, prevCategory, newCategory);
+        }
+
+        selectedItemId = null; // Reset selection
+        render();
+      }
+
+      // Undo last action
+      function undo() {
+        if (historyStack.length === 0) return;
+        const lastAction = historyStack.pop();
+        redoStack.push(lastAction);
+        moveItem(lastAction.itemId, lastAction.prevCategory, true);
+      }
+
+      // Redo action
+      function redo() {
+        if (redoStack.length === 0) return;
+        const nextAction = redoStack.pop();
+        historyStack.push(nextAction);
+        moveItem(nextAction.itemId, nextAction.newCategory, true);
+      }
+
+      // Render columns and bank
+      function render() {
+        // Clear all containers
+        itemBank.innerHTML = "";
+        const columns = {
+          simple: document.getElementById("items-simple"),
+          dry: document.getElementById("items-dry"),
+          complex: document.getElementById("items-complex"),
+          hot: document.getElementById("items-hot")
+        };
+        
+        Object.keys(columns).forEach(key => {
+          columns[key].innerHTML = "";
+          // Reset drop-zone visibility
+          const parentCol = document.getElementById(`col-${key}`);
+          parentCol.classList.remove("active-drop");
+        });
+
+        let bankRemaining = 0;
+        let sortedCount = 0;
+
+        ITEMS.forEach(item => {
+          const category = placements[item.id];
+          const card = createCard(item);
+
+          if (category) {
+            columns[category].appendChild(card);
+            sortedCount++;
+          } else {
+            itemBank.appendChild(card);
+            bankRemaining++;
+          }
+        });
+
+        // Hide/Show column placeholders based on children
+        Object.keys(columns).forEach(key => {
+          const colElement = document.getElementById(`col-${key}`);
+          const placeholder = colElement.querySelector(".drop-zone-placeholder");
+          const badge = document.getElementById(`badge-${key}`);
+          const count = columns[key].children.length;
+          
+          badge.textContent = count;
+          if (count > 0) {
+            placeholder.style.display = "none";
+            colElement.style.borderStyle = "solid";
+          } else {
+            placeholder.style.display = "flex";
+            colElement.style.borderStyle = "dashed";
+          }
+        });
+
+        // Update counts
+        bankCount.textContent = bankRemaining === 0 ? "All items classified!" : `${bankRemaining} item${bankRemaining > 1 ? 's' : ''} remaining`;
+
+        // Update Undo/Redo button disabled states
+        btnUndo.disabled = historyStack.length === 0;
+        btnRedo.disabled = redoStack.length === 0;
+
+        // Submit active when all items are classified
+        btnSubmit.disabled = sortedCount < ITEMS.length;
+      }
+
+      // Card Creation
+      function createCard(item) {
+        const card = document.createElement("div");
+        card.className = "item-card";
+        card.id = `card-${item.id}`;
+        card.draggable = true;
+        card.setAttribute("role", "option");
+        card.setAttribute("tabindex", "0");
+
+        if (selectedItemId === item.id) {
+          card.classList.add("selected");
+        }
+
+        card.innerHTML = `
+          <div class="item-name">${item.name}</div>
+          <div class="item-desc">${item.desc}</div>
+        `;
+
+        // Drag and Drop Event Listeners
+        card.addEventListener("dragstart", (e) => {
+          card.classList.add("dragging");
+          e.dataTransfer.setData("text/plain", item.id);
+        });
+
+        card.addEventListener("dragend", () => {
+          card.classList.remove("dragging");
+        });
+
+        // Keyboard & Mobile Accessibility: Tap to select
+        card.addEventListener("click", (e) => {
+          e.stopPropagation();
+          if (selectedItemId === item.id) {
+            selectedItemId = null; // Deselect
+          } else {
+            selectedItemId = item.id;
+          }
+          render();
+        });
+
+        card.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            if (selectedItemId === item.id) {
+              selectedItemId = null;
+            } else {
+              selectedItemId = item.id;
+            }
+            render();
+          }
+        });
+
+        return card;
+      }
+
+      // Column drop zones dragover & drop listeners
+      const cols = document.querySelectorAll(".column");
+      cols.forEach(col => {
+        const cat = col.getAttribute("data-category");
+
+        col.addEventListener("dragover", (e) => {
+          e.preventDefault();
+          col.classList.add("drag-over");
+        });
+
+        col.addEventListener("dragleave", () => {
+          col.classList.remove("drag-over");
+        });
+
+        col.addEventListener("drop", (e) => {
+          e.preventDefault();
+          col.classList.remove("drag-over");
+          const itemId = e.dataTransfer.getData("text/plain");
+          if (itemId) {
+            moveItem(itemId, cat);
+          }
+        });
+
+        // Tap to drop when an item is selected
+        col.addEventListener("click", () => {
+          if (selectedItemId) {
+            moveItem(selectedItemId, cat);
+          }
+        });
+      });
+
+      // Item bank is also a drop zone to return items
+      itemBank.addEventListener("dragover", (e) => {
+        e.preventDefault();
+      });
+      itemBank.addEventListener("drop", (e) => {
+        e.preventDefault();
+        const itemId = e.dataTransfer.getData("text/plain");
+        if (itemId) {
+          moveItem(itemId, null);
+        }
+      });
+      itemBank.addEventListener("click", () => {
+        if (selectedItemId) {
+          moveItem(selectedItemId, null);
+        }
+      });
+
+      // Undo / Redo Buttons
+      btnUndo.addEventListener("click", undo);
+      btnRedo.addEventListener("click", redo);
+
+      // Reset Board
+      btnReset.addEventListener("click", () => {
+        if (confirm("Are you sure you want to reset the board? All classifications will be cleared.")) {
+          init();
+        }
+      });
+
+      // Submit Results
+      btnSubmit.addEventListener("click", () => {
+        workspaceScreen.style.display = "none";
+        resultsScreen.style.display = "flex";
+        showResults();
+      });
+
+      // Restart Sorting
+      btnRestart.addEventListener("click", () => {
+        resultsScreen.style.display = "none";
+        workspaceScreen.style.display = "flex";
+        init();
+      });
+
+      // Populating the summary quadrant view
+      function showResults() {
+        const qs = ["simple", "dry", "complex", "hot"];
+        let correctCount = 0;
+
+        qs.forEach(q => {
+          const container = document.getElementById(`results-${q}`);
+          container.innerHTML = "";
+        });
+
+        ITEMS.forEach(item => {
+          const userCat = placements[item.id];
+          const isCorrect = userCat === item.correctCategory;
+          if (isCorrect) correctCount++;
+
+          const chip = document.createElement("div");
+          chip.className = `feedback-chip ${isCorrect ? 'correct' : 'incorrect'}`;
+
+          const statusIcon = isCorrect ? "✓" : "✗";
+          let label = item.name;
+
+          chip.innerHTML = `
+            <span class="status-icon">${statusIcon}</span>
+            <span>${label}</span>
+          `;
+
+          // If incorrect, add a badge showing where it belonged
+          if (!isCorrect) {
+            const correctTitle = item.correctCategory.charAt(0).toUpperCase() + item.correctCategory.slice(1);
+            chip.innerHTML += `<span class="incorrect-badge">Should be: ${correctTitle === 'Hot' ? 'Hot-button' : correctTitle}</span>`;
+          }
+
+          document.getElementById(`results-${userCat}`).appendChild(chip);
+        });
+
+        // Summary Score banner
+        summaryScore.textContent = `You correctly classified ${correctCount} out of ${ITEMS.length} topics!`;
+      }
+
+      // Start the App
+      init();
+    </script>
+  </body>
+</html>
