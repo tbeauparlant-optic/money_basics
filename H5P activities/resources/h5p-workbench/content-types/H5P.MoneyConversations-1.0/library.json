@@ -1,0 +1,28 @@
+{
+  "title": "Money Conversations",
+  "description": "An interactive sorting board to categorize financial conversations and view engagement tips.",
+  "machineName": "H5P.MoneyConversations",
+  "majorVersion": 1,
+  "minorVersion": 0,
+  "patchVersion": 0,
+  "runnable": 1,
+  "author": "Antigravity",
+  "license": "MIT",
+  "embedTypes": [
+    "div"
+  ],
+  "coreApi": {
+    "majorVersion": 1,
+    "minorVersion": 24
+  },
+  "preloadedJs": [
+    {
+      "path": "scripts/money-conversations.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "styles/money-conversations.css"
+    }
+  ]
+}

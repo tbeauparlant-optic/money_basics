@@ -1,0 +1,17 @@
+{
+  "title": "Workshop 5 Money Conversations Demo",
+  "language": "en",
+  "mainLibrary": "H5P.MoneyConversations",
+  "embedTypes": [
+    "div"
+  ],
+  "license": "MIT",
+  "defaultLanguage": "en",
+  "preloadedDependencies": [
+    {
+      "machineName": "H5P.MoneyConversations",
+      "majorVersion": 1,
+      "minorVersion": 0
+    }
+  ]
+}

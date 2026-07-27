@@ -1,0 +1,118 @@
+[
+  {
+    "name": "title",
+    "type": "text",
+    "label": "Title",
+    "default": "Workshop 5: Categorizing Money Conversations",
+    "importance": "high"
+  },
+  {
+    "name": "instruction",
+    "type": "text",
+    "widget": "textarea",
+    "label": "Instructions text",
+    "default": "Not all financial topics should be approached the same way. Classifying topics can help facilitators choose the best way to present them. Drag and drop or click/tap to select each of the topics below and sort them into their category columns.",
+    "importance": "high"
+  },
+  {
+    "name": "categoryLabels",
+    "type": "group",
+    "label": "Category Column Titles",
+    "importance": "medium",
+    "fields": [
+      {
+        "name": "simple",
+        "type": "text",
+        "label": "Simple Category Label",
+        "default": "Simple"
+      },
+      {
+        "name": "dry",
+        "type": "text",
+        "label": "Dry Category Label",
+        "default": "Dry"
+      },
+      {
+        "name": "complex",
+        "type": "text",
+        "label": "Complex Category Label",
+        "default": "Complex"
+      },
+      {
+        "name": "hot",
+        "type": "text",
+        "label": "Hot-button Category Label",
+        "default": "Hot-button"
+      }
+    ]
+  },
+  {
+    "name": "tips",
+    "type": "group",
+    "label": "Facilitator engaging tips per category",
+    "importance": "high",
+    "fields": [
+      {
+        "name": "simple",
+        "type": "text",
+        "widget": "textarea",
+        "label": "Simple Category Tips",
+        "default": "Filler Tip: To make simple topics engaging, use quick-fire quizzes, interactive matching games, and real-life scenario simulations to keep learners active."
+      },
+      {
+        "name": "dry",
+        "type": "text",
+        "widget": "textarea",
+        "label": "Dry Category Tips",
+        "default": "Filler Tip: Dry topics (like terms of service or regulation details) can be made engaging by using storytelling, gamification elements, or group problem-solving exercises."
+      },
+      {
+        "name": "complex",
+        "type": "text",
+        "widget": "textarea",
+        "label": "Complex Category Tips",
+        "default": "Filler Tip: For complex topics, break them into clear modular micro-lessons, use visual flowcharts, step-by-step progress trackers, and detailed case studies."
+      },
+      {
+        "name": "hot",
+        "type": "text",
+        "widget": "textarea",
+        "label": "Hot-button Category Tips",
+        "default": "Filler Tip: Engage learners on hot-button topics by facilitating anonymous voting, structuring debates, using roleplay, and offering space for reflection."
+      }
+    ]
+  },
+  {
+    "name": "topics",
+    "type": "list",
+    "label": "Topics to classify",
+    "entity": "Topic",
+    "importance": "high",
+    "field": {
+      "name": "topic",
+      "type": "group",
+      "label": "Topic Detail",
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "label": "Unique ID",
+          "description": "Unique identifier, e.g. atm, checking, budget"
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "label": "Topic Name",
+          "description": "Label displayed on the card"
+        },
+        {
+          "name": "desc",
+          "type": "text",
+          "widget": "textarea",
+          "label": "Topic Description",
+          "description": "Short explanation on the card"
+        }
+      ]
+    }
+  }
+]

@@ -500,47 +500,41 @@
         position: relative;
       }
 
-      .feedback-chip.correct {
+      .feedback-chip[data-col="simple"] {
         border-color: var(--color-simple-border);
         background: var(--color-simple-light);
         color: #065f46;
       }
 
-      .feedback-chip.incorrect {
+      .feedback-chip[data-col="dry"] {
+        border-color: var(--color-dry-border);
+        background: var(--color-dry-light);
+        color: #1e40af;
+      }
+
+      .feedback-chip[data-col="complex"] {
+        border-color: var(--color-complex-border);
+        background: var(--color-complex-light);
+        color: #5b21b6;
+      }
+
+      .feedback-chip[data-col="hot"] {
         border-color: var(--color-hot-border);
         background: var(--color-hot-light);
         color: #9f1239;
       }
 
-      .feedback-chip .status-icon {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 16px;
-        height: 16px;
+      .feedback-chip .status-bullet {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
         border-radius: 50%;
-        font-size: 10px;
-        font-weight: 800;
-        color: white;
       }
 
-      .feedback-chip.correct .status-icon {
-        background: var(--color-simple);
-      }
-
-      .feedback-chip.incorrect .status-icon {
-        background: var(--color-hot);
-      }
-
-      .incorrect-badge {
-        font-size: 10px;
-        font-weight: 700;
-        padding: 1px 6px;
-        border-radius: 4px;
-        background: #ffe4e6;
-        color: #b91c1c;
-        margin-left: 4px;
-      }
+      .feedback-chip[data-col="simple"] .status-bullet { background: var(--color-simple); }
+      .feedback-chip[data-col="dry"] .status-bullet { background: var(--color-dry); }
+      .feedback-chip[data-col="complex"] .status-bullet { background: var(--color-complex); }
+      .feedback-chip[data-col="hot"] .status-bullet { background: var(--color-hot); }
 
       /* Responsive rules */
       @media (max-width: 900px) {
@@ -581,8 +575,8 @@
         <header>
           <h1>Workshop 5: Categorizing Money Conversations</h1>
           <p class="instruction">
-            Not all financial topics should be approached the same way. Classifying topics can help you frame the discussion effectively.
-            <strong>Drag and drop</strong> or <strong>click/tap to select</strong> each of the 9 financial topics from the bank below and sort them into their correct category column.
+            Not all financial topics should be approached the same way. Classifying topics can help facilitators choose the best way to present them.
+            <strong>Drag and drop</strong> or <strong>click/tap to select</strong> each of the 12 financial topics below and sort them into their category columns.
           </p>
         </header>
 
@@ -666,7 +660,7 @@
           <div class="item-bank-container">
             <div class="item-bank-header">
               <span class="item-bank-title">Topic Bank</span>
-              <span class="column-badge" id="bank-count">9 items remaining</span>
+              <span class="column-badge" id="bank-count">12 items remaining</span>
             </div>
             <div class="item-bank" id="itemBank" role="listbox" aria-label="Topic Bank">
               <!-- Draggable topic cards here -->
@@ -716,9 +710,9 @@
                 </div>
               </div>
               <div>
-                <span class="quadrant-tips-title">Tips for How to Handle</span>
+                <span class="quadrant-tips-title">Tips for making these engaging</span>
                 <div class="quadrant-tips">
-                  Keep it direct and action-oriented. These conversations are transactional. Make quick plans, follow straightforward steps, and execute them without overthinking or getting bogged down in detail.
+                  Filler Tip: To make simple topics engaging, use quick-fire quizzes, interactive matching games, and real-life scenario simulations to keep learners active.
                 </div>
               </div>
             </div>
@@ -735,9 +729,9 @@
                 </div>
               </div>
               <div>
-                <span class="quadrant-tips-title">Tips for How to Handle</span>
+                <span class="quadrant-tips-title">Tips for making these engaging</span>
                 <div class="quadrant-tips">
-                  Focus on facts and structure. Keep conversations brief and focused. Rely heavily on structured checklists, step-by-step guides, or templates to maintain clarity and prevent boredom.
+                  Filler Tip: Dry topics (like terms of service or regulation details) can be made engaging by using storytelling, gamification elements, or group problem-solving exercises.
                 </div>
               </div>
             </div>
@@ -754,9 +748,9 @@
                 </div>
               </div>
               <div>
-                <span class="quadrant-tips-title">Tips for How to Handle</span>
+                <span class="quadrant-tips-title">Tips for making these engaging</span>
                 <div class="quadrant-tips">
-                  Take your time. Break the topic down into smaller, bite-sized tasks. Research the rules or requirements, ask clarifying questions, and do not hesitate to consult a trusted professional when needed.
+                  Filler Tip: For complex topics, break them into clear modular micro-lessons, use visual flowcharts, step-by-step progress trackers, and detailed case studies.
                 </div>
               </div>
             </div>
@@ -773,9 +767,9 @@
                 </div>
               </div>
               <div>
-                <span class="quadrant-tips-title">Tips for How to Handle</span>
+                <span class="quadrant-tips-title">Tips for making these engaging</span>
                 <div class="quadrant-tips">
-                  Acknowledge the emotions first. Focus on underlying values, active listening, and building trust. Take breaks if the conversation gets tense, and separate personal feelings from math/figures.
+                  Filler Tip: Engage learners on hot-button topics by facilitating anonymous voting, structuring debates, using roleplay, and offering space for reflection.
                 </div>
               </div>
             </div>
@@ -797,61 +791,67 @@
 
     <!-- JS Logic -->
     <script>
-      // 9 items with their correct categories
+      // 12 mock items
       const ITEMS = [
         {
           id: "atm",
           name: "ATMs & Cash Safety",
-          desc: "Withdrawing cash, checking balances, and avoiding card skimming.",
-          correctCategory: "simple"
+          desc: "Withdrawing cash, checking balances, and avoiding card skimming."
         },
         {
           id: "open-account",
           name: "Opening a Savings Account",
-          desc: "Setting up a basic, secure, low-risk account with a financial institution.",
-          correctCategory: "simple"
+          desc: "Setting up a basic, secure, low-risk account with a financial institution."
         },
         {
           id: "checking",
           name: "Checking Accounts",
-          desc: "Managing account features, transaction limits, and standard fees.",
-          correctCategory: "dry"
+          desc: "Managing account features, transaction limits, and standard fees."
         },
         {
           id: "interest",
           name: "Interest Rates",
-          desc: "The cost of borrowing or gain from saving, expressed as an annual rate.",
-          correctCategory: "dry"
+          desc: "The cost of borrowing or gain from saving, expressed as an annual rate."
         },
         {
           id: "taxes",
           name: "Filing Taxes",
-          desc: "Filing annual state and federal tax returns and identifying tax credits.",
-          correctCategory: "complex"
+          desc: "Filing annual state and federal tax returns and identifying tax credits."
         },
         {
           id: "loans",
           name: "Understanding Loans",
-          desc: "Navigating terms, principal, and amortization tables over the loan duration.",
-          correctCategory: "complex"
+          desc: "Navigating terms, principal, and amortization tables over the loan duration."
         },
         {
           id: "poverty",
           name: "Systemic Poverty",
-          desc: "Discussing wealth gaps, socio-economic barriers, and structural inequality.",
-          correctCategory: "hot"
+          desc: "Discussing wealth gaps, socio-economic barriers, and structural inequality."
         },
         {
           id: "debt",
           name: "Debt Repayment",
-          desc: "Managing past-due balances, collections, and payoff strategies.",
-          correctCategory: "hot"
+          desc: "Managing past-due balances, collections, and payoff strategies."
         },
         {
           id: "relationships",
           name: "Money & Relationships",
-          desc: "Addressing money values, family expectations, and financial alignment.",
-          correctCategory: "hot"
+          desc: "Addressing money values, family expectations, and financial alignment."
+        },
+        {
+          id: "budget",
+          name: "Making a Budget",
+          desc: "Creating plans to balance income and spending monthly."
+        },
+        {
+          id: "creditcard",
+          name: "Choosing a Credit Card",
+          desc: "Comparing interest rates, annual fees, credit limits, and rewards."
+        },
+        {
+          id: "savingsgoals",
+          name: "Setting Savings Goals",
+          desc: "Defining short-term and long-term targets for saving cash."
         }
       ];
 
@@ -860,6 +860,7 @@
       let historyStack = [];
       let redoStack = [];
       let selectedItemId = null; // for tap-to-select mobile interactions
+      let draggedItemId = null; // fallback for sandboxed iframe drop data transfer
 
       // DOM elements
       const itemBank = document.getElementById("itemBank");
@@ -1005,11 +1006,13 @@
         // Drag and Drop Event Listeners
         card.addEventListener("dragstart", (e) => {
           card.classList.add("dragging");
+          draggedItemId = item.id;
           e.dataTransfer.setData("text/plain", item.id);
         });
 
         card.addEventListener("dragend", () => {
           card.classList.remove("dragging");
+          draggedItemId = null;
         });
 
         // Keyboard & Mobile Accessibility: Tap to select
@@ -1055,7 +1058,7 @@
         col.addEventListener("drop", (e) => {
           e.preventDefault();
           col.classList.remove("drag-over");
-          const itemId = e.dataTransfer.getData("text/plain");
+          const itemId = e.dataTransfer.getData("text/plain") || draggedItemId;
           if (itemId) {
             moveItem(itemId, cat);
           }
@@ -1075,7 +1078,7 @@
       });
       itemBank.addEventListener("drop", (e) => {
         e.preventDefault();
-        const itemId = e.dataTransfer.getData("text/plain");
+        const itemId = e.dataTransfer.getData("text/plain") || draggedItemId;
         if (itemId) {
           moveItem(itemId, null);
         }
@@ -1111,10 +1114,9 @@
         init();
       });
 
-      // Populating the summary quadrant view
+      // Populating the summary quadrant view (Reflection Mode)
       function showResults() {
         const qs = ["simple", "dry", "complex", "hot"];
-        let correctCount = 0;
 
         qs.forEach(q => {
           const container = document.getElementById(`results-${q}`);
@@ -1123,31 +1125,20 @@
 
         ITEMS.forEach(item => {
           const userCat = placements[item.id];
-          const isCorrect = userCat === item.correctCategory;
-          if (isCorrect) correctCount++;
-
           const chip = document.createElement("div");
-          chip.className = `feedback-chip ${isCorrect ? 'correct' : 'incorrect'}`;
-
-          const statusIcon = isCorrect ? "✓" : "✗";
-          let label = item.name;
+          chip.className = "feedback-chip";
+          chip.setAttribute("data-col", userCat);
 
           chip.innerHTML = `
-            <span class="status-icon">${statusIcon}</span>
-            <span>${label}</span>
+            <span class="status-bullet"></span>
+            <span>${item.name}</span>
           `;
-
-          // If incorrect, add a badge showing where it belonged
-          if (!isCorrect) {
-            const correctTitle = item.correctCategory.charAt(0).toUpperCase() + item.correctCategory.slice(1);
-            chip.innerHTML += `<span class="incorrect-badge">Should be: ${correctTitle === 'Hot' ? 'Hot-button' : correctTitle}</span>`;
-          }
 
           document.getElementById(`results-${userCat}`).appendChild(chip);
         });
 
-        // Summary Score banner
-        summaryScore.textContent = `You correctly classified ${correctCount} out of ${ITEMS.length} topics!`;
+        // Summary Score banner (neutral text since there's no grading)
+        summaryScore.textContent = `You sorted all ${ITEMS.length} topics! Below are tips on how to make learning about these categories engaging.`;
       }
 
       // Start the App

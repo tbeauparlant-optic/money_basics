@@ -1,0 +1,30 @@
+{
+  "title": "Workshop 5: Categorizing Money Conversations",
+  "instruction": "Not all financial topics should be approached the same way. Classifying topics can help facilitators choose the best way to present them. Drag and drop or click/tap to select each of the topics below and sort them into their category columns.",
+  "categoryLabels": {
+    "simple": "Simple",
+    "dry": "Dry",
+    "complex": "Complex",
+    "hot": "Hot-button"
+  },
+  "tips": {
+    "simple": "Filler Tip: To make simple topics engaging, use quick-fire quizzes, interactive matching games, and real-life scenario simulations to keep learners active.",
+    "dry": "Filler Tip: Dry topics (like terms of service or regulation details) can be made engaging by using storytelling, gamification elements, or group problem-solving exercises.",
+    "complex": "Filler Tip: For complex topics, break them into clear modular micro-lessons, use visual flowcharts, step-by-step progress trackers, and detailed case studies.",
+    "hot": "Filler Tip: Engage learners on hot-button topics by facilitating anonymous voting, structuring debates, using roleplay, and offering space for reflection."
+  },
+  "topics": [
+    { "id": "atm", "name": "ATMs & Cash Safety", "desc": "Withdrawing cash, checking balances, and avoiding card skimming." },
+    { "id": "open-account", "name": "Opening a Savings Account", "desc": "Setting up a basic, secure, low-risk account with a financial institution." },
+    { "id": "checking", "name": "Checking Accounts", "desc": "Managing account features, transaction limits, and standard fees." },
+    { "id": "interest", "name": "Interest Rates", "desc": "The cost of borrowing or gain from saving, expressed as an annual rate." },
+    { "id": "taxes", "name": "Filing Taxes", "desc": "Filing annual state and federal tax returns and identifying tax credits." },
+    { "id": "loans", "name": "Understanding Loans", "desc": "Navigating terms, principal, and amortization tables over the loan duration." },
+    { "id": "poverty", "name": "Systemic Poverty", "desc": "Discussing wealth gaps, socio-economic barriers, and structural inequality." },
+    { "id": "debt", "name": "Debt Repayment", "desc": "Managing past-due balances, collections, and payoff strategies." },
+    { "id": "relationships", "name": "Money & Relationships", "desc": "Addressing money values, family expectations, and financial alignment." },
+    { "id": "budget", "name": "Making a Budget", "desc": "Creating plans to balance income and spending monthly." },
+    { "id": "creditcard", "name": "Choosing a Credit Card", "desc": "Comparing interest rates, annual fees, credit limits, and rewards." },
+    { "id": "savingsgoals", "name": "Setting Savings Goals", "desc": "Defining short-term and long-term targets for saving cash." }
+  ]
+}
