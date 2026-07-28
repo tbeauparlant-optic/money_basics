@@ -22,9 +22,66 @@
     { "id": "loans", "name": "Understanding Loans", "desc": "Navigating terms, principal, and amortization tables over the loan duration." },
     { "id": "poverty", "name": "Systemic Poverty", "desc": "Discussing wealth gaps, socio-economic barriers, and structural inequality." },
     { "id": "debt", "name": "Debt Repayment", "desc": "Managing past-due balances, collections, and payoff strategies." },
-    { "id": "relationships", "name": "Money & Relationships", "desc": "Addressing money values, family expectations, and financial alignment." },
+    { "id": "relationships", "name": "Money & Relationships", "desc": "Addressing money values, family expectations, and the signs of financial abuse." },
     { "id": "budget", "name": "Making a Budget", "desc": "Creating plans to balance income and spending monthly." },
     { "id": "creditcard", "name": "Choosing a Credit Card", "desc": "Comparing interest rates, annual fees, credit limits, and rewards." },
-    { "id": "savingsgoals", "name": "Setting Savings Goals", "desc": "Defining short-term and long-term targets for saving cash." }
-  ]
+    { "id": "savingsaccounts", "name": "Savings Accounts", "desc": "Defining short-term and long-term targets for saving cash." },
+    { "id": "financialcrisisplan", "name": "Financial Crisis Planning", "desc": "How to create a financial crisis plan" },
+    { "id": "debitcard", "name": "Debit Cards", "desc": "Fees, how to set one up, setting up direct deposit, safety, debit system and social security." },
+    { "id": "moneysafety", "name": "Money Safety", "desc": "ATM, debit card, credit card safety, as well as how to avoid identity theft." },
+    { "id": "onlinebanking", "name": "Online Banking", "desc": "Using online banks, mobile apps, and other newer banking technology__–-" },
+    { "id": "financialgoals", "name": "Financial Goal Setting", "desc": "Learning different strategies and approaches for setting savings and debt pay-off goals" }
+  ],
+  "styleSettings": {
+    "categoryColors": {
+      "simple": "#10b981",
+      "dry": "#3b82f6",
+      "complex": "#8b5cf6",
+      "hot": "#f43f5e"
+    },
+    "layoutColors": {
+      "pageBgColor": "#f8fafc",
+      "headerBgColor": "#ffffff",
+      "headerTitleColor": "#1e293b",
+      "headerDescColor": "#475569"
+    },
+    "cardColors": {
+      "bankBgColor": "#ffffff",
+      "cardBgColor": "#ffffff",
+      "cardBorderColor": "#cbd5e1",
+      "cardTitleColor": "#1e293b",
+      "cardDescColor": "#475569",
+      "cardSelectColor": "#0b6b7c"
+    },
+    "buttonColors": {
+      "btnSecondaryBg": "#ffffff",
+      "btnSecondaryText": "#1e293b",
+      "btnSecondaryBorder": "#cbd5e1",
+      "btnPrimaryBg": "#0b6b7c",
+      "btnPrimaryText": "#ffffff"
+    },
+    "resultsColors": {
+      "quadrantBgColor": "#ffffff",
+      "tipsBgColor": "#f8fafc",
+      "tipsTextColor": "#475569",
+      "sectionLabelColor": "#64748b"
+    }
+  },
+  "l10n": {
+    "topicBankTitle": "Topic Bank",
+    "dropZonePlaceholderTemplate": "Drop @category items",
+    "itemsRemainingSingle": "1 item remaining",
+    "itemsRemainingPlural": "@count items remaining",
+    "allItemsClassified": "All items classified!",
+    "btnUndo": "Undo",
+    "btnRedo": "Redo",
+    "btnReset": "Reset",
+    "btnSubmit": "Submit Classification",
+    "quadrantHeaderTemplate": "@category",
+    "sortedTopicsLabel": "Sorted Topics",
+    "tipsLabel": "Tips for making these engaging",
+    "summaryBannerTemplate": "You sorted all @count topics! Below are tips on how to make learning about these categories engaging.",
+    "btnTryAgain": "Try Again",
+    "resetConfirmText": "Are you sure you want to reset the board? All classifications will be cleared."
+  }
 }

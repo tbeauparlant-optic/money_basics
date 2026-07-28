@@ -37,7 +37,59 @@ H5P.MoneyConversations = (function ($) {
         { id: "budget", name: "Making a Budget", desc: "Creating plans to balance income and spending monthly." },
         { id: "creditcard", name: "Choosing a Credit Card", desc: "Comparing interest rates, annual fees, credit limits, and rewards." },
         { id: "savingsgoals", name: "Setting Savings Goals", desc: "Defining short-term and long-term targets for saving cash." }
-      ]
+      ],
+      styleSettings: {
+        categoryColors: {
+          simple: "#10b981",
+          dry: "#3b82f6",
+          complex: "#8b5cf6",
+          hot: "#f43f5e"
+        },
+        layoutColors: {
+          pageBgColor: "#f8fafc",
+          headerBgColor: "#ffffff",
+          headerTitleColor: "#1e293b",
+          headerDescColor: "#475569"
+        },
+        cardColors: {
+          bankBgColor: "#ffffff",
+          cardBgColor: "#ffffff",
+          cardBorderColor: "#cbd5e1",
+          cardTitleColor: "#1e293b",
+          cardDescColor: "#475569",
+          cardSelectColor: "#0b6b7c"
+        },
+        buttonColors: {
+          btnSecondaryBg: "#ffffff",
+          btnSecondaryText: "#1e293b",
+          btnSecondaryBorder: "#cbd5e1",
+          btnPrimaryBg: "#0b6b7c",
+          btnPrimaryText: "#ffffff"
+        },
+        resultsColors: {
+          quadrantBgColor: "#ffffff",
+          tipsBgColor: "#f8fafc",
+          tipsTextColor: "#475569",
+          sectionLabelColor: "#64748b"
+        }
+      },
+      l10n: {
+        topicBankTitle: "Topic Bank",
+        dropZonePlaceholderTemplate: "Drop @category items",
+        itemsRemainingSingle: "1 item remaining",
+        itemsRemainingPlural: "@count items remaining",
+        allItemsClassified: "All items classified!",
+        btnUndo: "Undo",
+        btnRedo: "Redo",
+        btnReset: "Reset",
+        btnSubmit: "Submit Classification",
+        quadrantHeaderTemplate: "@category",
+        sortedTopicsLabel: "Sorted Topics",
+        tipsLabel: "Tips for making these engaging",
+        summaryBannerTemplate: "You sorted all @count topics! Below are tips on how to make learning about these categories engaging.",
+        btnTryAgain: "Try Again",
+        resetConfirmText: "Are you sure you want to reset the board? All classifications will be cleared."
+      }
     }, params);
 
     // Local State
@@ -51,6 +103,47 @@ H5P.MoneyConversations = (function ($) {
   MoneyConversations.prototype = Object.create(H5P.EventDispatcher.prototype);
   MoneyConversations.prototype.constructor = MoneyConversations;
 
+  MoneyConversations.prototype.applyStyles = function () {
+    if (!this.params.styleSettings || !this.$wrapper) return;
+
+    var ss = this.params.styleSettings;
+    var cc = ss.categoryColors || {};
+    var lc = ss.layoutColors || {};
+    var cardc = ss.cardColors || {};
+    var btnc = ss.buttonColors || {};
+    var rc = ss.resultsColors || {};
+
+    this.$wrapper.css({
+      '--h5p-mc-page-bg': lc.pageBgColor || '#f8fafc',
+      '--h5p-mc-header-bg': lc.headerBgColor || '#ffffff',
+      '--h5p-mc-header-title': lc.headerTitleColor || '#1e293b',
+      '--h5p-mc-header-desc': lc.headerDescColor || '#475569',
+
+      '--h5p-mc-bank-bg': cardc.bankBgColor || '#ffffff',
+      '--h5p-mc-card-bg': cardc.cardBgColor || '#ffffff',
+      '--h5p-mc-card-border': cardc.cardBorderColor || '#cbd5e1',
+      '--h5p-mc-card-title': cardc.cardTitleColor || '#1e293b',
+      '--h5p-mc-card-desc': cardc.cardDescColor || '#475569',
+      '--h5p-mc-card-select': cardc.cardSelectColor || '#0b6b7c',
+
+      '--h5p-mc-btn-sec-bg': btnc.btnSecondaryBg || '#ffffff',
+      '--h5p-mc-btn-sec-text': btnc.btnSecondaryText || '#1e293b',
+      '--h5p-mc-btn-sec-border': btnc.btnSecondaryBorder || '#cbd5e1',
+      '--h5p-mc-btn-pri-bg': btnc.btnPrimaryBg || '#0b6b7c',
+      '--h5p-mc-btn-pri-text': btnc.btnPrimaryText || '#ffffff',
+
+      '--h5p-mc-quadrant-bg': rc.quadrantBgColor || '#ffffff',
+      '--h5p-mc-tips-bg': rc.tipsBgColor || '#f8fafc',
+      '--h5p-mc-tips-text': rc.tipsTextColor || '#475569',
+      '--h5p-mc-section-label': rc.sectionLabelColor || '#64748b',
+
+      '--h5p-mc-color-simple': cc.simple || '#10b981',
+      '--h5p-mc-color-dry': cc.dry || '#3b82f6',
+      '--h5p-mc-color-complex': cc.complex || '#8b5cf6',
+      '--h5p-mc-color-hot': cc.hot || '#f43f5e'
+    });
+  };
+
   MoneyConversations.prototype.attach = function ($container) {
     var self = this;
     
@@ -59,6 +152,8 @@ H5P.MoneyConversations = (function ($) {
 
     // Build DOM structure
     this.$wrapper = $('<div class="h5p-mc-wrap"></div>').appendTo($container);
+    this.applyStyles();
+
     this.$container = $('<div class="h5p-mc-container"></div>').appendTo(this.$wrapper);
 
     // Build Header
@@ -85,14 +180,18 @@ H5P.MoneyConversations = (function ($) {
       var $colItems = $('<div class="h5p-mc-column-items"></div>').appendTo($col);
       self.columns[cat] = $colItems;
 
+      var placeholderTemplate = self.params.l10n.dropZonePlaceholderTemplate || "Drop @category items";
+      var placeholderText = placeholderTemplate.replace('@category', colLabel);
+
       var $placeholder = $(
         '<div class="h5p-mc-drop-zone-placeholder">' +
           '<svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:32px;height:32px;opacity:0.5;">' +
             '<path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />' +
           '</svg>' +
-          '<span>Drop ' + colLabel + ' items</span>' +
+          '<span class="h5p-mc-drop-label"></span>' +
         '</div>'
       ).appendTo($col);
+      $placeholder.find('.h5p-mc-drop-label').text(placeholderText);
 
       // Drag & Drop events
       $col.on('dragover', function (e) {
@@ -124,8 +223,8 @@ H5P.MoneyConversations = (function ($) {
     // Build Item Bank
     var $bankContainer = $('<div class="h5p-mc-item-bank-container"></div>').appendTo(this.$workspaceScreen);
     var $bankHeader = $('<div class="h5p-mc-item-bank-header"></div>').appendTo($bankContainer);
-    $('<span class="h5p-mc-item-bank-title">Topic Bank</span>').appendTo($bankHeader);
-    this.$bankCount = $('<span class="h5p-mc-column-badge">12 items remaining</span>').appendTo($bankHeader);
+    $('<span class="h5p-mc-item-bank-title"></span>').text(this.params.l10n.topicBankTitle).appendTo($bankHeader);
+    this.$bankCount = $('<span class="h5p-mc-column-badge"></span>').appendTo($bankHeader);
     
     this.$itemBank = $('<div class="h5p-mc-item-bank" role="listbox" aria-label="Topic Bank"></div>').appendTo($bankContainer);
     this.$itemBank.on('dragover', function (e) {
@@ -149,28 +248,33 @@ H5P.MoneyConversations = (function ($) {
     var $toolGroup = $('<div class="h5p-mc-tool-group"></div>').appendTo($toolbar);
 
     this.$btnUndo = $(
-      '<button class="h5p-mc-btn" disabled aria-label="Undo last action">' +
+      '<button class="h5p-mc-btn" disabled>' +
         '<svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="margin-right:6px;vertical-align:middle;">' +
           '<path stroke-linecap="round" stroke-linejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />' +
-        '</svg>Undo' +
+        '</svg><span class="h5p-mc-btn-label"></span>' +
       '</button>'
     ).appendTo($toolGroup).on('click', function () { self.undo(); });
+    this.$btnUndo.find('.h5p-mc-btn-label').text(this.params.l10n.btnUndo);
+    this.$btnUndo.attr('aria-label', this.params.l10n.btnUndo);
 
     this.$btnRedo = $(
-      '<button class="h5p-mc-btn" disabled aria-label="Redo undone action">' +
+      '<button class="h5p-mc-btn" disabled>' +
         '<svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="margin-right:6px;vertical-align:middle;">' +
           '<path stroke-linecap="round" stroke-linejoin="round" d="M15 19l6-6m0 0l-6-6m6 6H9a6 6 0 000 12h3" />' +
-        '</svg>Redo' +
+        '</svg><span class="h5p-mc-btn-label"></span>' +
       '</button>'
     ).appendTo($toolGroup).on('click', function () { self.redo(); });
+    this.$btnRedo.find('.h5p-mc-btn-label').text(this.params.l10n.btnRedo);
+    this.$btnRedo.attr('aria-label', this.params.l10n.btnRedo);
 
-    this.$btnReset = $('<button class="h5p-mc-btn">Reset</button>').appendTo($toolGroup).on('click', function () {
-      if (confirm("Are you sure you want to reset the board?")) {
+    this.$btnReset = $('<button class="h5p-mc-btn"></button>').text(this.params.l10n.btnReset).appendTo($toolGroup).on('click', function () {
+      if (confirm(self.params.l10n.resetConfirmText)) {
         self.reset();
       }
     });
 
-    this.$btnSubmit = $('<button class="h5p-mc-btn h5p-mc-btn-primary" disabled>Submit Classification</button>')
+    this.$btnSubmit = $('<button class="h5p-mc-btn h5p-mc-btn-primary" disabled></button>')
+      .text(this.params.l10n.btnSubmit)
       .appendTo($toolbar)
       .on('click', function () {
         self.$workspaceScreen.hide();
@@ -186,24 +290,32 @@ H5P.MoneyConversations = (function ($) {
     cats.forEach(function (cat) {
       var colLabel = self.params.categoryLabels[cat] || cat;
       var tipText = self.params.tips[cat] || "";
+      var headerTemplate = self.params.l10n.quadrantHeaderTemplate || "@category";
+      var quadHeader = headerTemplate.replace('@category', colLabel);
 
       var $quadrant = $('<div class="h5p-mc-quadrant" data-q="' + cat + '"></div>').appendTo(self.$quadrantGrid);
-      var $qHeader = $('<div class="h5p-mc-quadrant-header"><span class="h5p-mc-quadrant-title">' + colLabel + ' Quadrant</span></div>').appendTo($quadrant);
+      var $qHeader = $('<div class="h5p-mc-quadrant-header"><span class="h5p-mc-quadrant-title"></span></div>').appendTo($quadrant);
+      $qHeader.find('.h5p-mc-quadrant-title').text(quadHeader);
       
-      var $qChipsContainer = $('<div class="h5p-mc-quadrant-chips-container"><span class="h5p-mc-quadrant-chips-label">Sorted Topics</span></div>').appendTo($quadrant);
+      var $qChipsContainer = $('<div class="h5p-mc-quadrant-chips-container"><span class="h5p-mc-quadrant-chips-label"></span></div>').appendTo($quadrant);
+      $qChipsContainer.find('.h5p-mc-quadrant-chips-label').text(self.params.l10n.sortedTopicsLabel);
       $('<div class="h5p-mc-quadrant-chips" id="h5p-mc-results-' + cat + '"></div>').appendTo($qChipsContainer);
 
-      var $qTips = $('<div><span class="h5p-mc-quadrant-tips-title">Tips for making these engaging</span><div class="h5p-mc-quadrant-tips">' + tipText + '</div></div>').appendTo($quadrant);
+      var $qTips = $('<div><span class="h5p-mc-quadrant-tips-title"></span><div class="h5p-mc-quadrant-tips">' + tipText + '</div></div>').appendTo($quadrant);
+      $qTips.find('.h5p-mc-quadrant-tips-title').text(self.params.l10n.tipsLabel);
     });
 
     var $resultsToolbar = $('<div class="h5p-mc-toolbar"></div>').appendTo(this.$resultsScreen);
-    this.$summaryScore = $('<span style="font-size:14px;font-weight:500;color:#475569;"></span>').appendTo($resultsToolbar);
-    $('<button class="h5p-mc-btn h5p-mc-btn-primary">Try Again</button>').appendTo($resultsToolbar).on('click', function () {
-      self.$resultsScreen.hide();
-      self.$workspaceScreen.show();
-      self.reset();
-      self.trigger('resize');
-    });
+    this.$summaryScore = $('<span style="font-size:14px;font-weight:500;color:var(--h5p-mc-header-desc, #475569);"></span>').appendTo($resultsToolbar);
+    $('<button class="h5p-mc-btn h5p-mc-btn-primary"></button>')
+      .text(this.params.l10n.btnTryAgain)
+      .appendTo($resultsToolbar)
+      .on('click', function () {
+        self.$resultsScreen.hide();
+        self.$workspaceScreen.show();
+        self.reset();
+        self.trigger('resize');
+      });
 
     // Initialize Placements & Recover state
     this.resetState();
@@ -225,6 +337,7 @@ H5P.MoneyConversations = (function ($) {
     this.historyStack = [];
     this.redoStack = [];
     this.selectedItemId = null;
+    this.draggedItemId = null;
   };
 
   MoneyConversations.prototype.reset = function () {
@@ -304,7 +417,16 @@ H5P.MoneyConversations = (function ($) {
       }
     });
 
-    this.$bankCount.text(bankCountVal === 0 ? "All items classified!" : bankCountVal + " item" + (bankCountVal > 1 ? 's' : '') + " remaining");
+    // Update bank remaining count with localized format
+    var remainingText = "";
+    if (bankCountVal === 0) {
+      remainingText = this.params.l10n.allItemsClassified;
+    } else if (bankCountVal === 1) {
+      remainingText = this.params.l10n.itemsRemainingSingle;
+    } else {
+      remainingText = this.params.l10n.itemsRemainingPlural.replace('@count', bankCountVal);
+    }
+    this.$bankCount.text(remainingText);
     
     this.$btnUndo.prop('disabled', this.historyStack.length === 0);
     this.$btnRedo.prop('disabled', this.redoStack.length === 0);
@@ -319,8 +441,8 @@ H5P.MoneyConversations = (function ($) {
       $card.addClass('selected');
     }
 
-    $('<div class="h5p-mc-item-name"></div>').text(topic.name).appendTo($card);
-    $('<div class="h5p-mc-item-desc"></div>').text(topic.desc).appendTo($card);
+    $('<div class="h5p-mc-item-name"></div>').html(topic.name).appendTo($card);
+    $('<div class="h5p-mc-item-desc"></div>').html(topic.desc).appendTo($card);
 
     // HTML5 Drag
     $card.on('dragstart', function (e) {
@@ -374,12 +496,13 @@ H5P.MoneyConversations = (function ($) {
 
       var $chip = $('<div class="h5p-mc-feedback-chip" data-col="' + cat + '"></div>');
       $('<span class="h5p-mc-status-bullet"></span>').appendTo($chip);
-      $('<span></span>').text(topic.name).appendTo($chip);
+      $('<span></span>').html(topic.name).appendTo($chip);
       
       $('#h5p-mc-results-' + cat).append($chip);
     });
 
-    this.$summaryScore.text("You sorted all " + this.params.topics.length + " topics! Below are tips on how to make learning about these categories engaging.");
+    var summaryText = this.params.l10n.summaryBannerTemplate.replace('@count', this.params.topics.length);
+    this.$summaryScore.text(summaryText);
   };
 
   // State Persistence
@@ -389,6 +512,7 @@ H5P.MoneyConversations = (function ($) {
       this.historyStack = state.historyStack ? [].concat(state.historyStack) : [];
       this.redoStack = [];
       this.selectedItemId = null;
+      this.draggedItemId = null;
       this.render();
     }
   };

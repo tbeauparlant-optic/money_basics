@@ -1,0 +1,405 @@
+[
+  {
+    "name": "title",
+    "type": "text",
+    "label": "Title",
+    "default": "Workshop 5: Categorizing Money Conversations",
+    "importance": "high"
+  },
+  {
+    "name": "instruction",
+    "type": "text",
+    "widget": "textarea",
+    "label": "Instructions text",
+    "default": "Not all financial topics should be approached the same way. Classifying topics can help facilitators choose the best way to present them. Drag and drop or click/tap to select each of the topics below and sort them into their category columns.",
+    "importance": "high"
+  },
+  {
+    "name": "categoryLabels",
+    "type": "group",
+    "label": "Category Column Titles",
+    "importance": "medium",
+    "fields": [
+      {
+        "name": "simple",
+        "type": "text",
+        "label": "Simple Category Label",
+        "default": "Simple"
+      },
+      {
+        "name": "dry",
+        "type": "text",
+        "label": "Dry Category Label",
+        "default": "Dry"
+      },
+      {
+        "name": "complex",
+        "type": "text",
+        "label": "Complex Category Label",
+        "default": "Complex"
+      },
+      {
+        "name": "hot",
+        "type": "text",
+        "label": "Hot-button Category Label",
+        "default": "Hot-button"
+      }
+    ]
+  },
+  {
+    "name": "tips",
+    "type": "group",
+    "label": "Facilitator engaging tips per category",
+    "importance": "high",
+    "fields": [
+      {
+        "name": "simple",
+        "type": "text",
+        "widget": "textarea",
+        "label": "Simple Category Tips",
+        "default": "Filler Tip: To make simple topics engaging, use quick-fire quizzes, interactive matching games, and real-life scenario simulations to keep learners active."
+      },
+      {
+        "name": "dry",
+        "type": "text",
+        "widget": "textarea",
+        "label": "Dry Category Tips",
+        "default": "Filler Tip: Dry topics (like terms of service or regulation details) can be made engaging by using storytelling, gamification elements, or group problem-solving exercises."
+      },
+      {
+        "name": "complex",
+        "type": "text",
+        "widget": "textarea",
+        "label": "Complex Category Tips",
+        "default": "Filler Tip: For complex topics, break them into clear modular micro-lessons, use visual flowcharts, step-by-step progress trackers, and detailed case studies."
+      },
+      {
+        "name": "hot",
+        "type": "text",
+        "widget": "textarea",
+        "label": "Hot-button Category Tips",
+        "default": "Filler Tip: Engage learners on hot-button topics by facilitating anonymous voting, structuring debates, using roleplay, and offering space for reflection."
+      }
+    ]
+  },
+  {
+    "name": "topics",
+    "type": "list",
+    "label": "Topics to classify",
+    "entity": "Topic",
+    "importance": "high",
+    "field": {
+      "name": "topic",
+      "type": "group",
+      "label": "Topic Detail",
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "label": "Unique ID",
+          "description": "Unique identifier, e.g. atm, checking, budget"
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "label": "Topic Name",
+          "description": "Label displayed on the card"
+        },
+        {
+          "name": "desc",
+          "type": "text",
+          "widget": "textarea",
+          "label": "Topic Description",
+          "description": "Short explanation on the card"
+        }
+      ]
+    }
+  },
+  {
+    "name": "styleSettings",
+    "type": "group",
+    "label": "Style & Visual Design Settings",
+    "importance": "medium",
+    "fields": [
+      {
+        "name": "categoryColors",
+        "type": "group",
+        "label": "Category Column & Quadrant Accent Colors",
+        "fields": [
+          {
+            "name": "simple",
+            "type": "text",
+            "label": "Simple Category Accent Color (Hex)",
+            "default": "#10b981",
+            "description": "Border, title, and bullet color for Simple items"
+          },
+          {
+            "name": "dry",
+            "type": "text",
+            "label": "Dry Category Accent Color (Hex)",
+            "default": "#3b82f6",
+            "description": "Border, title, and bullet color for Dry items"
+          },
+          {
+            "name": "complex",
+            "type": "text",
+            "label": "Complex Category Accent Color (Hex)",
+            "default": "#8b5cf6",
+            "description": "Border, title, and bullet color for Complex items"
+          },
+          {
+            "name": "hot",
+            "type": "text",
+            "label": "Hot-button Category Accent Color (Hex)",
+            "default": "#f43f5e",
+            "description": "Border, title, and bullet color for Hot-button items"
+          }
+        ]
+      },
+      {
+        "name": "layoutColors",
+        "type": "group",
+        "label": "Header & Main Background Colors",
+        "fields": [
+          {
+            "name": "pageBgColor",
+            "type": "text",
+            "label": "Activity Background Color (Hex)",
+            "default": "#f8fafc"
+          },
+          {
+            "name": "headerBgColor",
+            "type": "text",
+            "label": "Header Card Background Color (Hex)",
+            "default": "#ffffff"
+          },
+          {
+            "name": "headerTitleColor",
+            "type": "text",
+            "label": "Header Title Text Color (Hex)",
+            "default": "#1e293b"
+          },
+          {
+            "name": "headerDescColor",
+            "type": "text",
+            "label": "Header Instruction Text Color (Hex)",
+            "default": "#475569"
+          }
+        ]
+      },
+      {
+        "name": "cardColors",
+        "type": "group",
+        "label": "Topic Bank & Card Colors",
+        "fields": [
+          {
+            "name": "bankBgColor",
+            "type": "text",
+            "label": "Item Bank Background Color (Hex)",
+            "default": "#ffffff"
+          },
+          {
+            "name": "cardBgColor",
+            "type": "text",
+            "label": "Topic Card Background Color (Hex)",
+            "default": "#ffffff"
+          },
+          {
+            "name": "cardBorderColor",
+            "type": "text",
+            "label": "Topic Card Border Color (Hex)",
+            "default": "#cbd5e1"
+          },
+          {
+            "name": "cardTitleColor",
+            "type": "text",
+            "label": "Topic Card Title Color (Hex)",
+            "default": "#1e293b"
+          },
+          {
+            "name": "cardDescColor",
+            "type": "text",
+            "label": "Topic Card Description Color (Hex)",
+            "default": "#475569"
+          },
+          {
+            "name": "cardSelectColor",
+            "type": "text",
+            "label": "Selected Card Highlight Border Color (Hex)",
+            "default": "#0b6b7c"
+          }
+        ]
+      },
+      {
+        "name": "buttonColors",
+        "type": "group",
+        "label": "Button & Toolbar Colors",
+        "fields": [
+          {
+            "name": "btnSecondaryBg",
+            "type": "text",
+            "label": "Secondary Button Background Color (Hex)",
+            "default": "#ffffff"
+          },
+          {
+            "name": "btnSecondaryText",
+            "type": "text",
+            "label": "Secondary Button Text Color (Hex)",
+            "default": "#1e293b"
+          },
+          {
+            "name": "btnSecondaryBorder",
+            "type": "text",
+            "label": "Secondary Button Border Color (Hex)",
+            "default": "#cbd5e1"
+          },
+          {
+            "name": "btnPrimaryBg",
+            "type": "text",
+            "label": "Primary/Submit Button Background Color (Hex)",
+            "default": "#0b6b7c"
+          },
+          {
+            "name": "btnPrimaryText",
+            "type": "text",
+            "label": "Primary/Submit Button Text Color (Hex)",
+            "default": "#ffffff"
+          }
+        ]
+      },
+      {
+        "name": "resultsColors",
+        "type": "group",
+        "label": "Results Screen & Quadrants Colors",
+        "fields": [
+          {
+            "name": "quadrantBgColor",
+            "type": "text",
+            "label": "Results Quadrant Background Color (Hex)",
+            "default": "#ffffff"
+          },
+          {
+            "name": "tipsBgColor",
+            "type": "text",
+            "label": "Tips Callout Box Background Color (Hex)",
+            "default": "#f8fafc"
+          },
+          {
+            "name": "tipsTextColor",
+            "type": "text",
+            "label": "Tips Callout Text Color (Hex)",
+            "default": "#475569"
+          },
+          {
+            "name": "sectionLabelColor",
+            "type": "text",
+            "label": "Section Header Label Color (Hex)",
+            "default": "#64748b"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "l10n",
+    "type": "group",
+    "label": "User Interface Text (Localization)",
+    "importance": "medium",
+    "fields": [
+      {
+        "name": "topicBankTitle",
+        "type": "text",
+        "label": "Topic Bank Title",
+        "default": "Topic Bank"
+      },
+      {
+        "name": "dropZonePlaceholderTemplate",
+        "type": "text",
+        "label": "Drop Zone Placeholder Text Template",
+        "default": "Drop @category items",
+        "description": "Use @category as a placeholder for the category column name."
+      },
+      {
+        "name": "itemsRemainingSingle",
+        "type": "text",
+        "label": "Items Remaining Label (Single)",
+        "default": "1 item remaining"
+      },
+      {
+        "name": "itemsRemainingPlural",
+        "type": "text",
+        "label": "Items Remaining Label (Plural)",
+        "default": "@count items remaining",
+        "description": "Use @count as a placeholder for the number of items."
+      },
+      {
+        "name": "allItemsClassified",
+        "type": "text",
+        "label": "All Items Classified Label",
+        "default": "All items classified!"
+      },
+      {
+        "name": "btnUndo",
+        "type": "text",
+        "label": "Undo Button Text",
+        "default": "Undo"
+      },
+      {
+        "name": "btnRedo",
+        "type": "text",
+        "label": "Redo Button Text",
+        "default": "Redo"
+      },
+      {
+        "name": "btnReset",
+        "type": "text",
+        "label": "Reset Button Text",
+        "default": "Reset"
+      },
+      {
+        "name": "btnSubmit",
+        "type": "text",
+        "label": "Submit Button Text",
+        "default": "Submit Classification"
+      },
+      {
+        "name": "quadrantHeaderTemplate",
+        "type": "text",
+        "label": "Results Header Text Template",
+        "default": "@category",
+        "description": "Use @category as a placeholder for the category name."
+      },
+      {
+        "name": "sortedTopicsLabel",
+        "type": "text",
+        "label": "Sorted Topics Section Header",
+        "default": "Sorted Topics"
+      },
+      {
+        "name": "tipsLabel",
+        "type": "text",
+        "label": "Tips Section Header",
+        "default": "Tips for making these engaging"
+      },
+      {
+        "name": "summaryBannerTemplate",
+        "type": "text",
+        "label": "Summary Score Banner Template",
+        "default": "You sorted all @count topics! Below are tips on how to make learning about these categories engaging.",
+        "description": "Use @count as a placeholder for the number of sorted items."
+      },
+      {
+        "name": "btnTryAgain",
+        "type": "text",
+        "label": "Try Again Button Text",
+        "default": "Try Again"
+      },
+      {
+        "name": "resetConfirmText",
+        "type": "text",
+        "label": "Reset Confirmation Warning",
+        "default": "Are you sure you want to reset the board? All classifications will be cleared."
+      }
+    ]
+  }
+]
